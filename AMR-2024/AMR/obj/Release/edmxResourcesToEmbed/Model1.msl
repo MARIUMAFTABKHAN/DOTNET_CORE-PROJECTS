@@ -1,0 +1,1729 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="Model1" />
+  <Alias Key="Target" Value="Model1.Store" />
+  <EntityContainerMapping CdmEntityContainer="Model1Container" StorageEntityContainer="Model1StoreContainer">
+    <FunctionImportMapping FunctionImportName="usp_IDctr" FunctionName="Model1.Store.usp_IDctr" />
+    <FunctionImportMapping FunctionImportName="GettransactionDatafor_report" FunctionName="Model1.Store.GettransactionDatafor_report" />
+    <FunctionImportMapping FunctionImportName="SplitString" FunctionName="Model1.Store.SplitString" />
+    <FunctionImportMapping FunctionImportName="GetRateCardSummary" FunctionName="Model1.Store.GetRateCardSummary" />
+    <FunctionImportMapping FunctionImportName="Revenue_report" FunctionName="Model1.Store.Revenue_report" />
+    <FunctionImportMapping FunctionImportName="SplitString_string" FunctionName="Model1.Store.SplitString_string" />
+    <FunctionImportMapping FunctionImportName="dashboard_report2" FunctionName="Model1.Store.dashboard_report2" />
+    <FunctionImportMapping FunctionImportName="dashboard_report3" FunctionName="Model1.Store.dashboard_report3" />
+    <FunctionImportMapping FunctionImportName="dashboard_report4" FunctionName="Model1.Store.dashboard_report4" />
+    <FunctionImportMapping FunctionImportName="dashboard_report_Express" FunctionName="Model1.Store.dashboard_report_Express">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model1.dashboard_report_Express_Result">
+          <ScalarProperty Name="MainCategory_Id" ColumnName="MainCategory_Id" />
+          <ScalarProperty Name="MainCategory" ColumnName="MainCategory" />
+          <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dasboard_subcategory" FunctionName="Model1.Store.dasboard_subcategory" />
+    <FunctionImportMapping FunctionImportName="usp_GetTop10ClientPivotSummary" FunctionName="Model1.Store.usp_GetTop10ClientPivotSummary" />
+    <FunctionImportMapping FunctionImportName="usp_GetMenuNew" FunctionName="Model1.Store.usp_GetMenuNew">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model1.usp_GetMenuNew_Result">
+          <ScalarProperty Name="MenuItemId" ColumnName="MenuItemId" />
+          <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="MainActive" ColumnName="MainActive" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Revenue_report_new" FunctionName="Model1.Store.Revenue_report_new" />
+    <FunctionImportMapping FunctionImportName="Revenue_report_new4" FunctionName="Model1.Store.Revenue_report_new4" />
+    <FunctionImportMapping FunctionImportName="Revenue_report_CM" FunctionName="Model1.Store.Revenue_report_CM" />
+    <FunctionImportMapping FunctionImportName="usp_GetMenuInfo" FunctionName="Model1.Store.usp_GetMenuInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model1.usp_GetMenuInfo_Result">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="ActivityLogs">
+      <EntityTypeMapping TypeName="Model1.ActivityLog">
+        <MappingFragment StoreEntitySet="ActivityLog">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Cmp" ColumnName="Cmp" />
+          <ScalarProperty Name="Parent_Id" ColumnName="Parent_Id" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Table_RecId" ColumnName="Table_RecId" />
+          <ScalarProperty Name="Table_Name" ColumnName="Table_Name" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Activity_time" ColumnName="Activity_time" />
+          <ScalarProperty Name="Activity_Date" ColumnName="Activity_Date" />
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AExecutiveBrands">
+      <EntityTypeMapping TypeName="Model1.AExecutiveBrand">
+        <MappingFragment StoreEntitySet="AExecutiveBrands">
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Brand_Id" ColumnName="Brand_Id" />
+          <ScalarProperty Name="Executive_Id" ColumnName="Executive_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Agencies">
+      <EntityTypeMapping TypeName="Model1.Agency">
+        <MappingFragment StoreEntitySet="Agencies">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="AMR" ColumnName="AMR" />
+          <ScalarProperty Name="Dealing_Executive" ColumnName="Dealing_Executive" />
+          <ScalarProperty Name="Credit_Limit" ColumnName="Credit_Limit" />
+          <ScalarProperty Name="Credit_Days" ColumnName="Credit_Days" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="EMail_Address" ColumnName="EMail_Address" />
+          <ScalarProperty Name="Fax_Nos" ColumnName="Fax_Nos" />
+          <ScalarProperty Name="Telephone_Nos" ColumnName="Telephone_Nos" />
+          <ScalarProperty Name="Edition_Responsible" ColumnName="Edition_Responsible" />
+          <ScalarProperty Name="Address_4" ColumnName="Address_4" />
+          <ScalarProperty Name="Address_3" ColumnName="Address_3" />
+          <ScalarProperty Name="Address_2" ColumnName="Address_2" />
+          <ScalarProperty Name="Address_1" ColumnName="Address_1" />
+          <ScalarProperty Name="Agency_Type" ColumnName="Agency_Type" />
+          <ScalarProperty Name="Agency_Name" ColumnName="Agency_Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyAssignments_unused">
+      <EntityTypeMapping TypeName="Model1.AgencyAssignments_unused">
+        <MappingFragment StoreEntitySet="AgencyAssignments-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Agency_Id" ColumnName="Agency_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyBrands">
+      <EntityTypeMapping TypeName="Model1.AgencyBrand">
+        <MappingFragment StoreEntitySet="AgencyBrands">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Agency_Executive" ColumnName="Agency_Executive" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyExecutives">
+      <EntityTypeMapping TypeName="Model1.AgencyExecutive">
+        <MappingFragment StoreEntitySet="AgencyExecutives">
+          <ScalarProperty Name="Gen_Remarks" ColumnName="Gen_Remarks" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Exec2_Remarks" ColumnName="Exec2_Remarks" />
+          <ScalarProperty Name="Exec2_Rel" ColumnName="Exec2_Rel" />
+          <ScalarProperty Name="Exec2_Id" ColumnName="Exec2_Id" />
+          <ScalarProperty Name="Exec1_Remarks" ColumnName="Exec1_Remarks" />
+          <ScalarProperty Name="Exec1_Rel" ColumnName="Exec1_Rel" />
+          <ScalarProperty Name="Exec1_Id" ColumnName="Exec1_Id" />
+          <ScalarProperty Name="Wedding_Ann" ColumnName="Wedding_Ann" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital_Status" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="EMail_Address" ColumnName="EMail_Address" />
+          <ScalarProperty Name="Mobile_Phone" ColumnName="Mobile_Phone" />
+          <ScalarProperty Name="Direct_Phone" ColumnName="Direct_Phone" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Executive_Name" ColumnName="Executive_Name" />
+          <ScalarProperty Name="Agency_Id" ColumnName="Agency_Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Branches">
+      <EntityTypeMapping TypeName="Model1.Branch">
+        <MappingFragment StoreEntitySet="Branches">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Branch_Name" ColumnName="Branch_Name" />
+          <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+          <ScalarProperty Name="Branch_Id" ColumnName="Branch_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrandCampaign_unused">
+      <EntityTypeMapping TypeName="Model1.BrandCampaign_unused">
+        <MappingFragment StoreEntitySet="BrandCampaign-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Edition_SGD" ColumnName="Edition_SGD" />
+          <ScalarProperty Name="Edition_GUJ" ColumnName="Edition_GUJ" />
+          <ScalarProperty Name="Edition_FSB" ColumnName="Edition_FSB" />
+          <ScalarProperty Name="Edition_MUX" ColumnName="Edition_MUX" />
+          <ScalarProperty Name="Edition_QTA" ColumnName="Edition_QTA" />
+          <ScalarProperty Name="Edition_PEW" ColumnName="Edition_PEW" />
+          <ScalarProperty Name="Edition_LHE" ColumnName="Edition_LHE" />
+          <ScalarProperty Name="Edition_KHI" ColumnName="Edition_KHI" />
+          <ScalarProperty Name="Edition_ISB" ColumnName="Edition_ISB" />
+          <ScalarProperty Name="Expected_Budget" ColumnName="Expected_Budget" />
+          <ScalarProperty Name="During_The_Month" ColumnName="During_The_Month" />
+          <ScalarProperty Name="Expected_Launch_Date" ColumnName="Expected_Launch_Date" />
+          <ScalarProperty Name="Campaign_Title" ColumnName="Campaign_Title" />
+          <ScalarProperty Name="Brand_Id" ColumnName="Brand_Id" />
+          <ScalarProperty Name="CR_Id" ColumnName="CR_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="Model1.Brand">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Media_Buying_House" ColumnName="Media_Buying_House" />
+          <ScalarProperty Name="Company_Executive" ColumnName="Company_Executive" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Campaigns">
+      <EntityTypeMapping TypeName="Model1.Campaign">
+        <MappingFragment StoreEntitySet="Campaign">
+          <ScalarProperty Name="Rec_Edited_DateTime" ColumnName="Rec_Edited_DateTime" />
+          <ScalarProperty Name="Rec_Edited_by" ColumnName="Rec_Edited_by" />
+          <ScalarProperty Name="Rec_Added_DateTime" ColumnName="Rec_Added_DateTime" />
+          <ScalarProperty Name="Rec_Added_by" ColumnName="Rec_Added_by" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Launch_date" ColumnName="Launch_date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CExecutiveBrands">
+      <EntityTypeMapping TypeName="Model1.CExecutiveBrand">
+        <MappingFragment StoreEntitySet="CExecutiveBrands">
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Brand_Id" ColumnName="Brand_Id" />
+          <ScalarProperty Name="Executive_Id" ColumnName="Executive_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CExecutiveBrands_unused">
+      <EntityTypeMapping TypeName="Model1.CExecutiveBrands_unused">
+        <MappingFragment StoreEntitySet="CExecutiveBrands-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Brand_Id" ColumnName="Brand_Id" />
+          <ScalarProperty Name="Executive_Id" ColumnName="Executive_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientCompanies">
+      <EntityTypeMapping TypeName="Model1.ClientCompany">
+        <MappingFragment StoreEntitySet="ClientCompanies">
+          <ScalarProperty Name="Credit_Limit" ColumnName="Credit_Limit" />
+          <ScalarProperty Name="Credit_Days" ColumnName="Credit_Days" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="AMR" ColumnName="AMR" />
+          <ScalarProperty Name="Client_Type" ColumnName="Client_Type" />
+          <ScalarProperty Name="Client_MBH" ColumnName="Client_MBH" />
+          <ScalarProperty Name="Client_Agency" ColumnName="Client_Agency" />
+          <ScalarProperty Name="Client_Brand" ColumnName="Client_Brand" />
+          <ScalarProperty Name="Dealing_Executive" ColumnName="Dealing_Executive" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="EMail_Address" ColumnName="EMail_Address" />
+          <ScalarProperty Name="Fax_Nos" ColumnName="Fax_Nos" />
+          <ScalarProperty Name="Telephone_Nos" ColumnName="Telephone_Nos" />
+          <ScalarProperty Name="Edition_Responsible" ColumnName="Edition_Responsible" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Address_Line_4" ColumnName="Address_Line_4" />
+          <ScalarProperty Name="Address_Line_3" ColumnName="Address_Line_3" />
+          <ScalarProperty Name="Address_Line_2" ColumnName="Address_Line_2" />
+          <ScalarProperty Name="Address_Line_1" ColumnName="Address_Line_1" />
+          <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Client_Sector" ColumnName="Client_Sector" />
+          <ScalarProperty Name="Client_Abreviation" ColumnName="Client_Abreviation" />
+          <ScalarProperty Name="Client_Name" ColumnName="Client_Name" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientExecutives">
+      <EntityTypeMapping TypeName="Model1.ClientExecutive">
+        <MappingFragment StoreEntitySet="ClientExecutives">
+          <ScalarProperty Name="Gen_Remarks" ColumnName="Gen_Remarks" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Exec2_Remarks" ColumnName="Exec2_Remarks" />
+          <ScalarProperty Name="Exec2_Rel" ColumnName="Exec2_Rel" />
+          <ScalarProperty Name="Exec2_Id" ColumnName="Exec2_Id" />
+          <ScalarProperty Name="Exec1_Remarks" ColumnName="Exec1_Remarks" />
+          <ScalarProperty Name="Exec1_Rel" ColumnName="Exec1_Rel" />
+          <ScalarProperty Name="Exec1_Id" ColumnName="Exec1_Id" />
+          <ScalarProperty Name="Wedding_Ann" ColumnName="Wedding_Ann" />
+          <ScalarProperty Name="Marital_Status" ColumnName="Marital_Status" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Postal_Code" ColumnName="Postal_Code" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="EMail_Address" ColumnName="EMail_Address" />
+          <ScalarProperty Name="Mobile_Phone" ColumnName="Mobile_Phone" />
+          <ScalarProperty Name="Direct_Phone" ColumnName="Direct_Phone" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Executive_Name" ColumnName="Executive_Name" />
+          <ScalarProperty Name="Client_Id" ColumnName="Client_Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientSectors">
+      <EntityTypeMapping TypeName="Model1.ClientSector">
+        <MappingFragment StoreEntitySet="ClientSector">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClubCategories">
+      <EntityTypeMapping TypeName="Model1.ClubCategory">
+        <MappingFragment StoreEntitySet="ClubCategories">
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Category_Title" ColumnName="Category_Title" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="Model1.Company">
+        <MappingFragment StoreEntitySet="Companies">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Company_Name" ColumnName="Company_Name" />
+          <ScalarProperty Name="Division_Id" ColumnName="Division_Id" />
+          <ScalarProperty Name="Company_Id" ColumnName="Company_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompGRelations">
+      <EntityTypeMapping TypeName="Model1.CompGRelation">
+        <MappingFragment StoreEntitySet="CompGRelation">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="oGID" ColumnName="oGID" />
+          <ScalarProperty Name="cGID" ColumnName="cGID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompGroups">
+      <EntityTypeMapping TypeName="Model1.CompGroup">
+        <MappingFragment StoreEntitySet="CompGroup">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="PublicationID" ColumnName="PublicationID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompGStations">
+      <EntityTypeMapping TypeName="Model1.CompGStation">
+        <MappingFragment StoreEntitySet="CompGStation">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="IsPriority" ColumnName="IsPriority" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactReports">
+      <EntityTypeMapping TypeName="Model1.ContactReport">
+        <MappingFragment StoreEntitySet="ContactReport">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Gen_Reason_Of_Refusal" ColumnName="Gen_Reason_Of_Refusal" />
+          <ScalarProperty Name="Gen_Minutes_Of_Meeting" ColumnName="Gen_Minutes_Of_Meeting" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Issues_Remarks" ColumnName="Issues_Remarks" />
+          <ScalarProperty Name="Issues" ColumnName="Issues" />
+          <ScalarProperty Name="Expected_Edition_SGD" ColumnName="Expected_Edition_SGD" />
+          <ScalarProperty Name="Expected_Edition_GRW" ColumnName="Expected_Edition_GRW" />
+          <ScalarProperty Name="Expected_Edition_FSB" ColumnName="Expected_Edition_FSB" />
+          <ScalarProperty Name="Expected_Edition_MUX" ColumnName="Expected_Edition_MUX" />
+          <ScalarProperty Name="Expected_Edition_QTA" ColumnName="Expected_Edition_QTA" />
+          <ScalarProperty Name="Expected_Edition_PEW" ColumnName="Expected_Edition_PEW" />
+          <ScalarProperty Name="Expected_Edition_LHE" ColumnName="Expected_Edition_LHE" />
+          <ScalarProperty Name="Expected_Edition_KHI" ColumnName="Expected_Edition_KHI" />
+          <ScalarProperty Name="Expected_Edition_ISB" ColumnName="Expected_Edition_ISB" />
+          <ScalarProperty Name="Expected_Budget" ColumnName="Expected_Budget" />
+          <ScalarProperty Name="Or_During_The_Month" ColumnName="Or_During_The_Month" />
+          <ScalarProperty Name="Expected_Launch" ColumnName="Expected_Launch" />
+          <ScalarProperty Name="Campaign_Title" ColumnName="Campaign_Title" />
+          <ScalarProperty Name="Any_New_Campaign" ColumnName="Any_New_Campaign" />
+          <ScalarProperty Name="Reason_Of_Refusal" ColumnName="Reason_Of_Refusal" />
+          <ScalarProperty Name="Confirm_Edition_SGD" ColumnName="Confirm_Edition_SGD" />
+          <ScalarProperty Name="Confirm_Edition_GUJ" ColumnName="Confirm_Edition_GUJ" />
+          <ScalarProperty Name="Confirm_Edition_FSB" ColumnName="Confirm_Edition_FSB" />
+          <ScalarProperty Name="Confirm_Edition_MUX" ColumnName="Confirm_Edition_MUX" />
+          <ScalarProperty Name="Confirm_Edition_QTA" ColumnName="Confirm_Edition_QTA" />
+          <ScalarProperty Name="Confirm_Edition_PEW" ColumnName="Confirm_Edition_PEW" />
+          <ScalarProperty Name="Confirm_Edition_LHE" ColumnName="Confirm_Edition_LHE" />
+          <ScalarProperty Name="Confirm_Edition_KHI" ColumnName="Confirm_Edition_KHI" />
+          <ScalarProperty Name="Confirm_Edition_ISB" ColumnName="Confirm_Edition_ISB" />
+          <ScalarProperty Name="Confirm_Page" ColumnName="Confirm_Page" />
+          <ScalarProperty Name="Confirm_Publication" ColumnName="Confirm_Publication" />
+          <ScalarProperty Name="Confirm_Date" ColumnName="Confirm_Date" />
+          <ScalarProperty Name="CPR_Qty_Amount" ColumnName="CPR_Qty_Amount" />
+          <ScalarProperty Name="CPR_Activity" ColumnName="CPR_Activity" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Col" ColumnName="Col" />
+          <ScalarProperty Name="Cm" ColumnName="Cm" />
+          <ScalarProperty Name="Ad_Confirm" ColumnName="Ad_Confirm" />
+          <ScalarProperty Name="Follow_Up_Visit_To" ColumnName="Follow_Up_Visit_To" />
+          <ScalarProperty Name="Follow_Up_Visit_Mode" ColumnName="Follow_Up_Visit_Mode" />
+          <ScalarProperty Name="Follow_Up_Time" ColumnName="Follow_Up_Time" />
+          <ScalarProperty Name="Follow_Up_Date" ColumnName="Follow_Up_Date" />
+          <ScalarProperty Name="Follow_Up_Mode" ColumnName="Follow_Up_Mode" />
+          <ScalarProperty Name="New_Executive" ColumnName="New_Executive" />
+          <ScalarProperty Name="PR_Visit" ColumnName="PR_Visit" />
+          <ScalarProperty Name="Minutes_Of_Meeting" ColumnName="Minutes_Of_Meeting" />
+          <ScalarProperty Name="Visit_Date" ColumnName="Visit_Date" />
+          <ScalarProperty Name="Brand_Id" ColumnName="Brand_Id" />
+          <ScalarProperty Name="Agency_Client_Id" ColumnName="Agency_Client_Id" />
+          <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Visit_To" ColumnName="Visit_To" />
+          <ScalarProperty Name="Rec_Type" ColumnName="Rec_Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contactreport_mobile">
+      <EntityTypeMapping TypeName="Model1.contactreport_mobile">
+        <MappingFragment StoreEntitySet="contactreport_mobile">
+          <ScalarProperty Name="Person_name" ColumnName="Person_name" />
+          <ScalarProperty Name="Desgn" ColumnName="Desgn" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="visit_time" ColumnName="visit_time" />
+          <ScalarProperty Name="GenerationDateTime" ColumnName="GenerationDateTime" />
+          <ScalarProperty Name="System_name" ColumnName="System_name" />
+          <ScalarProperty Name="Windows_Id" ColumnName="Windows_Id" />
+          <ScalarProperty Name="Rec_Edit_Datetime" ColumnName="Rec_Edit_Datetime" />
+          <ScalarProperty Name="Rec_Edit_by" ColumnName="Rec_Edit_by" />
+          <ScalarProperty Name="Rec_Added_Datetime" ColumnName="Rec_Added_Datetime" />
+          <ScalarProperty Name="Rec_Added_by" ColumnName="Rec_Added_by" />
+          <ScalarProperty Name="followup_visit_date" ColumnName="followup_visit_date" />
+          <ScalarProperty Name="followup_visit_time" ColumnName="followup_visit_time" />
+          <ScalarProperty Name="followup_visit_mode" ColumnName="followup_visit_mode" />
+          <ScalarProperty Name="followup_visit_to" ColumnName="followup_visit_to" />
+          <ScalarProperty Name="newexecutive_name" ColumnName="newexecutive_name" />
+          <ScalarProperty Name="new_executive" ColumnName="new_executive" />
+          <ScalarProperty Name="pr_visit" ColumnName="pr_visit" />
+          <ScalarProperty Name="minutes_of_meetings" ColumnName="minutes_of_meetings" />
+          <ScalarProperty Name="visit_date" ColumnName="visit_date" />
+          <ScalarProperty Name="brand_id" ColumnName="brand_id" />
+          <ScalarProperty Name="agency_client_id" ColumnName="agency_client_id" />
+          <ScalarProperty Name="sub_cat" ColumnName="sub_cat" />
+          <ScalarProperty Name="main_cat" ColumnName="main_cat" />
+          <ScalarProperty Name="visit_to" ColumnName="visit_to" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contactreportmobile_Detail">
+      <EntityTypeMapping TypeName="Model1.Contactreportmobile_Detail">
+        <MappingFragment StoreEntitySet="Contactreportmobile_Detail">
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="contactreport" ColumnName="contactreport" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CPRActivities">
+      <EntityTypeMapping TypeName="Model1.CPRActivity">
+        <MappingFragment StoreEntitySet="CPRActivities">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Count_Type" ColumnName="Count_Type" />
+          <ScalarProperty Name="Activity_Title" ColumnName="Activity_Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CRUsers_unused">
+      <EntityTypeMapping TypeName="Model1.CRUsers_unused">
+        <MappingFragment StoreEntitySet="CRUsers-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="User_Level" ColumnName="User_Level" />
+          <ScalarProperty Name="User_Groups" ColumnName="User_Groups" />
+          <ScalarProperty Name="User_Desig" ColumnName="User_Desig" />
+          <ScalarProperty Name="User_Pass" ColumnName="User_Pass" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyRevenues">
+      <EntityTypeMapping TypeName="Model1.DailyRevenue">
+        <MappingFragment StoreEntitySet="DailyRevenue">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Net_Amount" ColumnName="Net_Amount" />
+          <ScalarProperty Name="Commission_Amount" ColumnName="Commission_Amount" />
+          <ScalarProperty Name="Commission_Value" ColumnName="Commission_Value" />
+          <ScalarProperty Name="Commission_Mode" ColumnName="Commission_Mode" />
+          <ScalarProperty Name="Gross_Amount" ColumnName="Gross_Amount" />
+          <ScalarProperty Name="Client_Name" ColumnName="Client_Name" />
+          <ScalarProperty Name="Revenue_Date" ColumnName="Revenue_Date" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Orignal_ID" ColumnName="Orignal_ID" />
+          <ScalarProperty Name="Loc_ID" ColumnName="Loc_ID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="Model1.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="DeptName" ColumnName="DeptName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designations">
+      <EntityTypeMapping TypeName="Model1.Designation">
+        <MappingFragment StoreEntitySet="Designation">
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Desgn_Name" ColumnName="Desgn_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Divisions">
+      <EntityTypeMapping TypeName="Model1.Division">
+        <MappingFragment StoreEntitySet="Divisions">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Division_Name" ColumnName="Division_Name" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+          <ScalarProperty Name="Division_Id" ColumnName="Division_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="Model1.dtproperty">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExportTable_unused">
+      <EntityTypeMapping TypeName="Model1.ExportTable_unused">
+        <MappingFragment StoreEntitySet="ExportTable-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Table_Name" ColumnName="Table_Name" />
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FollowUpExecutives">
+      <EntityTypeMapping TypeName="Model1.FollowUpExecutive">
+        <MappingFragment StoreEntitySet="FollowUpExecutives">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Executive_Id" ColumnName="Executive_Id" />
+          <ScalarProperty Name="ContactReport_Id" ColumnName="ContactReport_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupComps">
+      <EntityTypeMapping TypeName="Model1.GroupComp">
+        <MappingFragment StoreEntitySet="GroupComps">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Group_Edition" ColumnName="Group_Edition" />
+          <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="GroupComp_Name" ColumnName="GroupComp_Name" />
+          <ScalarProperty Name="GroupComp_Id" ColumnName="GroupComp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupSecurities">
+      <EntityTypeMapping TypeName="Model1.GroupSecurity">
+        <MappingFragment StoreEntitySet="GroupSecurities">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="AMR" ColumnName="AMR" />
+          <ScalarProperty Name="Auth_Print" ColumnName="Auth_Print" />
+          <ScalarProperty Name="Auth_Del" ColumnName="Auth_Del" />
+          <ScalarProperty Name="Auth_Edit" ColumnName="Auth_Edit" />
+          <ScalarProperty Name="Auth_Add" ColumnName="Auth_Add" />
+          <ScalarProperty Name="Auth_Access" ColumnName="Auth_Access" />
+          <ScalarProperty Name="Control_Id" ColumnName="Control_Id" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Helps">
+      <EntityTypeMapping TypeName="Model1.Help">
+        <MappingFragment StoreEntitySet="Help">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Gen_Help_Text" ColumnName="Gen_Help_Text" />
+          <ScalarProperty Name="Help_Text" ColumnName="Help_Text" />
+          <ScalarProperty Name="Help_Lang" ColumnName="Help_Lang" />
+          <ScalarProperty Name="Form_Id" ColumnName="Form_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdCtrs">
+      <EntityTypeMapping TypeName="Model1.IdCtr">
+        <MappingFragment StoreEntitySet="IdCtr">
+          <ScalarProperty Name="ForTable" ColumnName="ForTable" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogManagers">
+      <EntityTypeMapping TypeName="Model1.LogManager">
+        <MappingFragment StoreEntitySet="LogManager">
+          <ScalarProperty Name="ActionOn" ColumnName="ActionOn" />
+          <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+          <ScalarProperty Name="ActionOnForm" ColumnName="ActionOnForm" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogRecords">
+      <EntityTypeMapping TypeName="Model1.LogRecord">
+        <MappingFragment StoreEntitySet="LogRecord">
+          <ScalarProperty Name="ActionOn" ColumnName="ActionOn" />
+          <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+          <ScalarProperty Name="ActionOnForm" ColumnName="ActionOnForm" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainCategories">
+      <EntityTypeMapping TypeName="Model1.MainCategory">
+        <MappingFragment StoreEntitySet="MainCategories">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="AMR" ColumnName="AMR" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Category_Title" ColumnName="Category_Title" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MainRates">
+      <EntityTypeMapping TypeName="Model1.MainRate">
+        <MappingFragment StoreEntitySet="MainRates">
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Edition_Id" ColumnName="Edition_Id" />
+          <ScalarProperty Name="Publication_id" ColumnName="Publication_id" />
+          <ScalarProperty Name="MainCat_Id" ColumnName="MainCat_Id" />
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MediaBuyingHouses_unused">
+      <EntityTypeMapping TypeName="Model1.MediaBuyingHouses_unused">
+        <MappingFragment StoreEntitySet="MediaBuyingHouses-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="EMail_Address" ColumnName="EMail_Address" />
+          <ScalarProperty Name="Fax_Nos" ColumnName="Fax_Nos" />
+          <ScalarProperty Name="Telephone_Nos" ColumnName="Telephone_Nos" />
+          <ScalarProperty Name="Address_4" ColumnName="Address_4" />
+          <ScalarProperty Name="Address_3" ColumnName="Address_3" />
+          <ScalarProperty Name="Address_2" ColumnName="Address_2" />
+          <ScalarProperty Name="Address_1" ColumnName="Address_1" />
+          <ScalarProperty Name="Media_House_Name" ColumnName="Media_House_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeetingExecutives">
+      <EntityTypeMapping TypeName="Model1.MeetingExecutive">
+        <MappingFragment StoreEntitySet="MeetingExecutives">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Executive_Id" ColumnName="Executive_Id" />
+          <ScalarProperty Name="ContactReport_Id" ColumnName="ContactReport_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="Model1.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItems">
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="ParentMenuId" ColumnName="ParentMenuId" />
+          <ScalarProperty Name="MenuItemId" ColumnName="MenuItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="Model1.Menu">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyTargets">
+      <EntityTypeMapping TypeName="Model1.MonthlyTarget">
+        <MappingFragment StoreEntitySet="MonthlyTargets">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Target_Amount" ColumnName="Target_Amount" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Target_Month" ColumnName="Target_Month" />
+          <ScalarProperty Name="Orignal_ID" ColumnName="Orignal_ID" />
+          <ScalarProperty Name="Loc_ID" ColumnName="Loc_ID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organisations">
+      <EntityTypeMapping TypeName="Model1.Organisation">
+        <MappingFragment StoreEntitySet="Organisation">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrganizationChartBIs">
+      <EntityTypeMapping TypeName="Model1.OrganizationChartBI">
+        <MappingFragment StoreEntitySet="OrganizationChartBI">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Root" ColumnName="Root" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Report_to_user_id" ColumnName="Report_to_user_id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrgSecurities">
+      <EntityTypeMapping TypeName="Model1.OrgSecurity">
+        <MappingFragment StoreEntitySet="OrgSecurities">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Auth_Access" ColumnName="Auth_Access" />
+          <ScalarProperty Name="Sec_Code" ColumnName="Sec_Code" />
+          <ScalarProperty Name="Sec_Type" ColumnName="Sec_Type" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationGroupDetails">
+      <EntityTypeMapping TypeName="Model1.PublicationGroupDetail">
+        <MappingFragment StoreEntitySet="PublicationGroupDetails">
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationGroups">
+      <EntityTypeMapping TypeName="Model1.PublicationGroup">
+        <MappingFragment StoreEntitySet="PublicationGroups">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publications">
+      <EntityTypeMapping TypeName="Model1.Publication">
+        <MappingFragment StoreEntitySet="Publications">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="AMR_Comparision" ColumnName="AMR_Comparision" />
+          <ScalarProperty Name="In_House_Publication" ColumnName="In_House_Publication" />
+          <ScalarProperty Name="Publication_Name" ColumnName="Publication_Name" />
+          <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RateCards">
+      <EntityTypeMapping TypeName="Model1.RateCard">
+        <MappingFragment StoreEntitySet="RateCard">
+          <ScalarProperty Name="EffectiveFrom" ColumnName="EffectiveFrom" />
+          <ScalarProperty Name="Rec_Edit_dateTime" ColumnName="Rec_Edit_dateTime" />
+          <ScalarProperty Name="Rec_Edit_by" ColumnName="Rec_Edit_by" />
+          <ScalarProperty Name="Rec_add_dateTime" ColumnName="Rec_add_dateTime" />
+          <ScalarProperty Name="Rec_Add_by" ColumnName="Rec_Add_by" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RatePolicies">
+      <EntityTypeMapping TypeName="Model1.RatePolicy">
+        <MappingFragment StoreEntitySet="RatePolicy">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="rec_edit_DateTime" ColumnName="rec_edit_DateTime" />
+          <ScalarProperty Name="rec_edit_by" ColumnName="rec_edit_by" />
+          <ScalarProperty Name="rec_add_dateTime" ColumnName="rec_add_dateTime" />
+          <ScalarProperty Name="Rec_add_by" ColumnName="Rec_add_by" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Size_exception" ColumnName="Size_exception" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rate_day" ColumnName="Rate_day" />
+          <ScalarProperty Name="WeekDay" ColumnName="WeekDay" />
+          <ScalarProperty Name="Operator" ColumnName="Operator" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="No_Station" ColumnName="No_Station" />
+          <ScalarProperty Name="Base_Rate" ColumnName="Base_Rate" />
+          <ScalarProperty Name="Base_station" ColumnName="Base_station" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Sub_category" ColumnName="Sub_category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RatePolicyStations">
+      <EntityTypeMapping TypeName="Model1.RatePolicyStation">
+        <MappingFragment StoreEntitySet="RatePolicyStations">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="City_edition" ColumnName="City_edition" />
+          <ScalarProperty Name="Policy_id" ColumnName="Policy_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="Model1.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesItems">
+      <EntityTypeMapping TypeName="Model1.RolesItem">
+        <MappingFragment StoreEntitySet="RolesItem">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesItem_new">
+      <EntityTypeMapping TypeName="Model1.RolesItem_new">
+        <MappingFragment StoreEntitySet="RolesItem_new">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityControls">
+      <EntityTypeMapping TypeName="Model1.SecurityControl">
+        <MappingFragment StoreEntitySet="SecurityControl">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Control_Caption_Arabic" ColumnName="Control_Caption_Arabic" />
+          <ScalarProperty Name="Control_Caption" ColumnName="Control_Caption" />
+          <ScalarProperty Name="Control_Type" ColumnName="Control_Type" />
+          <ScalarProperty Name="Control_Name" ColumnName="Control_Name" />
+          <ScalarProperty Name="Control_Id" ColumnName="Control_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubBranches">
+      <EntityTypeMapping TypeName="Model1.SubBranch">
+        <MappingFragment StoreEntitySet="SubBranches">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="SBranch_Name" ColumnName="SBranch_Name" />
+          <ScalarProperty Name="Branch_Id" ColumnName="Branch_Id" />
+          <ScalarProperty Name="SBranch_Id" ColumnName="SBranch_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubCategories">
+      <EntityTypeMapping TypeName="Model1.SubCategory">
+        <MappingFragment StoreEntitySet="SubCategories">
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Grp" ColumnName="Grp" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Email_Address" ColumnName="Email_Address" />
+          <ScalarProperty Name="Telephone_No" ColumnName="Telephone_No" />
+          <ScalarProperty Name="Address_4" ColumnName="Address_4" />
+          <ScalarProperty Name="Address_3" ColumnName="Address_3" />
+          <ScalarProperty Name="Address_2" ColumnName="Address_2" />
+          <ScalarProperty Name="Address_1" ColumnName="Address_1" />
+          <ScalarProperty Name="Address_to" ColumnName="Address_to" />
+          <ScalarProperty Name="Amr" ColumnName="Amr" />
+          <ScalarProperty Name="Urdu_Title" ColumnName="Urdu_Title" />
+          <ScalarProperty Name="Category_Title" ColumnName="Category_Title" />
+          <ScalarProperty Name="Is_Brand" ColumnName="Is_Brand" />
+          <ScalarProperty Name="Club_Category" ColumnName="Club_Category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubRates">
+      <EntityTypeMapping TypeName="Model1.SubRate">
+        <MappingFragment StoreEntitySet="SubRates">
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Edition_Id" ColumnName="Edition_Id" />
+          <ScalarProperty Name="Publication_Id" ColumnName="Publication_Id" />
+          <ScalarProperty Name="SubCat_Id" ColumnName="SubCat_Id" />
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TemplateMinutes">
+      <EntityTypeMapping TypeName="Model1.TemplateMinute">
+        <MappingFragment StoreEntitySet="TemplateMinutes">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Minutes_Of_Meeting" ColumnName="Minutes_Of_Meeting" />
+          <ScalarProperty Name="Extra_Info" ColumnName="Extra_Info" />
+          <ScalarProperty Name="Temp_Status" ColumnName="Temp_Status" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Track_IDs_unused">
+      <EntityTypeMapping TypeName="Model1.Track_IDs_unused">
+        <MappingFragment StoreEntitySet="Track_IDs-unused">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_BY" ColumnName="Rec_Added_BY" />
+          <ScalarProperty Name="New_ID" ColumnName="New_ID" />
+          <ScalarProperty Name="Old_ID" ColumnName="Old_ID" />
+          <ScalarProperty Name="Table_Name" ColumnName="Table_Name" />
+          <ScalarProperty Name="Loc_ID" ColumnName="Loc_ID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionAdds">
+      <EntityTypeMapping TypeName="Model1.TransactionAdd">
+        <MappingFragment StoreEntitySet="TransactionAdd">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Extra_Charges" ColumnName="Extra_Charges" />
+          <ScalarProperty Name="Colour_charges" ColumnName="Colour_charges" />
+          <ScalarProperty Name="Premium_charges" ColumnName="Premium_charges" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Base_Station" ColumnName="Base_Station" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="Model1.Transaction">
+        <MappingFragment StoreEntitySet="Transactions">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="RO" ColumnName="RO" />
+          <ScalarProperty Name="Campaign_Id" ColumnName="Campaign_Id" />
+          <ScalarProperty Name="Countable" ColumnName="Countable" />
+          <ScalarProperty Name="Add_Id" ColumnName="Add_Id" />
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="Col_Size" ColumnName="Col_Size" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Colour_BW" ColumnName="Colour_BW" />
+          <ScalarProperty Name="Size_Col" ColumnName="Size_Col" />
+          <ScalarProperty Name="Size_CM" ColumnName="Size_CM" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Client_Company" ColumnName="Client_Company" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Ad_Type" ColumnName="Ad_Type" />
+          <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="City_Edition" ColumnName="City_Edition" />
+          <ScalarProperty Name="Publication_Date" ColumnName="Publication_Date" />
+          <ScalarProperty Name="Orignal_ID" ColumnName="Orignal_ID" />
+          <ScalarProperty Name="Loc_ID" ColumnName="Loc_ID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Types">
+      <EntityTypeMapping TypeName="Model1.Type">
+        <MappingFragment StoreEntitySet="Types">
+          <ScalarProperty Name="Edit_DateTime" ColumnName="Edit_DateTime" />
+          <ScalarProperty Name="Edit_by" ColumnName="Edit_by" />
+          <ScalarProperty Name="Add_DateTime" ColumnName="Add_DateTime" />
+          <ScalarProperty Name="add_by" ColumnName="add_by" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Type1" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserGroups">
+      <EntityTypeMapping TypeName="Model1.UserGroup">
+        <MappingFragment StoreEntitySet="UserGroups">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Group_Level" ColumnName="Group_Level" />
+          <ScalarProperty Name="Group_Desc" ColumnName="Group_Desc" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Model1.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User_Active" ColumnName="User_Active" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="User_Level" ColumnName="User_Level" />
+          <ScalarProperty Name="User_Groups" ColumnName="User_Groups" />
+          <ScalarProperty Name="User_Desig" ColumnName="User_Desig" />
+          <ScalarProperty Name="User_Pass" ColumnName="User_Pass" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSecurities">
+      <EntityTypeMapping TypeName="Model1.UserSecurity">
+        <MappingFragment StoreEntitySet="UserSecurities">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Auth_Print" ColumnName="Auth_Print" />
+          <ScalarProperty Name="Auth_Del" ColumnName="Auth_Del" />
+          <ScalarProperty Name="Auth_Edit" ColumnName="Auth_Edit" />
+          <ScalarProperty Name="Auth_Add" ColumnName="Auth_Add" />
+          <ScalarProperty Name="Auth_Access" ColumnName="Auth_Access" />
+          <ScalarProperty Name="Control_Id" ColumnName="Control_Id" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgeBraClis">
+      <EntityTypeMapping TypeName="Model1.AgeBraCli">
+        <MappingFragment StoreEntitySet="AgeBraCli">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="eType" ColumnName="eType" />
+          <ScalarProperty Name="eName" ColumnName="eName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyClient_Com">
+      <EntityTypeMapping TypeName="Model1.AgencyClient_Com">
+        <MappingFragment StoreEntitySet="AgencyClient_Com">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Old_ID" ColumnName="Old_ID" />
+          <ScalarProperty Name="New_ID" ColumnName="New_ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyExecChecks">
+      <EntityTypeMapping TypeName="Model1.AgencyExecCheck">
+        <MappingFragment StoreEntitySet="AgencyExecCheck">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="AgencyExecutive_id" ColumnName="AgencyExecutive_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyGroups">
+      <EntityTypeMapping TypeName="Model1.AgencyGroup">
+        <MappingFragment StoreEntitySet="AgencyGroup">
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Cmp" ColumnName="Cmp" />
+          <ScalarProperty Name="Group_Caption" ColumnName="Group_Caption" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgencyGroupDtls">
+      <EntityTypeMapping TypeName="Model1.AgencyGroupDtl">
+        <MappingFragment StoreEntitySet="AgencyGroupDtl">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="AgencyID" ColumnName="AgencyID" />
+          <ScalarProperty Name="AgencyGroupID" ColumnName="AgencyGroupID" />
+          <ScalarProperty Name="RecID" ColumnName="RecID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CaterogiesClients">
+      <EntityTypeMapping TypeName="Model1.CaterogiesClient">
+        <MappingFragment StoreEntitySet="CaterogiesClient">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Agency_Name" ColumnName="Agency_Name" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="cCity" ColumnName="cCity" />
+          <ScalarProperty Name="Client_Name" ColumnName="Client_Name" />
+          <ScalarProperty Name="sCategories" ColumnName="sCategories" />
+          <ScalarProperty Name="mCategories" ColumnName="mCategories" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientExecutiveChecks">
+      <EntityTypeMapping TypeName="Model1.ClientExecutiveCheck">
+        <MappingFragment StoreEntitySet="ClientExecutiveCheck">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ClientExecutive_id" ColumnName="ClientExecutive_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactReportChks">
+      <EntityTypeMapping TypeName="Model1.ContactReportChk">
+        <MappingFragment StoreEntitySet="ContactReportChk">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ContactReport_id" ColumnName="ContactReport_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CRUsers">
+      <EntityTypeMapping TypeName="Model1.CRUser">
+        <MappingFragment StoreEntitySet="CRUsers">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="User_Level" ColumnName="User_Level" />
+          <ScalarProperty Name="User_Groups" ColumnName="User_Groups" />
+          <ScalarProperty Name="User_Desig" ColumnName="User_Desig" />
+          <ScalarProperty Name="User_Pass" ColumnName="User_Pass" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyRevenueChks">
+      <EntityTypeMapping TypeName="Model1.DailyRevenueChk">
+        <MappingFragment StoreEntitySet="DailyRevenueChk">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="DailyRevenue_id" ColumnName="DailyRevenue_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DummyTables">
+      <EntityTypeMapping TypeName="Model1.DummyTable">
+        <MappingFragment StoreEntitySet="DummyTable">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DynamicTables">
+      <EntityTypeMapping TypeName="Model1.DynamicTable">
+        <MappingFragment StoreEntitySet="DynamicTable">
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SUK" ColumnName="SUK" />
+          <ScalarProperty Name="SGD" ColumnName="SGD" />
+          <ScalarProperty Name="RYK" ColumnName="RYK" />
+          <ScalarProperty Name="QTA" ColumnName="QTA" />
+          <ScalarProperty Name="PEW" ColumnName="PEW" />
+          <ScalarProperty Name="MUX" ColumnName="MUX" />
+          <ScalarProperty Name="LHE" ColumnName="LHE" />
+          <ScalarProperty Name="KHI" ColumnName="KHI" />
+          <ScalarProperty Name="ISB" ColumnName="ISB" />
+          <ScalarProperty Name="HYD" ColumnName="HYD" />
+          <ScalarProperty Name="GUJ" ColumnName="GUJ" />
+          <ScalarProperty Name="FSB" ColumnName="FSB" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="Group_Id" ColumnName="Group_Id" />
+          <ScalarProperty Name="Client_Name" ColumnName="Client_Name" />
+          <ScalarProperty Name="Client_Id" ColumnName="Client_Id" />
+          <ScalarProperty Name="Publication_Date" ColumnName="Publication_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Missings">
+      <EntityTypeMapping TypeName="Model1.Missing">
+        <MappingFragment StoreEntitySet="Missing">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Add_DateTime" ColumnName="Add_DateTime" />
+          <ScalarProperty Name="Add_by" ColumnName="Add_by" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="MissingPara_ID" ColumnName="MissingPara_ID" />
+          <ScalarProperty Name="Second_int" ColumnName="Second_int" />
+          <ScalarProperty Name="First_int" ColumnName="First_int" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MissingExectives">
+      <EntityTypeMapping TypeName="Model1.MissingExective">
+        <MappingFragment StoreEntitySet="MissingExectives">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="MissingPara_id" ColumnName="MissingPara_id" />
+          <ScalarProperty Name="Missing_id" ColumnName="Missing_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Client_Visi_2" ColumnName="Client Visi_2" />
+          <ScalarProperty Name="Agency_Visit_2" ColumnName="Agency Visit_2" />
+          <ScalarProperty Name="Client_Visit" ColumnName="Client Visit" />
+          <ScalarProperty Name="Agency_Visit" ColumnName="Agency Visit" />
+          <ScalarProperty Name="Total_2" ColumnName="Total_2" />
+          <ScalarProperty Name="NWQ_2" ColumnName="NWQ_2" />
+          <ScalarProperty Name="JANG_2" ColumnName="JANG_2" />
+          <ScalarProperty Name="EXP_2" ColumnName="EXP_2" />
+          <ScalarProperty Name="Tolal" ColumnName="Tolal" />
+          <ScalarProperty Name="NWQ" ColumnName="NWQ" />
+          <ScalarProperty Name="JANG" ColumnName="JANG" />
+          <ScalarProperty Name="EXP" ColumnName="EXP" />
+          <ScalarProperty Name="Exectives" ColumnName="Exectives" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Brands" ColumnName="Brands" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MissingParameters">
+      <EntityTypeMapping TypeName="Model1.MissingParameter">
+        <MappingFragment StoreEntitySet="MissingParameter">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Edit_DateTime" ColumnName="Edit_DateTime" />
+          <ScalarProperty Name="Edit_by" ColumnName="Edit_by" />
+          <ScalarProperty Name="Add_DateTime" ColumnName="Add_DateTime" />
+          <ScalarProperty Name="Add_by" ColumnName="Add_by" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Sub_category" ColumnName="Sub_category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Second_Int" ColumnName="Second_Int" />
+          <ScalarProperty Name="First_Int" ColumnName="First_Int" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Para_Caption" ColumnName="Para_Caption" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MissingRights">
+      <EntityTypeMapping TypeName="Model1.MissingRight">
+        <MappingFragment StoreEntitySet="MissingRights">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="MissingPara_id" ColumnName="MissingPara_id" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyTartgetChecks">
+      <EntityTypeMapping TypeName="Model1.MonthlyTartgetCheck">
+        <MappingFragment StoreEntitySet="MonthlyTartgetCheck">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="MonthlyTarget_id" ColumnName="MonthlyTarget_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RateCardBaseStations">
+      <EntityTypeMapping TypeName="Model1.RateCardBaseStation">
+        <MappingFragment StoreEntitySet="RateCardBaseStations">
+          <ScalarProperty Name="Station_Order" ColumnName="Station_Order" />
+          <ScalarProperty Name="City_Edition" ColumnName="City_Edition" />
+          <ScalarProperty Name="GroupComp_id" ColumnName="GroupComp_id" />
+          <ScalarProperty Name="Publication_id" ColumnName="Publication_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relation_Execs">
+      <EntityTypeMapping TypeName="Model1.Relation_Execs">
+        <MappingFragment StoreEntitySet="Relation_Execs">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Relation_WEF" ColumnName="Relation_WEF" />
+          <ScalarProperty Name="Relation_Exec" ColumnName="Relation_Exec" />
+          <ScalarProperty Name="Relation_ID" ColumnName="Relation_ID" />
+          <ScalarProperty Name="Relation_Type" ColumnName="Relation_Type" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relations_Execs">
+      <EntityTypeMapping TypeName="Model1.Relations_Execs">
+        <MappingFragment StoreEntitySet="Relations_Execs">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="eType" ColumnName="eType" />
+          <ScalarProperty Name="Relation_WEF" ColumnName="Relation_WEF" />
+          <ScalarProperty Name="eName" ColumnName="eName" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Softwares">
+      <EntityTypeMapping TypeName="Model1.Software">
+        <MappingFragment StoreEntitySet="Software">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="AppExe" ColumnName="AppExe" />
+          <ScalarProperty Name="AppName" ColumnName="AppName" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="temp_desg">
+      <EntityTypeMapping TypeName="Model1.temp_desg">
+        <MappingFragment StoreEntitySet="temp_desg">
+          <ScalarProperty Name="Designation_t" ColumnName="Designation_t" />
+          <ScalarProperty Name="Executive_Name_t" ColumnName="Executive_Name_t" />
+          <ScalarProperty Name="id_t" ColumnName="id_t" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempAddM_Visit_1">
+      <EntityTypeMapping TypeName="Model1.TempAddM_Visit_1">
+        <MappingFragment StoreEntitySet="TempAddM_Visit_1">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Half_2" ColumnName="Half_2" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempAddMiss_1">
+      <EntityTypeMapping TypeName="Model1.TempAddMiss_1">
+        <MappingFragment StoreEntitySet="TempAddMiss_1">
+          <ScalarProperty Name="Agency_Visit_1" ColumnName="Agency_Visit_1" />
+          <ScalarProperty Name="Client_Visit_1" ColumnName="Client_Visit_1" />
+          <ScalarProperty Name="Visiter_Name" ColumnName="Visiter_Name" />
+          <ScalarProperty Name="Agency_Visit" ColumnName="Agency_Visit" />
+          <ScalarProperty Name="Client_Visit" ColumnName="Client_Visit" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Half_2" ColumnName="Half_2" />
+          <ScalarProperty Name="Gp_Id" ColumnName="Gp_Id" />
+          <ScalarProperty Name="pub_abreviation" ColumnName="pub_abreviation" />
+          <ScalarProperty Name="non_active_sum" ColumnName="non_active_sum" />
+          <ScalarProperty Name="ActiveSize_sum" ColumnName="ActiveSize_sum" />
+          <ScalarProperty Name="mSize_sum" ColumnName="mSize_sum" />
+          <ScalarProperty Name="client_name" ColumnName="client_name" />
+          <ScalarProperty Name="agency_name" ColumnName="agency_name" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="brand_name" ColumnName="brand_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempClientCompanies">
+      <EntityTypeMapping TypeName="Model1.TempClientCompany">
+        <MappingFragment StoreEntitySet="TempClientCompanies">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="sub_category" ColumnName="sub_category" />
+          <ScalarProperty Name="main_category" ColumnName="main_category" />
+          <ScalarProperty Name="CITY" ColumnName="CITY" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tempIDs">
+      <EntityTypeMapping TypeName="Model1.tempID">
+        <MappingFragment StoreEntitySet="tempID">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempVolumeTrends">
+      <EntityTypeMapping TypeName="Model1.TempVolumeTrend">
+        <MappingFragment StoreEntitySet="TempVolumeTrend">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Client_Name" ColumnName="Client_Name" />
+          <ScalarProperty Name="Client_Company" ColumnName="Client_Company" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transaction_Dup">
+      <EntityTypeMapping TypeName="Model1.Transaction_Dup">
+        <MappingFragment StoreEntitySet="Transaction_Dup">
+          <ScalarProperty Name="RO" ColumnName="RO" />
+          <ScalarProperty Name="Type_Id" ColumnName="Type_Id" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Col_Size" ColumnName="Col_Size" />
+          <ScalarProperty Name="cExport" ColumnName="cExport" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Colour_BW" ColumnName="Colour_BW" />
+          <ScalarProperty Name="Size_Col" ColumnName="Size_Col" />
+          <ScalarProperty Name="Size_CM" ColumnName="Size_CM" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Agency" ColumnName="Agency" />
+          <ScalarProperty Name="Client_Company" ColumnName="Client_Company" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Ad_Type" ColumnName="Ad_Type" />
+          <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Publication" ColumnName="Publication" />
+          <ScalarProperty Name="City_Edition" ColumnName="City_Edition" />
+          <ScalarProperty Name="Publication_Date" ColumnName="Publication_Date" />
+          <ScalarProperty Name="Orignal_ID" ColumnName="Orignal_ID" />
+          <ScalarProperty Name="Loc_ID" ColumnName="Loc_ID" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionChks">
+      <EntityTypeMapping TypeName="Model1.TransactionChk">
+        <MappingFragment StoreEntitySet="TransactionChk">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Transaction_id" ColumnName="Transaction_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Revenue_report_CM_client" FunctionName="Model1.Store.Revenue_report_CM_client" />
+    <EntitySetMapping Name="RateCardDetails">
+      <EntityTypeMapping TypeName="Model1.RateCardDetail">
+        <MappingFragment StoreEntitySet="RateCardDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Half_Rate_day" ColumnName="Half_Rate_day" />
+          <ScalarProperty Name="Full_Rate_day" ColumnName="Full_Rate_day" />
+          <ScalarProperty Name="WeekDay" ColumnName="WeekDay" />
+          <ScalarProperty Name="Half_Rate" ColumnName="Half_Rate" />
+          <ScalarProperty Name="Full_Rate" ColumnName="Full_Rate" />
+          <ScalarProperty Name="City_edition" ColumnName="City_edition" />
+          <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+          <ScalarProperty Name="Rate_Id" ColumnName="Rate_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="contactreport_visit" FunctionName="Model1.Store.contactreport_visit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Model1.contactreport_visit_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="main_cat" ColumnName="main_cat" />
+          <ScalarProperty Name="Main_Category" ColumnName="Main_Category" />
+          <ScalarProperty Name="sub_cat" ColumnName="sub_cat" />
+          <ScalarProperty Name="Sub_Category" ColumnName="Sub_Category" />
+          <ScalarProperty Name="agency_client_id" ColumnName="agency_client_id" />
+          <ScalarProperty Name="VisitPartyName" ColumnName="VisitPartyName" />
+          <ScalarProperty Name="brand_id" ColumnName="brand_id" />
+          <ScalarProperty Name="Brand_Name" ColumnName="Brand_Name" />
+          <ScalarProperty Name="visit_date" ColumnName="visit_date" />
+          <ScalarProperty Name="followup_visit_date" ColumnName="followup_visit_date" />
+          <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

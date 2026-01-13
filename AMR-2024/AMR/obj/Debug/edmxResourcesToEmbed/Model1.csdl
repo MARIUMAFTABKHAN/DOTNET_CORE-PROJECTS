@@ -1,0 +1,2476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="usp_IDctr" ReturnType="Collection(Int32)">
+      <Parameter Name="For_Table" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GettransactionDatafor_report">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="SplitString" IsComposable="true" ReturnType="Collection(Int32)">
+      <Parameter Name="InputString" Mode="In" Type="String" />
+      <Parameter Name="Delimiter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetRateCardSummary" IsComposable="true" ReturnType="Collection(Decimal)">
+      <Parameter Name="Publication" Mode="In" Type="Int32" />
+      <Parameter Name="Main_Category" Mode="In" Type="Int32" />
+      <Parameter Name="Publication_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="City_Editions" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Revenue_report">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Publication" Mode="In" Type="Int32" />
+      <Parameter Name="MainCategory" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SplitString_string" IsComposable="true" ReturnType="Collection(String)">
+      <Parameter Name="InputString" Mode="In" Type="String" />
+      <Parameter Name="Delimiter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dashboard_report2">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Main_Category" Mode="In" Type="Int32" />
+      <Parameter Name="Sub_Categories" Mode="In" Type="String" />
+      <Parameter Name="City_Editions" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dashboard_report3">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Main_Category" Mode="In" Type="Int32" />
+      <Parameter Name="Sub_Categories" Mode="In" Type="String" />
+      <Parameter Name="City_Editions" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dashboard_report4">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Main_Category" Mode="In" Type="Int32" />
+      <Parameter Name="Sub_Categories" Mode="In" Type="String" />
+      <Parameter Name="City_Editions" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="dashboard_report_Express" ReturnType="Collection(Model1.dashboard_report_Express_Result)">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="dasboard_subcategory">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetTop10ClientPivotSummary">
+      <Parameter Name="GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetMenuNew" ReturnType="Collection(Model1.usp_GetMenuNew_Result)">
+      <Parameter Name="UID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="Revenue_report_new">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Supp" Mode="In" Type="Boolean" />
+      <Parameter Name="PublicationList" Mode="In" Type="String" />
+      <Parameter Name="MainCategoryList" Mode="In" Type="String" />
+      <Parameter Name="SubCategoryList" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Revenue_report_new4">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Supp" Mode="In" Type="Boolean" />
+      <Parameter Name="PublicationList" Mode="In" Type="String" />
+      <Parameter Name="MainCategoryList" Mode="In" Type="String" />
+      <Parameter Name="SubCategoryList" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Revenue_report_CM">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Supp" Mode="In" Type="Boolean" />
+      <Parameter Name="PublicationList" Mode="In" Type="String" />
+      <Parameter Name="MainCategoryList" Mode="In" Type="String" />
+      <Parameter Name="SubCategoryList" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetMenuInfo" ReturnType="Collection(Model1.usp_GetMenuInfo_Result)">
+      <Parameter Name="UID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="ActivityLogs" EntityType="Model1.ActivityLog" />
+    <EntitySet Name="AExecutiveBrands" EntityType="Model1.AExecutiveBrand" />
+    <EntitySet Name="Agencies" EntityType="Model1.Agency" />
+    <EntitySet Name="AgencyAssignments_unused" EntityType="Model1.AgencyAssignments_unused" />
+    <EntitySet Name="AgencyBrands" EntityType="Model1.AgencyBrand" />
+    <EntitySet Name="AgencyExecutives" EntityType="Model1.AgencyExecutive" />
+    <EntitySet Name="Branches" EntityType="Model1.Branch" />
+    <EntitySet Name="BrandCampaign_unused" EntityType="Model1.BrandCampaign_unused" />
+    <EntitySet Name="Brands" EntityType="Model1.Brand" />
+    <EntitySet Name="Campaigns" EntityType="Model1.Campaign" />
+    <EntitySet Name="CExecutiveBrands" EntityType="Model1.CExecutiveBrand" />
+    <EntitySet Name="CExecutiveBrands_unused" EntityType="Model1.CExecutiveBrands_unused" />
+    <EntitySet Name="ClientCompanies" EntityType="Model1.ClientCompany" />
+    <EntitySet Name="ClientExecutives" EntityType="Model1.ClientExecutive" />
+    <EntitySet Name="ClientSectors" EntityType="Model1.ClientSector" />
+    <EntitySet Name="ClubCategories" EntityType="Model1.ClubCategory" />
+    <EntitySet Name="Companies" EntityType="Model1.Company" />
+    <EntitySet Name="CompGRelations" EntityType="Model1.CompGRelation" />
+    <EntitySet Name="CompGroups" EntityType="Model1.CompGroup" />
+    <EntitySet Name="CompGStations" EntityType="Model1.CompGStation" />
+    <EntitySet Name="ContactReports" EntityType="Model1.ContactReport" />
+    <EntitySet Name="contactreport_mobile" EntityType="Model1.contactreport_mobile" />
+    <EntitySet Name="Contactreportmobile_Detail" EntityType="Model1.Contactreportmobile_Detail" />
+    <EntitySet Name="CPRActivities" EntityType="Model1.CPRActivity" />
+    <EntitySet Name="CRUsers_unused" EntityType="Model1.CRUsers_unused" />
+    <EntitySet Name="DailyRevenues" EntityType="Model1.DailyRevenue" />
+    <EntitySet Name="Departments" EntityType="Model1.Department" />
+    <EntitySet Name="Designations" EntityType="Model1.Designation" />
+    <EntitySet Name="Divisions" EntityType="Model1.Division" />
+    <EntitySet Name="dtproperties" EntityType="Model1.dtproperty" />
+    <EntitySet Name="ExportTable_unused" EntityType="Model1.ExportTable_unused" />
+    <EntitySet Name="FollowUpExecutives" EntityType="Model1.FollowUpExecutive" />
+    <EntitySet Name="GroupComps" EntityType="Model1.GroupComp" />
+    <EntitySet Name="GroupSecurities" EntityType="Model1.GroupSecurity" />
+    <EntitySet Name="Helps" EntityType="Model1.Help" />
+    <EntitySet Name="IdCtrs" EntityType="Model1.IdCtr" />
+    <EntitySet Name="LogManagers" EntityType="Model1.LogManager" />
+    <EntitySet Name="LogRecords" EntityType="Model1.LogRecord" />
+    <EntitySet Name="MainCategories" EntityType="Model1.MainCategory" />
+    <EntitySet Name="MainRates" EntityType="Model1.MainRate" />
+    <EntitySet Name="MediaBuyingHouses_unused" EntityType="Model1.MediaBuyingHouses_unused" />
+    <EntitySet Name="MeetingExecutives" EntityType="Model1.MeetingExecutive" />
+    <EntitySet Name="MenuItems" EntityType="Model1.MenuItem" />
+    <EntitySet Name="Menus" EntityType="Model1.Menu" />
+    <EntitySet Name="MonthlyTargets" EntityType="Model1.MonthlyTarget" />
+    <EntitySet Name="Organisations" EntityType="Model1.Organisation" />
+    <EntitySet Name="OrganizationChartBIs" EntityType="Model1.OrganizationChartBI" />
+    <EntitySet Name="OrgSecurities" EntityType="Model1.OrgSecurity" />
+    <EntitySet Name="PublicationGroupDetails" EntityType="Model1.PublicationGroupDetail" />
+    <EntitySet Name="PublicationGroups" EntityType="Model1.PublicationGroup" />
+    <EntitySet Name="Publications" EntityType="Model1.Publication" />
+    <EntitySet Name="RateCards" EntityType="Model1.RateCard" />
+    <EntitySet Name="RateCardDetails" EntityType="Model1.RateCardDetail" />
+    <EntitySet Name="RatePolicies" EntityType="Model1.RatePolicy" />
+    <EntitySet Name="RatePolicyStations" EntityType="Model1.RatePolicyStation" />
+    <EntitySet Name="Roles" EntityType="Model1.Role" />
+    <EntitySet Name="RolesItems" EntityType="Model1.RolesItem" />
+    <EntitySet Name="RolesItem_new" EntityType="Model1.RolesItem_new" />
+    <EntitySet Name="SecurityControls" EntityType="Model1.SecurityControl" />
+    <EntitySet Name="SubBranches" EntityType="Model1.SubBranch" />
+    <EntitySet Name="SubCategories" EntityType="Model1.SubCategory" />
+    <EntitySet Name="SubRates" EntityType="Model1.SubRate" />
+    <EntitySet Name="TemplateMinutes" EntityType="Model1.TemplateMinute" />
+    <EntitySet Name="Track_IDs_unused" EntityType="Model1.Track_IDs_unused" />
+    <EntitySet Name="TransactionAdds" EntityType="Model1.TransactionAdd" />
+    <EntitySet Name="Transactions" EntityType="Model1.Transaction" />
+    <EntitySet Name="Types" EntityType="Model1.Type" />
+    <EntitySet Name="UserGroups" EntityType="Model1.UserGroup" />
+    <EntitySet Name="Users" EntityType="Model1.User" />
+    <EntitySet Name="UserSecurities" EntityType="Model1.UserSecurity" />
+    <EntitySet Name="AgeBraClis" EntityType="Model1.AgeBraCli" />
+    <EntitySet Name="AgencyClient_Com" EntityType="Model1.AgencyClient_Com" />
+    <EntitySet Name="AgencyExecChecks" EntityType="Model1.AgencyExecCheck" />
+    <EntitySet Name="AgencyGroups" EntityType="Model1.AgencyGroup" />
+    <EntitySet Name="AgencyGroupDtls" EntityType="Model1.AgencyGroupDtl" />
+    <EntitySet Name="CaterogiesClients" EntityType="Model1.CaterogiesClient" />
+    <EntitySet Name="ClientExecutiveChecks" EntityType="Model1.ClientExecutiveCheck" />
+    <EntitySet Name="ContactReportChks" EntityType="Model1.ContactReportChk" />
+    <EntitySet Name="CRUsers" EntityType="Model1.CRUser" />
+    <EntitySet Name="DailyRevenueChks" EntityType="Model1.DailyRevenueChk" />
+    <EntitySet Name="DummyTables" EntityType="Model1.DummyTable" />
+    <EntitySet Name="DynamicTables" EntityType="Model1.DynamicTable" />
+    <EntitySet Name="Missings" EntityType="Model1.Missing" />
+    <EntitySet Name="MissingExectives" EntityType="Model1.MissingExective" />
+    <EntitySet Name="MissingParameters" EntityType="Model1.MissingParameter" />
+    <EntitySet Name="MissingRights" EntityType="Model1.MissingRight" />
+    <EntitySet Name="MonthlyTartgetChecks" EntityType="Model1.MonthlyTartgetCheck" />
+    <EntitySet Name="RateCardBaseStations" EntityType="Model1.RateCardBaseStation" />
+    <EntitySet Name="Relation_Execs" EntityType="Model1.Relation_Execs" />
+    <EntitySet Name="Relations_Execs" EntityType="Model1.Relations_Execs" />
+    <EntitySet Name="Softwares" EntityType="Model1.Software" />
+    <EntitySet Name="temp_desg" EntityType="Model1.temp_desg" />
+    <EntitySet Name="TempAddM_Visit_1" EntityType="Model1.TempAddM_Visit_1" />
+    <EntitySet Name="TempAddMiss_1" EntityType="Model1.TempAddMiss_1" />
+    <EntitySet Name="TempClientCompanies" EntityType="Model1.TempClientCompany" />
+    <EntitySet Name="tempIDs" EntityType="Model1.tempID" />
+    <EntitySet Name="TempVolumeTrends" EntityType="Model1.TempVolumeTrend" />
+    <EntitySet Name="Transaction_Dup" EntityType="Model1.Transaction_Dup" />
+    <EntitySet Name="TransactionChks" EntityType="Model1.TransactionChk" />
+    <AssociationSet Name="FK_AgencyBrands_Agencies" Association="Model1.FK_AgencyBrands_Agencies">
+      <End Role="Agency" EntitySet="Agencies" />
+      <End Role="AgencyBrand" EntitySet="AgencyBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgencyExecutives_Agencies" Association="Model1.FK_AgencyExecutives_Agencies">
+      <End Role="Agency" EntitySet="Agencies" />
+      <End Role="AgencyExecutive" EntitySet="AgencyExecutives" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgencyBrands_Brands" Association="Model1.FK_AgencyBrands_Brands">
+      <End Role="Brand" EntitySet="Brands" />
+      <End Role="AgencyBrand" EntitySet="AgencyBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AgencyExecCheck_AgencyExecutives" Association="Model1.FK_AgencyExecCheck_AgencyExecutives">
+      <End Role="AgencyExecutive" EntitySet="AgencyExecutives" />
+      <End Role="AgencyExecCheck" EntitySet="AgencyExecChecks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Brands_ClientCompanies" Association="Model1.FK_Brands_ClientCompanies">
+      <End Role="ClientCompany" EntitySet="ClientCompanies" />
+      <End Role="Brand" EntitySet="Brands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientExecutives_ClientCompanies" Association="Model1.FK_ClientExecutives_ClientCompanies">
+      <End Role="ClientCompany" EntitySet="ClientCompanies" />
+      <End Role="ClientExecutive" EntitySet="ClientExecutives" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientMainCatId" Association="Model1.FK_ClientMainCatId">
+      <End Role="MainCategory" EntitySet="MainCategories" />
+      <End Role="ClientCompany" EntitySet="ClientCompanies" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ClientExecutiveCheck_ClientExecutives" Association="Model1.FK_ClientExecutiveCheck_ClientExecutives">
+      <End Role="ClientExecutive" EntitySet="ClientExecutives" />
+      <End Role="ClientExecutiveCheck" EntitySet="ClientExecutiveChecks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MainCatId" Association="Model1.FK_MainCatId">
+      <End Role="MainCategory" EntitySet="MainCategories" />
+      <End Role="ClubCategory" EntitySet="ClubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PubId" Association="Model1.FK_PubId">
+      <End Role="Publication" EntitySet="Publications" />
+      <End Role="CompGroup" EntitySet="CompGroups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ContactReportChk_ContactReport" Association="Model1.FK_ContactReportChk_ContactReport">
+      <End Role="ContactReport" EntitySet="ContactReports" />
+      <End Role="ContactReportChk" EntitySet="ContactReportChks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DailyRevenue_Users" Association="Model1.FK_DailyRevenue_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="DailyRevenue" EntitySet="DailyRevenues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DailyRevenueChk_DailyRevenue" Association="Model1.FK_DailyRevenueChk_DailyRevenue">
+      <End Role="DailyRevenue" EntitySet="DailyRevenues" />
+      <End Role="DailyRevenueChk" EntitySet="DailyRevenueChks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MainRates_GroupComps" Association="Model1.FK_MainRates_GroupComps">
+      <End Role="GroupComp" EntitySet="GroupComps" />
+      <End Role="MainRate" EntitySet="MainRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubRates_GroupComps" Association="Model1.FK_SubRates_GroupComps">
+      <End Role="GroupComp" EntitySet="GroupComps" />
+      <End Role="SubRate" EntitySet="SubRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MainRates_MainCategories" Association="Model1.FK_MainRates_MainCategories">
+      <End Role="MainCategory" EntitySet="MainCategories" />
+      <End Role="MainRate" EntitySet="MainRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubCategories_MainCategories" Association="Model1.FK_SubCategories_MainCategories">
+      <End Role="MainCategory" EntitySet="MainCategories" />
+      <End Role="SubCategory" EntitySet="SubCategories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_MainCategories" Association="Model1.FK_Transactions_MainCategories">
+      <End Role="MainCategory" EntitySet="MainCategories" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MainRates_Publications" Association="Model1.FK_MainRates_Publications">
+      <End Role="Publication" EntitySet="Publications" />
+      <End Role="MainRate" EntitySet="MainRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuId" Association="Model1.FK_MenuId">
+      <End Role="Menu" EntitySet="Menus" />
+      <End Role="MenuItem" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItemId" Association="Model1.FK_MenuItemId">
+      <End Role="MenuItem" EntitySet="MenuItems" />
+      <End Role="RolesItem_new" EntitySet="RolesItem_new" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthlyTargets_Users" Association="Model1.FK_MonthlyTargets_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="MonthlyTarget" EntitySet="MonthlyTargets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MonthlyTartgetCheck_MonthlyTargets" Association="Model1.FK_MonthlyTartgetCheck_MonthlyTargets">
+      <End Role="MonthlyTarget" EntitySet="MonthlyTargets" />
+      <End Role="MonthlyTartgetCheck" EntitySet="MonthlyTartgetChecks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Organisation_Users" Association="Model1.FK_Organisation_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Organisation" EntitySet="Organisations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrgSecurities_Users" Association="Model1.FK_OrgSecurities_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="OrgSecurity" EntitySet="OrgSecurities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubRates_Publications" Association="Model1.FK_SubRates_Publications">
+      <End Role="Publication" EntitySet="Publications" />
+      <End Role="SubRate" EntitySet="SubRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_Publications" Association="Model1.FK_Transactions_Publications">
+      <End Role="Publication" EntitySet="Publications" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ParentRateCardId" Association="Model1.FK_ParentRateCardId">
+      <End Role="RateCard" EntitySet="RateCards" />
+      <End Role="RateCardDetail" EntitySet="RateCardDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RateCardDetail_RateCard" Association="Model1.FK_RateCardDetail_RateCard">
+      <End Role="RateCard" EntitySet="RateCards" />
+      <End Role="RateCardDetail" EntitySet="RateCardDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RatePolicyStations_RatePolicy" Association="Model1.FK_RatePolicyStations_RatePolicy">
+      <End Role="RatePolicy" EntitySet="RatePolicies" />
+      <End Role="RatePolicyStation" EntitySet="RatePolicyStations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleId" Association="Model1.FK_RoleId">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="RolesItem_new" EntitySet="RolesItem_new" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSecurities_SecurityControl" Association="Model1.FK_UserSecurities_SecurityControl">
+      <End Role="SecurityControl" EntitySet="SecurityControls" />
+      <End Role="UserSecurity" EntitySet="UserSecurities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SubRates_SubCategories" Association="Model1.FK_SubRates_SubCategories">
+      <End Role="SubCategory" EntitySet="SubCategories" />
+      <End Role="SubRate" EntitySet="SubRates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_SubCategories" Association="Model1.FK_Transactions_SubCategories">
+      <End Role="SubCategory" EntitySet="SubCategories" />
+      <End Role="Transaction" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionChk_Transactions" Association="Model1.FK_TransactionChk_Transactions">
+      <End Role="Transaction" EntitySet="Transactions" />
+      <End Role="TransactionChk" EntitySet="TransactionChks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSecurities_Users" Association="Model1.FK_UserSecurities_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserSecurity" EntitySet="UserSecurities" />
+    </AssociationSet>
+    <FunctionImport Name="Revenue_report_CM_client">
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="Supp" Mode="In" Type="Boolean" />
+      <Parameter Name="PublicationList" Mode="In" Type="String" />
+      <Parameter Name="MainCategoryList" Mode="In" Type="String" />
+      <Parameter Name="SubCategoryList" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="dashboard_report_Express_Result">
+    <Property Type="Int32" Name="MainCategory_Id" Nullable="true" />
+    <Property Type="String" Name="MainCategory" Nullable="true" MaxLength="40" />
+    <Property Type="String" Name="Pub_Abreviation" Nullable="true" MaxLength="6" />
+    <Property Type="Int32" Name="Total" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetMenuNew_Result">
+    <Property Type="Int32" Name="MenuItemId" Nullable="false" />
+    <Property Type="Int32" Name="ParentMenuId" Nullable="false" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="FormName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="OrderBy" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="MainActive" Nullable="false" />
+    <Property Type="Int32" Name="UserID" Nullable="true" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetMenuInfo_Result">
+    <Property Type="Int32" Name="RoleId" Nullable="true" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="FormName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="Int32" Name="ParentMenuId" Nullable="false" />
+    <Property Type="Int32" Name="OrderBy" Nullable="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="ActivityLog">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="RecId" Type="Int32" Nullable="false" />
+    <Property Name="Activity_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Activity_time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Table_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Table_RecId" Type="Int32" Nullable="false" />
+    <Property Name="Action" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Parent_Id" Type="Int32" />
+    <Property Name="Cmp" Type="Byte" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AExecutiveBrand">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Executive_Id" Type="Int32" />
+    <Property Name="Brand_Id" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+  </EntityType>
+  <EntityType Name="Agency">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Agency_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Agency_Type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Address_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Edition_Responsible" Type="Byte" />
+    <Property Name="Telephone_Nos" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax_Nos" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMail_Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Code" Type="Int32" />
+    <Property Name="Credit_Days" Type="Byte" />
+    <Property Name="Credit_Limit" Type="Double" />
+    <Property Name="Dealing_Executive" Type="Int32" />
+    <Property Name="AMR" Type="Boolean" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AgencyBrands" Relationship="Model1.FK_AgencyBrands_Agencies" FromRole="Agency" ToRole="AgencyBrand" />
+    <NavigationProperty Name="AgencyExecutives" Relationship="Model1.FK_AgencyExecutives_Agencies" FromRole="Agency" ToRole="AgencyExecutive" />
+  </EntityType>
+  <EntityType Name="AgencyAssignments_unused">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="User_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Agency_Id" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgencyBrand">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Agency" Type="Int32" />
+    <Property Name="Brand" Type="Int32" />
+    <Property Name="Agency_Executive" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Agency1" Relationship="Model1.FK_AgencyBrands_Agencies" FromRole="AgencyBrand" ToRole="Agency" />
+    <NavigationProperty Name="Brand1" Relationship="Model1.FK_AgencyBrands_Brands" FromRole="AgencyBrand" ToRole="Brand" />
+  </EntityType>
+  <EntityType Name="AgencyExecutive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Agency_Id" Type="Int32" />
+    <Property Name="Executive_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Designation" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Direct_Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile_Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMail_Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Code" Type="Int32" />
+    <Property Name="Department" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Marital_Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Wedding_Ann" Type="DateTime" Precision="3" />
+    <Property Name="Exec1_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Exec1_Rel" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Exec1_Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Exec2_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Exec2_Rel" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Exec2_Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="Gen_Remarks" Type="Int32" />
+    <NavigationProperty Name="Agency" Relationship="Model1.FK_AgencyExecutives_Agencies" FromRole="AgencyExecutive" ToRole="Agency" />
+    <NavigationProperty Name="AgencyExecChecks" Relationship="Model1.FK_AgencyExecCheck_AgencyExecutives" FromRole="AgencyExecutive" ToRole="AgencyExecCheck" />
+  </EntityType>
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="Branch_Id" />
+    </Key>
+    <Property Name="Branch_Id" Type="Byte" Nullable="false" />
+    <Property Name="Company_Id" Type="Byte" />
+    <Property Name="Branch_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BrandCampaign_unused">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CR_Id" Type="Int32" />
+    <Property Name="Brand_Id" Type="Int32" />
+    <Property Name="Campaign_Title" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Expected_Launch_Date" Type="DateTime" Precision="3" />
+    <Property Name="During_The_Month" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Budget" Type="Int32" />
+    <Property Name="Edition_ISB" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_KHI" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_LHE" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_PEW" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_QTA" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_MUX" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_FSB" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_GUJ" Type="Boolean" Nullable="false" />
+    <Property Name="Edition_SGD" Type="Boolean" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Brand">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Company" Type="Int32" />
+    <Property Name="Brand_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Company_Executive" Type="Int32" />
+    <Property Name="Media_Buying_House" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AgencyBrands" Relationship="Model1.FK_AgencyBrands_Brands" FromRole="Brand" ToRole="AgencyBrand" />
+    <NavigationProperty Name="ClientCompany" Relationship="Model1.FK_Brands_ClientCompanies" FromRole="Brand" ToRole="ClientCompany" />
+  </EntityType>
+  <EntityType Name="Campaign">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Launch_date" Type="DateTime" Precision="3" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_by" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_by" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_DateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CExecutiveBrand">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Executive_Id" Type="Int32" />
+    <Property Name="Brand_Id" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+  </EntityType>
+  <EntityType Name="CExecutiveBrands_unused">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Executive_Id" Type="Int32" />
+    <Property Name="Brand_Id" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientCompany">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Name" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Abreviation" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Sector" Type="Int32" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Sub_Category" Type="Int32" />
+    <Property Name="Address_Line_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_Line_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_Line_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_Line_4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Agency" Type="Int32" />
+    <Property Name="Edition_Responsible" Type="Byte" />
+    <Property Name="Telephone_Nos" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax_Nos" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMail_Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Code" Type="Int32" />
+    <Property Name="Dealing_Executive" Type="Int32" />
+    <Property Name="Client_Brand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Agency" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Client_MBH" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="AMR" Type="Boolean" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="Credit_Days" Type="Byte" />
+    <Property Name="Credit_Limit" Type="Double" />
+    <NavigationProperty Name="Brands" Relationship="Model1.FK_Brands_ClientCompanies" FromRole="ClientCompany" ToRole="Brand" />
+    <NavigationProperty Name="ClientExecutives" Relationship="Model1.FK_ClientExecutives_ClientCompanies" FromRole="ClientCompany" ToRole="ClientExecutive" />
+    <NavigationProperty Name="MainCategory" Relationship="Model1.FK_ClientMainCatId" FromRole="ClientCompany" ToRole="MainCategory" />
+  </EntityType>
+  <EntityType Name="ClientExecutive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Id" Type="Int32" />
+    <Property Name="Executive_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Designation" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Direct_Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile_Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMail_Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Postal_Code" Type="Int32" />
+    <Property Name="Department" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Marital_Status" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Wedding_Ann" Type="DateTime" Precision="3" />
+    <Property Name="Exec1_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Exec1_Rel" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Exec1_Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Exec2_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Exec2_Rel" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Exec2_Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="Gen_Remarks" Type="Int32" />
+    <NavigationProperty Name="ClientCompany" Relationship="Model1.FK_ClientExecutives_ClientCompanies" FromRole="ClientExecutive" ToRole="ClientCompany" />
+    <NavigationProperty Name="ClientExecutiveChecks" Relationship="Model1.FK_ClientExecutiveCheck_ClientExecutives" FromRole="ClientExecutive" ToRole="ClientExecutiveCheck" />
+  </EntityType>
+  <EntityType Name="ClientSector">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ClubCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Category_Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <NavigationProperty Name="MainCategory" Relationship="Model1.FK_MainCatId" FromRole="ClubCategory" ToRole="MainCategory" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Company_Id" />
+    </Key>
+    <Property Name="Company_Id" Type="Byte" Nullable="false" />
+    <Property Name="Division_Id" Type="Byte" />
+    <Property Name="Company_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CompGRelation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="cGID" Type="Int32" Nullable="false" />
+    <Property Name="oGID" Type="Int32" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="CompGroup">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PublicationID" Type="Int32" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Publication" Relationship="Model1.FK_PubId" FromRole="CompGroup" ToRole="Publication" />
+  </EntityType>
+  <EntityType Name="CompGStation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="GroupID" Type="Int32" Nullable="false" />
+    <Property Name="StationID" Type="Int32" Nullable="false" />
+    <Property Name="IsPriority" Type="Boolean" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ContactReport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Rec_Type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Visit_To" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Sub_Category" Type="Int32" />
+    <Property Name="Agency_Client_Id" Type="Int32" />
+    <Property Name="Brand_Id" Type="Int32" />
+    <Property Name="Visit_Date" Type="DateTime" Precision="3" />
+    <Property Name="Minutes_Of_Meeting" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PR_Visit" Type="Boolean" Nullable="false" />
+    <Property Name="New_Executive" Type="Boolean" />
+    <Property Name="Follow_Up_Mode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Follow_Up_Date" Type="DateTime" Precision="3" />
+    <Property Name="Follow_Up_Time" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="Follow_Up_Visit_Mode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Follow_Up_Visit_To" Type="Int32" />
+    <Property Name="Ad_Confirm" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Cm" Type="Int32" />
+    <Property Name="Col" Type="Byte" />
+    <Property Name="Color" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CPR_Activity" Type="Int32" />
+    <Property Name="CPR_Qty_Amount" Type="Int32" />
+    <Property Name="Confirm_Date" Type="DateTime" Precision="3" />
+    <Property Name="Confirm_Publication" Type="Int32" />
+    <Property Name="Confirm_Page" Type="Byte" />
+    <Property Name="Confirm_Edition_ISB" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_KHI" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_LHE" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_PEW" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_QTA" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_MUX" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_FSB" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_GUJ" Type="Boolean" Nullable="false" />
+    <Property Name="Confirm_Edition_SGD" Type="Boolean" Nullable="false" />
+    <Property Name="Reason_Of_Refusal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Any_New_Campaign" Type="Boolean" Nullable="false" />
+    <Property Name="Campaign_Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Expected_Launch" Type="DateTime" Precision="3" />
+    <Property Name="Or_During_The_Month" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Budget" Type="Int32" />
+    <Property Name="Expected_Edition_ISB" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_KHI" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_LHE" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_PEW" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_QTA" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_MUX" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_FSB" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_GRW" Type="Boolean" Nullable="false" />
+    <Property Name="Expected_Edition_SGD" Type="Boolean" Nullable="false" />
+    <Property Name="Issues" Type="Boolean" Nullable="false" />
+    <Property Name="Issues_Remarks" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="Gen_Minutes_Of_Meeting" Type="Int32" />
+    <Property Name="Gen_Reason_Of_Refusal" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="ContactReportChks" Relationship="Model1.FK_ContactReportChk_ContactReport" FromRole="ContactReport" ToRole="ContactReportChk" />
+  </EntityType>
+  <EntityType Name="contactreport_mobile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="visit_to" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="main_cat" Type="Int32" />
+    <Property Name="sub_cat" Type="Int32" />
+    <Property Name="agency_client_id" Type="Int32" Nullable="false" />
+    <Property Name="brand_id" Type="Int32" Nullable="false" />
+    <Property Name="visit_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="minutes_of_meetings" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pr_visit" Type="Boolean" />
+    <Property Name="new_executive" Type="Boolean" />
+    <Property Name="newexecutive_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="followup_visit_to" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="followup_visit_mode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="followup_visit_time" Type="Time" Precision="7" />
+    <Property Name="followup_visit_date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_by" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Datetime" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edit_by" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edit_Datetime" Type="DateTime" Precision="3" />
+    <Property Name="Windows_Id" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="System_name" Type="String" MaxLength="31" FixedLength="false" Unicode="false" />
+    <Property Name="GenerationDateTime" Type="DateTime" Precision="3" />
+    <Property Name="visit_time" Type="Time" Precision="7" />
+    <Property Name="Mode" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Contactreportmobile_Detail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="contactreport" Type="Int32" Nullable="false" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="Longitude" Type="Double" />
+  </EntityType>
+  <EntityType Name="CPRActivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Activity_Title" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Count_Type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CRUsers_unused">
+    <Key>
+      <PropertyRef Name="User_Id" />
+    </Key>
+    <Property Name="User_Id" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="User_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Pass" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="User_Desig" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Groups" Type="Int32" />
+    <Property Name="User_Level" Type="Byte" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DailyRevenue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Loc_ID" Type="Int32" />
+    <Property Name="Orignal_ID" Type="Int32" />
+    <Property Name="User_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Revenue_Date" Type="DateTime" Precision="3" />
+    <Property Name="Client_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Gross_Amount" Type="Int32" />
+    <Property Name="Commission_Mode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Commission_Value" Type="Int32" />
+    <Property Name="Commission_Amount" Type="Int32" />
+    <Property Name="Net_Amount" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_DailyRevenue_Users" FromRole="DailyRevenue" ToRole="User" />
+    <NavigationProperty Name="DailyRevenueChks" Relationship="Model1.FK_DailyRevenueChk_DailyRevenue" FromRole="DailyRevenue" ToRole="DailyRevenueChk" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DeptName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Desgn_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Division">
+    <Key>
+      <PropertyRef Name="Division_Id" />
+    </Key>
+    <Property Name="Division_Id" Type="Byte" Nullable="false" />
+    <Property Name="Group_Id" Type="Byte" />
+    <Property Name="Division_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dtproperty">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="property" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="objectid" Type="Int32" />
+    <Property Name="property" Type="String" Nullable="false" MaxLength="64" FixedLength="false" Unicode="false" />
+    <Property Name="value" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="uvalue" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="lvalue" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="version" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExportTable_unused">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="RecId" Type="Int32" Nullable="false" />
+    <Property Name="Table_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FollowUpExecutive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ContactReport_Id" Type="Int32" />
+    <Property Name="Executive_Id" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupComp">
+    <Key>
+      <PropertyRef Name="GroupComp_Id" />
+    </Key>
+    <Property Name="GroupComp_Id" Type="Int32" Nullable="false" />
+    <Property Name="GroupComp_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Sequence" Type="Int16" />
+    <Property Name="Abreviation" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Group_Edition" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="MainRates" Relationship="Model1.FK_MainRates_GroupComps" FromRole="GroupComp" ToRole="MainRate" />
+    <NavigationProperty Name="SubRates" Relationship="Model1.FK_SubRates_GroupComps" FromRole="GroupComp" ToRole="SubRate" />
+  </EntityType>
+  <EntityType Name="GroupSecurity">
+    <Key>
+      <PropertyRef Name="Group_Id" />
+      <PropertyRef Name="Control_Id" />
+    </Key>
+    <Property Name="Group_Id" Type="Int32" Nullable="false" />
+    <Property Name="Control_Id" Type="Int32" Nullable="false" />
+    <Property Name="Auth_Access" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Add" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Edit" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Del" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Print" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="AMR" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Help">
+    <Key>
+      <PropertyRef Name="Form_Id" />
+    </Key>
+    <Property Name="Form_Id" Type="String" Nullable="false" MaxLength="19" FixedLength="false" Unicode="false" />
+    <Property Name="Help_Lang" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Help_Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Gen_Help_Text" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IdCtr">
+    <Key>
+      <PropertyRef Name="ForTable" />
+    </Key>
+    <Property Name="Counter" Type="Int32" Nullable="false" />
+    <Property Name="ForTable" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LogManager">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="ActionOnForm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ActionTaken" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="ActionOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="LogRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="ActionOnForm" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ActionTaken" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="ActionOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="MainCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Category_Title" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="AMR" Type="Boolean" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ClientCompanies" Relationship="Model1.FK_ClientMainCatId" FromRole="MainCategory" ToRole="ClientCompany" />
+    <NavigationProperty Name="ClubCategories" Relationship="Model1.FK_MainCatId" FromRole="MainCategory" ToRole="ClubCategory" />
+    <NavigationProperty Name="MainRates" Relationship="Model1.FK_MainRates_MainCategories" FromRole="MainCategory" ToRole="MainRate" />
+    <NavigationProperty Name="SubCategories" Relationship="Model1.FK_SubCategories_MainCategories" FromRole="MainCategory" ToRole="SubCategory" />
+    <NavigationProperty Name="Transactions" Relationship="Model1.FK_Transactions_MainCategories" FromRole="MainCategory" ToRole="Transaction" />
+  </EntityType>
+  <EntityType Name="MainRate">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="RecId" Type="Int32" Nullable="false" />
+    <Property Name="MainCat_Id" Type="Int32" Nullable="false" />
+    <Property Name="Publication_id" Type="Int32" Nullable="false" />
+    <Property Name="Edition_Id" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GroupComp" Relationship="Model1.FK_MainRates_GroupComps" FromRole="MainRate" ToRole="GroupComp" />
+    <NavigationProperty Name="MainCategory" Relationship="Model1.FK_MainRates_MainCategories" FromRole="MainRate" ToRole="MainCategory" />
+    <NavigationProperty Name="Publication" Relationship="Model1.FK_MainRates_Publications" FromRole="MainRate" ToRole="Publication" />
+  </EntityType>
+  <EntityType Name="MediaBuyingHouses_unused">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Media_House_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Address_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone_Nos" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax_Nos" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EMail_Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MeetingExecutive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ContactReport_Id" Type="Int32" />
+    <Property Name="Executive_Id" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MenuItem">
+    <Key>
+      <PropertyRef Name="MenuItemId" />
+    </Key>
+    <Property Name="MenuItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentMenuId" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FormName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="OrderBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Menu" Relationship="Model1.FK_MenuId" FromRole="MenuItem" ToRole="Menu" />
+    <NavigationProperty Name="RolesItem_new" Relationship="Model1.FK_MenuItemId" FromRole="MenuItem" ToRole="RolesItem_new" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="OrderBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MenuItems" Relationship="Model1.FK_MenuId" FromRole="Menu" ToRole="MenuItem" />
+  </EntityType>
+  <EntityType Name="MonthlyTarget">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Loc_ID" Type="Int32" />
+    <Property Name="Orignal_ID" Type="Int32" />
+    <Property Name="Target_Month" Type="DateTime" Precision="3" />
+    <Property Name="User_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Target_Amount" Type="Int32" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_MonthlyTargets_Users" FromRole="MonthlyTarget" ToRole="User" />
+    <NavigationProperty Name="MonthlyTartgetChecks" Relationship="Model1.FK_MonthlyTartgetCheck_MonthlyTargets" FromRole="MonthlyTarget" ToRole="MonthlyTartgetCheck" />
+  </EntityType>
+  <EntityType Name="Organisation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_Organisation_Users" FromRole="Organisation" ToRole="User" />
+  </EntityType>
+  <EntityType Name="OrganizationChartBI">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="User_id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Report_to_user_id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Root" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrgSecurity">
+    <Key>
+      <PropertyRef Name="User_Id" />
+      <PropertyRef Name="Sec_Type" />
+      <PropertyRef Name="Sec_Code" />
+    </Key>
+    <Property Name="User_Id" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Sec_Type" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Sec_Code" Type="Byte" Nullable="false" />
+    <Property Name="Auth_Access" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_OrgSecurities_Users" FromRole="OrgSecurity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="PublicationGroupDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Group_Id" Type="Int32" />
+    <Property Name="Publication" Type="Int32" />
+    <Property Name="Priority" Type="Int16" />
+  </EntityType>
+  <EntityType Name="PublicationGroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="group_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Publication" Type="Int32" />
+    <Property Name="Priority" Type="Int16" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Publication">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Pub_Abreviation" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="Publication_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="In_House_Publication" Type="Boolean" Nullable="false" />
+    <Property Name="AMR_Comparision" Type="Boolean" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="CompGroups" Relationship="Model1.FK_PubId" FromRole="Publication" ToRole="CompGroup" />
+    <NavigationProperty Name="MainRates" Relationship="Model1.FK_MainRates_Publications" FromRole="Publication" ToRole="MainRate" />
+    <NavigationProperty Name="SubRates" Relationship="Model1.FK_SubRates_Publications" FromRole="Publication" ToRole="SubRate" />
+    <NavigationProperty Name="Transactions" Relationship="Model1.FK_Transactions_Publications" FromRole="Publication" ToRole="Transaction" />
+  </EntityType>
+  <EntityType Name="RateCard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Publication" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="cExport" Type="Boolean" />
+    <Property Name="Rec_Add_by" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_add_dateTime" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edit_by" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edit_dateTime" Type="DateTime" Precision="3" />
+    <Property Name="EffectiveFrom" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="RateCardDetails" Relationship="Model1.FK_ParentRateCardId" FromRole="RateCard" ToRole="RateCardDetail" />
+    <NavigationProperty Name="RateCardDetails1" Relationship="Model1.FK_RateCardDetail_RateCard" FromRole="RateCard" ToRole="RateCardDetail" />
+  </EntityType>
+  <EntityType Name="RateCardDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Rate_Id" Type="Int32" Nullable="false" />
+    <Property Name="Sub_Category" Type="Int32" />
+    <Property Name="City_edition" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Full_Rate" Type="Single" />
+    <Property Name="Half_Rate" Type="Single" />
+    <Property Name="WeekDay" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="Full_Rate_day" Type="Single" />
+    <Property Name="Half_Rate_day" Type="Single" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="RateCard" Relationship="Model1.FK_ParentRateCardId" FromRole="RateCardDetail" ToRole="RateCard" />
+    <NavigationProperty Name="RateCard1" Relationship="Model1.FK_RateCardDetail_RateCard" FromRole="RateCardDetail" ToRole="RateCard" />
+  </EntityType>
+  <EntityType Name="RatePolicy">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Publication" Type="Int32" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Sub_category" Type="Int32" />
+    <Property Name="Rate" Type="Single" />
+    <Property Name="Page" Type="Byte" />
+    <Property Name="Base_station" Type="Boolean" />
+    <Property Name="Base_Rate" Type="Single" />
+    <Property Name="No_Station" Type="Byte" />
+    <Property Name="Percentage" Type="Boolean" />
+    <Property Name="Operator" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="WeekDay" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Rate_day" Type="Single" />
+    <Property Name="cExport" Type="Byte" />
+    <Property Name="Size_exception" Type="Byte" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_add_by" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="rec_add_dateTime" Type="DateTime" Precision="3" />
+    <Property Name="rec_edit_by" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="rec_edit_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="RatePolicyStations" Relationship="Model1.FK_RatePolicyStations_RatePolicy" FromRole="RatePolicy" ToRole="RatePolicyStation" />
+  </EntityType>
+  <EntityType Name="RatePolicyStation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Policy_id" Type="Int32" Nullable="false" />
+    <Property Name="City_edition" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="RatePolicy" Relationship="Model1.FK_RatePolicyStations_RatePolicy" FromRole="RatePolicyStation" ToRole="RatePolicy" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserRole" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="RolesItem_new" Relationship="Model1.FK_RoleId" FromRole="Role" ToRole="RolesItem_new" />
+  </EntityType>
+  <EntityType Name="RolesItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RolesItem_new">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MenuItem" Relationship="Model1.FK_MenuItemId" FromRole="RolesItem_new" ToRole="MenuItem" />
+    <NavigationProperty Name="Role" Relationship="Model1.FK_RoleId" FromRole="RolesItem_new" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="SecurityControl">
+    <Key>
+      <PropertyRef Name="Control_Id" />
+    </Key>
+    <Property Name="Control_Id" Type="Int32" Nullable="false" />
+    <Property Name="Control_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Control_Type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Control_Caption" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Control_Caption_Arabic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="UserSecurities" Relationship="Model1.FK_UserSecurities_SecurityControl" FromRole="SecurityControl" ToRole="UserSecurity" />
+  </EntityType>
+  <EntityType Name="SubBranch">
+    <Key>
+      <PropertyRef Name="SBranch_Id" />
+    </Key>
+    <Property Name="SBranch_Id" Type="Byte" Nullable="false" />
+    <Property Name="Branch_Id" Type="Byte" />
+    <Property Name="SBranch_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubCategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Club_Category" Type="Int32" />
+    <Property Name="Is_Brand" Type="Boolean" />
+    <Property Name="Category_Title" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Urdu_Title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Amr" Type="Boolean" />
+    <Property Name="Address_to" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_2" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_3" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Address_4" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone_No" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Email_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="Grp" Type="Byte" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="MainCategory" Relationship="Model1.FK_SubCategories_MainCategories" FromRole="SubCategory" ToRole="MainCategory" />
+    <NavigationProperty Name="SubRates" Relationship="Model1.FK_SubRates_SubCategories" FromRole="SubCategory" ToRole="SubRate" />
+    <NavigationProperty Name="Transactions" Relationship="Model1.FK_Transactions_SubCategories" FromRole="SubCategory" ToRole="Transaction" />
+  </EntityType>
+  <EntityType Name="SubRate">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="RecId" Type="Int32" Nullable="false" />
+    <Property Name="SubCat_Id" Type="Int32" Nullable="false" />
+    <Property Name="Publication_Id" Type="Int32" Nullable="false" />
+    <Property Name="Edition_Id" Type="Int32" Nullable="false" />
+    <Property Name="Rate" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GroupComp" Relationship="Model1.FK_SubRates_GroupComps" FromRole="SubRate" ToRole="GroupComp" />
+    <NavigationProperty Name="Publication" Relationship="Model1.FK_SubRates_Publications" FromRole="SubRate" ToRole="Publication" />
+    <NavigationProperty Name="SubCategory" Relationship="Model1.FK_SubRates_SubCategories" FromRole="SubRate" ToRole="SubCategory" />
+  </EntityType>
+  <EntityType Name="TemplateMinute">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Temp_Status" Type="Boolean" Nullable="false" />
+    <Property Name="Extra_Info" Type="Boolean" Nullable="false" />
+    <Property Name="Minutes_Of_Meeting" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Track_IDs_unused">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Loc_ID" Type="Int32" />
+    <Property Name="Table_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Old_ID" Type="Int32" />
+    <Property Name="New_ID" Type="Int32" />
+    <Property Name="Rec_Added_BY" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionAdd">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Base_Station" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Premium_charges" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Colour_charges" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Extra_Charges" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Loc_ID" Type="Int32" />
+    <Property Name="Orignal_ID" Type="Int32" />
+    <Property Name="Publication_Date" Type="DateTime" Precision="3" />
+    <Property Name="City_Edition" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Publication" Type="Int32" />
+    <Property Name="Page" Type="Int32" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Sub_Category" Type="Int32" />
+    <Property Name="Ad_Type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Brand" Type="Int32" />
+    <Property Name="Client_Company" Type="Int32" />
+    <Property Name="Agency" Type="Int32" />
+    <Property Name="Caption" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Size_CM" Type="Int32" />
+    <Property Name="Size_Col" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Colour_BW" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="Col_Size" Type="Int32" />
+    <Property Name="Type_Id" Type="Int32" />
+    <Property Name="Add_Id" Type="Int32" />
+    <Property Name="Countable" Type="Boolean" />
+    <Property Name="Campaign_Id" Type="Int32" />
+    <Property Name="RO" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MainCategory" Relationship="Model1.FK_Transactions_MainCategories" FromRole="Transaction" ToRole="MainCategory" />
+    <NavigationProperty Name="Publication1" Relationship="Model1.FK_Transactions_Publications" FromRole="Transaction" ToRole="Publication" />
+    <NavigationProperty Name="SubCategory" Relationship="Model1.FK_Transactions_SubCategories" FromRole="Transaction" ToRole="SubCategory" />
+    <NavigationProperty Name="TransactionChks" Relationship="Model1.FK_TransactionChk_Transactions" FromRole="Transaction" ToRole="TransactionChk" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Type1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="add_by" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Add_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="Edit_by" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Edit_DateTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="UserGroup">
+    <Key>
+      <PropertyRef Name="Group_Id" />
+    </Key>
+    <Property Name="Group_Id" Type="Int32" Nullable="false" />
+    <Property Name="Group_Desc" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Group_Level" Type="Byte" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="User_Id" />
+    </Key>
+    <Property Name="User_Id" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="User_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Pass" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="User_Desig" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Groups" Type="Int32" />
+    <Property Name="User_Level" Type="Byte" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="User_Active" Type="Boolean" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="Int32" />
+    <NavigationProperty Name="DailyRevenues" Relationship="Model1.FK_DailyRevenue_Users" FromRole="User" ToRole="DailyRevenue" />
+    <NavigationProperty Name="MonthlyTargets" Relationship="Model1.FK_MonthlyTargets_Users" FromRole="User" ToRole="MonthlyTarget" />
+    <NavigationProperty Name="Organisations" Relationship="Model1.FK_Organisation_Users" FromRole="User" ToRole="Organisation" />
+    <NavigationProperty Name="OrgSecurities" Relationship="Model1.FK_OrgSecurities_Users" FromRole="User" ToRole="OrgSecurity" />
+    <NavigationProperty Name="UserSecurities" Relationship="Model1.FK_UserSecurities_Users" FromRole="User" ToRole="UserSecurity" />
+  </EntityType>
+  <EntityType Name="UserSecurity">
+    <Key>
+      <PropertyRef Name="User_Id" />
+      <PropertyRef Name="Control_Id" />
+    </Key>
+    <Property Name="User_Id" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Control_Id" Type="Int32" Nullable="false" />
+    <Property Name="Auth_Access" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Add" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Edit" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Del" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Auth_Print" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="SecurityControl" Relationship="Model1.FK_UserSecurities_SecurityControl" FromRole="UserSecurity" ToRole="SecurityControl" />
+    <NavigationProperty Name="User" Relationship="Model1.FK_UserSecurities_Users" FromRole="UserSecurity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="AgeBraCli">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="eType" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="eName" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="eType" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgencyClient_Com">
+    <Key>
+      <PropertyRef Name="RecID" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="New_ID" />
+      <PropertyRef Name="Old_ID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="RecID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="New_ID" Type="Int32" Nullable="false" />
+    <Property Name="Old_ID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgencyExecCheck">
+    <Key>
+      <PropertyRef Name="AgencyExecutive_id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="AgencyExecutive_id" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="AgencyExecutive" Relationship="Model1.FK_AgencyExecCheck_AgencyExecutives" FromRole="AgencyExecCheck" ToRole="AgencyExecutive" />
+  </EntityType>
+  <EntityType Name="AgencyGroup">
+    <Key>
+      <PropertyRef Name="RecID" />
+      <PropertyRef Name="Group_Caption" />
+    </Key>
+    <Property Name="RecID" Type="Int32" Nullable="false" />
+    <Property Name="Group_Caption" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Cmp" Type="Byte" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="AgencyGroupDtl">
+    <Key>
+      <PropertyRef Name="RecID" />
+      <PropertyRef Name="AgencyGroupID" />
+      <PropertyRef Name="AgencyID" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="RecID" Type="Int32" Nullable="false" />
+    <Property Name="AgencyGroupID" Type="Int32" Nullable="false" />
+    <Property Name="AgencyID" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CaterogiesClient">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="mCategories" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="sCategories" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Name" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="cCity" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Brand_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Agency_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ClientExecutiveCheck">
+    <Key>
+      <PropertyRef Name="ClientExecutive_id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="ClientExecutive_id" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="ClientExecutive" Relationship="Model1.FK_ClientExecutiveCheck_ClientExecutives" FromRole="ClientExecutiveCheck" ToRole="ClientExecutive" />
+  </EntityType>
+  <EntityType Name="ContactReportChk">
+    <Key>
+      <PropertyRef Name="ContactReport_id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="ContactReport_id" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="ContactReport" Relationship="Model1.FK_ContactReportChk_ContactReport" FromRole="ContactReportChk" ToRole="ContactReport" />
+  </EntityType>
+  <EntityType Name="CRUser">
+    <Key>
+      <PropertyRef Name="User_Id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="User_Id" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="User_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Pass" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="User_Desig" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="User_Groups" Type="Int32" />
+    <Property Name="User_Level" Type="Byte" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DailyRevenueChk">
+    <Key>
+      <PropertyRef Name="DailyRevenue_id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="DailyRevenue_id" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="DailyRevenue" Relationship="Model1.FK_DailyRevenueChk_DailyRevenue" FromRole="DailyRevenueChk" ToRole="DailyRevenue" />
+  </EntityType>
+  <EntityType Name="DummyTable">
+    <Key>
+      <PropertyRef Name="CityId" />
+      <PropertyRef Name="CityName" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="CityId" Type="Byte" Nullable="false" />
+    <Property Name="CityName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DynamicTable">
+    <Key>
+      <PropertyRef Name="Client_Id" />
+    </Key>
+    <Property Name="Publication_Date" Type="DateTime" Precision="3" />
+    <Property Name="Client_Id" Type="Int32" Nullable="false" />
+    <Property Name="Client_Name" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Group_Id" Type="Int32" />
+    <Property Name="group_name" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="Publication" Type="Int32" />
+    <Property Name="Pub_Abreviation" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="Type_Id" Type="Int32" />
+    <Property Name="Type" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="FSB" Type="Int32" />
+    <Property Name="GUJ" Type="Int32" />
+    <Property Name="HYD" Type="Int32" />
+    <Property Name="ISB" Type="Int32" />
+    <Property Name="KHI" Type="Int32" />
+    <Property Name="LHE" Type="Int32" />
+    <Property Name="MUX" Type="Int32" />
+    <Property Name="PEW" Type="Int32" />
+    <Property Name="QTA" Type="Int32" />
+    <Property Name="RYK" Type="Int32" />
+    <Property Name="SGD" Type="Int32" />
+    <Property Name="SUK" Type="Int32" />
+    <Property Name="Total" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Missing">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Caption" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="First_int" Type="Byte" />
+    <Property Name="Second_int" Type="Byte" />
+    <Property Name="MissingPara_ID" Type="Int32" />
+    <Property Name="Locked" Type="Boolean" />
+    <Property Name="Add_by" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Add_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MissingExective">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="id" Type="Int32" />
+    <Property Name="Client" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Brands" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Agency" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Exectives" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="EXP" Type="Int32" />
+    <Property Name="JANG" Type="Int32" />
+    <Property Name="NWQ" Type="Int32" />
+    <Property Name="Tolal" Type="Int32" />
+    <Property Name="EXP_2" Type="Int32" />
+    <Property Name="JANG_2" Type="Int32" />
+    <Property Name="NWQ_2" Type="Int32" />
+    <Property Name="Total_2" Type="Int32" />
+    <Property Name="Agency_Visit" Type="Int32" />
+    <Property Name="Client_Visit" Type="Int32" />
+    <Property Name="Agency_Visit_2" Type="Int32" />
+    <Property Name="Client_Visi_2" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="user_id" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Missing_id" Type="Int32" />
+    <Property Name="MissingPara_id" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MissingParameter">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Para_Caption" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="First_Int" Type="Byte" />
+    <Property Name="Second_Int" Type="Byte" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Sub_category" Type="Int32" />
+    <Property Name="City" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Add_by" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Add_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="Edit_by" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Edit_DateTime" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MissingRight">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_ID" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="MissingPara_id" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MonthlyTartgetCheck">
+    <Key>
+      <PropertyRef Name="MonthlyTarget_id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="MonthlyTarget_id" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="MonthlyTarget" Relationship="Model1.FK_MonthlyTartgetCheck_MonthlyTargets" FromRole="MonthlyTartgetCheck" ToRole="MonthlyTarget" />
+  </EntityType>
+  <EntityType Name="RateCardBaseStation">
+    <Key>
+      <PropertyRef Name="Publication_id" />
+    </Key>
+    <Property Name="Publication_id" Type="Int32" Nullable="false" />
+    <Property Name="GroupComp_id" Type="Int32" />
+    <Property Name="City_Edition" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="Station_Order" Type="Byte" />
+  </EntityType>
+  <EntityType Name="Relation_Execs">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Relation_Type" />
+      <PropertyRef Name="Relation_ID" />
+      <PropertyRef Name="Relation_Exec" />
+      <PropertyRef Name="Relation_WEF" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Relation_Type" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Relation_ID" Type="Int32" Nullable="false" />
+    <Property Name="Relation_Exec" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Relation_WEF" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Relations_Execs">
+    <Key>
+      <PropertyRef Name="Relation_WEF" />
+      <PropertyRef Name="eType" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="User_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="eName" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="Relation_WEF" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="eType" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Software">
+    <Key>
+      <PropertyRef Name="Version" />
+      <PropertyRef Name="AppName" />
+      <PropertyRef Name="AppExe" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Version" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="AppName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AppExe" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="temp_desg">
+    <Key>
+      <PropertyRef Name="id_t" />
+      <PropertyRef Name="Executive_Name_t" />
+      <PropertyRef Name="Designation_t" />
+    </Key>
+    <Property Name="id_t" Type="Int32" Nullable="false" />
+    <Property Name="Executive_Name_t" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Designation_t" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TempAddM_Visit_1">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Brand" Type="Int32" />
+    <Property Name="Agency" Type="Int32" />
+    <Property Name="Client" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Half_2" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempAddMiss_1">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="brand_name" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="brand" Type="Int32" />
+    <Property Name="agency_name" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="client_name" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="mSize_sum" Type="String" MaxLength="100" FixedLength="true" Unicode="false" />
+    <Property Name="ActiveSize_sum" Type="Int32" />
+    <Property Name="non_active_sum" Type="Int32" />
+    <Property Name="pub_abreviation" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Gp_Id" Type="Int32" />
+    <Property Name="Half_2" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="Client_Visit" Type="Int32" />
+    <Property Name="Agency_Visit" Type="Int32" />
+    <Property Name="Visiter_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Client_Visit_1" Type="Int32" />
+    <Property Name="Agency_Visit_1" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TempClientCompany">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CITY" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="main_category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="sub_category" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tempID">
+    <Key>
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="ID" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TempVolumeTrend">
+    <Key>
+      <PropertyRef Name="Client_Company" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Client_Company" Type="Int32" Nullable="false" />
+    <Property Name="Client_Name" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Transaction_Dup">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="cExport" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Loc_ID" Type="Int32" />
+    <Property Name="Orignal_ID" Type="Int32" />
+    <Property Name="Publication_Date" Type="DateTime" Precision="3" />
+    <Property Name="City_Edition" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="Publication" Type="Int32" />
+    <Property Name="Page" Type="Int32" />
+    <Property Name="Main_Category" Type="Int32" />
+    <Property Name="Sub_Category" Type="Int32" />
+    <Property Name="Ad_Type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Brand" Type="Int32" />
+    <Property Name="Client_Company" Type="Int32" />
+    <Property Name="Agency" Type="Int32" />
+    <Property Name="Caption" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Size_CM" Type="Int32" />
+    <Property Name="Size_Col" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Colour_BW" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+    <Property Name="cExport" Type="Boolean" Nullable="false" />
+    <Property Name="Col_Size" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="Type_Id" Type="Int32" />
+    <Property Name="RO" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TransactionChk">
+    <Key>
+      <PropertyRef Name="Transaction_id" />
+      <PropertyRef Name="rowguid" />
+    </Key>
+    <Property Name="Transaction_id" Type="Int32" Nullable="false" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Transaction" Relationship="Model1.FK_TransactionChk_Transactions" FromRole="TransactionChk" ToRole="Transaction" />
+  </EntityType>
+  <Association Name="FK_AgencyBrands_Agencies">
+    <End Type="Model1.Agency" Role="Agency" Multiplicity="0..1" />
+    <End Type="Model1.AgencyBrand" Role="AgencyBrand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgencyBrand">
+        <PropertyRef Name="Agency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgencyExecutives_Agencies">
+    <End Type="Model1.Agency" Role="Agency" Multiplicity="0..1" />
+    <End Type="Model1.AgencyExecutive" Role="AgencyExecutive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Agency">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgencyExecutive">
+        <PropertyRef Name="Agency_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgencyBrands_Brands">
+    <End Type="Model1.Brand" Role="Brand" Multiplicity="0..1" />
+    <End Type="Model1.AgencyBrand" Role="AgencyBrand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Brand">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgencyBrand">
+        <PropertyRef Name="Brand" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AgencyExecCheck_AgencyExecutives">
+    <End Type="Model1.AgencyExecutive" Role="AgencyExecutive" Multiplicity="1" />
+    <End Type="Model1.AgencyExecCheck" Role="AgencyExecCheck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgencyExecutive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AgencyExecCheck">
+        <PropertyRef Name="AgencyExecutive_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Brands_ClientCompanies">
+    <End Type="Model1.ClientCompany" Role="ClientCompany" Multiplicity="0..1" />
+    <End Type="Model1.Brand" Role="Brand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Brand">
+        <PropertyRef Name="Company" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientExecutives_ClientCompanies">
+    <End Type="Model1.ClientCompany" Role="ClientCompany" Multiplicity="0..1" />
+    <End Type="Model1.ClientExecutive" Role="ClientExecutive" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientCompany">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClientExecutive">
+        <PropertyRef Name="Client_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientMainCatId">
+    <End Type="Model1.MainCategory" Role="MainCategory" Multiplicity="0..1" />
+    <End Type="Model1.ClientCompany" Role="ClientCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MainCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClientCompany">
+        <PropertyRef Name="Main_Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ClientExecutiveCheck_ClientExecutives">
+    <End Type="Model1.ClientExecutive" Role="ClientExecutive" Multiplicity="1" />
+    <End Type="Model1.ClientExecutiveCheck" Role="ClientExecutiveCheck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientExecutive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClientExecutiveCheck">
+        <PropertyRef Name="ClientExecutive_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MainCatId">
+    <End Type="Model1.MainCategory" Role="MainCategory" Multiplicity="0..1" />
+    <End Type="Model1.ClubCategory" Role="ClubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MainCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ClubCategory">
+        <PropertyRef Name="Main_Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PubId">
+    <End Type="Model1.Publication" Role="Publication" Multiplicity="1" />
+    <End Type="Model1.CompGroup" Role="CompGroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publication">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CompGroup">
+        <PropertyRef Name="PublicationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ContactReportChk_ContactReport">
+    <End Type="Model1.ContactReport" Role="ContactReport" Multiplicity="1" />
+    <End Type="Model1.ContactReportChk" Role="ContactReportChk" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContactReport">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ContactReportChk">
+        <PropertyRef Name="ContactReport_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DailyRevenue_Users">
+    <End Type="Model1.User" Role="User" Multiplicity="0..1" />
+    <End Type="Model1.DailyRevenue" Role="DailyRevenue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="DailyRevenue">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DailyRevenueChk_DailyRevenue">
+    <End Type="Model1.DailyRevenue" Role="DailyRevenue" Multiplicity="1" />
+    <End Type="Model1.DailyRevenueChk" Role="DailyRevenueChk" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DailyRevenue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DailyRevenueChk">
+        <PropertyRef Name="DailyRevenue_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MainRates_GroupComps">
+    <End Type="Model1.GroupComp" Role="GroupComp" Multiplicity="1" />
+    <End Type="Model1.MainRate" Role="MainRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupComp">
+        <PropertyRef Name="GroupComp_Id" />
+      </Principal>
+      <Dependent Role="MainRate">
+        <PropertyRef Name="Edition_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubRates_GroupComps">
+    <End Type="Model1.GroupComp" Role="GroupComp" Multiplicity="1" />
+    <End Type="Model1.SubRate" Role="SubRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GroupComp">
+        <PropertyRef Name="GroupComp_Id" />
+      </Principal>
+      <Dependent Role="SubRate">
+        <PropertyRef Name="Edition_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MainRates_MainCategories">
+    <End Type="Model1.MainCategory" Role="MainCategory" Multiplicity="1" />
+    <End Type="Model1.MainRate" Role="MainRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MainCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MainRate">
+        <PropertyRef Name="MainCat_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubCategories_MainCategories">
+    <End Type="Model1.MainCategory" Role="MainCategory" Multiplicity="0..1" />
+    <End Type="Model1.SubCategory" Role="SubCategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MainCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubCategory">
+        <PropertyRef Name="Main_Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_MainCategories">
+    <End Type="Model1.MainCategory" Role="MainCategory" Multiplicity="0..1" />
+    <End Type="Model1.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MainCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="Main_Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MainRates_Publications">
+    <End Type="Model1.Publication" Role="Publication" Multiplicity="1" />
+    <End Type="Model1.MainRate" Role="MainRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publication">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MainRate">
+        <PropertyRef Name="Publication_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuId">
+    <End Type="Model1.Menu" Role="Menu" Multiplicity="1" />
+    <End Type="Model1.MenuItem" Role="MenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuItem">
+        <PropertyRef Name="ParentMenuId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItemId">
+    <End Type="Model1.MenuItem" Role="MenuItem" Multiplicity="1" />
+    <End Type="Model1.RolesItem_new" Role="RolesItem_new" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItem">
+        <PropertyRef Name="MenuItemId" />
+      </Principal>
+      <Dependent Role="RolesItem_new">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MonthlyTargets_Users">
+    <End Type="Model1.User" Role="User" Multiplicity="0..1" />
+    <End Type="Model1.MonthlyTarget" Role="MonthlyTarget" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="MonthlyTarget">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MonthlyTartgetCheck_MonthlyTargets">
+    <End Type="Model1.MonthlyTarget" Role="MonthlyTarget" Multiplicity="1" />
+    <End Type="Model1.MonthlyTartgetCheck" Role="MonthlyTartgetCheck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MonthlyTarget">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MonthlyTartgetCheck">
+        <PropertyRef Name="MonthlyTarget_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Organisation_Users">
+    <End Type="Model1.User" Role="User" Multiplicity="0..1" />
+    <End Type="Model1.Organisation" Role="Organisation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="Organisation">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrgSecurities_Users">
+    <End Type="Model1.User" Role="User" Multiplicity="1" />
+    <End Type="Model1.OrgSecurity" Role="OrgSecurity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="OrgSecurity">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubRates_Publications">
+    <End Type="Model1.Publication" Role="Publication" Multiplicity="1" />
+    <End Type="Model1.SubRate" Role="SubRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publication">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubRate">
+        <PropertyRef Name="Publication_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_Publications">
+    <End Type="Model1.Publication" Role="Publication" Multiplicity="0..1" />
+    <End Type="Model1.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publication">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="Publication" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ParentRateCardId">
+    <End Type="Model1.RateCard" Role="RateCard" Multiplicity="1" />
+    <End Type="Model1.RateCardDetail" Role="RateCardDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RateCard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RateCardDetail">
+        <PropertyRef Name="Rate_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RateCardDetail_RateCard">
+    <End Type="Model1.RateCard" Role="RateCard" Multiplicity="1" />
+    <End Type="Model1.RateCardDetail" Role="RateCardDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RateCard">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RateCardDetail">
+        <PropertyRef Name="Rate_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RatePolicyStations_RatePolicy">
+    <End Type="Model1.RatePolicy" Role="RatePolicy" Multiplicity="1" />
+    <End Type="Model1.RatePolicyStation" Role="RatePolicyStation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RatePolicy">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RatePolicyStation">
+        <PropertyRef Name="Policy_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleId">
+    <End Type="Model1.Role" Role="Role" Multiplicity="1" />
+    <End Type="Model1.RolesItem_new" Role="RolesItem_new" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RolesItem_new">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSecurities_SecurityControl">
+    <End Type="Model1.SecurityControl" Role="SecurityControl" Multiplicity="1" />
+    <End Type="Model1.UserSecurity" Role="UserSecurity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SecurityControl">
+        <PropertyRef Name="Control_Id" />
+      </Principal>
+      <Dependent Role="UserSecurity">
+        <PropertyRef Name="Control_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SubRates_SubCategories">
+    <End Type="Model1.SubCategory" Role="SubCategory" Multiplicity="1" />
+    <End Type="Model1.SubRate" Role="SubRate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubRate">
+        <PropertyRef Name="SubCat_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_SubCategories">
+    <End Type="Model1.SubCategory" Role="SubCategory" Multiplicity="0..1" />
+    <End Type="Model1.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubCategory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="Sub_Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionChk_Transactions">
+    <End Type="Model1.Transaction" Role="Transaction" Multiplicity="1" />
+    <End Type="Model1.TransactionChk" Role="TransactionChk" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaction">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TransactionChk">
+        <PropertyRef Name="Transaction_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSecurities_Users">
+    <End Type="Model1.User" Role="User" Multiplicity="1" />
+    <End Type="Model1.UserSecurity" Role="UserSecurity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="User_Id" />
+      </Principal>
+      <Dependent Role="UserSecurity">
+        <PropertyRef Name="User_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
