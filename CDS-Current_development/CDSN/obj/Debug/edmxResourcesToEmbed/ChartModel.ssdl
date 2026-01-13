@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CDSModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <Function Name="usp_Showgraph" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="charttype" Type="varchar" Mode="In" />
+    <Parameter Name="territoryid" Type="int" Mode="In" />
+    <Parameter Name="divisionid" Type="varchar" Mode="In" />
+    <Parameter Name="cityid" Type="varchar" Mode="In" />
+    <Parameter Name="areaid" Type="varchar" Mode="In" />
+    <Parameter Name="channelid" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="CDSModel1StoreContainer" />
+</Schema>

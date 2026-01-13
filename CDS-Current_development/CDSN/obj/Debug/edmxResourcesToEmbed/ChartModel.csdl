@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CDSModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ChartsEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="usp_Showgraph" ReturnType="Collection(CDSModel1.usp_Showgraph_Result)">
+      <Parameter Name="charttype" Mode="In" Type="String" />
+      <Parameter Name="territoryid" Mode="In" Type="Int32" />
+      <Parameter Name="divisionid" Mode="In" Type="String" />
+      <Parameter Name="cityid" Mode="In" Type="String" />
+      <Parameter Name="areaid" Mode="In" Type="String" />
+      <Parameter Name="channelid" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_Showgraph_Result">
+    <Property Type="Int32" Name="OperatorId" Nullable="false" />
+    <Property Type="String" Name="ChannelName" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="CurPosition" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CityName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="DivisionName" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="Int32" Name="TerritoryId" Nullable="false" />
+    <Property Type="Int32" Name="DivisionId" Nullable="false" />
+    <Property Type="String" Name="TerritoryName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="ShortNames" Nullable="false" MaxLength="5" />
+    <Property Type="Int32" Name="OrderBy" Nullable="false" />
+    <Property Type="DateTime" Name="WEF" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="89e21d19aab74c258ef2e93b50b15e66" Name="Diagram1">
+        <EntityTypeShape EntityType="CDSModel.dtproperty" Width="1.5" PointX="10.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.GoogleAreaMap" Width="1.5" PointX="12.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.GoogleCityMap" Width="1.5" PointX="13.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.GoogleCountryMap" Width="1.5" PointX="14.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.GoogleHeadEndMaps_" Width="1.5" PointX="15.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.GoogleSubAreaMap" Width="1.5" PointX="15.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.Role" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.RolesItem" Width="1.5" PointX="10.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tbAreaType" Width="1.5" PointX="16.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblActivity" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblArea" Width="1.5" PointX="3" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblAreaMap" Width="1.5" PointX="16.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblChannel" Width="1.5" PointX="3" PointY="49.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblChannelHistory" Width="1.5" PointX="5.25" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblChannelLog" Width="1.5" PointX="8.25" PointY="33.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblChannelPosition" Width="1.5" PointX="5.25" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblChannelType" Width="1.5" PointX="17.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblCity" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblComplain" Width="1.5" PointX="7.5" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblConsumer" Width="1.5" PointX="17.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblContact" Width="1.5" PointX="5.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblCountry" Width="1.5" PointX="1.5" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblCPI" Width="1.5" PointX="8.25" PointY="50.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblDDCP" Width="1.5" PointX="6" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.TblDivision" Width="1.5" PointX="1.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblEvent" Width="1.5" PointX="10.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblEventDetail" Width="1.5" PointX="13" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblExpChannel" Width="1.5" PointX="13.75" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblFilterControl" Width="1.5" PointX="8.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblFilterControlDetail" Width="1.5" PointX="11" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblForm" Width="1.5" PointX="6" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblHeadEndTerritory" Width="1.5" PointX="5.25" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblIdctr" Width="1.5" PointX="17.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblIncentiveDetailType" Width="1.5" PointX="6" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblIncentiveType" Width="1.5" PointX="3.75" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblInventory" Width="1.5" PointX="3.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblInventoryIssue" Width="1.5" PointX="6" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblLog" Width="1.5" PointX="18.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblLoopHolder" Width="1.5" PointX="18.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblMenuHeader" Width="1.5" PointX="15.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblMenuItem" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblOperator" Width="1.5" PointX="3" PointY="31.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblOperatorInfo" Width="1.5" PointX="11.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblOpIncentive" Width="1.5" PointX="8.25" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblPropertier" Width="1.5" PointX="0.75" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblRegion" Width="1.5" PointX="1.5" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblRole" Width="1.5" PointX="6" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblRoleForm" Width="1.5" PointX="8.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblScheduleActivity" Width="1.5" PointX="8.25" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblSegment" Width="1.5" PointX="17.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblSubArea" Width="1.5" PointX="5.25" PointY="39" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblTask" Width="1.5" PointX="19.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblTaskActivity" Width="1.5" PointX="6" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.TblTempNew" Width="1.5" PointX="19.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblTerritory" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblUser" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblUserForm" Width="1.5" PointX="8.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblUserHeadend" Width="1.5" PointX="8.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblUserTerritory" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.DBMunir2" Width="1.5" PointX="19.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.DBRegal" Width="1.5" PointX="20.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.ExamptedForm" Width="1.5" PointX="21.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.MenuItem" Width="1.5" PointX="7.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.Menu" Width="1.5" PointX="21.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.NewsCPRTable" Width="1.5" PointX="21.75" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.NewsCPRTable2" Width="1.5" PointX="13.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.NewsCPRTableSearch" Width="1.5" PointX="15.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.TblChannelList" Width="1.5" PointX="21.75" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.TblChannelSummaryForReport" Width="1.5" PointX="22.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.tblusercountry" Width="1.5" PointX="11.25" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.UserInfo" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.bar2" Width="1.5" PointX="17.75" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.barchart" Width="1.5" PointX="23.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.dashboard_grid" Width="1.5" PointX="23.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.vArea" Width="1.5" PointX="23.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.VChannelPosition" Width="1.5" PointX="23.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.VCity" Width="1.5" PointX="19.75" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.VCityGoogleData" Width="1.5" PointX="23.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.vDistrictArea" Width="1.5" PointX="24.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.vGoogleMap" Width="1.5" PointX="25.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.vMetroCityMap" Width="1.5" PointX="10.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.VOperatorInfo" Width="1.5" PointX="25.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CDSModel.vSubArea" Width="1.5" PointX="25.75" PointY="20.5" IsExpanded="true" />
+        <AssociationConnector Association="CDSModel.FK_roleid" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_userroleid" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblActivity_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblArea_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblSubArea_tblArea" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblChannelHistory_tblChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblChannelLog_tblChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblChannelPosition_tblChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblCPIS_tblChannel" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblChannelHistory_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblChannelLog_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_cityid" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblCity_TblDivisions" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperator_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblPropertier_tblCity" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblComplain_tblSubArea" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblContact_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblContact_tblTerritory" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblContact_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_countryid" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_tblCountry" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblRegion_tblCountry1" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblCPIS_tblDDCP" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_TblDivisions_tblTerritory" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_TblDivisions" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblEventDetails_tblEvent" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblFilterControlDetail_tblFilterControl" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblRoleForms_tblForms" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblUserForms_tblForms" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblHeadEndTerritory_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblIncentiveDetailType_tblIncentiveType" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOpIncentive_tblIncentiveDetailType" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblInventoryIssue_tblInventory" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblMenuItems_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperator_tblPropertier" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOpIncentive_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblUserHeadend_tblOperator" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_tblOperatorInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_tblRegion" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblOperatorInfo_tblTerritory" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblTerritory_tblRegion" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblRoleForms_tblRole" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblScheduleActivity_tblTaskActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblScheduleActivity_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblTaskActivity_tblTaskActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblUserTerritory_tblTerritory1" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblUserForms_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblUserHeadend_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_tblUserTerritory_tblUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CDSModel.FK_userid" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

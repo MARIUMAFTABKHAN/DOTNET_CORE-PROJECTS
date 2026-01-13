@@ -1,0 +1,387 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="CDSN.Layout" %>
+
+<%@ Register Src="~/App_Data/MenuControl.ascx" TagPrefix="MenuControl" TagName="MenuControl" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Express News Channel</title>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/jquery-blink.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-ui-1.13.2.js"></script>
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="Scripts/jquery.sumoselect.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/master.css" rel="stylesheet" />
+    <link href="Content/sumoselect.css" rel="stylesheet" />
+    <link href="Content/MasterStyle.css" rel="stylesheet" />
+    <script src="Scripts/JSCharts.js"></script>
+
+
+
+    <style type="text/css">
+        h4 {
+            color: #1a344d !important;
+        }
+
+        .lbl{
+    font-size:medium;
+    font-weight:bold;
+}
+
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        .main_menu {
+            width: 100px;
+            background-color: #bed8eb;
+            color: black;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+
+        .level_menu {
+            width: 110px;
+            background-color: #bed8eb;
+            color: black;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 5px;
+        }
+
+        .selected {
+            background-color: black;
+            color: #bed8eb;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+            color: black; /*Sets the text hover color on navbar*/
+        }
+
+        .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+            background-color: #bed8eb;
+            color: black !important;
+            border-left: solid 1px black;
+            border-right: solid 1px black;
+            border-bottom: solid 1px black;
+        }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            color: #bed8eb; /*BACKGROUND color for active*/
+            background-color: black;
+        }
+
+
+        .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            color: black;
+            text-decoration: none;
+            background-color: #bed8eb; /*change color of links in drop down here*/
+            /*border-left: solid 10px red;*/
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus {
+            text-decoration: none;
+            background-color: #bed8eb; /*Change rollover cell color here*/
+        }
+
+
+        .navbar-default .navbar-nav > li > a {
+            color: black; /*Change active text color here*/
+            border: 1px solid black !important;
+        }
+
+        .navbar-default {
+            width: 100% !important;
+            background-color: #bed8eb;
+        }
+
+        .container-fluid {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .navbar-default {
+            border: 0px;
+        }
+
+        .dropdown-menu {
+            background-color: #bed8eb;
+            margin-top: 6px !important;
+        }
+
+        .active {
+            background-color: black;
+        }
+
+        .dropdown {
+            color: black;
+        }
+
+        .dropdown-toggle {
+            color: black !important;
+        }
+
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            background-color: #bed8eb;
+            color: black;
+        }
+
+        .container {
+            width: 100% !important;
+        }
+
+        .navbar-nav > li > .dropdown-menu {
+            border-left: solid 10px black;
+        }
+
+        element.style {
+        }
+
+        .dropdown-menu > li > a {
+            border-bottom: 1px solid black !important;
+        }
+
+        .ui-datepicker .ui-datepicker-title select {
+            background-color: rgb(143,99,20);
+            color: #fff;
+        }
+
+        .ui-datepicker table {
+            background-color: #bed8eb;
+            color: #fff;
+        }
+        .btn-info, .btn-info:focus, .btn-info:active {
+            background-color: #4682B4 !important;
+            color: white !important;
+        }
+
+        .btn-info:hover {
+            background-color: #bed8eb !important;
+            color: #4682B4 !important;
+            border: solid !important;
+        }
+        .btn-danger, .btn-danger:focus, .btn-danger:active {
+            background-color: red !important;
+            color: white !important;
+        }
+
+        .btn-danger:hover {
+            background-color: indianred !important;
+            color: white !important;
+            border: solid !important;
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+ <%--   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body style="background-color: #bed8eb; margin-top: 0px !important">
+    <form id="form1" runat="server">
+
+        <asp:ScriptManager ID="MasterSM" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.blink').blink();
+                $('.blink2').blink();
+            });
+            function pageLoad() {
+                $('.blink').blink();
+                $('.blink2').blink();
+            }
+            //function blinkFunction() {
+            //    window.open("CurrentActivity.aspx", '_blank');
+            //}
+
+            function blinkFunction(type) {
+                var count = 0;
+                if (type === "new") {
+                    count = parseInt($("#<%= lblblink.ClientID %>").text().match(/\d+/));
+    } else {
+        count = parseInt($("#<%= lblblink2.ClientID %>").text().match(/\d+/));
+    }
+
+    if (count > 0) {
+        loadMessages(type);
+    } else {
+        alert("No messages to show.");
+    }
+}
+
+            function loadMessages(type) {
+                var userId = '<%= Session["UserID"] %>'; // current logged-in user
+                $.ajax({
+                    type: "POST",
+                    url: "GetCPR.asmx/GetOperatorAllActivities",
+                    data: JSON.stringify({ RecordID: userId }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (r) {
+                        var data = JSON.parse(r.d);
+                        var html = "";
+
+                        $.each(data, function (i, item) {
+                            if (type === "new" && item.isViewed === false) {
+                                html += buildRow(item);
+                                markViewed(item.RecordID);
+                            } else if (type === "viewed" && item.isViewed === true) {
+                                html += buildRow(item);
+                            }
+                        });
+
+                        if (html === "") {
+                            html = "<tr><td colspan='4' class='text-center'>No " + type + " messages.</td></tr>";
+                        }
+
+                        $("#msgGrid tbody").html(html);
+                        $("#msgModal").modal("show");
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error:", xhr.responseText);
+                        alert("Failed to load messages: " + error);
+                    }
+                });
+            }
+
+            function buildRow(item) {
+                return "<tr>" +
+                    "<td>" + (item.OperatorName || "") + "</td>" +
+                    "<td>" + (item.Messagetxt || "") + "</td>" +
+                    "<td>" + formatDate(item.MessageDate) + "</td>" +
+                    "<td><button class='btn btn-info btn-sm' " +
+                    "onclick='openReply(" + item.RecordID + ",\"" + escapeQuotes(item.Messagetxt) + "\",\"" + (item.OperatorName || "") + "\")'>Reply</button></td>" +
+                    "</tr>";
+            }
+
+            function escapeQuotes(str) {
+                if (!str) return "";
+                return str.toString().replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+            }
+
+            function formatDate(dateString) {
+                if (!dateString) return "";
+                var d = new Date(dateString);
+                return d.toLocaleDateString() + " " + d.toLocaleTimeString();
+            }
+
+
+            function markViewed(recordId) {
+                $.ajax({
+                    type: "POST",
+                    url: "GetCPR.asmx/ViewedMessage",
+                    data: JSON.stringify({ RecordID: recordId }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json"
+                });
+            }
+
+            function openReply(recordId, message, operator) {
+                alert("Reply to " + operator + ":\n\n" + message + "\n\n(Here you can open a reply modal or redirect to CurrentActivity.aspx)");
+                // 🔹 Instead of alert, you can create another reply modal here
+            }
+
+
+        </script>
+        
+        <script type="text/javascript" language="javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+            function EndRequestHandler(sender, args) {
+                if (args.get_error() != undefined) {
+                    args.set_errorHandled(true);
+                }
+            }
+        </script>
+        <div class="container body-content" style="margin: 0; padding: 0">
+            <div class="row" style="margin-bottom: 0px">
+                <div class="col-md-12 header">
+
+                    <div runat="server" class="img col-md-4 img-responsive">
+                    </div>
+
+                    <div class=" col-md-7" style="float: right">
+                        <div class="col-md-12">
+                            <div class="col-md-3 col-md-offset-9">
+                                <div style="float: right; text-align: right">
+                                    &nbsp;&nbsp;   |&nbsp;&nbsp; <a href="Login.aspx" style="margin-right: 15px !important; float: right; color:white;" >Logout</a>
+                                </div>
+                                <div style="float: right; text-align: left">
+                                    <asp:Label ID="lblloginuser" runat="server" Text="" Style="color:white;"></asp:Label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-md-offset-6 text-right" id="blink" runat="server" style="margin-top: 35px !important">
+                               <a id="lnkblink" href="#" onclick="blinkFunction('new');">  
+                                   <asp:Label ID="lblblink" CssClass="blink" runat="server" Text="" Style="margin-right: 15px !important; float: right; margin-bottom: 5px !important"></asp:Label></a>
+                               </div>
+                           
+                            <div class="col-md-3  text-right" id="blink2" runat="server" style="margin-top: 35px !important">
+                                 <a id="lnkblink2" href="#" onclick="blinkFunction('viewed');">  
+                                   <asp:Label ID="lblblink2" CssClass="blink" runat="server" Text="" Style="margin-right: 15px !important; float: right; margin-bottom: 5px !important"></asp:Label></a>
+                               </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="row">
+                <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                    <MenuControl:MenuControl runat="server" ID="MenuControl" />
+                </div>
+
+            </div>
+
+            <div class="row" style="z-index: -999999; padding-left: 10px; padding-right: 10px; background-color: #bed8eb">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <span style="color: black">&copy; 2013-2024 Express News Channel &nbsp;&nbsp;&nbsp; </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Message Modal -->
+<div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-info">
+        <h5 class="modal-title">Messages</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <table id="msgGrid" class="table table-bordered table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>Operator</th>
+              <th>Message</th>
+              <th>Date</th>
+              <th>Reply</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </form>
+
+</body>
+</html>

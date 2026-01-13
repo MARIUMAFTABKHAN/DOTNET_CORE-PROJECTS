@@ -1,0 +1,58 @@
+﻿using Microsoft.Ajax.Utilities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Script.Serialization;
+using System.Web.Script.Services;
+using System.Web.Services;
+using System.Web.UI.WebControls;
+
+namespace CDSN.Services
+{
+    /// <summary>
+    /// Summary description for GetChartByPosition
+    /// </summary>
+    [WebService(Namespace = "http://tempuri.org/")]
+    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [System.ComponentModel.ToolboxItem(false)]
+    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
+     [System.Web.Script.Services.ScriptService]
+    public class GetChartByPosition : System.Web.Services.WebService
+    {
+
+        [WebMethod]
+        public string HelloWorld(int territoryid, int channelid)
+        {
+            return "Hello World";
+        }
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public List<ClsChannelList> GetData(int territoryid, int channelid)
+        {
+            using (CDSEntities db = new CDSEntities())
+            {
+                List<ClsChannelList> lst = new List<ClsChannelList>();
+                var r = db.Get_PositionBars("B", territoryid, "0", "0", "0", channelid).ToList();
+                foreach (var s in r)
+                {
+                    lst.Add(new ClsChannelList
+                    {
+                        ChannelName = s.ChannelName.ToString(),
+                        CurrentPosition = Convert.ToInt32(s.CurPosition)
+
+                    });
+                }
+
+                return lst.ToList();
+
+            }
+        }
+        public class ClsChannelList
+        {
+            public string ChannelName;
+            public int CurrentPosition;
+
+        }
+    }
+}

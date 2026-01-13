@@ -1,0 +1,263 @@
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\CDSN.dll.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\CDSN.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\CDSN.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\csc.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\csc.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\csc.rsp
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\csi.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\csi.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\csi.rsp
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.AppContext.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Collections.Immutable.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Console.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Globalization.Calendars.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.IO.Compression.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.IO.FileSystem.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Net.Http.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Net.Sockets.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Reflection.Metadata.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.ValueTuple.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Xml.XPath.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\vbc.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\vbc.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\vbc.rsp
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\VBCSCompiler.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\roslyn\VBCSCompiler.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\AjaxControlToolkit.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Antlr3.Runtime.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\AspNet.ScriptManager.jQuery.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\DropDownCheckBoxes.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\EntityFramework.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\EntityFramework.SqlServer.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Web.Infrastructure.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Newtonsoft.Json.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Net.Http.Formatting.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Web.Http.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Web.Http.WebHost.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Web.Optimization.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\WebGrease.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\EntityFramework.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\EntityFramework.SqlServer.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Net.Http.Formatting.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Web.Http.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Web.Http.WebHost.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Web.Optimization.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Newtonsoft.Json.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Antlr3.Runtime.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\obj\Debug\CDSN.csproj.AssemblyReference.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\obj\Debug\CDSN.csproj.CoreCompileInputs.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\obj\Debug\CDSN.csproj.Up2Date
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\obj\Debug\CDSN.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\obj\Debug\CDSN.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Authorization.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.FileProviders.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Hosting.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Http.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Http.Extensions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Http.Features.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.JsonPatch.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Mvc.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Mvc.Core.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Mvc.Formatters.Json.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Routing.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Configuration.Binder.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Configuration.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.MemoryPool.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.OptionsModel.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.PlatformAbstractions.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Primitives.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.WebEncoders.Core.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Net.Http.Headers.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Authorization.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.FileProviders.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Hosting.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Http.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Http.Extensions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Http.Features.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.JsonPatch.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Mvc.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Mvc.Core.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Mvc.Formatters.Json.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.AspNet.Routing.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Configuration.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Configuration.Binder.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Logging.Abstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.MemoryPool.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.OptionsModel.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.PlatformAbstractions.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.Primitives.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Extensions.WebEncoders.Core.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\Microsoft.Net.Http.Headers.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\News Web Apps\CDSN\bin\System.Diagnostics.DiagnosticSource.xml
+C:\CDS-Current_development\CDSN\obj\Debug\CDSN.csproj.AssemblyReference.cache
+C:\CDS-Current_development\CDSN\obj\Debug\CDSN.csproj.CoreCompileInputs.cache
+C:\CDS-Current_development\CDSN\bin\CDSN.dll.config
+C:\CDS-Current_development\CDSN\bin\CDSN.dll
+C:\CDS-Current_development\CDSN\bin\CDSN.pdb
+C:\CDS-Current_development\CDSN\bin\roslyn\csc.exe
+C:\CDS-Current_development\CDSN\bin\roslyn\csc.exe.config
+C:\CDS-Current_development\CDSN\bin\roslyn\csc.rsp
+C:\CDS-Current_development\CDSN\bin\roslyn\csi.exe
+C:\CDS-Current_development\CDSN\bin\roslyn\csi.exe.config
+C:\CDS-Current_development\CDSN\bin\roslyn\csi.rsp
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.Managed.Core.targets
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\CDS-Current_development\CDSN\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.AppContext.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Collections.Immutable.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Console.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Globalization.Calendars.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.IO.Compression.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.IO.FileSystem.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Net.Http.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Net.Sockets.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Reflection.Metadata.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.ValueTuple.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Xml.XmlDocument.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Xml.XPath.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\CDS-Current_development\CDSN\bin\roslyn\vbc.exe
+C:\CDS-Current_development\CDSN\bin\roslyn\vbc.exe.config
+C:\CDS-Current_development\CDSN\bin\roslyn\vbc.rsp
+C:\CDS-Current_development\CDSN\bin\roslyn\VBCSCompiler.exe
+C:\CDS-Current_development\CDSN\bin\roslyn\VBCSCompiler.exe.config
+C:\CDS-Current_development\CDSN\bin\AjaxControlToolkit.dll
+C:\CDS-Current_development\CDSN\bin\Antlr3.Runtime.dll
+C:\CDS-Current_development\CDSN\bin\AspNet.ScriptManager.bootstrap.dll
+C:\CDS-Current_development\CDSN\bin\AspNet.ScriptManager.jQuery.dll
+C:\CDS-Current_development\CDSN\bin\EntityFramework.dll
+C:\CDS-Current_development\CDSN\bin\EntityFramework.SqlServer.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Authorization.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.FileProviders.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Hosting.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Http.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Http.Extensions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Http.Features.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.JsonPatch.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Mvc.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Mvc.Core.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Mvc.Formatters.Json.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Routing.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Configuration.Binder.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Configuration.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.MemoryPool.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.OptionsModel.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.PlatformAbstractions.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Primitives.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.WebEncoders.Core.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Net.Http.Headers.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.ScriptManager.WebForms.dll
+C:\CDS-Current_development\CDSN\bin\Microsoft.Web.Infrastructure.dll
+C:\CDS-Current_development\CDSN\bin\Newtonsoft.Json.dll
+C:\CDS-Current_development\CDSN\bin\System.Diagnostics.DiagnosticSource.dll
+C:\CDS-Current_development\CDSN\bin\System.Net.Http.Formatting.dll
+C:\CDS-Current_development\CDSN\bin\System.Web.Http.dll
+C:\CDS-Current_development\CDSN\bin\System.Web.Http.WebHost.dll
+C:\CDS-Current_development\CDSN\bin\System.Web.Optimization.dll
+C:\CDS-Current_development\CDSN\bin\WebGrease.dll
+C:\CDS-Current_development\CDSN\bin\EntityFramework.xml
+C:\CDS-Current_development\CDSN\bin\EntityFramework.SqlServer.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Authorization.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.FileProviders.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Hosting.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Http.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Http.Extensions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Http.Features.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.JsonPatch.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Mvc.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Mvc.Core.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Mvc.Formatters.Json.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.Routing.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Configuration.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Configuration.Binder.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.MemoryPool.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.OptionsModel.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.PlatformAbstractions.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.Primitives.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Extensions.WebEncoders.Core.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.Net.Http.Headers.xml
+C:\CDS-Current_development\CDSN\bin\Newtonsoft.Json.xml
+C:\CDS-Current_development\CDSN\bin\System.Diagnostics.DiagnosticSource.xml
+C:\CDS-Current_development\CDSN\bin\System.Net.Http.Formatting.xml
+C:\CDS-Current_development\CDSN\bin\System.Web.Http.xml
+C:\CDS-Current_development\CDSN\bin\System.Web.Http.WebHost.xml
+C:\CDS-Current_development\CDSN\bin\System.Web.Optimization.xml
+C:\CDS-Current_development\CDSN\bin\Antlr3.Runtime.pdb
+C:\CDS-Current_development\CDSN\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\CDS-Current_development\CDSN\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\CDS-Current_development\CDSN\obj\Debug\CDSN.csproj.Up2Date
+C:\CDS-Current_development\CDSN\obj\Debug\CDSN.dll
+C:\CDS-Current_development\CDSN\obj\Debug\CDSN.pdb

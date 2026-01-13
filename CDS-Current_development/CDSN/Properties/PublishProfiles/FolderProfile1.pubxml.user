@@ -1,0 +1,1495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Published\29052023</_PublishTargetUrl>
+    <History>True|2023-05-29T11:44:36.3753956Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ActivityTasks.asmx">
+      <publishTime>09/05/2023 17:16:00</publishTime>
+    </File>
+    <File Include="AddArea.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddChannel.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddChannelType.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddCity.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddCountry.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddDivisions.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddRegion.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddSubArea.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AddUserInfo.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/MenuControl.ascx">
+      <publishTime>10/05/2023 17:20:59</publishTime>
+    </File>
+    <File Include="AssignRoleItmes.aspx">
+      <publishTime>11/05/2023 12:06:05</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>10/09/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>10/09/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/CDSN.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/CDSN.pdb">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/DropDownCheckBoxes.dll">
+      <publishTime>06/03/2023 18:16:09</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>11/02/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>05/09/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>06/09/2013 11:20:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>06/09/2013 11:20:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>05/12/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>05/12/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>05/11/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>05/11/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>05/11/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>05/11/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>05/11/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>05/11/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>05/11/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>05/11/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>05/11/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>05/11/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>05/11/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>05/11/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>05/11/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>05/11/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>05/11/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>05/11/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>05/11/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>05/11/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>05/11/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>05/11/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>05/11/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>05/11/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>05/11/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>05/11/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>05/11/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/02/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ChannelPosition.aspx">
+      <publishTime>11/05/2023 13:05:16</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/12121.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/1212111112.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/1left_meny.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/1main_bar.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/1m_bar.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/1pix.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/1_arrow_down.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/2_arrow_right.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/activity2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ajax-loader.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Application-edit.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Application-ok.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Approved.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/arrow.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/arrow1.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Arrow2Down.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Arrow2Right.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Arrow2Right_.GIF">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Arrow2Up.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bar.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BarImage.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BarImg.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BarImg_.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BarImg_A.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BarImg_N.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BarImg__.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bg_mms.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bg_mms1.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bg_table.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bg_x.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BlueMenuHeader.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/BlueMenuHeader_.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bottoms.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/bottoms_top.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/btnImage.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/buttonbgHover1.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/buttonpg1.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/calander.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Calendar.GIF">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/calendar.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Calendar_scheduleHS.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Cancel.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cancel_1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Chart2-Add.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Chart2-Edit.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ClearTxt.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/ClearTxtdd.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/clear_pakistan_map2.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Copy of Minus_.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/cross.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/done.png">
+      <publishTime>10/04/2023 14:22:13</publishTime>
+    </File>
+    <File Include="Content/Images/double-check.png">
+      <publishTime>10/04/2023 14:10:50</publishTime>
+    </File>
+    <File Include="Content/Images/email.png">
+      <publishTime>10/04/2023 14:22:33</publishTime>
+    </File>
+    <File Include="Content/Images/glyphicons-halflings.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/haslist.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/help.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/important.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/info.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/info2.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/loginLogo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Logo.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Logo1.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Mail-reply.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/News-Edit.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/nolist.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Ok.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/OnHold.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/pending.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/printer.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/recycle-full.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/rejected.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/reply.png">
+      <publishTime>10/04/2023 14:24:03</publishTime>
+    </File>
+    <File Include="Content/Images/Role.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Script.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/supervised.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/TopHeader_Aamir.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Images/Trash-Cancel.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/master.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/MasterStyle.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/sumoselect.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/sumoselect.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/accordion.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/all.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/autocomplete.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/base.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/button.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/core.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/datepicker.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/dialog.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/draggable.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_444444_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_555555_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_777620_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_777777_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cc0000_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_ffffff_256x240.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/jquery-ui.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/menu.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/progressbar.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/resizable.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectable.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectmenu.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/slider.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/sortable.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/spinner.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/tabs.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/theme.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/tooltip.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Control/menuCtrl.ascx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="CPR.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="CurrentActivity.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ExamptedForm.cs">
+      <publishTime>05/12/2023 12:45:16</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="GetCPR.asmx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="GetNewActivityListCDSN11_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="GetNewActivityListCDSN12_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="GetNewActivityListCDSN1_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="GetNewActivityList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Home.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="HtmlPage1.html">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Layout.Master">
+      <publishTime>10/05/2023 17:56:50</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>07/04/2023 11:51:50</publishTime>
+    </File>
+    <File Include="m.login">
+      <publishTime>07/04/2023 12:06:58</publishTime>
+    </File>
+    <File Include="m.mobile">
+      <publishTime>07/04/2023 12:06:15</publishTime>
+    </File>
+    <File Include="Menu.cs">
+      <publishTime>05/11/2023 12:53:58</publishTime>
+    </File>
+    <File Include="MenuItem.cs">
+      <publishTime>05/12/2023 12:41:13</publishTime>
+    </File>
+    <File Include="Model1.Context.cs">
+      <publishTime>10/22/2024 18:53:38</publishTime>
+    </File>
+    <File Include="Model1.Context.tt">
+      <publishTime>03/13/2023 19:09:52</publishTime>
+    </File>
+    <File Include="Model1.cs">
+      <publishTime>10/22/2024 18:53:46</publishTime>
+    </File>
+    <File Include="Model1.Designer.cs">
+      <publishTime>10/22/2024 18:53:46</publishTime>
+    </File>
+    <File Include="Model1.edmx">
+      <publishTime>10/22/2024 18:53:31</publishTime>
+    </File>
+    <File Include="Model1.edmx.diagram">
+      <publishTime>10/08/2024 17:32:26</publishTime>
+    </File>
+    <File Include="Model1.tt">
+      <publishTime>03/13/2023 19:10:12</publishTime>
+    </File>
+    <File Include="N1SP_UserArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="N2SP_UserArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="N3SP_UserArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="Operators.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Propritors.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Role.cs">
+      <publishTime>05/12/2023 12:41:12</publishTime>
+    </File>
+    <File Include="RoleManager.aspx">
+      <publishTime>10/05/2023 16:15:12</publishTime>
+    </File>
+    <File Include="RolesItem.cs">
+      <publishTime>05/12/2023 12:41:12</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-blink.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.13.2.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.13.2.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.sumoselect.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.sumoselect.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>07/04/2023 12:21:24</publishTime>
+    </File>
+    <File Include="SplitList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="SplitList__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetCDSNOperatorInfoN1_Result.cs">
+      <publishTime>06/16/2023 13:23:38</publishTime>
+    </File>
+    <File Include="sp_GetCDSNOperatorInfo_Result.cs">
+      <publishTime>06/16/2023 13:11:14</publishTime>
+    </File>
+    <File Include="sp_getchannelist_t_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminCDSN1N_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminCDSN1_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminCDSN_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminStringCDSN112_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminStringCDSN11_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminStringCDSN12_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminStringCDSN1N_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminStringCDSN1_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdminString_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsAdmin_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByID_Result.cs">
+      <publishTime>05/23/2023 15:52:38</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByOperatorIDCDSN1N1_Result.cs">
+      <publishTime>06/14/2023 15:43:57</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByOperatorIDCDSN1N2_Result.cs">
+      <publishTime>06/14/2023 17:06:36</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByOperatorIDCDSN1N_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByOperatorIDCDSN1_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByOperatorIDCDSN_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetailsByOperatorID_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetails_ByOperatorID_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_GetContactDetails_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="sp_Report_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="tbAreaType.cs">
+      <publishTime>05/17/2023 12:51:00</publishTime>
+    </File>
+    <File Include="tblArea.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblChannel.cs">
+      <publishTime>05/15/2023 16:51:03</publishTime>
+    </File>
+    <File Include="tblChannelPosition.cs">
+      <publishTime>05/12/2023 12:54:00</publishTime>
+    </File>
+    <File Include="tblChannelType.cs">
+      <publishTime>05/15/2023 16:51:03</publishTime>
+    </File>
+    <File Include="tblCity.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblContact.cs">
+      <publishTime>06/12/2023 14:45:36</publishTime>
+    </File>
+    <File Include="tblCountry.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="TblDivision.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblIdctr.cs">
+      <publishTime>05/12/2023 12:54:00</publishTime>
+    </File>
+    <File Include="tblIncentiveDetailType.cs">
+      <publishTime>06/15/2023 15:28:03</publishTime>
+    </File>
+    <File Include="tblIncentiveType.cs">
+      <publishTime>05/15/2023 11:57:36</publishTime>
+    </File>
+    <File Include="tblLog.cs">
+      <publishTime>05/12/2023 12:56:24</publishTime>
+    </File>
+    <File Include="tblOperator.cs">
+      <publishTime>06/15/2023 15:28:03</publishTime>
+    </File>
+    <File Include="tblOperatorInfo.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblOpIncentive.cs">
+      <publishTime>06/16/2023 11:27:55</publishTime>
+    </File>
+    <File Include="tblPropertier.cs">
+      <publishTime>05/16/2023 16:29:21</publishTime>
+    </File>
+    <File Include="tblRegion.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblSegment.cs">
+      <publishTime>05/29/2023 13:02:54</publishTime>
+    </File>
+    <File Include="tblSubArea.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblTerritory.cs">
+      <publishTime>06/16/2023 12:56:45</publishTime>
+    </File>
+    <File Include="tblusercountry.cs">
+      <publishTime>05/26/2023 12:31:57</publishTime>
+    </File>
+    <File Include="tblUserTerritory.cs">
+      <publishTime>05/12/2023 12:41:12</publishTime>
+    </File>
+    <File Include="TerritoryManager.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="UserInfo.cs">
+      <publishTime>06/12/2023 14:45:36</publishTime>
+    </File>
+    <File Include="UserTerritories.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="usp_AllOperatorsExceptAdmin_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_CDSNGetAllcityByCountryid_Result.cs">
+      <publishTime>05/25/2023 13:23:48</publishTime>
+    </File>
+    <File Include="usp_CDSNGetAllDistrictsByUserId_Result.cs">
+      <publishTime>05/16/2023 15:37:27</publishTime>
+    </File>
+    <File Include="usp_CDSNGetCityByUserId_Result.cs">
+      <publishTime>05/15/2023 12:32:15</publishTime>
+    </File>
+    <File Include="usp_CDSNMenus_Result.cs">
+      <publishTime>05/10/2023 17:19:03</publishTime>
+    </File>
+    <File Include="usp_ChannelPositionByTypeByOperatorChannelType_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_ChannelPositionByTypeByOperator_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_ChannelPositionByTypeByOperator__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_CheckValidPage_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllAreaByCityList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllCity_CDSApps_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllCity_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllCountry_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllDistrictsByUserIdTerritoryId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllDistrictsByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllDistricts_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllFilterControlDetail_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllMenuHeader_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllOperatorsInfo_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllOperatorsInfo__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllProperitorsByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllProperitorsByUserId__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllRegion_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllSubArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllTerritoryByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllTerritory_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllUserForms_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAllViewerHeadendByRegionList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAreaByCityId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAreaByUserIdCityId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAreaByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetAreaIdbySubAreaId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelByTypeId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelListByOperatorIdChannelTypeId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelListByOperatorId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelListByParameters__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelLogHistory_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelPositionByOperatorID2_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetChannelPositionByOperatorID_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCityByUserIdDivisionId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCityByUserIdTerritoryId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCityByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCityFilterListByDivisionId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCityListByDivisionId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCityWithLatLng_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetCountryByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetDDCP__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetDivisionByTerritoryId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetDivisionListByTerritoryList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetDivisionListFromOPInfo_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEmailByDistrict_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventById_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventDetailsByEventId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventDetailsByOPByDate_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventListByUserIdForUser_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventListByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetEventList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetGoogleTerritoryData_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadEndsAddress_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadEndsByUserIdCityId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadEndsByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByArea_Remaining_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByCity_Remaining_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByCity_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByCountry_Remaining_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByCountry_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByDistrict_Remaining_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByDistrict_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByTerritory_Remaining_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendviewershipByTerritory_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadEndViewerShip_Apps_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendViewership_AreaLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendViewership_CityLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendViewership_CountryLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendViewership_DistrictLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetHeadendViewership_TerritoryLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetIncentypeDetails_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetMenuCDSN_Result.cs">
+      <publishTime>05/10/2023 17:12:50</publishTime>
+    </File>
+    <File Include="usp_GetMenuItemByCriteria_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetMenus_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetMenu_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetMergedGoogleData_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorByUserIdViaOpCity_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorByUserIdViaOpCity__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorByUserIdViaOpCity___Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorfromOperatorInfo_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorIncentiveDetailsByDate_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorIncentiveDetails_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorListByCityOpInfo_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorListByRegionTerritory_Region_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorListByRegionTerritory_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorListByRegionTerritory__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorProperitorInfo_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorsbyUserbyCity_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatorsByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatoryByDivisionIdUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatoryByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOperatory_Admin_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetOpteratorTerritoryInfo__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetPositionByUserByuCity_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetProvinceByCoutryId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetRegionByCountryIdUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetRegionByCountryId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetRoleForms_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetRoleItems_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSlabByOperatorIDChannelID__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSlabByOperatorIDChannelID___Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSubAreaByAreaId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSubAreaListforupdate_ByAreaByOperatorId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSubAreaListforupdate_ByArea_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSubAreaListforupdate_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSubAreaListforupdate__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSummary_N_Region_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSummary_N_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSummary_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetSummary__Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetTerritoryByCountryId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetTerritoryByRegionIdByUser_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetTerritoryByRegionId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetTerritoryByUserId_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetTerritoryHeadends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetTerritoryList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserHeadendList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserMenuByHeaderID_New_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserMenuByHeaderID_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserMenu_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserTerritoryListByCountry_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserTerritoryListByRegion_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetUserTerritoryList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="Usp_GetViewedNewMessages_Result.cs">
+      <publishTime>06/14/2023 11:19:53</publishTime>
+    </File>
+    <File Include="usp_GetViewership_AreaLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetViewership_CityLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetViewership_DistrictLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GetViewership_TerritoryLegends_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_GVGetChannelPosition_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_MenusControl_Result.cs">
+      <publishTime>05/11/2023 15:28:56</publishTime>
+    </File>
+    <File Include="usp_RptGetChannelPosition_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_RptGetCheckpoint_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_RptGetOperator_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_RptGetSubscriberinfo_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_SubsribersByAreaList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_SubsribersByCityList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_SubsribersByDistrict_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_SubsribersByTerritoryList_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="usp_ValidateUser_Result.cs">
+      <publishTime>05/10/2023 17:04:59</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\CDS-Current_development\\CDSN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|c:\\cds-current_development\\cdsn\\cpr.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|solutionrelative:cpr.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|c:\\cds-current_development\\cdsn\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|c:\\cds-current_development\\cdsn\\cpr.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|solutionrelative:cpr.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|c:\\cds-current_development\\cdsn\\headendviewershipreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|solutionrelative:headendviewershipreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|C:\\CDS-Current_development\\CDSN\\viewershipreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|solutionrelative:viewershipreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|C:\\CDS-Current_development\\CDSN\\headendviewershipreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{54AF3389-C75D-414A-AED7-253A60BEF3BC}|CDSN.csproj|solutionrelative:headendviewershipreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\CDS-Current_development\\CDSN\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\CDS-Current_development\\CDSN\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-02T07:58:24.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CPR.aspx",
+              "DocumentMoniker": "C:\\CDS-Current_development\\CDSN\\CPR.aspx",
+              "RelativeDocumentMoniker": "CPR.aspx",
+              "ToolTip": "C:\\CDS-Current_development\\CDSN\\CPR.aspx",
+              "RelativeToolTip": "CPR.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-02T07:58:04.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CPR.aspx.cs",
+              "DocumentMoniker": "C:\\CDS-Current_development\\CDSN\\CPR.aspx.cs",
+              "RelativeDocumentMoniker": "CPR.aspx.cs",
+              "ToolTip": "C:\\CDS-Current_development\\CDSN\\CPR.aspx.cs",
+              "RelativeToolTip": "CPR.aspx.cs",
+              "ViewState": "AgIAALsBAAAAAAAAAAAkwMoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T07:58:00.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Viewershipreport.aspx.cs",
+              "DocumentMoniker": "C:\\CDS-Current_development\\CDSN\\Viewershipreport.aspx.cs",
+              "RelativeDocumentMoniker": "Viewershipreport.aspx.cs",
+              "ToolTip": "C:\\CDS-Current_development\\CDSN\\Viewershipreport.aspx.cs",
+              "RelativeToolTip": "Viewershipreport.aspx.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:51:09.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HeadendViewershipreport.aspx.cs",
+              "DocumentMoniker": "C:\\CDS-Current_development\\CDSN\\HeadendViewershipreport.aspx.cs",
+              "RelativeDocumentMoniker": "HeadendViewershipreport.aspx.cs",
+              "ToolTip": "C:\\CDS-Current_development\\CDSN\\HeadendViewershipreport.aspx.cs",
+              "RelativeToolTip": "HeadendViewershipreport.aspx.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:47:43.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HeadendViewershipreport.aspx",
+              "DocumentMoniker": "C:\\CDS-Current_development\\CDSN\\HeadendViewershipreport.aspx",
+              "RelativeDocumentMoniker": "HeadendViewershipreport.aspx",
+              "ToolTip": "C:\\CDS-Current_development\\CDSN\\HeadendViewershipreport.aspx",
+              "RelativeToolTip": "HeadendViewershipreport.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-27T08:47:36.729Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

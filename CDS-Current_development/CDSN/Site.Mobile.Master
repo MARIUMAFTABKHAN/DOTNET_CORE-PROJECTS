@@ -1,0 +1,241 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="CDSN.Site_Mobile" %>
+<%@ Register Src="~/Control/menuCtrl.ascx" TagPrefix="MenuControl" TagName="menuCtrl" %>
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />    
+    <title>Express News Channel</title>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-ui-1.13.2.js"></script>
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="Scripts/jquery.sumoselect.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/master.css" rel="stylesheet" />
+    <link href="Content/sumoselect.css" rel="stylesheet" />
+    <link href="Content/MasterStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #img2 {
+            width: 811px;
+            height: 140px;
+        }
+
+        .style1 {
+            width: 824px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('.blink').blink();
+        });
+
+    </script>
+
+    <style type="text/css">
+        h4 {
+            color: #1a344d !important;
+        }
+
+
+
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+
+        .main_menu {
+            width: 100px;
+            background-color: #8db4f9;
+            color: #000;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+
+        .level_menu {
+            width: 110px;
+            background-color: #f8e0be;
+            color: #FFF;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 5px;
+        }
+
+        .selected {
+            background-color: #eae2c1;
+            color: #020202;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+            color: #FFF; /*Sets the text hover color on navbar*/
+        }
+
+        .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+            background-color: #000;
+            color: #FFF !important;
+            border-left: solid 1px #FFF;
+            border-right: solid 1px #FFF;
+        }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            color: #FFF; /*BACKGROUND color for active*/
+            background-color: #000;
+        }
+
+
+        .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            color: #FFF;
+            text-decoration: none;
+            background-color: #000; /*change color of links in drop down here*/
+            border-left: solid 10px red;
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus {
+            text-decoration: none;
+            background-color: #000; /*Change rollover cell color here*/
+        }
+
+
+        .navbar-default .navbar-nav > li > a {
+            color: #000; /*Change active text color here*/
+        }
+
+        .navbar-default {
+            width: 100% !important;
+            background-color: #000;
+        }
+
+        .container-fluid {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .navbar-default {
+            border: 0px;
+        }
+
+        .dropdown-menu {
+            background-color: #fff;
+        }
+
+        .active {
+            background-color: #020202;
+        }
+
+        .dropdown {
+            color: #FFF;
+        }
+
+        .dropdown-toggle {
+            color: #FFF !important;
+        }
+
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .container {
+            width: 100% !important;
+        }
+
+        .navbar-nav > li > .dropdown-menu {
+            border-left: solid 10px black;
+        }
+    </style>
+    <script type="text/javascript" language="javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+        function EndRequestHandler(sender, args) {
+            if (args.get_error() != undefined) {
+
+                args.set_errorHandled(true);
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+
+
+</head>
+<body style="background-color: #fef8e9; margin-top: 0px !important">
+    <form id="form2" runat="server">
+
+        <asp:ScriptManager runat="server">
+        </asp:ScriptManager>
+        <div class="container body-content" style="margin: 0; padding: 0">
+
+
+            <div class="row" style="margin-bottom: 0px">
+                <div class="col-md-12 header">
+
+                    <div runat="server" class="img col-md-4 img-responsive">
+                    </div>
+
+                    <div class=" col-md-7" style="float: right">
+                        <div class="col-md-12">
+                            <div class="col-md-3 col-md-offset-9">
+                                <div style="float: right; text-align: right">
+                                    &nbsp;&nbsp;   |&nbsp;&nbsp; <a href="Login.aspx" style="margin-right: 15px !important; float: right">Logout</a>
+                                </div>
+                                <div style="float: right; text-align: left">
+                                    <asp:Label ID="lblloginuser" runat="server" Text=""></asp:Label>
+                                </div>
+                            </div>
+
+                            <div class="blink col-md-3 col-md-offset-9 text-right" id="blink" runat="server" style="margin-top: 35px !important">
+                                <asp:Label ID="lblalert" CssClass="blink" runat="server" Text="" Style="margin-right: 15px !important; color: white; background-color: #3f372a; float: right"></asp:Label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12" style="padding-left: 5px; padding-right: 5px">
+                    <menucontrol:menuctrl runat="server" id="menuCtrl" />
+                </div>
+
+            </div>
+           
+            <section class="content-wrapper main-content clear-fix">
+                <div class="row" style="z-index: -999999; padding-left: 10px; padding-right: 10px; background-color: #fef8e9">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </section>
+            <friendlyUrls:ViewSwitcher runat="server" />
+            <div class="row">
+                <div class="col-md-12">
+                    <span style="color: white">&copy; 2013-2023 Express News Channel &nbsp;&nbsp;&nbsp; </span>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+<%--<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>Mobile Master Page</h1>
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent">
+
+            </asp:ContentPlaceHolder> 
+        </section>
+        <friendlyUrls:ViewSwitcher runat="server" />
+    </div>
+    </form>
+</body>--%>
+</html>
