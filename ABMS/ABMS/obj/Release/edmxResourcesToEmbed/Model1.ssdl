@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbJobPortalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AcademicQualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="AcademicInstitute" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DegreeID" Type="int" Nullable="false" />
+    <Property Name="PassingYear" Type="varchar" MaxLength="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BreiefNote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="BriefNote" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="CandidateLanguages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="Language" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LanRead" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LanWrite" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LanSpeak" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'dbJobPortal.dbo.Captcha' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Captcha">
+    <Key>
+      <PropertyRef Name="CpName" />
+    </Key>
+    <Property Name="CpName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="SortPosition" Type="int" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="LanguageStatus" Type="bit" />
+    <Property Name="TechnicalEducation" Type="bit" />
+    <Property Name="ParticipatingTraining" Type="bit" />
+  </EntityType>
+  <EntityType Name="CategoryLanguage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="LanguageName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Isactive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoryWorkingExperiences">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WorkingExperienceID" Type="int" Nullable="false" />
+    <Property Name="MasterID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="Comments" Type="varchar" MaxLength="500" />
+    <Property Name="RatingID" Type="int" />
+  </EntityType>
+  <EntityType Name="DegreeInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DegreeName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EdLevel" Type="varchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="JobsName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Category_ID" Type="int" Nullable="false" />
+    <Property Name="PositionName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="ntext" Nullable="false" />
+    <Property Name="Stations" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="Experience" Type="bit" Nullable="false" />
+    <Property Name="Fresh" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LocationInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LocationName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LogRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="ActionOnForm" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ActionTaken" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ActionBy" Type="int" Nullable="false" />
+    <Property Name="ActionOn" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MasterTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClaimedID" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="Experienced" Type="bit" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PositionID" Type="int" Nullable="false" />
+    <Property Name="ReadytoJoinID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApplicantName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Married" Type="bit" Nullable="false" />
+    <Property Name="ApplicantAddress" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="bit" Nullable="false" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LandLine" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" Nullable="false" />
+    <Property Name="PlaceofBirth" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Hobbies" Type="varchar" MaxLength="250" />
+    <Property Name="ApplicantImage" Type="varbinary(max)" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="IsSelected" Type="bit" />
+    <Property Name="ApplicationDate" Type="datetime" />
+    <Property Name="CategoryLanguageID" Type="int" />
+  </EntityType>
+  <EntityType Name="MenuItems">
+    <Key>
+      <PropertyRef Name="MenuItemId" />
+    </Key>
+    <Property Name="MenuItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ParentMenu_Id" Type="int" Nullable="false" />
+    <Property Name="ItemName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FormName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="OrderBy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Menus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="OrderBy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ratinginfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rating" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserRole" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RolesItems">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="ItemID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TechnicalQualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="InstituteName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DegreeName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Passingyear" Type="varchar" MaxLength="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrainingProgramme">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="InstituteName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TrainingName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="TrgYear" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="TrgDuration" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Userdb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserPWD" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RatingAllowed" Type="bit" Nullable="false" />
+    <Property Name="RemarksAllowed" Type="bit" Nullable="false" />
+    <Property Name="DeleteAllowed" Type="bit" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="RoleID" Type="int" Nullable="false" />
+    <Property Name="SelectedAllowed" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserDepartments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserPositions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="PositionID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="WorkExperience">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RecordID" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PositioninCompany" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FromDate" Type="datetime" Nullable="false" />
+    <Property Name="ToDate" Type="datetime" Nullable="false" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="BriefDescription" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="WorkingExperiences">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="ExpDescritpion" Type="varchar" MaxLength="50" />
+    <Property Name="Isactive" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'dbJobPortal.dbo.vGNBData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vGNBData">
+    <Key>
+      <PropertyRef Name="PositionName" />
+      <PropertyRef Name="Experience" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="ReadytoJoinID" />
+      <PropertyRef Name="ApplicantName" />
+      <PropertyRef Name="Married" />
+      <PropertyRef Name="ApplicantAddress" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="EmailID" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="Mobile" />
+      <PropertyRef Name="DOB" />
+      <PropertyRef Name="PlaceofBirth" />
+    </Key>
+    <Property Name="Category" Type="varchar" MaxLength="255" />
+    <Property Name="PositionName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Experience" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReadytoJoinID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApplicantName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Married" Type="bit" Nullable="false" />
+    <Property Name="ApplicantAddress" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="bit" Nullable="false" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LandLine" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" Nullable="false" />
+    <Property Name="PlaceofBirth" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApplicationDate" Type="datetime" />
+    <Property Name="AcademicInstitute" Type="varchar" MaxLength="100" />
+    <Property Name="PassingYear" Type="varchar" MaxLength="4" />
+    <Property Name="DegreeName" Type="varchar" MaxLength="100" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="100" />
+    <Property Name="PositioninCompany" Type="varchar" MaxLength="100" />
+    <Property Name="Duration in days" Type="int" />
+    <Property Name="FromDate" Type="datetime" />
+    <Property Name="ToDate" Type="datetime" />
+    <Property Name="Duration" Type="int" />
+    <Property Name="TrainingName" Type="varchar" MaxLength="100" />
+    <Property Name="InstituteName" Type="varchar" MaxLength="100" />
+    <Property Name="TrgDuration" Type="varchar" MaxLength="50" />
+    <Property Name="TrgYear" Type="varchar" MaxLength="4" />
+    <Property Name="Technical Inistitute" Type="varchar" MaxLength="100" />
+    <Property Name="Technical Degree" Type="varchar" MaxLength="50" />
+    <Property Name="Technical Qualification Passing Year" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'dbJobPortal.dbo.vUserDepartmentPosition' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vUserDepartmentPosition">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="PositionID" />
+      <PropertyRef Name="PositionName" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="PositionID" Type="int" Nullable="false" />
+    <Property Name="PositionName" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'dbJobPortal.dbo.vUserMasterData' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vUserMasterData">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="PositionID" />
+      <PropertyRef Name="PositionName" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="DepartmentName" />
+      <PropertyRef Name="MasterID" />
+      <PropertyRef Name="Experienced" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="ReadytoJoinID" />
+      <PropertyRef Name="ApplicantName" />
+      <PropertyRef Name="Married" />
+      <PropertyRef Name="ApplicantAddress" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="EmailID" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="Mobile" />
+      <PropertyRef Name="DOB" />
+      <PropertyRef Name="PlaceofBirth" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="PositionID" Type="int" Nullable="false" />
+    <Property Name="PositionName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="MasterID" Type="int" Nullable="false" />
+    <Property Name="Experienced" Type="bit" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReadytoJoinID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ApplicantName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Married" Type="bit" Nullable="false" />
+    <Property Name="ApplicantAddress" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EmailID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LandLine" Type="varchar" MaxLength="50" />
+    <Property Name="DOB" Type="datetime" Nullable="false" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Experience" Type="int" />
+    <Property Name="PlaceofBirth" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Hobbies" Type="varchar" MaxLength="250" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="IsSelected" Type="bit" />
+    <Property Name="ApplicationDate" Type="varchar" MaxLength="21" />
+    <Property Name="Allcompanies" Type="nvarchar(max)" />
+    <Property Name="LastCompany" Type="varchar(max)" />
+  </EntityType>
+  <Association Name="FK_AcademicQualification_DegreeInfo1">
+    <End Role="DegreeInfo" Type="Self.DegreeInfo" Multiplicity="1" />
+    <End Role="AcademicQualification" Type="Self.AcademicQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DegreeInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AcademicQualification">
+        <PropertyRef Name="DegreeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BreiefNote_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="BreiefNote" Type="Self.BreiefNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BreiefNote">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLanguages_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="CandidateLanguages" Type="Self.CandidateLanguages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CandidateLanguages">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryWorkingExperiences_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="CategoryWorkingExperiences" Type="Self.CategoryWorkingExperiences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CategoryWorkingExperiences">
+        <PropertyRef Name="MasterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryWorkingExperiences_WorkingExperiences">
+    <End Role="WorkingExperiences" Type="Self.WorkingExperiences" Multiplicity="1" />
+    <End Role="CategoryWorkingExperiences" Type="Self.CategoryWorkingExperiences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkingExperiences">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CategoryWorkingExperiences">
+        <PropertyRef Name="WorkingExperienceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Ratinginfo">
+    <End Role="Ratinginfo" Type="Self.Ratinginfo" Multiplicity="0..1" />
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ratinginfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="RatingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterTable_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MasterTable">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterTable_JobsName">
+    <End Role="JobsName" Type="Self.JobsName" Multiplicity="1" />
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobsName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MasterTable">
+        <PropertyRef Name="PositionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Menus_ParentMenu_Id">
+    <End Role="Menus" Type="Self.Menus" Multiplicity="1" />
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuItems">
+        <PropertyRef Name="ParentMenu_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesItems_MenuItems">
+    <End Role="MenuItems" Type="Self.MenuItems" Multiplicity="1" />
+    <End Role="RolesItems" Type="Self.RolesItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="MenuItemId" />
+      </Principal>
+      <Dependent Role="RolesItems">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesItems_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="RolesItems" Type="Self.RolesItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RolesItems">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TechnicalQualification_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="TechnicalQualification" Type="Self.TechnicalQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TechnicalQualification">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrainingProgramme_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="TrainingProgramme" Type="Self.TrainingProgramme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TrainingProgramme">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Userdb_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Userdb" Type="Self.Userdb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Userdb">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDepartments_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="UserDepartments" Type="Self.UserDepartments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserDepartments">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDepartments_Userdb">
+    <End Role="Userdb" Type="Self.Userdb" Multiplicity="1" />
+    <End Role="UserDepartments" Type="Self.UserDepartments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userdb">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserDepartments">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPositions_JobsName">
+    <End Role="JobsName" Type="Self.JobsName" Multiplicity="1" />
+    <End Role="UserPositions" Type="Self.UserPositions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobsName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserPositions">
+        <PropertyRef Name="PositionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkExperience_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="WorkExperience" Type="Self.WorkExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WorkExperience">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkingExperiences_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="WorkingExperiences" Type="Self.WorkingExperiences" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WorkingExperiences">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="fnCalAge" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="DiffFrom" Type="datetime" Mode="In" />
+    <Parameter Name="DiffTo" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="fnGetAllCompanies" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fnGetCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fnGetExperience" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fnGetLastcompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar(max)">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetUserDepartment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="bit">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ItemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetUserPosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="bit">
+    <Parameter Name="UID" Type="int" Mode="In" />
+    <Parameter Name="ItemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="RoleItem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="bit">
+    <Parameter Name="RoldID" Type="int" Mode="In" />
+    <Parameter Name="ItemID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_GetCaptcha" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_GetTotalRecord" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="spGetCompanyNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_CheckValidPage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Page" Type="varchar" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetCompanyNames" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetExperience" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="MasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetLastCompany" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RecordID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetRoleItems" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="RoleID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetRoleList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetSearchDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dpid" Type="int" Mode="In" />
+    <Parameter Name="Poid" Type="int" Mode="In" />
+    <Parameter Name="City" Type="varchar" Mode="In" />
+    <Parameter Name="gender" Type="varchar" Mode="In" />
+    <Parameter Name="agefrom" Type="int" Mode="In" />
+    <Parameter Name="ageto" Type="int" Mode="In" />
+    <Parameter Name="ApplicantName" Type="varchar" Mode="In" />
+    <Parameter Name="exp" Type="int" Mode="In" />
+    <Parameter Name="puserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserDepartment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserDepartmentDDL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserPosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="DepartmentID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="dbJobPortalModelStoreContainer">
+    <EntitySet Name="AcademicQualification" EntityType="Self.AcademicQualification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BreiefNote" EntityType="Self.BreiefNote" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CandidateLanguages" EntityType="Self.CandidateLanguages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryLanguage" EntityType="Self.CategoryLanguage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CategoryWorkingExperiences" EntityType="Self.CategoryWorkingExperiences" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DegreeInfo" EntityType="Self.DegreeInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JobsName" EntityType="Self.JobsName" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LocationInfo" EntityType="Self.LocationInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LogRecord" EntityType="Self.LogRecord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MasterTable" EntityType="Self.MasterTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MenuItems" EntityType="Self.MenuItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menus" EntityType="Self.Menus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ratinginfo" EntityType="Self.Ratinginfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RolesItems" EntityType="Self.RolesItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TechnicalQualification" EntityType="Self.TechnicalQualification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrainingProgramme" EntityType="Self.TrainingProgramme" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Userdb" EntityType="Self.Userdb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserDepartments" EntityType="Self.UserDepartments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserPositions" EntityType="Self.UserPositions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WorkExperience" EntityType="Self.WorkExperience" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WorkingExperiences" EntityType="Self.WorkingExperiences" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Captcha" EntityType="Self.Captcha" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Captcha].[CpName] AS [CpName]
+    FROM [dbo].[Captcha] AS [Captcha]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vGNBData" EntityType="Self.vGNBData" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vGNBData].[Category] AS [Category], 
+    [vGNBData].[PositionName] AS [PositionName], 
+    [vGNBData].[Experience] AS [Experience], 
+    [vGNBData].[Location] AS [Location], 
+    [vGNBData].[ReadytoJoinID] AS [ReadytoJoinID], 
+    [vGNBData].[ApplicantName] AS [ApplicantName], 
+    [vGNBData].[Married] AS [Married], 
+    [vGNBData].[ApplicantAddress] AS [ApplicantAddress], 
+    [vGNBData].[City] AS [City], 
+    [vGNBData].[EmailID] AS [EmailID], 
+    [vGNBData].[Gender] AS [Gender], 
+    [vGNBData].[Mobile] AS [Mobile], 
+    [vGNBData].[LandLine] AS [LandLine], 
+    [vGNBData].[DOB] AS [DOB], 
+    [vGNBData].[PlaceofBirth] AS [PlaceofBirth], 
+    [vGNBData].[ApplicationDate] AS [ApplicationDate], 
+    [vGNBData].[AcademicInstitute] AS [AcademicInstitute], 
+    [vGNBData].[PassingYear] AS [PassingYear], 
+    [vGNBData].[DegreeName] AS [DegreeName], 
+    [vGNBData].[CompanyName] AS [CompanyName], 
+    [vGNBData].[PositioninCompany] AS [PositioninCompany], 
+    [vGNBData].[Duration in days] AS [Duration in days], 
+    [vGNBData].[FromDate] AS [FromDate], 
+    [vGNBData].[ToDate] AS [ToDate], 
+    [vGNBData].[Duration] AS [Duration], 
+    [vGNBData].[TrainingName] AS [TrainingName], 
+    [vGNBData].[InstituteName] AS [InstituteName], 
+    [vGNBData].[TrgDuration] AS [TrgDuration], 
+    [vGNBData].[TrgYear] AS [TrgYear], 
+    [vGNBData].[Technical Inistitute] AS [Technical Inistitute], 
+    [vGNBData].[Technical Degree] AS [Technical Degree], 
+    [vGNBData].[Technical Qualification Passing Year] AS [Technical Qualification Passing Year]
+    FROM [dbo].[vGNBData] AS [vGNBData]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vUserDepartmentPosition" EntityType="Self.vUserDepartmentPosition" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vUserDepartmentPosition].[UserID] AS [UserID], 
+    [vUserDepartmentPosition].[DepartmentID] AS [DepartmentID], 
+    [vUserDepartmentPosition].[PositionID] AS [PositionID], 
+    [vUserDepartmentPosition].[PositionName] AS [PositionName]
+    FROM [dbo].[vUserDepartmentPosition] AS [vUserDepartmentPosition]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vUserMasterData" EntityType="Self.vUserMasterData" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vUserMasterData].[UserID] AS [UserID], 
+    [vUserMasterData].[PositionID] AS [PositionID], 
+    [vUserMasterData].[PositionName] AS [PositionName], 
+    [vUserMasterData].[DepartmentID] AS [DepartmentID], 
+    [vUserMasterData].[DepartmentName] AS [DepartmentName], 
+    [vUserMasterData].[MasterID] AS [MasterID], 
+    [vUserMasterData].[Experienced] AS [Experienced], 
+    [vUserMasterData].[Location] AS [Location], 
+    [vUserMasterData].[ReadytoJoinID] AS [ReadytoJoinID], 
+    [vUserMasterData].[ApplicantName] AS [ApplicantName], 
+    [vUserMasterData].[Married] AS [Married], 
+    [vUserMasterData].[ApplicantAddress] AS [ApplicantAddress], 
+    [vUserMasterData].[City] AS [City], 
+    [vUserMasterData].[EmailID] AS [EmailID], 
+    [vUserMasterData].[Gender] AS [Gender], 
+    [vUserMasterData].[Mobile] AS [Mobile], 
+    [vUserMasterData].[LandLine] AS [LandLine], 
+    [vUserMasterData].[DOB] AS [DOB], 
+    [vUserMasterData].[Age] AS [Age], 
+    [vUserMasterData].[Experience] AS [Experience], 
+    [vUserMasterData].[PlaceofBirth] AS [PlaceofBirth], 
+    [vUserMasterData].[Hobbies] AS [Hobbies], 
+    [vUserMasterData].[IsDeleted] AS [IsDeleted], 
+    [vUserMasterData].[IsSelected] AS [IsSelected], 
+    [vUserMasterData].[ApplicationDate] AS [ApplicationDate], 
+    [vUserMasterData].[Allcompanies] AS [Allcompanies], 
+    [vUserMasterData].[LastCompany] AS [LastCompany]
+    FROM [dbo].[vUserMasterData] AS [vUserMasterData]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_AcademicQualification_DegreeInfo1" Association="Self.FK_AcademicQualification_DegreeInfo1">
+      <End Role="DegreeInfo" EntitySet="DegreeInfo" />
+      <End Role="AcademicQualification" EntitySet="AcademicQualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BreiefNote_MasterTable" Association="Self.FK_BreiefNote_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="BreiefNote" EntitySet="BreiefNote" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLanguages_MasterTable" Association="Self.FK_CandidateLanguages_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="CandidateLanguages" EntitySet="CandidateLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryWorkingExperiences_MasterTable" Association="Self.FK_CategoryWorkingExperiences_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="CategoryWorkingExperiences" EntitySet="CategoryWorkingExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryWorkingExperiences_WorkingExperiences" Association="Self.FK_CategoryWorkingExperiences_WorkingExperiences">
+      <End Role="WorkingExperiences" EntitySet="WorkingExperiences" />
+      <End Role="CategoryWorkingExperiences" EntitySet="CategoryWorkingExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_MasterTable" Association="Self.FK_Comments_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Ratinginfo" Association="Self.FK_Comments_Ratinginfo">
+      <End Role="Ratinginfo" EntitySet="Ratinginfo" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterTable_Category" Association="Self.FK_MasterTable_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="MasterTable" EntitySet="MasterTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterTable_JobsName" Association="Self.FK_MasterTable_JobsName">
+      <End Role="JobsName" EntitySet="JobsName" />
+      <End Role="MasterTable" EntitySet="MasterTable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Menus_ParentMenu_Id" Association="Self.FK_MenuItems_Menus_ParentMenu_Id">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="MenuItems" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesItems_MenuItems" Association="Self.FK_RolesItems_MenuItems">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="RolesItems" EntitySet="RolesItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesItems_Role" Association="Self.FK_RolesItems_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="RolesItems" EntitySet="RolesItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TechnicalQualification_MasterTable" Association="Self.FK_TechnicalQualification_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="TechnicalQualification" EntitySet="TechnicalQualification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrainingProgramme_MasterTable" Association="Self.FK_TrainingProgramme_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="TrainingProgramme" EntitySet="TrainingProgramme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Userdb_Role" Association="Self.FK_Userdb_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Userdb" EntitySet="Userdb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDepartments_Category" Association="Self.FK_UserDepartments_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="UserDepartments" EntitySet="UserDepartments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDepartments_Userdb" Association="Self.FK_UserDepartments_Userdb">
+      <End Role="Userdb" EntitySet="Userdb" />
+      <End Role="UserDepartments" EntitySet="UserDepartments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPositions_JobsName" Association="Self.FK_UserPositions_JobsName">
+      <End Role="JobsName" EntitySet="JobsName" />
+      <End Role="UserPositions" EntitySet="UserPositions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkExperience_MasterTable" Association="Self.FK_WorkExperience_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTable" />
+      <End Role="WorkExperience" EntitySet="WorkExperience" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkingExperiences_Category" Association="Self.FK_WorkingExperiences_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="WorkingExperiences" EntitySet="WorkingExperiences" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

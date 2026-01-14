@@ -1,0 +1,45 @@
+﻿body {
+}
+ 
+        .menucssred {
+            display: inline-block;
+            min-width: 140px;
+            list-style: none;
+            width: 100px;
+            padding-left: 0px;
+            color: #fff;
+            /* background-color:#4d758b;*/
+            margin: 0px;
+            margin-top: 2px;
+            font-size: small;
+            font-weight: bold;
+            cursor: default;
+            background-color:#941421;
+            height:30px;
+            border-left:10px;
+            border-left-color :green;
+            border-left-style :solid;
+            text-align:center;
+            padding-top:6px;
+        }
+        .menucss {
+            display: inline-block;
+            min-width: 140px;
+            list-style: none;
+            width: 100px;
+            padding-left: 0px;
+            color: #fff;
+            /* background-color:#4d758b;*/
+            margin: 0px;
+            margin-top: 2px;
+            font-size: small;
+            font-weight: bold;
+            cursor: default;
+            background-color:#808080;
+            height:30px;
+            border-left:10px;
+            border-left-color :green;
+            border-left-style :solid;
+            text-align:center;
+            padding-top:6px;
+        }

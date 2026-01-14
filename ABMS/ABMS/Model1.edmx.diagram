@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41c8155b345e41759e94654b90205275" Name="Diagram1">
+        <EntityTypeShape EntityType="dbJobPortalModel.AcademicQualification" Width="1.5" PointX="10" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.BreiefNote" Width="1.5" PointX="5.25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.CandidateLanguage" Width="1.5" PointX="5.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Category" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.CategoryLanguage" Width="1.5" PointX="8.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.CategoryWorkingExperience" Width="1.5" PointX="8.25" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Comment" Width="1.5" PointX="8.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.DegreeInfo" Width="1.5" PointX="7.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.JobsName" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.LocationInfo" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.LogRecord" Width="1.5" PointX="10.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.MasterTable" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.MenuItem" Width="1.5" PointX="4.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Menu" Width="1.5" PointX="2.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Ratinginfo" Width="1.5" PointX="6" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Role" Width="1.5" PointX="1.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.RolesItem" Width="1.5" PointX="6.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.sysdiagram" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.TechnicalQualification" Width="1.5" PointX="5.25" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.TrainingProgramme" Width="1.5" PointX="5.25" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Userdb" Width="1.5" PointX="3.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.UserDepartment" Width="1.5" PointX="6" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.UserPosition" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.WorkExperience" Width="1.5" PointX="5.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.WorkingExperience" Width="1.5" PointX="3" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.Captcha" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.vGNBData" Width="1.5" PointX="10.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.vUserDepartmentPosition" Width="1.5" PointX="12.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbJobPortalModel.vUserMasterData" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="dbJobPortalModel.FK_AcademicQualification_DegreeInfo1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_BreiefNote_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_CandidateLanguages_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_MasterTable_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_UserDepartments_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_WorkingExperiences_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_CategoryWorkingExperiences_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_CategoryWorkingExperiences_WorkingExperiences" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_Comments_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_Comments_Ratinginfo" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_MasterTable_JobsName" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_UserPositions_JobsName" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_TechnicalQualification_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_TrainingProgramme_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_WorkExperience_MasterTable" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_MenuItems_Menus_ParentMenu_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_RolesItems_MenuItems" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_RolesItems_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_Userdb_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="dbJobPortalModel.FK_UserDepartments_Userdb" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

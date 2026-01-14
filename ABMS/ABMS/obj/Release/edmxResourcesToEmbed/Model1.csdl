@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbJobPortalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AcademicQualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="AcademicInstitute" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DegreeID" Type="Int32" Nullable="false" />
+    <Property Name="PassingYear" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DegreeInfo" Relationship="Self.FK_AcademicQualification_DegreeInfo1" FromRole="AcademicQualification" ToRole="DegreeInfo" />
+  </EntityType>
+  <EntityType Name="BreiefNote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="BriefNote" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_BreiefNote_MasterTable" FromRole="BreiefNote" ToRole="MasterTable" />
+  </EntityType>
+  <EntityType Name="CandidateLanguage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="Language" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LanRead" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LanWrite" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LanSpeak" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_CandidateLanguages_MasterTable" FromRole="CandidateLanguages" ToRole="MasterTable" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SortPosition" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <Property Name="LanguageStatus" Type="Boolean" />
+    <Property Name="TechnicalEducation" Type="Boolean" />
+    <Property Name="ParticipatingTraining" Type="Boolean" />
+    <NavigationProperty Name="MasterTables" Relationship="Self.FK_MasterTable_Category" FromRole="Category" ToRole="MasterTable" />
+    <NavigationProperty Name="UserDepartments" Relationship="Self.FK_UserDepartments_Category" FromRole="Category" ToRole="UserDepartments" />
+    <NavigationProperty Name="WorkingExperiences" Relationship="Self.FK_WorkingExperiences_Category" FromRole="Category" ToRole="WorkingExperiences" />
+  </EntityType>
+  <EntityType Name="CategoryLanguage">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="LanguageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Isactive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoryWorkingExperience">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WorkingExperienceID" Type="Int32" Nullable="false" />
+    <Property Name="MasterID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_CategoryWorkingExperiences_MasterTable" FromRole="CategoryWorkingExperiences" ToRole="MasterTable" />
+    <NavigationProperty Name="WorkingExperience" Relationship="Self.FK_CategoryWorkingExperiences_WorkingExperiences" FromRole="CategoryWorkingExperiences" ToRole="WorkingExperiences" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="RatingID" Type="Int32" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_Comments_MasterTable" FromRole="Comments" ToRole="MasterTable" />
+    <NavigationProperty Name="Ratinginfo" Relationship="Self.FK_Comments_Ratinginfo" FromRole="Comments" ToRole="Ratinginfo" />
+  </EntityType>
+  <EntityType Name="DegreeInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DegreeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AcademicQualifications" Relationship="Self.FK_AcademicQualification_DegreeInfo1" FromRole="DegreeInfo" ToRole="AcademicQualification" />
+    <Property Name="EdLevel" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="JobsName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Category_ID" Type="Int32" Nullable="false" />
+    <Property Name="PositionName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Stations" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <Property Name="Experience" Type="Boolean" Nullable="false" />
+    <Property Name="Fresh" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="MasterTables" Relationship="Self.FK_MasterTable_JobsName" FromRole="JobsName" ToRole="MasterTable" />
+    <NavigationProperty Name="UserPositions" Relationship="Self.FK_UserPositions_JobsName" FromRole="JobsName" ToRole="UserPositions" />
+  </EntityType>
+  <EntityType Name="LocationInfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LogRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="ActionOnForm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ActionTaken" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="ActionOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="MasterTable">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClaimedID" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="Experienced" Type="Boolean" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PositionID" Type="Int32" Nullable="false" />
+    <Property Name="ReadytoJoinID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApplicantName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Married" Type="Boolean" Nullable="false" />
+    <Property Name="ApplicantAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="Boolean" Nullable="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LandLine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PlaceofBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Hobbies" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ApplicantImage" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="IsSelected" Type="Boolean" />
+    <Property Name="ApplicationDate" Type="DateTime" Precision="3" />
+    <Property Name="CategoryLanguageID" Type="Int32" />
+    <NavigationProperty Name="BreiefNotes" Relationship="Self.FK_BreiefNote_MasterTable" FromRole="MasterTable" ToRole="BreiefNote" />
+    <NavigationProperty Name="CandidateLanguages" Relationship="Self.FK_CandidateLanguages_MasterTable" FromRole="MasterTable" ToRole="CandidateLanguages" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_MasterTable_Category" FromRole="MasterTable" ToRole="Category" />
+    <NavigationProperty Name="CategoryWorkingExperiences" Relationship="Self.FK_CategoryWorkingExperiences_MasterTable" FromRole="MasterTable" ToRole="CategoryWorkingExperiences" />
+    <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_MasterTable" FromRole="MasterTable" ToRole="Comments" />
+    <NavigationProperty Name="JobsName" Relationship="Self.FK_MasterTable_JobsName" FromRole="MasterTable" ToRole="JobsName" />
+    <NavigationProperty Name="TechnicalQualifications" Relationship="Self.FK_TechnicalQualification_MasterTable" FromRole="MasterTable" ToRole="TechnicalQualification" />
+    <NavigationProperty Name="TrainingProgrammes" Relationship="Self.FK_TrainingProgramme_MasterTable" FromRole="MasterTable" ToRole="TrainingProgramme" />
+    <NavigationProperty Name="WorkExperiences" Relationship="Self.FK_WorkExperience_MasterTable" FromRole="MasterTable" ToRole="WorkExperience" />
+  </EntityType>
+  <EntityType Name="MenuItem">
+    <Key>
+      <PropertyRef Name="MenuItemId" />
+    </Key>
+    <Property Name="MenuItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ParentMenu_Id" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FormName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="OrderBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_MenuItems_Menus_ParentMenu_Id" FromRole="MenuItems" ToRole="Menus" />
+    <NavigationProperty Name="RolesItems" Relationship="Self.FK_RolesItems_MenuItems" FromRole="MenuItems" ToRole="RolesItems" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="OrderBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MenuItems" Relationship="Self.FK_MenuItems_Menus_ParentMenu_Id" FromRole="Menus" ToRole="MenuItems" />
+  </EntityType>
+  <EntityType Name="Ratinginfo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Rating" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Comments" Relationship="Self.FK_Comments_Ratinginfo" FromRole="Ratinginfo" ToRole="Comments" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserRole" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="RolesItems" Relationship="Self.FK_RolesItems_Role" FromRole="Role" ToRole="RolesItems" />
+    <NavigationProperty Name="Userdbs" Relationship="Self.FK_Userdb_Role" FromRole="Role" ToRole="Userdb" />
+  </EntityType>
+  <EntityType Name="RolesItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MenuItem" Relationship="Self.FK_RolesItems_MenuItems" FromRole="RolesItems" ToRole="MenuItems" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_RolesItems_Role" FromRole="RolesItems" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TechnicalQualification">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="InstituteName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DegreeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Passingyear" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_TechnicalQualification_MasterTable" FromRole="TechnicalQualification" ToRole="MasterTable" />
+  </EntityType>
+  <EntityType Name="TrainingProgramme">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="InstituteName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TrainingName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TrgYear" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TrgDuration" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_TrainingProgramme_MasterTable" FromRole="TrainingProgramme" ToRole="MasterTable" />
+  </EntityType>
+  <EntityType Name="Userdb">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserPWD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RatingAllowed" Type="Boolean" Nullable="false" />
+    <Property Name="RemarksAllowed" Type="Boolean" Nullable="false" />
+    <Property Name="DeleteAllowed" Type="Boolean" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="SelectedAllowed" Type="Boolean" />
+    <NavigationProperty Name="Role" Relationship="Self.FK_Userdb_Role" FromRole="Userdb" ToRole="Role" />
+    <NavigationProperty Name="UserDepartments" Relationship="Self.FK_UserDepartments_Userdb" FromRole="Userdb" ToRole="UserDepartments" />
+  </EntityType>
+  <EntityType Name="UserDepartment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_UserDepartments_Category" FromRole="UserDepartments" ToRole="Category" />
+    <NavigationProperty Name="Userdb" Relationship="Self.FK_UserDepartments_Userdb" FromRole="UserDepartments" ToRole="Userdb" />
+  </EntityType>
+  <EntityType Name="UserPosition">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="PositionID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="JobsName" Relationship="Self.FK_UserPositions_JobsName" FromRole="UserPositions" ToRole="JobsName" />
+  </EntityType>
+  <EntityType Name="WorkExperience">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PositioninCompany" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FromDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ToDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Duration" Type="Int32" Nullable="false" />
+    <Property Name="BriefDescription" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="MasterTable" Relationship="Self.FK_WorkExperience_MasterTable" FromRole="WorkExperience" ToRole="MasterTable" />
+  </EntityType>
+  <EntityType Name="WorkingExperience">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="ExpDescritpion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Isactive" Type="Boolean" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_WorkingExperiences_Category" FromRole="WorkingExperiences" ToRole="Category" />
+    <NavigationProperty Name="CategoryWorkingExperiences" Relationship="Self.FK_CategoryWorkingExperiences_WorkingExperiences" FromRole="WorkingExperiences" ToRole="CategoryWorkingExperiences" />
+  </EntityType>
+  <EntityType Name="Captcha">
+    <Key>
+      <PropertyRef Name="CpName" />
+    </Key>
+    <Property Name="CpName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vGNBData">
+    <Key>
+      <PropertyRef Name="PositionName" />
+      <PropertyRef Name="Experience" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="ReadytoJoinID" />
+      <PropertyRef Name="ApplicantName" />
+      <PropertyRef Name="Married" />
+      <PropertyRef Name="ApplicantAddress" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="EmailID" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="Mobile" />
+      <PropertyRef Name="DOB" />
+      <PropertyRef Name="PlaceofBirth" />
+    </Key>
+    <Property Name="Category" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="PositionName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Experience" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReadytoJoinID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApplicantName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Married" Type="Boolean" Nullable="false" />
+    <Property Name="ApplicantAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="Boolean" Nullable="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LandLine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PlaceofBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApplicationDate" Type="DateTime" Precision="3" />
+    <Property Name="AcademicInstitute" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PassingYear" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="DegreeName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PositioninCompany" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Duration_in_days" Type="Int32" />
+    <Property Name="FromDate" Type="DateTime" Precision="3" />
+    <Property Name="ToDate" Type="DateTime" Precision="3" />
+    <Property Name="Duration" Type="Int32" />
+    <Property Name="TrainingName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="InstituteName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TrgDuration" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TrgYear" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="Technical_Inistitute" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Technical_Degree" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Technical_Qualification_Passing_Year" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vUserDepartmentPosition">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="PositionID" />
+      <PropertyRef Name="PositionName" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="PositionID" Type="Int32" Nullable="false" />
+    <Property Name="PositionName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vUserMasterData">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="PositionID" />
+      <PropertyRef Name="PositionName" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="DepartmentName" />
+      <PropertyRef Name="MasterID" />
+      <PropertyRef Name="Experienced" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="ReadytoJoinID" />
+      <PropertyRef Name="ApplicantName" />
+      <PropertyRef Name="Married" />
+      <PropertyRef Name="ApplicantAddress" />
+      <PropertyRef Name="City" />
+      <PropertyRef Name="EmailID" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="Mobile" />
+      <PropertyRef Name="DOB" />
+      <PropertyRef Name="PlaceofBirth" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="PositionID" Type="Int32" Nullable="false" />
+    <Property Name="PositionName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="DepartmentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MasterID" Type="Int32" Nullable="false" />
+    <Property Name="Experienced" Type="Boolean" Nullable="false" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReadytoJoinID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApplicantName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Married" Type="Boolean" Nullable="false" />
+    <Property Name="ApplicantAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Mobile" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LandLine" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Experience" Type="Int32" />
+    <Property Name="PlaceofBirth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Hobbies" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="IsSelected" Type="Boolean" />
+    <Property Name="ApplicationDate" Type="String" MaxLength="21" FixedLength="false" Unicode="false" />
+    <Property Name="Allcompanies" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastCompany" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_AcademicQualification_DegreeInfo1">
+    <End Role="DegreeInfo" Type="Self.DegreeInfo" Multiplicity="1" />
+    <End Role="AcademicQualification" Type="Self.AcademicQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DegreeInfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AcademicQualification">
+        <PropertyRef Name="DegreeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BreiefNote_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="BreiefNote" Type="Self.BreiefNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BreiefNote">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CandidateLanguages_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="CandidateLanguages" Type="Self.CandidateLanguage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CandidateLanguages">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterTable_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MasterTable">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDepartments_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="UserDepartments" Type="Self.UserDepartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserDepartments">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkingExperiences_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="WorkingExperiences" Type="Self.WorkingExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WorkingExperiences">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryWorkingExperiences_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="CategoryWorkingExperiences" Type="Self.CategoryWorkingExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CategoryWorkingExperiences">
+        <PropertyRef Name="MasterID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CategoryWorkingExperiences_WorkingExperiences">
+    <End Role="WorkingExperiences" Type="Self.WorkingExperience" Multiplicity="1" />
+    <End Role="CategoryWorkingExperiences" Type="Self.CategoryWorkingExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkingExperiences">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CategoryWorkingExperiences">
+        <PropertyRef Name="WorkingExperienceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="Comments" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Ratinginfo">
+    <End Role="Ratinginfo" Type="Self.Ratinginfo" Multiplicity="0..1" />
+    <End Role="Comments" Type="Self.Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ratinginfo">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="RatingID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MasterTable_JobsName">
+    <End Role="JobsName" Type="Self.JobsName" Multiplicity="1" />
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobsName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MasterTable">
+        <PropertyRef Name="PositionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPositions_JobsName">
+    <End Role="JobsName" Type="Self.JobsName" Multiplicity="1" />
+    <End Role="UserPositions" Type="Self.UserPosition" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JobsName">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserPositions">
+        <PropertyRef Name="PositionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TechnicalQualification_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="TechnicalQualification" Type="Self.TechnicalQualification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TechnicalQualification">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrainingProgramme_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="TrainingProgramme" Type="Self.TrainingProgramme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TrainingProgramme">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WorkExperience_MasterTable">
+    <End Role="MasterTable" Type="Self.MasterTable" Multiplicity="1" />
+    <End Role="WorkExperience" Type="Self.WorkExperience" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MasterTable">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="WorkExperience">
+        <PropertyRef Name="RecordID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Menus_ParentMenu_Id">
+    <End Role="Menus" Type="Self.Menu" Multiplicity="1" />
+    <End Role="MenuItems" Type="Self.MenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuItems">
+        <PropertyRef Name="ParentMenu_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesItems_MenuItems">
+    <End Role="MenuItems" Type="Self.MenuItem" Multiplicity="1" />
+    <End Role="RolesItems" Type="Self.RolesItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="MenuItemId" />
+      </Principal>
+      <Dependent Role="RolesItems">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesItems_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="RolesItems" Type="Self.RolesItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RolesItems">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Userdb_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Userdb" Type="Self.Userdb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Userdb">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDepartments_Userdb">
+    <End Role="Userdb" Type="Self.Userdb" Multiplicity="1" />
+    <End Role="UserDepartments" Type="Self.UserDepartment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Userdb">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserDepartments">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbJobPortalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AcademicQualifications" EntityType="Self.AcademicQualification" />
+    <EntitySet Name="BreiefNotes" EntityType="Self.BreiefNote" />
+    <EntitySet Name="CandidateLanguages" EntityType="Self.CandidateLanguage" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="CategoryLanguages" EntityType="Self.CategoryLanguage" />
+    <EntitySet Name="CategoryWorkingExperiences" EntityType="Self.CategoryWorkingExperience" />
+    <EntitySet Name="Comments" EntityType="Self.Comment" />
+    <EntitySet Name="DegreeInfoes" EntityType="Self.DegreeInfo" />
+    <EntitySet Name="JobsNames" EntityType="Self.JobsName" />
+    <EntitySet Name="LocationInfoes" EntityType="Self.LocationInfo" />
+    <EntitySet Name="LogRecords" EntityType="Self.LogRecord" />
+    <EntitySet Name="MasterTables" EntityType="Self.MasterTable" />
+    <EntitySet Name="MenuItems" EntityType="Self.MenuItem" />
+    <EntitySet Name="Menus" EntityType="Self.Menu" />
+    <EntitySet Name="Ratinginfoes" EntityType="Self.Ratinginfo" />
+    <EntitySet Name="Roles" EntityType="Self.Role" />
+    <EntitySet Name="RolesItems" EntityType="Self.RolesItem" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TechnicalQualifications" EntityType="Self.TechnicalQualification" />
+    <EntitySet Name="TrainingProgrammes" EntityType="Self.TrainingProgramme" />
+    <EntitySet Name="Userdbs" EntityType="Self.Userdb" />
+    <EntitySet Name="UserDepartments" EntityType="Self.UserDepartment" />
+    <EntitySet Name="UserPositions" EntityType="Self.UserPosition" />
+    <EntitySet Name="WorkExperiences" EntityType="Self.WorkExperience" />
+    <EntitySet Name="WorkingExperiences" EntityType="Self.WorkingExperience" />
+    <EntitySet Name="Captchas" EntityType="Self.Captcha" />
+    <EntitySet Name="vGNBDatas" EntityType="Self.vGNBData" />
+    <EntitySet Name="vUserDepartmentPositions" EntityType="Self.vUserDepartmentPosition" />
+    <EntitySet Name="vUserMasterDatas" EntityType="Self.vUserMasterData" />
+    <AssociationSet Name="FK_AcademicQualification_DegreeInfo1" Association="Self.FK_AcademicQualification_DegreeInfo1">
+      <End Role="DegreeInfo" EntitySet="DegreeInfoes" />
+      <End Role="AcademicQualification" EntitySet="AcademicQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BreiefNote_MasterTable" Association="Self.FK_BreiefNote_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="BreiefNote" EntitySet="BreiefNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CandidateLanguages_MasterTable" Association="Self.FK_CandidateLanguages_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="CandidateLanguages" EntitySet="CandidateLanguages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterTable_Category" Association="Self.FK_MasterTable_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="MasterTable" EntitySet="MasterTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDepartments_Category" Association="Self.FK_UserDepartments_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="UserDepartments" EntitySet="UserDepartments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkingExperiences_Category" Association="Self.FK_WorkingExperiences_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="WorkingExperiences" EntitySet="WorkingExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryWorkingExperiences_MasterTable" Association="Self.FK_CategoryWorkingExperiences_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="CategoryWorkingExperiences" EntitySet="CategoryWorkingExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CategoryWorkingExperiences_WorkingExperiences" Association="Self.FK_CategoryWorkingExperiences_WorkingExperiences">
+      <End Role="WorkingExperiences" EntitySet="WorkingExperiences" />
+      <End Role="CategoryWorkingExperiences" EntitySet="CategoryWorkingExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_MasterTable" Association="Self.FK_Comments_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Ratinginfo" Association="Self.FK_Comments_Ratinginfo">
+      <End Role="Ratinginfo" EntitySet="Ratinginfoes" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MasterTable_JobsName" Association="Self.FK_MasterTable_JobsName">
+      <End Role="JobsName" EntitySet="JobsNames" />
+      <End Role="MasterTable" EntitySet="MasterTables" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPositions_JobsName" Association="Self.FK_UserPositions_JobsName">
+      <End Role="JobsName" EntitySet="JobsNames" />
+      <End Role="UserPositions" EntitySet="UserPositions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TechnicalQualification_MasterTable" Association="Self.FK_TechnicalQualification_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="TechnicalQualification" EntitySet="TechnicalQualifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrainingProgramme_MasterTable" Association="Self.FK_TrainingProgramme_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="TrainingProgramme" EntitySet="TrainingProgrammes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WorkExperience_MasterTable" Association="Self.FK_WorkExperience_MasterTable">
+      <End Role="MasterTable" EntitySet="MasterTables" />
+      <End Role="WorkExperience" EntitySet="WorkExperiences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Menus_ParentMenu_Id" Association="Self.FK_MenuItems_Menus_ParentMenu_Id">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="MenuItems" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesItems_MenuItems" Association="Self.FK_RolesItems_MenuItems">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="RolesItems" EntitySet="RolesItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesItems_Role" Association="Self.FK_RolesItems_Role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="RolesItems" EntitySet="RolesItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Userdb_Role" Association="Self.FK_Userdb_Role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Userdb" EntitySet="Userdbs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDepartments_Userdb" Association="Self.FK_UserDepartments_Userdb">
+      <End Role="Userdb" EntitySet="Userdbs" />
+      <End Role="UserDepartments" EntitySet="UserDepartments" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetCaptcha" ReturnType="Collection(dbJobPortalModel.sp_GetCaptcha_Result)" />
+    <FunctionImport Name="sp_GetTotalRecord" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(dbJobPortalModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(dbJobPortalModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="spGetCompanyNames" ReturnType="Collection(String)">
+      <Parameter Name="MasterID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_CheckValidPage">
+      <Parameter Name="Page" Mode="In" Type="String" />
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetCompanyNames" ReturnType="Collection(String)">
+      <Parameter Name="MasterID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetExperience" ReturnType="Collection(dbJobPortalModel.usp_GetExperience_Result)">
+      <Parameter Name="MasterID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetLastCompany" ReturnType="Collection(String)">
+      <Parameter Name="RecordID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetMenu" ReturnType="Collection(dbJobPortalModel.usp_GetMenu_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetRoleItems" ReturnType="Collection(dbJobPortalModel.usp_GetRoleItems_Result)">
+      <Parameter Name="RoleID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetRoleList" ReturnType="Collection(dbJobPortalModel.usp_GetRoleList_Result)" />
+    <FunctionImport Name="usp_GetSearchDetails" ReturnType="Collection(dbJobPortalModel.usp_GetSearchDetails_Result)">
+      <Parameter Name="dpid" Mode="In" Type="Int32" />
+      <Parameter Name="Poid" Mode="In" Type="Int32" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="gender" Mode="In" Type="String" />
+      <Parameter Name="agefrom" Mode="In" Type="Int32" />
+      <Parameter Name="ageto" Mode="In" Type="Int32" />
+      <Parameter Name="ApplicantName" Mode="In" Type="String" />
+      <Parameter Name="exp" Mode="In" Type="Int32" />
+      <Parameter Name="puserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetUserDepartment" ReturnType="Collection(dbJobPortalModel.usp_GetUserDepartment_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetUserDepartmentDDL" ReturnType="Collection(dbJobPortalModel.usp_GetUserDepartmentDDL_Result)">
+      <Parameter Name="UID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetUserPosition" ReturnType="Collection(dbJobPortalModel.usp_GetUserPosition_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int32" />
+      <Parameter Name="DepartmentID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_GetCaptcha_Result">
+    <Property Type="String" Name="ImgFileName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="comparename" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetExperience_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="CompanyName" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PositioninCompany" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="Expereience" Nullable="true" />
+    <Property Type="String" Name="DateSet" Nullable="true" MaxLength="23" />
+  </ComplexType>
+  <ComplexType Name="usp_GetMenu_Result">
+    <Property Type="String" Name="UserRole" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="RoleID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="FormName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="Int32" Name="ParentMenu_Id" Nullable="false" />
+    <Property Type="Int32" Name="OrderBy" Nullable="false" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetRoleItems_Result">
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="Int32" Name="RoleID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetRoleList_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="UserRole" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="IsActive" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetSearchDetails_Result">
+    <Property Type="Int32" Name="UserID" Nullable="false" />
+    <Property Type="Int32" Name="PositionID" Nullable="false" />
+    <Property Type="String" Name="PositionName" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="DepartmentID" Nullable="false" />
+    <Property Type="String" Name="DepartmentName" Nullable="false" MaxLength="255" />
+    <Property Type="Int32" Name="MasterID" Nullable="false" />
+    <Property Type="Boolean" Name="Experienced" Nullable="false" />
+    <Property Type="String" Name="Location" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ReadytoJoinID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ApplicantName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="Married" Nullable="false" />
+    <Property Type="String" Name="ApplicantAddress" Nullable="false" MaxLength="250" />
+    <Property Type="String" Name="City" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EmailID" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Gender" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="Mobile" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LandLine" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="DOB" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Age" Nullable="true" />
+    <Property Type="Int32" Name="Experience" Nullable="true" />
+    <Property Type="String" Name="PlaceofBirth" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Hobbies" Nullable="true" MaxLength="250" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="true" />
+    <Property Type="Boolean" Name="IsSelected" Nullable="true" />
+    <Property Type="String" Name="ApplicationDate" Nullable="true" MaxLength="21" />
+    <Property Type="String" Name="Allcompanies" Nullable="true" />
+    <Property Type="String" Name="LastCompany" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetUserDepartment_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="255" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetUserDepartmentDDL_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="255" />
+  </ComplexType>
+  <ComplexType Name="usp_GetUserPosition_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="PositionName" Nullable="false" MaxLength="255" />
+    <Property Type="String" Name="Description" Nullable="false" MaxLength="255" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+  </ComplexType>
+</Schema>

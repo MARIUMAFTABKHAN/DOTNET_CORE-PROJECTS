@@ -1,0 +1,101 @@
+﻿.cal_Theme1 .ajax__calendar_container {
+    background-color: #e6e6e6;
+    border: solid 1px #e6e6e6;
+}
+
+.cal_Theme1 .ajax__calendar_header {
+    background-color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.cal_Theme1 .ajax__calendar_title,
+.cal_Theme1 .ajax__calendar_next,
+.cal_Theme1 .ajax__calendar_prev {
+    color: #004080;
+    padding-top: 3px;
+}
+
+.cal_Theme1 .ajax__calendar_body {
+    background-color: #ffffff;
+    border: solid 1px #e6e6e6;
+}
+
+.cal_Theme1 .ajax__calendar_dayname {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    color: #004080;
+
+}
+
+.cal_Theme1 .ajax__calendar_day {
+    color: #004080;
+    text-align: center;
+    font-size:14px !important;
+    padding:3px;
+}
+
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_day,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_month,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_year,
+.cal_Theme1 .ajax__calendar_active {
+    color: #004080;
+    font-weight: bold;
+    background-color: #e6e6e6;
+}
+
+.cal_Theme1 .ajax__calendar_today {
+    font-weight: bold;
+}
+
+.cal_Theme1 .ajax__calendar_other,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_today,
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_title {
+    color: #bbbbbb;
+}
+
+
+.EU_DataTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .EU_DataTable tr {
+        height: 15px;
+    }
+
+        .EU_DataTable tr th {
+            background-color: #bbbbbb !important;
+            color: #47494a;
+            padding: 1px 5px 1px 5px;
+            border: 1px solid #47494a;
+            font-size: 16px;
+            font-weight: normal;
+            text-transform: capitalize;
+            text-align: center;
+            height: 14px;
+        }
+
+        .EU_DataTable tr:nth-child(2n+2) {
+            background-color: #dcdcdc;
+        }
+
+        .EU_DataTable tr:nth-child(2n+1) td {
+            background-color: #FFF;
+            color: #454545;
+        }
+
+        .EU_DataTable tr td {
+            padding: 1px 10px 1px 10px;
+            color: #454545;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            border: 1px solid #cccccc;
+            vertical-align: middle;
+            height: 14px;
+        }
+
+            .EU_DataTable tr td:first-child {
+                text-align: center;
+            }

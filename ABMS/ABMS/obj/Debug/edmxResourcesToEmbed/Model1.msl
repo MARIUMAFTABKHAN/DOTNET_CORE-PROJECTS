@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbJobPortalModelStoreContainer" CdmEntityContainer="dbJobPortalEntities">
+    <EntitySetMapping Name="AcademicQualifications">
+      <EntityTypeMapping TypeName="dbJobPortalModel.AcademicQualification">
+        <MappingFragment StoreEntitySet="AcademicQualification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="AcademicInstitute" ColumnName="AcademicInstitute" />
+          <ScalarProperty Name="DegreeID" ColumnName="DegreeID" />
+          <ScalarProperty Name="PassingYear" ColumnName="PassingYear" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BreiefNotes">
+      <EntityTypeMapping TypeName="dbJobPortalModel.BreiefNote">
+        <MappingFragment StoreEntitySet="BreiefNote">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="BriefNote" ColumnName="BriefNote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CandidateLanguages">
+      <EntityTypeMapping TypeName="dbJobPortalModel.CandidateLanguage">
+        <MappingFragment StoreEntitySet="CandidateLanguages">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="LanRead" ColumnName="LanRead" />
+          <ScalarProperty Name="LanWrite" ColumnName="LanWrite" />
+          <ScalarProperty Name="LanSpeak" ColumnName="LanSpeak" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SortPosition" ColumnName="SortPosition" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="LanguageStatus" ColumnName="LanguageStatus" />
+          <ScalarProperty Name="TechnicalEducation" ColumnName="TechnicalEducation" />
+          <ScalarProperty Name="ParticipatingTraining" ColumnName="ParticipatingTraining" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryLanguages">
+      <EntityTypeMapping TypeName="dbJobPortalModel.CategoryLanguage">
+        <MappingFragment StoreEntitySet="CategoryLanguage">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LanguageName" ColumnName="LanguageName" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryWorkingExperiences">
+      <EntityTypeMapping TypeName="dbJobPortalModel.CategoryWorkingExperience">
+        <MappingFragment StoreEntitySet="CategoryWorkingExperiences">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="WorkingExperienceID" ColumnName="WorkingExperienceID" />
+          <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Comment">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="RatingID" ColumnName="RatingID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DegreeInfoes">
+      <EntityTypeMapping TypeName="dbJobPortalModel.DegreeInfo">
+        <MappingFragment StoreEntitySet="DegreeInfo">
+          <ScalarProperty Name="EdLevel" ColumnName="EdLevel" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DegreeName" ColumnName="DegreeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JobsNames">
+      <EntityTypeMapping TypeName="dbJobPortalModel.JobsName">
+        <MappingFragment StoreEntitySet="JobsName">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Stations" ColumnName="Stations" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Fresh" ColumnName="Fresh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationInfoes">
+      <EntityTypeMapping TypeName="dbJobPortalModel.LocationInfo">
+        <MappingFragment StoreEntitySet="LocationInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogRecords">
+      <EntityTypeMapping TypeName="dbJobPortalModel.LogRecord">
+        <MappingFragment StoreEntitySet="LogRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ActionOnForm" ColumnName="ActionOnForm" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+          <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+          <ScalarProperty Name="ActionOn" ColumnName="ActionOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MasterTables">
+      <EntityTypeMapping TypeName="dbJobPortalModel.MasterTable">
+        <MappingFragment StoreEntitySet="MasterTable">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ClaimedID" ColumnName="ClaimedID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Experienced" ColumnName="Experienced" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="ReadytoJoinID" ColumnName="ReadytoJoinID" />
+          <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="ApplicantAddress" ColumnName="ApplicantAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="LandLine" ColumnName="LandLine" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PlaceofBirth" ColumnName="PlaceofBirth" />
+          <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+          <ScalarProperty Name="ApplicantImage" ColumnName="ApplicantImage" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="CategoryLanguageID" ColumnName="CategoryLanguageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="dbJobPortalModel.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItems">
+          <ScalarProperty Name="MenuItemId" ColumnName="MenuItemId" />
+          <ScalarProperty Name="ParentMenu_Id" ColumnName="ParentMenu_Id" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Menu">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ratinginfoes">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Ratinginfo">
+        <MappingFragment StoreEntitySet="Ratinginfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesItems">
+      <EntityTypeMapping TypeName="dbJobPortalModel.RolesItem">
+        <MappingFragment StoreEntitySet="RolesItems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="dbJobPortalModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TechnicalQualifications">
+      <EntityTypeMapping TypeName="dbJobPortalModel.TechnicalQualification">
+        <MappingFragment StoreEntitySet="TechnicalQualification">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+          <ScalarProperty Name="DegreeName" ColumnName="DegreeName" />
+          <ScalarProperty Name="Passingyear" ColumnName="Passingyear" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainingProgrammes">
+      <EntityTypeMapping TypeName="dbJobPortalModel.TrainingProgramme">
+        <MappingFragment StoreEntitySet="TrainingProgramme">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+          <ScalarProperty Name="TrainingName" ColumnName="TrainingName" />
+          <ScalarProperty Name="TrgYear" ColumnName="TrgYear" />
+          <ScalarProperty Name="TrgDuration" ColumnName="TrgDuration" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Userdbs">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Userdb">
+        <MappingFragment StoreEntitySet="Userdb">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserPWD" ColumnName="UserPWD" />
+          <ScalarProperty Name="RatingAllowed" ColumnName="RatingAllowed" />
+          <ScalarProperty Name="RemarksAllowed" ColumnName="RemarksAllowed" />
+          <ScalarProperty Name="DeleteAllowed" ColumnName="DeleteAllowed" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="SelectedAllowed" ColumnName="SelectedAllowed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDepartments">
+      <EntityTypeMapping TypeName="dbJobPortalModel.UserDepartment">
+        <MappingFragment StoreEntitySet="UserDepartments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserPositions">
+      <EntityTypeMapping TypeName="dbJobPortalModel.UserPosition">
+        <MappingFragment StoreEntitySet="UserPositions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkExperiences">
+      <EntityTypeMapping TypeName="dbJobPortalModel.WorkExperience">
+        <MappingFragment StoreEntitySet="WorkExperience">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="PositioninCompany" ColumnName="PositioninCompany" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="BriefDescription" ColumnName="BriefDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkingExperiences">
+      <EntityTypeMapping TypeName="dbJobPortalModel.WorkingExperience">
+        <MappingFragment StoreEntitySet="WorkingExperiences">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ExpDescritpion" ColumnName="ExpDescritpion" />
+          <ScalarProperty Name="Isactive" ColumnName="Isactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Captchas">
+      <EntityTypeMapping TypeName="dbJobPortalModel.Captcha">
+        <MappingFragment StoreEntitySet="Captcha">
+          <ScalarProperty Name="CpName" ColumnName="CpName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vGNBDatas">
+      <EntityTypeMapping TypeName="dbJobPortalModel.vGNBData">
+        <MappingFragment StoreEntitySet="vGNBData">
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ReadytoJoinID" ColumnName="ReadytoJoinID" />
+          <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="ApplicantAddress" ColumnName="ApplicantAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="LandLine" ColumnName="LandLine" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="PlaceofBirth" ColumnName="PlaceofBirth" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="AcademicInstitute" ColumnName="AcademicInstitute" />
+          <ScalarProperty Name="PassingYear" ColumnName="PassingYear" />
+          <ScalarProperty Name="DegreeName" ColumnName="DegreeName" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="PositioninCompany" ColumnName="PositioninCompany" />
+          <ScalarProperty Name="Duration_in_days" ColumnName="Duration in days" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="TrainingName" ColumnName="TrainingName" />
+          <ScalarProperty Name="InstituteName" ColumnName="InstituteName" />
+          <ScalarProperty Name="TrgDuration" ColumnName="TrgDuration" />
+          <ScalarProperty Name="TrgYear" ColumnName="TrgYear" />
+          <ScalarProperty Name="Technical_Inistitute" ColumnName="Technical Inistitute" />
+          <ScalarProperty Name="Technical_Degree" ColumnName="Technical Degree" />
+          <ScalarProperty Name="Technical_Qualification_Passing_Year" ColumnName="Technical Qualification Passing Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vUserDepartmentPositions">
+      <EntityTypeMapping TypeName="dbJobPortalModel.vUserDepartmentPosition">
+        <MappingFragment StoreEntitySet="vUserDepartmentPosition">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vUserMasterDatas">
+      <EntityTypeMapping TypeName="dbJobPortalModel.vUserMasterData">
+        <MappingFragment StoreEntitySet="vUserMasterData">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+          <ScalarProperty Name="Experienced" ColumnName="Experienced" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ReadytoJoinID" ColumnName="ReadytoJoinID" />
+          <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="ApplicantAddress" ColumnName="ApplicantAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="LandLine" ColumnName="LandLine" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="PlaceofBirth" ColumnName="PlaceofBirth" />
+          <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="Allcompanies" ColumnName="Allcompanies" />
+          <ScalarProperty Name="LastCompany" ColumnName="LastCompany" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="dbJobPortalModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="dbJobPortalModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="dbJobPortalModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_GetCaptcha" FunctionName="dbJobPortalModel.Store.sp_GetCaptcha">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.sp_GetCaptcha_Result">
+          <ScalarProperty Name="ImgFileName" ColumnName="ImgFileName" />
+          <ScalarProperty Name="comparename" ColumnName="comparename" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetTotalRecord" FunctionName="dbJobPortalModel.Store.sp_GetTotalRecord" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="dbJobPortalModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="dbJobPortalModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="dbJobPortalModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="dbJobPortalModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="spGetCompanyNames" FunctionName="dbJobPortalModel.Store.spGetCompanyNames" />
+    <FunctionImportMapping FunctionImportName="usp_CheckValidPage" FunctionName="dbJobPortalModel.Store.usp_CheckValidPage" />
+    <FunctionImportMapping FunctionImportName="usp_GetCompanyNames" FunctionName="dbJobPortalModel.Store.usp_GetCompanyNames" />
+    <FunctionImportMapping FunctionImportName="usp_GetExperience" FunctionName="dbJobPortalModel.Store.usp_GetExperience">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetExperience_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="PositioninCompany" ColumnName="PositioninCompany" />
+          <ScalarProperty Name="Expereience" ColumnName="Expereience" />
+          <ScalarProperty Name="DateSet" ColumnName="DateSet" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetLastCompany" FunctionName="dbJobPortalModel.Store.usp_GetLastCompany" />
+    <FunctionImportMapping FunctionImportName="usp_GetMenu" FunctionName="dbJobPortalModel.Store.usp_GetMenu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetMenu_Result">
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="ParentMenu_Id" ColumnName="ParentMenu_Id" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetRoleItems" FunctionName="dbJobPortalModel.Store.usp_GetRoleItems">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetRoleItems_Result">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetRoleList" FunctionName="dbJobPortalModel.Store.usp_GetRoleList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetRoleList_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserRole" ColumnName="UserRole" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetSearchDetails" FunctionName="dbJobPortalModel.Store.usp_GetSearchDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetSearchDetails_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+          <ScalarProperty Name="Experienced" ColumnName="Experienced" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ReadytoJoinID" ColumnName="ReadytoJoinID" />
+          <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+          <ScalarProperty Name="Married" ColumnName="Married" />
+          <ScalarProperty Name="ApplicantAddress" ColumnName="ApplicantAddress" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="LandLine" ColumnName="LandLine" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="PlaceofBirth" ColumnName="PlaceofBirth" />
+          <ScalarProperty Name="Hobbies" ColumnName="Hobbies" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsSelected" ColumnName="IsSelected" />
+          <ScalarProperty Name="ApplicationDate" ColumnName="ApplicationDate" />
+          <ScalarProperty Name="Allcompanies" ColumnName="Allcompanies" />
+          <ScalarProperty Name="LastCompany" ColumnName="LastCompany" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUserDepartment" FunctionName="dbJobPortalModel.Store.usp_GetUserDepartment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetUserDepartment_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUserDepartmentDDL" FunctionName="dbJobPortalModel.Store.usp_GetUserDepartmentDDL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetUserDepartmentDDL_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUserPosition" FunctionName="dbJobPortalModel.Store.usp_GetUserPosition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="dbJobPortalModel.usp_GetUserPosition_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

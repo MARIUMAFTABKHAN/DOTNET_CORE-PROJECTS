@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\APIandMobApp\\ABMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F983B1AA-3CDF-4140-9732-D962B5A49F14}|ABMS\\ABMS.csproj|d:\\apiandmobapp\\abms\\abms\\adbooking.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F983B1AA-3CDF-4140-9732-D962B5A49F14}|ABMS\\ABMS.csproj|solutionrelative:abms\\adbooking.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F983B1AA-3CDF-4140-9732-D962B5A49F14}|ABMS\\ABMS.csproj|D:\\APIandMobApp\\ABMS\\abms\\adbooking.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{F983B1AA-3CDF-4140-9732-D962B5A49F14}|ABMS\\ABMS.csproj|solutionrelative:abms\\adbooking.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdBooking.aspx",
+              "DocumentMoniker": "D:\\APIandMobApp\\ABMS\\ABMS\\AdBooking.aspx",
+              "RelativeDocumentMoniker": "ABMS\\AdBooking.aspx",
+              "ToolTip": "D:\\APIandMobApp\\ABMS\\ABMS\\AdBooking.aspx",
+              "RelativeToolTip": "ABMS\\AdBooking.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-29T11:13:30.143Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdBooking.aspx.cs",
+              "DocumentMoniker": "D:\\APIandMobApp\\ABMS\\ABMS\\AdBooking.aspx.cs",
+              "RelativeDocumentMoniker": "ABMS\\AdBooking.aspx.cs",
+              "ToolTip": "D:\\APIandMobApp\\ABMS\\ABMS\\AdBooking.aspx.cs",
+              "RelativeToolTip": "ABMS\\AdBooking.aspx.cs",
+              "ViewState": "AgIAAFEDAAAAAAAAAAAQwGEDAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T06:35:46.807Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

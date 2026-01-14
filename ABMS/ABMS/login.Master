@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="login.master.cs" Inherits="ABMS.login" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Ad Booking & Monitoring System</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+        
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript">
+        $(window).resize(function () {
+            var mobileWidth = (window.innerWidth > 0) ?
+                                window.innerWidth :
+                                screen.width;
+            var viewport = (mobileWidth > 360) ?
+                            'width=device-width, initial-scale=1.0' :
+                            'width=1200';
+            $("meta[name=viewport]").attr('content', viewport);
+        }).resize();
+    </script>
+    </head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+           
+        </asp:ScriptManager>
+
+        <div class="col-sm-12" style="background-color: #5f021f; padding-top: 0px; border-bottom: 3px solid #c4223d; margin-top: 0px">
+            <img src="Content/Images/MainLogo2.jpg" class="img-responsive">
+        </div>
+
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Ad Booking & Monitoring System</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

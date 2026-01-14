@@ -1,0 +1,454 @@
+C:\ABMS\ABMS\ABMS\bin\ABMS.dll.config
+C:\ABMS\ABMS\ABMS\bin\ABMS.dll
+C:\ABMS\ABMS\ABMS\bin\ABMS.pdb
+C:\ABMS\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+C:\ABMS\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+C:\ABMS\ABMS\ABMS\bin\DropDownCheckBoxes.dll
+C:\ABMS\ABMS\ABMS\bin\EntityFramework.dll
+C:\ABMS\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+C:\ABMS\ABMS\ABMS\bin\Newtonsoft.Json.dll
+C:\ABMS\ABMS\ABMS\bin\Owin.dll
+C:\ABMS\ABMS\ABMS\bin\System.Web.Optimization.dll
+C:\ABMS\ABMS\ABMS\bin\System.Web.Providers.dll
+C:\ABMS\ABMS\ABMS\bin\WebGrease.dll
+C:\ABMS\ABMS\ABMS\bin\System.Web.Optimization.xml
+C:\ABMS\ABMS\ABMS\bin\Newtonsoft.Json.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\ABMS\ABMS\ABMS\bin\EntityFramework.xml
+C:\ABMS\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ABMS\ABMS\ABMS\bin\System.Web.Providers.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\ABMS\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\ABMS\ABMS\ABMS\obj\Release\ABMS.dll
+C:\ABMS\ABMS\ABMS\obj\Release\ABMS.pdb
+C:\ABMS\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+C:\ABMS-28042017\ABMS\ABMS\bin\ABMS.dll.config
+C:\ABMS-28042017\ABMS\ABMS\bin\ABMS.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\ABMS.pdb
+C:\ABMS-28042017\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\DropDownCheckBoxes.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\EntityFramework.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Newtonsoft.Json.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\Owin.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\System.Web.Optimization.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\System.Web.Providers.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\WebGrease.dll
+C:\ABMS-28042017\ABMS\ABMS\bin\System.Web.Optimization.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Newtonsoft.Json.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\EntityFramework.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\System.Web.Providers.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\ABMS-28042017\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\ABMS-28042017\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+C:\ABMS-28042017\ABMS\ABMS\obj\Release\ABMS.dll
+C:\ABMS-28042017\ABMS\ABMS\obj\Release\ABMS.pdb
+D:\WebApplications_Working\ABMS\ABMS\bin\ABMS.dll.config
+D:\WebApplications_Working\ABMS\ABMS\bin\ABMS.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\ABMS.pdb
+D:\WebApplications_Working\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\EntityFramework.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Newtonsoft.Json.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\Owin.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\System.Web.Optimization.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\System.Web.Providers.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\WebGrease.dll
+D:\WebApplications_Working\ABMS\ABMS\bin\System.Web.Optimization.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Newtonsoft.Json.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\EntityFramework.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\System.Web.Providers.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebApplications_Working\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebApplications_Working\ABMS\ABMS\obj\Release\ABMS.dll
+D:\WebApplications_Working\ABMS\ABMS\obj\Release\ABMS.pdb
+D:\WebApplications_Working\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+D:\WebApplications_Working\ABMS-2\ABMS\bin\ABMS.dll.config
+D:\WebApplications_Working\ABMS-2\ABMS\bin\ABMS.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\ABMS.pdb
+D:\WebApplications_Working\ABMS-2\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\EntityFramework.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\EntityFramework.SqlServer.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Newtonsoft.Json.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Owin.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\System.Web.Optimization.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\System.Web.Providers.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\WebGrease.dll
+D:\WebApplications_Working\ABMS-2\ABMS\bin\System.Web.Optimization.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Newtonsoft.Json.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\EntityFramework.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\EntityFramework.SqlServer.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\System.Web.Providers.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebApplications_Working\ABMS-2\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebApplications_Working\ABMS-2\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+D:\WebApplications_Working\ABMS-2\ABMS\obj\Release\ABMS.dll
+D:\WebApplications_Working\ABMS-2\ABMS\obj\Release\ABMS.pdb
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.dll.config
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.pdb
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Newtonsoft.Json.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Owin.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Optimization.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Providers.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\WebGrease.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Optimization.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Newtonsoft.Json.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Providers.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.dll
+D:\OldProjects\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.pdb
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.dll.config
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.pdb
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Newtonsoft.Json.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Owin.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Optimization.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Providers.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\WebGrease.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Optimization.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Newtonsoft.Json.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Providers.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.dll
+D:\WebSites\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.pdb
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.dll.config
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\ABMS.pdb
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Newtonsoft.Json.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Owin.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Optimization.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Providers.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\WebGrease.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Optimization.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Newtonsoft.Json.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\System.Web.Providers.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.dll
+D:\Development\WebApps\ABMS-AddBookingMonitoringSystem\ABMS\ABMS\obj\Release\ABMS.pdb
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\ABMS.dll.config
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\ABMS.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\ABMS.pdb
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\EntityFramework.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Newtonsoft.Json.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Owin.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\System.Web.Optimization.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\System.Web.Providers.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\WebGrease.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\System.Web.Optimization.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Newtonsoft.Json.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\EntityFramework.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\System.Web.Providers.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\JobAppProject\Experimental\ABMS\ABMS\obj\Release\ABMS.csprojResolveAssemblyReference.cache
+D:\JobAppProject\Experimental\ABMS\ABMS\obj\Release\ABMS.dll
+D:\JobAppProject\Experimental\ABMS\ABMS\obj\Release\ABMS.pdb
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\ABMS.dll.config
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\ABMS.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\ABMS.pdb
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\AspNet.ScriptManager.jQuery.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\EntityFramework.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\EntityFramework.SqlServer.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Web.Infrastructure.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Newtonsoft.Json.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Owin.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\System.Web.Optimization.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\System.Web.Providers.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\WebGrease.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\System.Web.Optimization.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Newtonsoft.Json.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\EntityFramework.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\EntityFramework.SqlServer.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\System.Web.Providers.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Google.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\obj\Release\ABMS.csproj.AssemblyReference.cache
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\obj\Release\ABMS.csproj.CoreCompileInputs.cache
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\obj\Release\ABMS.csproj.Up2Date
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\obj\Release\ABMS.dll
+D:\Development\Web Dot Net\ASPNet\ABMS\ABMS\obj\Release\ABMS.pdb
