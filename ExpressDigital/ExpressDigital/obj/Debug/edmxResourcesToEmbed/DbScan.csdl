@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBScanModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DigitalDocument">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RONumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FileSize" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FileType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UploadedFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="QuotationFilePath" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DocumentType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContentType" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AppCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="DBScanEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DigitalDocuments" EntityType="Self.DigitalDocument" />
+    <FunctionImport Name="usp_GetDigitalScanDocument" ReturnType="Collection(DBScanModel1.usp_GetDigitalScanDocument_Result)">
+      <Parameter Name="ID" Mode="In" Type="String" />
+      <Parameter Name="Type" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetDigitalScanDocumentByID" ReturnType="Collection(DBScanModel1.usp_GetDigitalScanDocumentByID_Result)">
+      <Parameter Name="ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_GetDigitalScanDocument_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="RONumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FileName" Nullable="true" />
+    <Property Type="Decimal" Name="FileSize" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="FileType" Nullable="true" MaxLength="50" />
+    <Property Type="Binary" Name="UploadedFile" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="true" />
+    <Property Type="String" Name="QuotationFilePath" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="DocumentType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ContentType" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="AppCode" Nullable="true" MaxLength="10" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="DeletedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="usp_GetDigitalScanDocumentByID_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="RONumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FileName" Nullable="true" />
+    <Property Type="Decimal" Name="FileSize" Nullable="true" Precision="18" Scale="0" />
+    <Property Type="String" Name="FileType" Nullable="true" MaxLength="50" />
+    <Property Type="Binary" Name="UploadedFile" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="CreatedBy" Nullable="true" />
+    <Property Type="String" Name="QuotationFilePath" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="DocumentType" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ContentType" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="AppCode" Nullable="true" MaxLength="10" />
+    <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+    <Property Type="DateTime" Name="DeletedDate" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

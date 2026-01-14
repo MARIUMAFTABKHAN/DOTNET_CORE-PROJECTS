@@ -1,0 +1,443 @@
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ExpressDigital.dll.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ExpressDigital.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ExpressDigital.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\csc.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\csc.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\csc.rsp
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\csi.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\csi.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\csi.rsp
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.AppContext.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Collections.Immutable.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Console.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Compression.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.FileSystem.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Pipes.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Reflection.Metadata.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.AccessControl.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Claims.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.ValueTuple.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XPath.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\vbc.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\vbc.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\vbc.rsp
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\VBCSCompiler.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\roslyn\VBCSCompiler.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\EntityFramework.SqlServer.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.Design.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\Microsoft.SqlServer.Types.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\DocumentFormat.OpenXml.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\EnvDTE.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\stdole.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\Microsoft.MSXML.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\EntityFramework.SqlServer.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\DocumentFormat.OpenXml.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.AssemblyReference.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.CoreCompileInputs.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.CopyComplete
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.pdb
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x64\msvcr120.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x86\msvcr120.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ExpressDigital.dll.config
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ExpressDigital.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ExpressDigital.pdb
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\csc.exe
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\csc.exe.config
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\csc.rsp
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\csi.exe
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\csi.exe.config
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\csi.rsp
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.Managed.Core.targets
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.AppContext.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Collections.Immutable.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Console.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Compression.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.FileSystem.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Pipes.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Reflection.Metadata.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.AccessControl.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Claims.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Principal.Windows.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.ValueTuple.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XmlDocument.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XPath.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\vbc.exe
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\vbc.exe.config
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\vbc.rsp
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\VBCSCompiler.exe
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\roslyn\VBCSCompiler.exe.config
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Azure.Core.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Azure.Identity.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\EntityFramework.SqlServer.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Data.SqlClient.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Logging.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Tokens.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.Design.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.SqlServer.Types.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Buffers.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Configuration.ConfigurationManager.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Diagnostics.DiagnosticSource.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Memory.Data.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Memory.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Numerics.Vectors.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.AccessControl.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.Cryptography.ProtectedData.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.Permissions.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.Principal.Windows.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Text.Encodings.Web.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Text.Json.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Threading.Tasks.Extensions.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.ValueTuple.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\DocumentFormat.OpenXml.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\EnvDTE.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\stdole.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.MSXML.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Azure.Core.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Azure.Identity.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\EntityFramework.SqlServer.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Data.SqlClient.pdb
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Data.SqlClient.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Logging.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Tokens.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Buffers.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Configuration.ConfigurationManager.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Diagnostics.DiagnosticSource.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Memory.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Memory.Data.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Numerics.Vectors.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.AccessControl.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.Cryptography.ProtectedData.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.Permissions.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Security.Principal.Windows.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Text.Encodings.Web.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Text.Json.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.Threading.Tasks.Extensions.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\System.ValueTuple.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\DocumentFormat.OpenXml.xml
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\de\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\es\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\fr\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\it\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ja\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ko\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ru\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.AssemblyReference.cache
+D:\OldProjects\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.CoreCompileInputs.cache
+D:\OldProjects\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.CopyComplete
+D:\OldProjects\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.dll
+D:\OldProjects\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.pdb
+C:\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x64\msvcr120.dll
+C:\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x86\msvcr120.dll
+C:\ExpressDigital\ExpressDigital\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\ExpressDigital\ExpressDigital\bin\ExpressDigital.dll.config
+C:\ExpressDigital\ExpressDigital\bin\ExpressDigital.dll
+C:\ExpressDigital\ExpressDigital\bin\ExpressDigital.pdb
+C:\ExpressDigital\ExpressDigital\bin\roslyn\csc.exe
+C:\ExpressDigital\ExpressDigital\bin\roslyn\csc.exe.config
+C:\ExpressDigital\ExpressDigital\bin\roslyn\csc.rsp
+C:\ExpressDigital\ExpressDigital\bin\roslyn\csi.exe
+C:\ExpressDigital\ExpressDigital\bin\roslyn\csi.exe.config
+C:\ExpressDigital\ExpressDigital\bin\roslyn\csi.rsp
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.Managed.Core.targets
+C:\ExpressDigital\ExpressDigital\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.AppContext.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Collections.Immutable.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Console.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Compression.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.FileSystem.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.IO.Pipes.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Reflection.Metadata.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.AccessControl.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Claims.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Security.Principal.Windows.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.ValueTuple.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XmlDocument.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XPath.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\ExpressDigital\ExpressDigital\bin\roslyn\vbc.exe
+C:\ExpressDigital\ExpressDigital\bin\roslyn\vbc.exe.config
+C:\ExpressDigital\ExpressDigital\bin\roslyn\vbc.rsp
+C:\ExpressDigital\ExpressDigital\bin\roslyn\VBCSCompiler.exe
+C:\ExpressDigital\ExpressDigital\bin\roslyn\VBCSCompiler.exe.config
+C:\ExpressDigital\ExpressDigital\bin\Azure.Core.dll
+C:\ExpressDigital\ExpressDigital\bin\Azure.Identity.dll
+C:\ExpressDigital\ExpressDigital\bin\EntityFramework.SqlServer.dll
+C:\ExpressDigital\ExpressDigital\bin\EPPlus.dll
+C:\ExpressDigital\ExpressDigital\bin\EPPlus.Interfaces.dll
+C:\ExpressDigital\ExpressDigital\bin\EPPlus.System.Drawing.dll
+C:\ExpressDigital\ExpressDigital\bin\Ionic.Zip.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Data.SqlClient.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Logging.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Tokens.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.Design.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.SqlServer.Types.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Buffers.dll
+C:\ExpressDigital\ExpressDigital\bin\System.ComponentModel.Annotations.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Configuration.ConfigurationManager.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Diagnostics.DiagnosticSource.dll
+C:\ExpressDigital\ExpressDigital\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Memory.Data.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Memory.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Numerics.Vectors.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Security.AccessControl.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Security.Cryptography.ProtectedData.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Security.Permissions.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Security.Principal.Windows.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Text.Encoding.CodePages.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Text.Encodings.Web.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Text.Json.dll
+C:\ExpressDigital\ExpressDigital\bin\System.Threading.Tasks.Extensions.dll
+C:\ExpressDigital\ExpressDigital\bin\System.ValueTuple.dll
+C:\ExpressDigital\ExpressDigital\bin\DocumentFormat.OpenXml.dll
+C:\ExpressDigital\ExpressDigital\bin\EnvDTE.dll
+C:\ExpressDigital\ExpressDigital\bin\stdole.dll
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.MSXML.dll
+C:\ExpressDigital\ExpressDigital\bin\Azure.Core.xml
+C:\ExpressDigital\ExpressDigital\bin\Azure.Identity.xml
+C:\ExpressDigital\ExpressDigital\bin\EntityFramework.SqlServer.xml
+C:\ExpressDigital\ExpressDigital\bin\EPPlus.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Data.SqlClient.pdb
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Data.SqlClient.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Logging.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IdentityModel.Tokens.xml
+C:\ExpressDigital\ExpressDigital\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Buffers.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Configuration.ConfigurationManager.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Diagnostics.DiagnosticSource.xml
+C:\ExpressDigital\ExpressDigital\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Memory.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Memory.Data.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Numerics.Vectors.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Security.AccessControl.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Security.Cryptography.ProtectedData.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Security.Permissions.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Security.Principal.Windows.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Text.Encodings.Web.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Text.Json.xml
+C:\ExpressDigital\ExpressDigital\bin\System.Threading.Tasks.Extensions.xml
+C:\ExpressDigital\ExpressDigital\bin\System.ValueTuple.xml
+C:\ExpressDigital\ExpressDigital\bin\DocumentFormat.OpenXml.xml
+C:\ExpressDigital\ExpressDigital\bin\de\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\es\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\fr\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\it\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ja\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ko\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ru\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.AssemblyReference.cache
+C:\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.csproj.CoreCompileInputs.cache
+C:\ExpressDigital\ExpressDigital\obj\Release\ExpressD.11576AAE.Up2Date
+C:\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.dll
+C:\ExpressDigital\ExpressDigital\obj\Release\ExpressDigital.pdb

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBScanModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DigitalDocuments">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RONumber" Type="varchar" MaxLength="50" />
+          <Property Name="FileName" Type="varchar(max)" />
+          <Property Name="FileSize" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="FileType" Type="varchar" MaxLength="50" />
+          <Property Name="UploadedFile" Type="varbinary(max)" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="QuotationFilePath" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="DocumentType" Type="varchar" MaxLength="50" />
+          <Property Name="ContentType" Type="nchar" MaxLength="200" />
+          <Property Name="Remarks" Type="varchar" MaxLength="500" />
+          <Property Name="AppCode" Type="varchar" MaxLength="10" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="DeletedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ROAttachedDocuments">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ROID" Type="int" Nullable="false" />
+          <Property Name="RONumber" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AttachedData" Type="varbinary(max)" Nullable="false" />
+          <Property Name="DocType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="AppCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="Remarks" Type="varchar" MaxLength="500" />
+          <Property Name="docext" Type="varchar" MaxLength="5" Nullable="false" />
+        </EntityType>
+        <Function Name="usp_AddNewScanDocument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RONumber" Type="varchar" Mode="In" />
+          <Parameter Name="FileName" Type="varchar(max)" Mode="In" />
+          <Parameter Name="FileSize" Type="numeric" Mode="In" />
+          <Parameter Name="FileType" Type="varchar" Mode="In" />
+          <Parameter Name="UploadedFile" Type="varbinary(max)" Mode="In" />
+          <Parameter Name="CreatedDate" Type="datetime" Mode="In" />
+          <Parameter Name="CreatedBy" Type="int" Mode="In" />
+          <Parameter Name="QuotationFilePath" Type="varchar" Mode="In" />
+          <Parameter Name="DocumentType" Type="varchar" Mode="In" />
+          <Parameter Name="ContentType" Type="nchar" Mode="In" />
+          <Parameter Name="Remarks" Type="varchar" Mode="In" />
+          <Parameter Name="AppCode" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetDigitalScanDocument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+          <Parameter Name="Type" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetDigitalScanDocumentByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="DBScanModelStoreContainer">
+          <EntitySet Name="DigitalDocuments" EntityType="Self.DigitalDocuments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ROAttachedDocuments" EntityType="Self.ROAttachedDocuments" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBScanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DBScanEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="usp_AddNewScanDocument">
+            <Parameter Name="RONumber" Mode="In" Type="String" />
+            <Parameter Name="FileName" Mode="In" Type="String" />
+            <Parameter Name="FileSize" Mode="In" Type="Decimal" />
+            <Parameter Name="FileType" Mode="In" Type="String" />
+            <Parameter Name="UploadedFile" Mode="In" Type="Binary" />
+            <Parameter Name="CreatedDate" Mode="In" Type="DateTime" />
+            <Parameter Name="CreatedBy" Mode="In" Type="Int32" />
+            <Parameter Name="QuotationFilePath" Mode="In" Type="String" />
+            <Parameter Name="DocumentType" Mode="In" Type="String" />
+            <Parameter Name="ContentType" Mode="In" Type="String" />
+            <Parameter Name="Remarks" Mode="In" Type="String" />
+            <Parameter Name="AppCode" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="ROAttachedDocuments" EntityType="DBScanModel.ROAttachedDocument" />
+          <EntitySet Name="DigitalDocuments" EntityType="DBScanModel.DigitalDocument" />
+          <FunctionImport Name="usp_GetDigitalScanDocument" ReturnType="Collection(DBScanModel.usp_GetDigitalScanDocument_Result)">
+            <Parameter Name="ID" Mode="In" Type="String" />
+            <Parameter Name="Type" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetDigitalScanDocumentByID" ReturnType="Collection(DBScanModel.usp_GetDigitalScanDocumentByID_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="ROAttachedDocument">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ROID" Type="Int32" Nullable="false" />
+          <Property Name="RONumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AttachedData" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+          <Property Name="DocType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" Nullable="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AppCode" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="docext" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DigitalDocument">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RONumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="FileSize" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FileType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UploadedFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="QuotationFilePath" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="DocumentType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContentType" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Remarks" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="AppCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="DeletedDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <ComplexType Name="usp_GetDigitalScanDocument_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="RONumber" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FileName" Nullable="true" />
+          <Property Type="Decimal" Name="FileSize" Nullable="true" Precision="18" Scale="0" />
+          <Property Type="String" Name="FileType" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="UploadedFile" Nullable="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="CreatedBy" Nullable="true" />
+          <Property Type="String" Name="QuotationFilePath" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="DocumentType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ContentType" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Remarks" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="AppCode" Nullable="true" MaxLength="10" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" Nullable="true" Precision="23" />
+        </ComplexType>
+        <ComplexType Name="usp_GetDigitalScanDocumentByID_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="RONumber" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FileName" Nullable="true" />
+          <Property Type="Decimal" Name="FileSize" Nullable="true" Precision="18" Scale="0" />
+          <Property Type="String" Name="FileType" Nullable="true" MaxLength="50" />
+          <Property Type="Binary" Name="UploadedFile" Nullable="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="CreatedBy" Nullable="true" />
+          <Property Type="String" Name="QuotationFilePath" Nullable="false" MaxLength="150" />
+          <Property Type="String" Name="DocumentType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="ContentType" Nullable="true" MaxLength="200" />
+          <Property Type="String" Name="Remarks" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="AppCode" Nullable="true" MaxLength="10" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="DateTime" Name="DeletedDate" Nullable="true" Precision="23" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBScanModelStoreContainer" CdmEntityContainer="DBScanEntities">
+          <FunctionImportMapping FunctionImportName="usp_AddNewScanDocument" FunctionName="DBScanModel.Store.usp_AddNewScanDocument" />
+          <EntitySetMapping Name="ROAttachedDocuments">
+            <EntityTypeMapping TypeName="DBScanModel.ROAttachedDocument">
+              <MappingFragment StoreEntitySet="ROAttachedDocuments">
+                <ScalarProperty Name="docext" ColumnName="docext" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="DocType" ColumnName="DocType" />
+                <ScalarProperty Name="AttachedData" ColumnName="AttachedData" />
+                <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+                <ScalarProperty Name="ROID" ColumnName="ROID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DigitalDocuments">
+            <EntityTypeMapping TypeName="DBScanModel.DigitalDocument">
+              <MappingFragment StoreEntitySet="DigitalDocuments">
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="QuotationFilePath" ColumnName="QuotationFilePath" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="UploadedFile" ColumnName="UploadedFile" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetDigitalScanDocument" FunctionName="DBScanModel.Store.usp_GetDigitalScanDocument">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBScanModel.usp_GetDigitalScanDocument_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="UploadedFile" ColumnName="UploadedFile" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="QuotationFilePath" ColumnName="QuotationFilePath" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetDigitalScanDocumentByID" FunctionName="DBScanModel.Store.usp_GetDigitalScanDocumentByID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DBScanModel.usp_GetDigitalScanDocumentByID_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+                <ScalarProperty Name="FileType" ColumnName="FileType" />
+                <ScalarProperty Name="UploadedFile" ColumnName="UploadedFile" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="QuotationFilePath" ColumnName="QuotationFilePath" />
+                <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBScanModelStoreContainer" CdmEntityContainer="DBScanEntities">
+    <FunctionImportMapping FunctionImportName="usp_AddNewScanDocument" FunctionName="DBScanModel.Store.usp_AddNewScanDocument" />
+    <EntitySetMapping Name="ROAttachedDocuments">
+      <EntityTypeMapping TypeName="DBScanModel.ROAttachedDocument">
+        <MappingFragment StoreEntitySet="ROAttachedDocuments">
+          <ScalarProperty Name="docext" ColumnName="docext" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="DocType" ColumnName="DocType" />
+          <ScalarProperty Name="AttachedData" ColumnName="AttachedData" />
+          <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+          <ScalarProperty Name="ROID" ColumnName="ROID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DigitalDocuments">
+      <EntityTypeMapping TypeName="DBScanModel.DigitalDocument">
+        <MappingFragment StoreEntitySet="DigitalDocuments">
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="QuotationFilePath" ColumnName="QuotationFilePath" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UploadedFile" ColumnName="UploadedFile" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDigitalScanDocument" FunctionName="DBScanModel.Store.usp_GetDigitalScanDocument">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBScanModel.usp_GetDigitalScanDocument_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="UploadedFile" ColumnName="UploadedFile" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="QuotationFilePath" ColumnName="QuotationFilePath" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDigitalScanDocumentByID" FunctionName="DBScanModel.Store.usp_GetDigitalScanDocumentByID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBScanModel.usp_GetDigitalScanDocumentByID_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RONumber" ColumnName="RONumber" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="FileType" ColumnName="FileType" />
+          <ScalarProperty Name="UploadedFile" ColumnName="UploadedFile" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="QuotationFilePath" ColumnName="QuotationFilePath" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="AppCode" ColumnName="AppCode" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeletedDate" ColumnName="DeletedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBScanModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DigitalDocuments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RONumber" Type="varchar" MaxLength="50" />
+    <Property Name="FileName" Type="varchar(max)" />
+    <Property Name="FileSize" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="FileType" Type="varchar" MaxLength="50" />
+    <Property Name="UploadedFile" Type="varbinary(max)" />
+    <Property Name="CreatedDate" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="QuotationFilePath" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="DocumentType" Type="varchar" MaxLength="50" />
+    <Property Name="ContentType" Type="nchar" MaxLength="200" />
+    <Property Name="Remarks" Type="varchar" MaxLength="500" />
+    <Property Name="AppCode" Type="varchar" MaxLength="10" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="DeletedDate" Type="datetime" />
+  </EntityType>
+  <Function Name="usp_GetDigitalScanDocument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="varchar" Mode="In" />
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDigitalScanDocumentByID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ID" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="DBScanModel1StoreContainer">
+    <EntitySet Name="DigitalDocuments" EntityType="Self.DigitalDocuments" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

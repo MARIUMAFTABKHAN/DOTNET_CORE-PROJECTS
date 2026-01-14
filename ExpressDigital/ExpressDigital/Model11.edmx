@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ChartOfAccounts">
+          <Key>
+            <PropertyRef Name="Account_Code" />
+          </Key>
+          <Property Name="Account_Code" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Title_Of_Account" Type="varchar" MaxLength="40" />
+          <Property Name="Type_Of_Account" Type="varchar" MaxLength="1" />
+          <Property Name="Is_Cash_Account" Type="bit" Nullable="false" />
+          <Property Name="Cash_Flow_Title" Type="int" />
+          <Property Name="Is_Transaction_Level" Type="bit" Nullable="false" />
+          <Property Name="Subsidiary_Account_Type" Type="varchar" MaxLength="2" />
+          <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Added_Date" Type="datetime" />
+          <Property Name="Rec_Added_Time" Type="datetime" />
+          <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Edited_Date" Type="datetime" />
+          <Property Name="Rec_Edited_Time" Type="datetime" />
+          <Property Name="Comp_Code" Type="int" />
+          <Property Name="Subsidiary_Account_Param" Type="varchar" MaxLength="5" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CostCenters">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="CostCenter_Title" Type="varchar" MaxLength="30" />
+          <Property Name="Abreviation" Type="varchar" MaxLength="5" />
+          <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Added_Date" Type="datetime" />
+          <Property Name="Rec_Added_Time" Type="datetime" />
+          <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Edited_Date" Type="datetime" />
+          <Property Name="Rec_Edited_Time" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Departments">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Department_Name" Type="varchar" MaxLength="40" />
+          <Property Name="Abreviation" Type="varchar" MaxLength="5" />
+          <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Added_Date" Type="datetime" />
+          <Property Name="Rec_Added_Time" Type="datetime" />
+          <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Edited_Date" Type="datetime" />
+          <Property Name="Rec_Edited_Time" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="FiscalYear">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Starting_date" Type="datetime" Nullable="false" />
+          <Property Name="Ending_date" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="bit" Nullable="false" />
+          <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Added_Date" Type="datetime" />
+          <Property Name="Rec_Added_Time" Type="datetime" />
+          <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Edited_Date" Type="datetime" />
+          <Property Name="Rec_Edited_Time" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GroupComps">
+          <Key>
+            <PropertyRef Name="GroupComp_Id" />
+          </Key>
+          <Property Name="GroupComp_Id" Type="tinyint" Nullable="false" />
+          <Property Name="GroupComp_Name" Type="varchar" MaxLength="30" />
+          <Property Name="Sequence" Type="smallint" />
+          <Property Name="Abreviation" Type="varchar" MaxLength="3" />
+          <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Added_Date" Type="datetime" />
+          <Property Name="Rec_Added_Time" Type="datetime" />
+          <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Edited_Date" Type="datetime" />
+          <Property Name="Rec_Edited_Time" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IdCtr">
+          <Key>
+            <PropertyRef Name="ForTable" />
+          </Key>
+          <Property Name="ForTable" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Counter" Type="int" Nullable="false" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MonthlyClosing">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Company_id" Type="int" />
+          <Property Name="Closing_Month" Type="datetime" />
+          <Property Name="Fiscal_Id" Type="int" />
+          <Property Name="Rec_added_by" Type="varchar" MaxLength="15" />
+          <Property Name="Rec_added_dateTime" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Publications">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Publication_Name" Type="varchar" MaxLength="40" />
+          <Property Name="Pub_Abreviation" Type="varchar" MaxLength="5" />
+          <Property Name="In_House_Publication" Type="bit" Nullable="false" />
+          <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Added_Date" Type="datetime" />
+          <Property Name="Rec_Added_Time" Type="datetime" />
+          <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+          <Property Name="Rec_Edited_Date" Type="datetime" />
+          <Property Name="Rec_Edited_Time" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <Function Name="usp_GetAllChannel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_nPublication_Id" Type="int" Mode="In" />
+          <Parameter Name="p_strPublication_Name" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAbreviation" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetAllChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_strAccount_Code" Type="varchar" Mode="In" />
+          <Parameter Name="p_strTitle_Of_Account" Type="varchar" Mode="In" />
+          <Parameter Name="p_strType_Of_Account" Type="varchar" Mode="In" />
+          <Parameter Name="p_bIs_Transaction_Level" Type="bit" Mode="In" />
+          <Parameter Name="p_strSubsidiary_Account_Type" Type="varchar" Mode="In" />
+          <Parameter Name="p_nComp_Code" Type="int" Mode="In" />
+          <Parameter Name="p_strSubsidiary_Account_Param" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetAllDepartment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_nId" Type="int" Mode="In" />
+          <Parameter Name="p_strDepartment_Name" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAbreviation" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetAllFiscalYears" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_bStatus" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="usp_GetAllLocation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_nGroupComp_Id" Type="int" Mode="In" />
+          <Parameter Name="p_strGroupComp_Name" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAbreviation" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetAllSalexTaxAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="companyid" Type="int" Mode="In" />
+          <Parameter Name="txt" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_GetAllSuppliers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_nId" Type="int" Mode="In" />
+          <Parameter Name="p_strSupplier_Name" Type="varchar" Mode="In" />
+          <Parameter Name="p_nPurchase_Category" Type="int" Mode="In" />
+          <Parameter Name="p_strNTN" Type="varchar" Mode="In" />
+          <Parameter Name="p_dtNTN_Valid" Type="datetime" Mode="In" />
+          <Parameter Name="p_strAddress_Line_1" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAddress_Line_2" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAddress_Line_3" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAddress_Line_4" Type="varchar" Mode="In" />
+          <Parameter Name="p_strPayable_Account_Code" Type="varchar" Mode="In" />
+          <Parameter Name="p_nCmp" Type="int" Mode="In" />
+          <Parameter Name="p_strRec_Added_By" Type="varchar" Mode="In" />
+          <Parameter Name="p_dtRec_Added_Date" Type="datetime" Mode="In" />
+          <Parameter Name="p_dtRec_Added_Time" Type="datetime" Mode="In" />
+          <Parameter Name="p_strRec_Edited_By" Type="varchar" Mode="In" />
+          <Parameter Name="p_dtRec_Edited_Date" Type="datetime" Mode="In" />
+          <Parameter Name="p_dtRec_Edited_Time" Type="datetime" Mode="In" />
+          <Parameter Name="p_guidrowguid" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="usp_GetChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_strAccount_Code" Type="varchar" Mode="In" />
+          <Parameter Name="p_strSubsidiary_Account_Type" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="usp_GetFiscalMonthStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_dtVoucher_Date" Type="datetime" Mode="In" />
+          <Parameter Name="p_nCompanyId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="usp_IDctr" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="For_Table" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_IDctrProcurement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="For_Table" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_InsertVoucher" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_dtVoucher_Date" Type="datetime" Mode="In" />
+          <Parameter Name="p_cVoucherType" Type="char" Mode="In" />
+          <Parameter Name="p_nBank" Type="int" Mode="In" />
+          <Parameter Name="p_strCheque_No" Type="varchar" Mode="In" />
+          <Parameter Name="p_dtCheque_Date" Type="datetime" Mode="In" />
+          <Parameter Name="p_strDrawn_On" Type="varchar" Mode="In" />
+          <Parameter Name="p_strRemarks" Type="varchar" Mode="In" />
+          <Parameter Name="p_nReference" Type="int" Mode="In" />
+          <Parameter Name="p_strRec_Added_By" Type="varchar" Mode="In" />
+          <Parameter Name="p_strVoucherNoOld" Type="varchar" Mode="In" />
+          <Parameter Name="p_strVoucherNo" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="usp_InsertVoucherDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="p_strVoucher_No" Type="varchar" Mode="In" />
+          <Parameter Name="p_dtTransaction_Date" Type="datetime" Mode="In" />
+          <Parameter Name="p_strTrans_Details" Type="varchar" Mode="In" />
+          <Parameter Name="p_byEntry_Loc" Type="tinyint" Mode="In" />
+          <Parameter Name="p_strCost_Center" Type="varchar" Mode="In" />
+          <Parameter Name="p_strDepartment" Type="varchar" Mode="In" />
+          <Parameter Name="p_strAccount_Code" Type="varchar" Mode="In" />
+          <Parameter Name="p_nSubsidiary_Account" Type="int" Mode="In" />
+          <Parameter Name="p_strSubsidiary_Account_Type" Type="char" Mode="In" />
+          <Parameter Name="p_dblAmount" Type="int" Mode="In" />
+          <Parameter Name="p_strRec_Added_By" Type="varchar" Mode="In" />
+          <Parameter Name="p_nCompanyId" Type="int" Mode="In" />
+          <Parameter Name="p_nChannelId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="usp_VGetCureCityChar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="GLModelStoreContainer">
+          <EntitySet Name="ChartOfAccounts" EntityType="Self.ChartOfAccounts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CostCenters" EntityType="Self.CostCenters" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FiscalYear" EntityType="Self.FiscalYear" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GroupComps" EntityType="Self.GroupComps" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IdCtr" EntityType="Self.IdCtr" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MonthlyClosing" EntityType="Self.MonthlyClosing" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Publications" EntityType="Self.Publications" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="GLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="FiscalYears" EntityType="GLModel.FiscalYear" />
+          <EntitySet Name="GroupComps" EntityType="GLModel.GroupComp" />
+          <EntitySet Name="Publications" EntityType="GLModel.Publication" />
+          <FunctionImport Name="usp_GetAllChannel" ReturnType="Collection(GLModel.usp_GetAllChannel_Result)">
+            <Parameter Name="p_nPublication_Id" Mode="In" Type="Int32" />
+            <Parameter Name="p_strPublication_Name" Mode="In" Type="String" />
+            <Parameter Name="p_strAbreviation" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetAllChartOfAccounts" ReturnType="Collection(GLModel.usp_GetAllChartOfAccounts_Result)">
+            <Parameter Name="p_strAccount_Code" Mode="In" Type="String" />
+            <Parameter Name="p_strTitle_Of_Account" Mode="In" Type="String" />
+            <Parameter Name="p_strType_Of_Account" Mode="In" Type="String" />
+            <Parameter Name="p_bIs_Transaction_Level" Mode="In" Type="Boolean" />
+            <Parameter Name="p_strSubsidiary_Account_Type" Mode="In" Type="String" />
+            <Parameter Name="p_nComp_Code" Mode="In" Type="Int32" />
+            <Parameter Name="p_strSubsidiary_Account_Param" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetAllDepartment" ReturnType="Collection(GLModel.usp_GetAllDepartment_Result)">
+            <Parameter Name="p_nId" Mode="In" Type="Int32" />
+            <Parameter Name="p_strDepartment_Name" Mode="In" Type="String" />
+            <Parameter Name="p_strAbreviation" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetAllFiscalYears" ReturnType="Collection(GLModel.usp_GetAllFiscalYears_Result)">
+          <Parameter Name="p_bStatus" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetAllLocation" ReturnType="Collection(GLModel.usp_GetAllLocation_Result)">
+            <Parameter Name="p_nGroupComp_Id" Mode="In" Type="Int32" />
+            <Parameter Name="p_strGroupComp_Name" Mode="In" Type="String" />
+            <Parameter Name="p_strAbreviation" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetAllSuppliers">
+            <Parameter Name="p_nId" Mode="In" Type="Int32" />
+            <Parameter Name="p_strSupplier_Name" Mode="In" Type="String" />
+            <Parameter Name="p_nPurchase_Category" Mode="In" Type="Int32" />
+            <Parameter Name="p_strNTN" Mode="In" Type="String" />
+            <Parameter Name="p_dtNTN_Valid" Mode="In" Type="DateTime" />
+            <Parameter Name="p_strAddress_Line_1" Mode="In" Type="String" />
+            <Parameter Name="p_strAddress_Line_2" Mode="In" Type="String" />
+            <Parameter Name="p_strAddress_Line_3" Mode="In" Type="String" />
+            <Parameter Name="p_strAddress_Line_4" Mode="In" Type="String" />
+            <Parameter Name="p_strPayable_Account_Code" Mode="In" Type="String" />
+            <Parameter Name="p_nCmp" Mode="In" Type="Int32" />
+            <Parameter Name="p_strRec_Added_By" Mode="In" Type="String" />
+            <Parameter Name="p_dtRec_Added_Date" Mode="In" Type="DateTime" />
+            <Parameter Name="p_dtRec_Added_Time" Mode="In" Type="DateTime" />
+            <Parameter Name="p_strRec_Edited_By" Mode="In" Type="String" />
+            <Parameter Name="p_dtRec_Edited_Date" Mode="In" Type="DateTime" />
+            <Parameter Name="p_dtRec_Edited_Time" Mode="In" Type="DateTime" />
+            <Parameter Name="p_guidrowguid" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetChartOfAccounts">
+            <Parameter Name="p_strAccount_Code" Mode="In" Type="String" />
+            <Parameter Name="p_strSubsidiary_Account_Type" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_GetFiscalMonthStatus" ReturnType="Collection(Int32)">
+            <Parameter Name="p_dtVoucher_Date" Mode="In" Type="DateTime" />
+            <Parameter Name="p_nCompanyId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="usp_InsertVoucher" ReturnType="Collection(GLModel.usp_InsertVoucher_Result)">
+            <Parameter Name="p_dtVoucher_Date" Mode="In" Type="DateTime" />
+            <Parameter Name="p_cVoucherType" Mode="In" Type="String" />
+            <Parameter Name="p_nBank" Mode="In" Type="Int32" />
+            <Parameter Name="p_strCheque_No" Mode="In" Type="String" />
+            <Parameter Name="p_dtCheque_Date" Mode="In" Type="DateTime" />
+            <Parameter Name="p_strDrawn_On" Mode="In" Type="String" />
+            <Parameter Name="p_strRemarks" Mode="In" Type="String" />
+            <Parameter Name="p_nReference" Mode="In" Type="Int32" />
+            <Parameter Name="p_strRec_Added_By" Mode="In" Type="String" />
+            <Parameter Name="p_strVoucherNoOld" Mode="In" Type="String" />
+            <Parameter Name="p_strVoucherNo" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_InsertVoucherDetail">
+            <Parameter Name="p_strVoucher_No" Mode="In" Type="String" />
+            <Parameter Name="p_dtTransaction_Date" Mode="In" Type="DateTime" />
+            <Parameter Name="p_strTrans_Details" Mode="In" Type="String" />
+            <Parameter Name="p_byEntry_Loc" Mode="In" Type="Byte" />
+            <Parameter Name="p_strCost_Center" Mode="In" Type="String" />
+            <Parameter Name="p_strDepartment" Mode="In" Type="String" />
+            <Parameter Name="p_strAccount_Code" Mode="In" Type="String" />
+            <Parameter Name="p_nSubsidiary_Account" Mode="In" Type="Int32" />
+            <Parameter Name="p_strSubsidiary_Account_Type" Mode="In" Type="String" />
+            <Parameter Name="p_dblAmount" Mode="In" Type="Int32" />
+            <Parameter Name="p_strRec_Added_By" Mode="In" Type="String" />
+            <Parameter Name="p_nCompanyId" Mode="In" Type="Int32" />
+            <Parameter Name="p_nChannelId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="Departments" EntityType="GLModel.Department" />
+          <EntitySet Name="CostCenters" EntityType="GLModel.CostCenter" />
+          <EntitySet Name="ChartOfAccounts" EntityType="GLModel.ChartOfAccount" />
+          <EntitySet Name="MonthlyClosings" EntityType="GLModel.MonthlyClosing" />
+          <FunctionImport Name="usp_IDctrProcurement" ReturnType="Collection(Int32)">
+          <Parameter Name="For_Table" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_IDctr" ReturnType="Collection(String)">
+          <Parameter Name="For_Table" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="IdCtrs" EntityType="GLModel.IdCtr" />
+          <FunctionImport Name="usp_VGetCureCityChar" ReturnType="Collection(Int32)" />
+          <FunctionImport Name="usp_GetAllSalexTaxAccounts" ReturnType="Collection(GLModel.usp_GetAllSalexTaxAccounts_Result)">
+            <Parameter Name="companyid" Mode="In" Type="Int32" />
+            <Parameter Name="txt" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="FiscalYear">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Starting_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Ending_date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
+          <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GroupComp">
+          <Key>
+            <PropertyRef Name="GroupComp_Id" />
+          </Key>
+          <Property Name="GroupComp_Id" Type="Byte" Nullable="false" />
+          <Property Name="GroupComp_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Sequence" Type="Int16" />
+          <Property Name="Abreviation" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Publication">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Publication_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Pub_Abreviation" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="In_House_Publication" Type="Boolean" Nullable="false" />
+          <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="usp_GetAllChannel_Result">
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="3" />
+          <Property Type="String" Name="Publication_Name" Nullable="true" MaxLength="40" />
+          <Property Type="String" Name="Pub_Abreviation" Nullable="true" MaxLength="5" />
+        </ComplexType>
+        <ComplexType Name="usp_GetAllChartOfAccounts_Result">
+          <Property Type="String" Name="Code" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Title" Nullable="true" MaxLength="40" />
+          <Property Type="String" Name="Type" Nullable="true" MaxLength="1" />
+          <Property Type="Boolean" Name="Is_Transaction_Level" Nullable="false" />
+          <Property Type="String" Name="Subsidiary_Account_Type" Nullable="true" MaxLength="2" />
+          <Property Type="Int32" Name="Comp_Code" Nullable="true" />
+          <Property Type="String" Name="Subsidiary_Account_Param" Nullable="true" MaxLength="5" />
+        </ComplexType>
+        <ComplexType Name="usp_GetAllDepartment_Result">
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="3" />
+          <Property Type="String" Name="Department_Name" Nullable="true" MaxLength="40" />
+          <Property Type="String" Name="Abreviation" Nullable="true" MaxLength="5" />
+        </ComplexType>
+        <ComplexType Name="usp_GetAllFiscalYears_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="FiscalYear" Nullable="true" MaxLength="61" />
+        </ComplexType>
+        <ComplexType Name="usp_GetAllLocation_Result">
+          <Property Type="Byte" Name="GroupComp_Id" Nullable="false" />
+          <Property Type="String" Name="GroupComp_Name" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Abreviation" Nullable="true" MaxLength="3" />
+        </ComplexType>
+        <ComplexType Name="usp_InsertVoucher_Result">
+          <Property Type="String" Name="Column1" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Column2" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Department_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Abreviation" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CostCenter">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="CostCenter_Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Abreviation" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ChartOfAccount">
+          <Key>
+            <PropertyRef Name="Account_Code" />
+          </Key>
+          <Property Name="Account_Code" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Title_Of_Account" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Type_Of_Account" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="Is_Cash_Account" Type="Boolean" Nullable="false" />
+          <Property Name="Cash_Flow_Title" Type="Int32" />
+          <Property Name="Is_Transaction_Level" Type="Boolean" Nullable="false" />
+          <Property Name="Subsidiary_Account_Type" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Added_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Added_Time" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_By" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_Edited_Date" Type="DateTime" Precision="3" />
+          <Property Name="Rec_Edited_Time" Type="DateTime" Precision="3" />
+          <Property Name="Comp_Code" Type="Int32" />
+          <Property Name="Subsidiary_Account_Param" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MonthlyClosing">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Company_id" Type="Int32" />
+          <Property Name="Closing_Month" Type="DateTime" Precision="3" />
+          <Property Name="Fiscal_Id" Type="Int32" />
+          <Property Name="Rec_added_by" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Rec_added_dateTime" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IdCtr">
+          <Key>
+            <PropertyRef Name="ForTable" />
+          </Key>
+          <Property Name="ForTable" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Counter" Type="Int32" Nullable="false" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="usp_GetAllSalexTaxAccounts_Result">
+          <Property Type="String" Name="Account_Code" Nullable="false" MaxLength="30" />
+          <Property Type="String" Name="Title_Of_Account" Nullable="true" MaxLength="40" />
+          <Property Type="String" Name="Type_Of_Account" Nullable="true" MaxLength="1" />
+          <Property Type="Boolean" Name="Is_Cash_Account" Nullable="false" />
+          <Property Type="Int32" Name="Cash_Flow_Title" Nullable="true" />
+          <Property Type="Boolean" Name="Is_Transaction_Level" Nullable="false" />
+          <Property Type="String" Name="Subsidiary_Account_Type" Nullable="true" MaxLength="2" />
+          <Property Type="String" Name="Rec_Added_By" Nullable="true" MaxLength="12" />
+          <Property Type="DateTime" Name="Rec_Added_Date" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="Rec_Added_Time" Nullable="true" Precision="23" />
+          <Property Type="String" Name="Rec_Edited_By" Nullable="true" MaxLength="12" />
+          <Property Type="DateTime" Name="Rec_Edited_Date" Nullable="true" Precision="23" />
+          <Property Type="DateTime" Name="Rec_Edited_Time" Nullable="true" Precision="23" />
+          <Property Type="Int32" Name="Comp_Code" Nullable="true" />
+          <Property Type="String" Name="Subsidiary_Account_Param" Nullable="true" MaxLength="5" />
+          <Property Type="Guid" Name="rowguid" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GLModelStoreContainer" CdmEntityContainer="GLEntities">
+          <EntitySetMapping Name="FiscalYears">
+            <EntityTypeMapping TypeName="GLModel.FiscalYear">
+              <MappingFragment StoreEntitySet="FiscalYear">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Ending_date" ColumnName="Ending_date" />
+                <ScalarProperty Name="Starting_date" ColumnName="Starting_date" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GroupComps">
+            <EntityTypeMapping TypeName="GLModel.GroupComp">
+              <MappingFragment StoreEntitySet="GroupComps">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="GroupComp_Name" ColumnName="GroupComp_Name" />
+                <ScalarProperty Name="GroupComp_Id" ColumnName="GroupComp_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Publications">
+            <EntityTypeMapping TypeName="GLModel.Publication">
+              <MappingFragment StoreEntitySet="Publications">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="In_House_Publication" ColumnName="In_House_Publication" />
+                <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+                <ScalarProperty Name="Publication_Name" ColumnName="Publication_Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetAllChannel" FunctionName="GLModel.Store.usp_GetAllChannel">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_GetAllChannel_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Publication_Name" ColumnName="Publication_Name" />
+                <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetAllChartOfAccounts" FunctionName="GLModel.Store.usp_GetAllChartOfAccounts">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_GetAllChartOfAccounts_Result">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Is_Transaction_Level" ColumnName="Is_Transaction_Level" />
+                <ScalarProperty Name="Subsidiary_Account_Type" ColumnName="Subsidiary_Account_Type" />
+                <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+                <ScalarProperty Name="Subsidiary_Account_Param" ColumnName="Subsidiary_Account_Param" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetAllDepartment" FunctionName="GLModel.Store.usp_GetAllDepartment">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_GetAllDepartment_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Department_Name" ColumnName="Department_Name" />
+                <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetAllFiscalYears" FunctionName="GLModel.Store.usp_GetAllFiscalYears">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_GetAllFiscalYears_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetAllLocation" FunctionName="GLModel.Store.usp_GetAllLocation">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_GetAllLocation_Result">
+                <ScalarProperty Name="GroupComp_Id" ColumnName="GroupComp_Id" />
+                <ScalarProperty Name="GroupComp_Name" ColumnName="GroupComp_Name" />
+                <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_GetAllSuppliers" FunctionName="GLModel.Store.usp_GetAllSuppliers" />
+          <FunctionImportMapping FunctionImportName="usp_GetChartOfAccounts" FunctionName="GLModel.Store.usp_GetChartOfAccounts" />
+          <FunctionImportMapping FunctionImportName="usp_GetFiscalMonthStatus" FunctionName="GLModel.Store.usp_GetFiscalMonthStatus" />
+          <FunctionImportMapping FunctionImportName="usp_InsertVoucher" FunctionName="GLModel.Store.usp_InsertVoucher">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_InsertVoucher_Result">
+                <ScalarProperty Name="Column1" ColumnName="Column1" />
+                <ScalarProperty Name="Column2" ColumnName="Column2" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="usp_InsertVoucherDetail" FunctionName="GLModel.Store.usp_InsertVoucherDetail" />
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="GLModel.Department">
+              <MappingFragment StoreEntitySet="Departments">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+                <ScalarProperty Name="Department_Name" ColumnName="Department_Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CostCenters">
+            <EntityTypeMapping TypeName="GLModel.CostCenter">
+              <MappingFragment StoreEntitySet="CostCenters">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+                <ScalarProperty Name="CostCenter_Title" ColumnName="CostCenter_Title" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ChartOfAccounts">
+            <EntityTypeMapping TypeName="GLModel.ChartOfAccount">
+              <MappingFragment StoreEntitySet="ChartOfAccounts">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Subsidiary_Account_Param" ColumnName="Subsidiary_Account_Param" />
+                <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="Subsidiary_Account_Type" ColumnName="Subsidiary_Account_Type" />
+                <ScalarProperty Name="Is_Transaction_Level" ColumnName="Is_Transaction_Level" />
+                <ScalarProperty Name="Cash_Flow_Title" ColumnName="Cash_Flow_Title" />
+                <ScalarProperty Name="Is_Cash_Account" ColumnName="Is_Cash_Account" />
+                <ScalarProperty Name="Type_Of_Account" ColumnName="Type_Of_Account" />
+                <ScalarProperty Name="Title_Of_Account" ColumnName="Title_Of_Account" />
+                <ScalarProperty Name="Account_Code" ColumnName="Account_Code" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MonthlyClosings">
+            <EntityTypeMapping TypeName="GLModel.MonthlyClosing">
+              <MappingFragment StoreEntitySet="MonthlyClosing">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Rec_added_dateTime" ColumnName="Rec_added_dateTime" />
+                <ScalarProperty Name="Rec_added_by" ColumnName="Rec_added_by" />
+                <ScalarProperty Name="Fiscal_Id" ColumnName="Fiscal_Id" />
+                <ScalarProperty Name="Closing_Month" ColumnName="Closing_Month" />
+                <ScalarProperty Name="Company_id" ColumnName="Company_id" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_IDctrProcurement" FunctionName="GLModel.Store.usp_IDctrProcurement" />
+          <FunctionImportMapping FunctionImportName="usp_IDctr" FunctionName="GLModel.Store.usp_IDctr" />
+          <EntitySetMapping Name="IdCtrs">
+            <EntityTypeMapping TypeName="GLModel.IdCtr">
+              <MappingFragment StoreEntitySet="IdCtr">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="Counter" ColumnName="Counter" />
+                <ScalarProperty Name="ForTable" ColumnName="ForTable" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_VGetCureCityChar" FunctionName="GLModel.Store.usp_VGetCureCityChar" />
+          <FunctionImportMapping FunctionImportName="usp_GetAllSalexTaxAccounts" FunctionName="GLModel.Store.usp_GetAllSalexTaxAccounts">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="GLModel.usp_GetAllSalexTaxAccounts_Result">
+                <ScalarProperty Name="Account_Code" ColumnName="Account_Code" />
+                <ScalarProperty Name="Title_Of_Account" ColumnName="Title_Of_Account" />
+                <ScalarProperty Name="Type_Of_Account" ColumnName="Type_Of_Account" />
+                <ScalarProperty Name="Is_Cash_Account" ColumnName="Is_Cash_Account" />
+                <ScalarProperty Name="Cash_Flow_Title" ColumnName="Cash_Flow_Title" />
+                <ScalarProperty Name="Is_Transaction_Level" ColumnName="Is_Transaction_Level" />
+                <ScalarProperty Name="Subsidiary_Account_Type" ColumnName="Subsidiary_Account_Type" />
+                <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+                <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+                <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+                <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+                <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+                <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+                <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+                <ScalarProperty Name="Subsidiary_Account_Param" ColumnName="Subsidiary_Account_Param" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

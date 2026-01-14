@@ -1,0 +1,756 @@
+﻿body
+{
+    font-family: 'Open Sans' , sans-serif;
+}
+.TopHeader
+{
+    background-image: url('Images/TopHeader.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-size: 100% 100%;
+}
+.loginlogo
+{
+    width: 291px;
+    height: 119px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.loginlogo img
+{
+    width: 302px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 154;
+    top: 0px;
+}
+
+.header
+{
+    height: 83px;
+}
+
+.leftHeader
+{
+    background-image: url(images/light.png);
+    background-repeat: repeat-x;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 83px !important;
+    margin:0px auto;
+}
+
+.rightHeader
+{
+    background-image: url(images/dark.png);
+    background-repeat: repeat-x;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 83px!important;
+    margin:0px auto;
+}
+.logininfo
+{
+    width: 340px;    
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-top-style: solid;
+    border-top-color: #660834;
+    border-top-width: 1px;
+}
+
+.logintxt
+{
+    background-image: url(images/logininfotxt.png);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 350px;
+}
+.username
+{
+    /*background-image: url(images/logininfotxt.png) ;     background-repeat:no-repeat;*/
+    height: 40px;
+    width: 350px;
+    margin-top:20px;
+    border-style: solid;
+    border-color: #685642;
+    border-width: 1px;
+}
+.login
+{
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    color: White;
+    margin-top: 30px;
+    background-color: #020202;
+    color: white;
+    height: 40px;
+    width: 350px;
+    border-style: solid;
+    border-color: #1a344d;
+    border-width: 1px;
+    padding-top: 0px;
+    
+}
+.userico
+{
+    background-image: url(../Content/images/usericon.png);
+    background-repeat: repeat-x;
+    display: block;
+    float: left;
+    width: 45px;
+    height: 40px;
+}
+.userpwdico
+{
+    background-image: url(../Content/images/pwdicon.png);
+    background-repeat: repeat-x;
+    display: block;
+    float: left;
+    width: 45px;
+    height: 40px;
+}
+.txt
+{
+    border: 0px solid;
+    outline: 0px;
+    text-align: left;
+    color: #1a344d;
+    height: 29px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 3px;
+    width: 296px;
+    margin-top: 3px;
+    padding-left:3px;
+}
+.loginfooter
+{
+    background-image: url(images/loginfooter_n.png);
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 350px;
+}
+
+
+/* Master layout */
+._title
+{
+    height: 33px;
+    font-family: Sans-Serif;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: #1d3950;
+    width:100%;
+}
+
+._middletop
+{
+    background-color: White;
+    height: 73px;
+}
+._middlecenter
+{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+._middleleft
+{
+    display: block;
+    float: left;
+    width: 79%;
+    height: 100%;
+}
+.middletopRight
+{
+    display: block;
+    float: right;
+    width: 168px;
+    height: 73px;
+}
+
+._middleright
+{
+    /* background-image: url(images/masterpersonalimage.png);     background-repeat: repeat-x;*/
+    display: block;
+    float: right;
+    width: 100%;
+    height: 54px;
+}
+._middleright_under
+{
+    /*background-image: url(images/masterlougout.png);     background-repeat: repeat-x;*/
+    display: block;
+    float: right;
+    width: 100%;
+    height: 25px;
+}
+
+
+._leftHeader
+{
+    background-image: url(../Content/images/masterleft.png);
+    background-repeat: repeat-x;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+._rightHeader
+{
+    background-image: url(../Content/images/materright.png);
+    background-repeat: repeat-x;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.Main
+{
+    width: 100%;
+}
+.Nav
+{
+    width: 18%;
+    height: 400px;
+    float: left;
+    display: block; /*background-color:#f1f2f7;*/
+}
+.line
+{
+    width: 2px;
+    height: 800px;
+    float: left;
+    display: block;
+    background-color: #2a5276;
+    margin-left: 2px;
+}
+/*.bottomline
+{
+    width:80%;
+    height:2px;    
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color:#2a5276;
+}*/
+
+.Content
+{
+    width: 81%;
+    float: right;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    height: auto;
+    background: #f1f2f7;
+    margin-bottom: 2px; /*border-bottom-style: solid;     border-bottom-width:2px;       border-bottom-color:#2a5276;    */
+}
+
+img
+{
+    cursor: pointer;
+    cursor: hand !important;
+}
+.title
+{
+    background-color: #f1f2f7;
+    color: #1d3950;
+    border-top: 1px solid #ec534b;
+    border-bottom: 1px solid #ec534b;
+}
+.field-validation-error
+{
+    color: red;
+}
+
+.editor-field
+{
+    border: 1px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #2a5376;
+    width: 300px;
+    height: 23px;
+    padding-left: 2px;
+    margin-bottom: 2px;
+    background: #FFF;
+    color: #1a344d;
+}
+.ddllist
+{
+    border: 1px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #2a5376;
+    width: 305px;
+    height: 24px;
+    padding-left: 2px;
+    margin-bottom: 2px;
+    background: #FFF;
+    color: #1a344d;
+}
+hr
+{
+    border: 1px solid #f1f2f7;
+    width: 60%;
+    float: left;
+    margin: 30px 0px 0px 130px;
+}
+/*.captioncolumn
+{
+    background-color: #E7E4D3 !important;
+    width: 120px !important;
+    margin-right: 5px !important;
+    padding: 2px !important;
+}*/
+
+
+.button
+{
+    outline: 0;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    background-color: #2a5376;
+    border: 1px solid #e7e4d3;
+    width: 75px;
+    color: #e7e4d3;
+    display: block;
+    height: 30px !important;
+    padding: 2px;
+    font-family: 'Open Sans' , sans-serif !important;
+    font-weight: 100 !important; /*font-size: larger !important;*/
+}
+.lnkbutton
+{
+    outline: 0;
+    text-decoration: initial;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    background-color: #2a5376;
+    border: 1px solid #e7e4d3;
+    width: 75px;
+    color: #e7e4d3;
+    display: block;
+    height: 20px;
+    padding: 7px 2px 2px 2px;
+    text-decoration: none !important;
+    font-family: 'Open Sans' , sans-serif !important;
+    font-weight: 100 !important;
+}
+
+.lnk
+{
+    text-decoration: initial;
+    text-decoration: none !important;
+    color: #206ba4;
+}
+
+.mylink
+{
+    color: #206BA4;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.log
+{
+    color: #fff;
+    font-family: Tahoma;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Divtitle
+{
+    width: 100%;
+    background-color: #2a5276;
+    font-family: Tahoma;
+    font-size: 12px;
+    display: block;
+    overflow: hidden;
+    height: 25px;
+}
+
+.DivtitleInnertitle
+{
+    background-color: #1d3950;
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 300px;
+    float: left;
+    color: #fff;
+    height: 25px;
+    display: block;
+    padding: 4px 2px 2px 5px;
+}
+.rowheader
+{
+    /*background-color: #fb7f79;*/
+    background-color: #2a5276;
+    overflow: hidden;
+    height: 22px;
+    border-top: 3px solid #ee534b;
+    border-bottom: 1px solid #ee534b;
+    padding-top: 5px;
+    color: #FFF;
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 300px;
+}
+.rowheader_
+{
+    /*background-color: #fb7f79;*/
+    background-color: #2a5276;
+    overflow: hidden;
+    height: 35px;
+    padding-top: 5px;
+    color: #FFF;
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 300px;
+}
+.errmess
+{
+    /*background-color: #fb7f79;*/
+    background-color: #FFF;
+    overflow: hidden;
+    height: 22px;
+    border-top: 1px solid #ee534b;
+    border-bottom: 1px solid #ee534b;
+    font-family: Tahoma;
+    font-size: 16px;
+    margin: 1px;
+    color: Red;
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    padding-top: 2px;
+    font-size: medium;
+    font-weight: 300;
+}
+.rowheader th
+{
+    padding-top: 2px;
+    text-align: left;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.tblContent
+{
+    width: 100%;
+    margin-top: 2px;
+}
+.tblContent th
+{
+    padding: 2px 4px 2px 2px;
+    text-align: right;
+    width: 120px;
+}
+.tr
+{
+    padding-top: 5px;
+    color: #1a344d;
+    font-family: Tahoma;
+    font-size: 14px;
+    border-width: 1px 0px 1px 0px !important;
+    border-color: #2a5276 !important;
+    border-style: solid !important;
+}
+.tr td
+{
+    padding: 2px;
+}
+
+/*.btn
+{
+    width: 70px;
+    height: 30px;
+    background-color: #1d3950;
+    border: 1px solid #FFF;
+    color: #FFF;
+}
+.btn:hover
+{
+    background-color: #2a5276;
+    border: 1px solid #ee534b;
+    color: #FFF;
+    cursor: auto;
+}*/
+
+.ddlError
+{
+    border: 1px;
+    border-style: solid;
+    border-width: thin;
+    border-color: Red;
+    width: 305px;
+    height: 24px;
+    padding-left: 2px;
+    margin-bottom: 2px;
+    color: Red;
+}
+
+.txtError
+{
+    border: 1px;
+    border-style: solid;
+    border-width: thin;
+    border-color: Red;
+    text-align: left;
+    color: Red;
+    height: 29px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 3px;
+    width: 296px;
+    margin-top: 3px;
+}
+
+.txtArea
+{
+    border: 1px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #2a5276;
+    text-align: right;   
+    font-family:Arial;
+    font-size:20px;
+   
+    
+    
+    }
+.txtAreaError
+{
+    border: 1px;
+    border-style: solid;
+    border-width: thin;
+    border-color: Red;
+    text-align: left;       
+ }
+ 
+ 
+ .UrduTxt
+ {
+     text-align:right !important;    
+     padding:2px 2px 8px 2px !important;
+ }
+   a.edit
+{
+     background: url(../Content/Images/News-Edit.ico) no-repeat top center ;
+     display: block;
+     width: 50px;
+     height: 16px;
+     text-indent: -9999px; /* hides the link text */
+     
+}
+     a.delete
+{
+     background: url(../Content/Images/Trash-Cancel.ico) no-repeat top center ;
+     display: block;
+     width: 50px;
+     height: 16px;
+     text-indent: -9999px; /* hides the link text */     
+}
+    
+    .ui-jqgrid-title{
+        color:#FFF;
+    }
+   /* #gbox_myGrid{
+        width:100%;
+    }*/ 
+   .ui-widget-header{
+       background-color:#1a344d;
+       color:#FFF;
+       background:none;
+       background:#1a344d;
+   }
+h5 {
+    color: #428bca !important;
+}
+
+
+ 
+        .webGrid { margin: 4px; border-collapse: collapse; width: 100%;  background-color:#FCFCFC; padding:2px;}
+        .header { background-color: #1a344d; font-weight: bold; color: #FFF; height:35px !important; }
+        .webGrid th, .webGrid td { border: 1px solid #1a344d; padding: 1px;height:25px;}
+        .alt { background-color: #f8f8f8; color: #000; }
+        .gridHead a:hover {text-decoration:underline;}        
+        .description { width:auto}
+        .select{background-color: #389DF5}
+        .webGrid th a {color:#FFF !important;}
+        .webGrid th {text-align:center;}
+    
+        
+    .col3Width {
+        width: 100px;
+        text-align: center;
+    }
+    
+    .bootbox-body {
+        padding: 7px 20px 20px 7px !important;
+        background-color: #131414 !important;
+        border-bottom: 2px solid #956c73 !important;
+        color: #FFF;
+       
+    
+    }
+
+    .modal-footer {
+        margin-top: 3px !important;
+    }
+
+    .bootbox-close-button close {
+        color: #FFF;
+        margin-right: 15px;
+    }
+
+    .modal-body {
+        padding: 5px !important;
+        color: #f7574b !important;
+       
+         
+    }
+   
+    button.close {
+        margin-top: 5px !important;
+        color: #FFF !important;
+        margin-right: 10px; z-index:99999 !important ;
+    }
+
+    .modal-footer {
+        padding: 7px 20px 7px !important;
+        
+    }
+
+    
+ 
+ .EU_TableScroll
+{
+	max-height: 300px;
+	overflow: auto;
+	border: 0px solid #287db4;
+	margin: 2px;	
+}
+.EU_DataTable
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+.EU_DataTable tr th
+{
+	background-color: #929393 !important;
+	color: #020202;
+	padding: 3px 5px 3px 5px;
+	border: 1px solid #b2b0b0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-transform: capitalize;
+    text-align:center;
+}
+.EU_DataTable tr:nth-child(2n+2)
+{
+	background-color: #e0e3e3;
+}
+
+.EU_DataTable tr:nth-child(2n+1) td
+{
+	background-color: #FFF;
+	color: #454545;
+}
+.EU_DataTable tr td
+{
+	padding:  3px 10px 3px 10px;
+	color: #454545;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	border: 1px solid #cccccc;
+	vertical-align: middle;
+}
+.EU_DataTable tr td:first-child
+{
+	text-align: left ;
+}
+ 
+ .pagination span
+    {
+        background-color:red;
+        color:#FFF;
+        font-size:20px;
+       
+    }  
+    .pagination td
+    {
+        padding-left: 5px;   
+        padding-right: 5px;  
+      
+    }
+   
+.form-group {
+    margin-bottom:3px !important;
+    
+       
+}
+.ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all{
+    z-index:502 !important;
+
+}
+
+ .accordion {
+                    width: 100%;
+                }
+
+                .accordionHeader {
+                    border: 1px solid #2F4F4F;
+                    color: white;
+                    background-color: #020202;
+                    font-family: Arial, Sans-Serif;
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding: 5px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                .accordionHeaderSelected {
+                    border: 1px solid #2F4F4F;
+                    color: white;
+                    background-color: #929393;
+                    font-family: Arial, Sans-Serif;
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding: 5px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                }
+
+                .accordionContent {
+                    background-color: #FFF;
+                    border: 0px dashed #2F4F4F;
+                    border-top: none;
+                    padding: 2px;
+                    padding-top: 10px;
+                }

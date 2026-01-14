@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4a05d3974c47488da50a12e27b8d0d68" Name="Diagram1">
+        <EntityTypeShape EntityType="DbDigitalModel.AcknowledgeReference" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Adjustment" Width="1.5" PointX="26.25" PointY="55" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.AdjustmentDetail" Width="1.5" PointX="28.5" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.AdjustmentStatu" Width="1.5" PointX="24" PointY="49.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Agency" Width="1.5" PointX="10.5" PointY="56.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.AttachedDocType" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Channel" Width="1.5" PointX="13.5" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.CityManagement" Width="1.5" PointX="5.25" PointY="59.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Client" Width="1.5" PointX="7.5" PointY="53.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Compain" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Company" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Country" Width="1.5" PointX="0.75" PointY="51.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.CountryState" Width="1.5" PointX="3" PointY="59.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.CreativeType" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.CRVCN__" Width="1.5" PointX="31.5" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.CRVStatu" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.CurrencyMode" Width="1.5" PointX="5.25" PointY="63.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.DeliveryInstruction" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Designation" Width="1.5" PointX="11.25" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.DocumentType" Width="1.5" PointX="21.75" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.EffectiveProvince" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.ExamptedForm" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.GLAccounttHead" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.GLHead" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.GroupAgency" Width="1.5" PointX="7.5" PointY="61.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.GSTProvince" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.IdCtr" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.InvDN" Width="1.5" PointX="31.5" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.InvoiceDetail" Width="1.5" PointX="20.25" PointY="66" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.InvoiceDocument" Width="1.5" PointX="12.75" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.InvoiceDocumentDetail" Width="1.5" PointX="23.25" PointY="52.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.InvoiceMaster" Width="1.5" PointX="18" PointY="53.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.LedgerBalance" Width="1.5" PointX="31.5" PointY="62.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.LogManager" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.LogRecord" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.LSAdjustmentDetail" Width="1.5" PointX="34.5" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.MenuItem" Width="1.5" PointX="14.25" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Menu" Width="1.5" PointX="12" PointY="38.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.PageType" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Payment" Width="1.5" PointX="12.75" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.PaymentDetail" Width="1.5" PointX="23.25" PointY="61.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.PaymentMode" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.PaymentStatu" Width="1.5" PointX="15.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.PaymentType" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Portal" Width="1.5" PointX="24" PointY="69.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.PositionManagemenet" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Profile" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.RecordStatu" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.ReleaseOrderDetail" Width="1.5" PointX="21" PointY="55.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.ReleaseOrderMaster" Width="1.5" PointX="15.75" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.ReleaseOrderSTI" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.ROAttachedDocument" Width="1.5" PointX="24" PointY="57.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.Role" Width="1.5" PointX="11.25" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.RolesItem" Width="1.5" PointX="16.5" PointY="43.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.SalesPerson" Width="1.5" PointX="13.5" PointY="59" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.SettlementPlan" Width="1.5" PointX="15" PointY="64.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.SettlementPlanDetail" Width="1.5" PointX="17.25" PointY="64.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.SuspentionRestorationAgencyOption" Width="1.5" PointX="12.75" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.SuspentionRestorationClientOption" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.SuspentionRestorationOption" Width="1.5" PointX="9.75" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.sysdiagram" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.TaxSlabesData" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblCRV" Width="1.5" PointX="12.75" PointY="67.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblCRVCN" Width="1.5" PointX="12.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblCRVDetail" Width="1.5" PointX="15" PointY="68.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblCRVStatus__" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblDocument" Width="1.5" PointX="12.75" PointY="75.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblDocumentDetail" Width="1.5" PointX="23.25" PointY="65.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblLanguage" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.TransactionStatu" Width="1.5" PointX="29.25" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.UserInfo" Width="1.5" PointX="13.5" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.VoucherTrack" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.tblSettlementPlanDetail___" Width="1.5" PointX="12.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.VAdjustmentData" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vAgencyWithCity" Width="1.5" PointX="14.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vBilling" Width="1.5" PointX="10.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vDebitCreditNote" Width="1.5" PointX="12.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vExecuteReleaseOrder" Width="1.5" PointX="14.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.ViewAllInvoice" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vInvoiceAcknowledgement_" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.VInvoicePrintData" Width="1.5" PointX="4.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.VInvoicePrintData_" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vLedgerReport" Width="1.5" PointX="6.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vNewLedgerReport" Width="1.5" PointX="16.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vReleaseOrderDetail" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vReleaseOrderMaster" Width="1.5" PointX="18.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.VReportInvoiceMaster" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vReportReleaseOrderMasterWithSTI" Width="1.5" PointX="18.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vRptInvoiceDetail" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.VSummaryReleaseOrder" Width="1.5" PointX="20.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbDigitalModel.vUpdateExpressionList" Width="1.5" PointX="20.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="DbDigitalModel.FK_Adjustment_AdjustmentStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Adjustment_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Adjustment_Channel" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Adjustment_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Adjustment_Portal" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_AdjustmentDetail_Adjustment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_CRVCN_Adjustment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvDN_Adjustment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LedgerBalance_Adjustment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LSAdjustmentDetail_Adjustment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Agency_CityManagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Agency_GroupAgency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Client_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_CRVCN_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Invoice_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvoiceDocument_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LedgerBalance_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LSAdjustmentDetail_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Payment_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderMaster_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SettlementPlan_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SuspentionRestorationAgencyOption_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_tblCRV_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_tblDocument_Agency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderMaster_Channel" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_CityManagement_CountryStates" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Client_CityManagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_GroupAgency_CityManagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SalesPerson_CityManagement" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Client_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Client_CountryStates" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderMaster_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_CountryStates_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_CRVCN_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_GroupAgency_CurrencyMode" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SalesPerson_Designation" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ROAttachedDocuments_ROAttachedDocuments" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SuspentionRestorationOption_GroupAgency" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvDN_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvoiceDetail_Invoice" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvoiceDetail_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvoiceDocumentDetail_InvoiceDocument" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvoiceDocumentDetail_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_Invoice_PaymentStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_InvoiceMaster_ReleaseOrderMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LedgerBalance_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LSAdjustmentDetail_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_PaymentDetail_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_tblDocumentDetail_InvoiceMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_LedgerBalance_TransactionStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_MenuItems_Menus_ParentMenu_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_RolesItems_MenuItems" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_PaymentDetail_Payment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderDetails_Portal" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderDetails_ReleaseOrderMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderMaster_SalesPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderMaster_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ReleaseOrderMaster_UserInfo1" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_ROAttachedDocuments_ReleaseOrderMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_RolesItems_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_UserInfo_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SettlementPlan_CRVMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SettlementPlanDetail_SettlementPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SuspentionRestorationAgencyOption_UserInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_SuspentionRestorationOption_UserInfo1" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_tblCRVDetail_tblCRV" ManuallyRouted="false" />
+        <AssociationConnector Association="DbDigitalModel.FK_tblDocumentDetail_tblDocument" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

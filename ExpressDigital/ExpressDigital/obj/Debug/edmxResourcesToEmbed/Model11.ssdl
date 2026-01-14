@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ChartOfAccounts">
+    <Key>
+      <PropertyRef Name="Account_Code" />
+    </Key>
+    <Property Name="Account_Code" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Title_Of_Account" Type="varchar" MaxLength="40" />
+    <Property Name="Type_Of_Account" Type="varchar" MaxLength="1" />
+    <Property Name="Is_Cash_Account" Type="bit" Nullable="false" />
+    <Property Name="Cash_Flow_Title" Type="int" />
+    <Property Name="Is_Transaction_Level" Type="bit" Nullable="false" />
+    <Property Name="Subsidiary_Account_Type" Type="varchar" MaxLength="2" />
+    <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Added_Date" Type="datetime" />
+    <Property Name="Rec_Added_Time" Type="datetime" />
+    <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Edited_Date" Type="datetime" />
+    <Property Name="Rec_Edited_Time" Type="datetime" />
+    <Property Name="Comp_Code" Type="int" />
+    <Property Name="Subsidiary_Account_Param" Type="varchar" MaxLength="5" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CostCenters">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="CostCenter_Title" Type="varchar" MaxLength="30" />
+    <Property Name="Abreviation" Type="varchar" MaxLength="5" />
+    <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Added_Date" Type="datetime" />
+    <Property Name="Rec_Added_Time" Type="datetime" />
+    <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Edited_Date" Type="datetime" />
+    <Property Name="Rec_Edited_Time" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Departments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Department_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Abreviation" Type="varchar" MaxLength="5" />
+    <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Added_Date" Type="datetime" />
+    <Property Name="Rec_Added_Time" Type="datetime" />
+    <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Edited_Date" Type="datetime" />
+    <Property Name="Rec_Edited_Time" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FiscalYear">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Starting_date" Type="datetime" Nullable="false" />
+    <Property Name="Ending_date" Type="datetime" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Added_Date" Type="datetime" />
+    <Property Name="Rec_Added_Time" Type="datetime" />
+    <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Edited_Date" Type="datetime" />
+    <Property Name="Rec_Edited_Time" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GroupComps">
+    <Key>
+      <PropertyRef Name="GroupComp_Id" />
+    </Key>
+    <Property Name="GroupComp_Id" Type="tinyint" Nullable="false" />
+    <Property Name="GroupComp_Name" Type="varchar" MaxLength="30" />
+    <Property Name="Sequence" Type="smallint" />
+    <Property Name="Abreviation" Type="varchar" MaxLength="3" />
+    <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Added_Date" Type="datetime" />
+    <Property Name="Rec_Added_Time" Type="datetime" />
+    <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Edited_Date" Type="datetime" />
+    <Property Name="Rec_Edited_Time" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IdCtr">
+    <Key>
+      <PropertyRef Name="ForTable" />
+    </Key>
+    <Property Name="ForTable" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Counter" Type="int" Nullable="false" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MonthlyClosing">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Company_id" Type="int" />
+    <Property Name="Closing_Month" Type="datetime" />
+    <Property Name="Fiscal_Id" Type="int" />
+    <Property Name="Rec_added_by" Type="varchar" MaxLength="15" />
+    <Property Name="Rec_added_dateTime" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Publications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="Publication_Name" Type="varchar" MaxLength="40" />
+    <Property Name="Pub_Abreviation" Type="varchar" MaxLength="5" />
+    <Property Name="In_House_Publication" Type="bit" Nullable="false" />
+    <Property Name="Rec_Added_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Added_Date" Type="datetime" />
+    <Property Name="Rec_Added_Time" Type="datetime" />
+    <Property Name="Rec_Edited_By" Type="varchar" MaxLength="12" />
+    <Property Name="Rec_Edited_Date" Type="datetime" />
+    <Property Name="Rec_Edited_Time" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Function Name="usp_GetAllChannel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_nPublication_Id" Type="int" Mode="In" />
+    <Parameter Name="p_strPublication_Name" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAbreviation" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetAllChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_strAccount_Code" Type="varchar" Mode="In" />
+    <Parameter Name="p_strTitle_Of_Account" Type="varchar" Mode="In" />
+    <Parameter Name="p_strType_Of_Account" Type="varchar" Mode="In" />
+    <Parameter Name="p_bIs_Transaction_Level" Type="bit" Mode="In" />
+    <Parameter Name="p_strSubsidiary_Account_Type" Type="varchar" Mode="In" />
+    <Parameter Name="p_nComp_Code" Type="int" Mode="In" />
+    <Parameter Name="p_strSubsidiary_Account_Param" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetAllDepartment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_nId" Type="int" Mode="In" />
+    <Parameter Name="p_strDepartment_Name" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAbreviation" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetAllFiscalYears" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_bStatus" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_GetAllLocation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_nGroupComp_Id" Type="int" Mode="In" />
+    <Parameter Name="p_strGroupComp_Name" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAbreviation" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetAllSalexTaxAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="companyid" Type="int" Mode="In" />
+    <Parameter Name="txt" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetAllSuppliers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_nId" Type="int" Mode="In" />
+    <Parameter Name="p_strSupplier_Name" Type="varchar" Mode="In" />
+    <Parameter Name="p_nPurchase_Category" Type="int" Mode="In" />
+    <Parameter Name="p_strNTN" Type="varchar" Mode="In" />
+    <Parameter Name="p_dtNTN_Valid" Type="datetime" Mode="In" />
+    <Parameter Name="p_strAddress_Line_1" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAddress_Line_2" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAddress_Line_3" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAddress_Line_4" Type="varchar" Mode="In" />
+    <Parameter Name="p_strPayable_Account_Code" Type="varchar" Mode="In" />
+    <Parameter Name="p_nCmp" Type="int" Mode="In" />
+    <Parameter Name="p_strRec_Added_By" Type="varchar" Mode="In" />
+    <Parameter Name="p_dtRec_Added_Date" Type="datetime" Mode="In" />
+    <Parameter Name="p_dtRec_Added_Time" Type="datetime" Mode="In" />
+    <Parameter Name="p_strRec_Edited_By" Type="varchar" Mode="In" />
+    <Parameter Name="p_dtRec_Edited_Date" Type="datetime" Mode="In" />
+    <Parameter Name="p_dtRec_Edited_Time" Type="datetime" Mode="In" />
+    <Parameter Name="p_guidrowguid" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartOfAccounts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_strAccount_Code" Type="varchar" Mode="In" />
+    <Parameter Name="p_strSubsidiary_Account_Type" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_GetFiscalMonthStatus" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_dtVoucher_Date" Type="datetime" Mode="In" />
+    <Parameter Name="p_nCompanyId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_IDctr" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="For_Table" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_IDctrProcurement" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="For_Table" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertVoucher" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_dtVoucher_Date" Type="datetime" Mode="In" />
+    <Parameter Name="p_cVoucherType" Type="char" Mode="In" />
+    <Parameter Name="p_nBank" Type="int" Mode="In" />
+    <Parameter Name="p_strCheque_No" Type="varchar" Mode="In" />
+    <Parameter Name="p_dtCheque_Date" Type="datetime" Mode="In" />
+    <Parameter Name="p_strDrawn_On" Type="varchar" Mode="In" />
+    <Parameter Name="p_strRemarks" Type="varchar" Mode="In" />
+    <Parameter Name="p_nReference" Type="int" Mode="In" />
+    <Parameter Name="p_strRec_Added_By" Type="varchar" Mode="In" />
+    <Parameter Name="p_strVoucherNoOld" Type="varchar" Mode="In" />
+    <Parameter Name="p_strVoucherNo" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_InsertVoucherDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_strVoucher_No" Type="varchar" Mode="In" />
+    <Parameter Name="p_dtTransaction_Date" Type="datetime" Mode="In" />
+    <Parameter Name="p_strTrans_Details" Type="varchar" Mode="In" />
+    <Parameter Name="p_byEntry_Loc" Type="tinyint" Mode="In" />
+    <Parameter Name="p_strCost_Center" Type="varchar" Mode="In" />
+    <Parameter Name="p_strDepartment" Type="varchar" Mode="In" />
+    <Parameter Name="p_strAccount_Code" Type="varchar" Mode="In" />
+    <Parameter Name="p_nSubsidiary_Account" Type="int" Mode="In" />
+    <Parameter Name="p_strSubsidiary_Account_Type" Type="char" Mode="In" />
+    <Parameter Name="p_dblAmount" Type="int" Mode="In" />
+    <Parameter Name="p_strRec_Added_By" Type="varchar" Mode="In" />
+    <Parameter Name="p_nCompanyId" Type="int" Mode="In" />
+    <Parameter Name="p_nChannelId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_VGetCureCityChar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="GLModelStoreContainer">
+    <EntitySet Name="ChartOfAccounts" EntityType="Self.ChartOfAccounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CostCenters" EntityType="Self.CostCenters" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Departments" EntityType="Self.Departments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FiscalYear" EntityType="Self.FiscalYear" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GroupComps" EntityType="Self.GroupComps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IdCtr" EntityType="Self.IdCtr" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MonthlyClosing" EntityType="Self.MonthlyClosing" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Publications" EntityType="Self.Publications" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

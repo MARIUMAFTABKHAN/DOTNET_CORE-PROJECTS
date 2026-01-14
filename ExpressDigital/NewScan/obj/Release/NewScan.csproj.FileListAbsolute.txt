@@ -1,0 +1,154 @@
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\NewScan.exe.config
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\NewScan.exe
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\NewScan.pdb
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\Fleck.dll
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\NTwain.dll
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\NTwain.pdb
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\bin\Release\NTwain.xml
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\obj\Release\NewScan.Form1.resources
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\obj\Release\NewScan.Properties.Resources.resources
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\obj\Release\NewScan.SplashScreen.resources
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\obj\Release\NewScan.csproj.GenerateResource.Cache
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\obj\Release\NewScan.exe
+C:\Users\MGR\Documents\Visual Studio 2015\Projects\NewScan\NewScan\obj\Release\NewScan.pdb
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\NewScan.exe.config
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\NewScan.exe
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\NewScan.pdb
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\Fleck.dll
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\Newtonsoft.Json.dll
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\NTwain.dll
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\Newtonsoft.Json.xml
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\NTwain.pdb
+D:\TMNDigital\ExpressDigital\NewScan\bin\Release\NTwain.xml
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.csprojAssemblyReference.cache
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.Form1.resources
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.Properties.Resources.resources
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.SplashScreen.resources
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.csproj.GenerateResource.cache
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.csproj.CoreCompileInputs.cache
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.csproj.CopyComplete
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.exe
+D:\TMNDigital\ExpressDigital\NewScan\obj\Release\NewScan.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x64\msvcr120.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x86\msvcr120.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\NewScan.exe.config
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\NewScan.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\NewScan.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\EntityFramework.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\EntityFramework.SqlServer.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\Fleck.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\Microsoft.SqlServer.Types.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\NTwain.dll
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\EntityFramework.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\EntityFramework.SqlServer.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\Newtonsoft.Json.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\NTwain.pdb
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\bin\Release\NTwain.xml
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.csproj.AssemblyReference.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.csproj.SuggestedBindingRedirects.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.Form1.resources
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.Properties.Resources.resources
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.SplashScreen.resources
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.csproj.GenerateResource.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.csproj.CoreCompileInputs.cache
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.csproj.CopyComplete
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.exe
+D:\Development\Web Dot Net\ASPNet\New Web Developments\2022\ExpressDigital\NewScan\obj\Release\NewScan.pdb
+C:\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x64\msvcr120.dll
+C:\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x86\msvcr120.dll
+C:\ExpressDigital\NewScan\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\ExpressDigital\NewScan\bin\Release\NewScan.exe.config
+C:\ExpressDigital\NewScan\bin\Release\NewScan.exe
+C:\ExpressDigital\NewScan\bin\Release\NewScan.pdb
+C:\ExpressDigital\NewScan\bin\Release\EntityFramework.dll
+C:\ExpressDigital\NewScan\bin\Release\EntityFramework.SqlServer.dll
+C:\ExpressDigital\NewScan\bin\Release\Fleck.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.Design.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.WebDesign.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.WebForms.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.SqlServer.Types.dll
+C:\ExpressDigital\NewScan\bin\Release\NTwain.dll
+C:\ExpressDigital\NewScan\bin\Release\EnvDTE.dll
+C:\ExpressDigital\NewScan\bin\Release\stdole.dll
+C:\ExpressDigital\NewScan\bin\Release\Microsoft.MSXML.dll
+C:\ExpressDigital\NewScan\bin\Release\EntityFramework.xml
+C:\ExpressDigital\NewScan\bin\Release\EntityFramework.SqlServer.xml
+C:\ExpressDigital\NewScan\bin\Release\Newtonsoft.Json.xml
+C:\ExpressDigital\NewScan\bin\Release\NTwain.pdb
+C:\ExpressDigital\NewScan\bin\Release\NTwain.xml
+C:\ExpressDigital\NewScan\bin\Release\de\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\es\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\it\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\de\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\es\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\it\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\ExpressDigital\NewScan\obj\Release\NewScan.csproj.AssemblyReference.cache
+C:\ExpressDigital\NewScan\obj\Release\NewScan.Form1.resources
+C:\ExpressDigital\NewScan\obj\Release\NewScan.Properties.Resources.resources
+C:\ExpressDigital\NewScan\obj\Release\NewScan.SplashScreen.resources
+C:\ExpressDigital\NewScan\obj\Release\NewScan.csproj.GenerateResource.cache
+C:\ExpressDigital\NewScan\obj\Release\NewScan.csproj.CoreCompileInputs.cache
+C:\ExpressDigital\NewScan\obj\Release\NewScan.csproj.Up2Date
+C:\ExpressDigital\NewScan\obj\Release\NewScan.exe
+C:\ExpressDigital\NewScan\obj\Release\NewScan.pdb

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GLModelStoreContainer" CdmEntityContainer="GLEntities">
+    <EntitySetMapping Name="FiscalYears">
+      <EntityTypeMapping TypeName="GLModel.FiscalYear">
+        <MappingFragment StoreEntitySet="FiscalYear">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Ending_date" ColumnName="Ending_date" />
+          <ScalarProperty Name="Starting_date" ColumnName="Starting_date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupComps">
+      <EntityTypeMapping TypeName="GLModel.GroupComp">
+        <MappingFragment StoreEntitySet="GroupComps">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="GroupComp_Name" ColumnName="GroupComp_Name" />
+          <ScalarProperty Name="GroupComp_Id" ColumnName="GroupComp_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publications">
+      <EntityTypeMapping TypeName="GLModel.Publication">
+        <MappingFragment StoreEntitySet="Publications">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="In_House_Publication" ColumnName="In_House_Publication" />
+          <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+          <ScalarProperty Name="Publication_Name" ColumnName="Publication_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllChannel" FunctionName="GLModel.Store.usp_GetAllChannel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_GetAllChannel_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Publication_Name" ColumnName="Publication_Name" />
+          <ScalarProperty Name="Pub_Abreviation" ColumnName="Pub_Abreviation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllChartOfAccounts" FunctionName="GLModel.Store.usp_GetAllChartOfAccounts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_GetAllChartOfAccounts_Result">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Is_Transaction_Level" ColumnName="Is_Transaction_Level" />
+          <ScalarProperty Name="Subsidiary_Account_Type" ColumnName="Subsidiary_Account_Type" />
+          <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+          <ScalarProperty Name="Subsidiary_Account_Param" ColumnName="Subsidiary_Account_Param" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllDepartment" FunctionName="GLModel.Store.usp_GetAllDepartment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_GetAllDepartment_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Department_Name" ColumnName="Department_Name" />
+          <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllFiscalYears" FunctionName="GLModel.Store.usp_GetAllFiscalYears">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_GetAllFiscalYears_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FiscalYear" ColumnName="FiscalYear" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllLocation" FunctionName="GLModel.Store.usp_GetAllLocation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_GetAllLocation_Result">
+          <ScalarProperty Name="GroupComp_Id" ColumnName="GroupComp_Id" />
+          <ScalarProperty Name="GroupComp_Name" ColumnName="GroupComp_Name" />
+          <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetAllSuppliers" FunctionName="GLModel.Store.usp_GetAllSuppliers" />
+    <FunctionImportMapping FunctionImportName="usp_GetChartOfAccounts" FunctionName="GLModel.Store.usp_GetChartOfAccounts" />
+    <FunctionImportMapping FunctionImportName="usp_GetFiscalMonthStatus" FunctionName="GLModel.Store.usp_GetFiscalMonthStatus" />
+    <FunctionImportMapping FunctionImportName="usp_InsertVoucher" FunctionName="GLModel.Store.usp_InsertVoucher">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_InsertVoucher_Result">
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+          <ScalarProperty Name="Column2" ColumnName="Column2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_InsertVoucherDetail" FunctionName="GLModel.Store.usp_InsertVoucherDetail" />
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="GLModel.Department">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+          <ScalarProperty Name="Department_Name" ColumnName="Department_Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CostCenters">
+      <EntityTypeMapping TypeName="GLModel.CostCenter">
+        <MappingFragment StoreEntitySet="CostCenters">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Abreviation" ColumnName="Abreviation" />
+          <ScalarProperty Name="CostCenter_Title" ColumnName="CostCenter_Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChartOfAccounts">
+      <EntityTypeMapping TypeName="GLModel.ChartOfAccount">
+        <MappingFragment StoreEntitySet="ChartOfAccounts">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Subsidiary_Account_Param" ColumnName="Subsidiary_Account_Param" />
+          <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Subsidiary_Account_Type" ColumnName="Subsidiary_Account_Type" />
+          <ScalarProperty Name="Is_Transaction_Level" ColumnName="Is_Transaction_Level" />
+          <ScalarProperty Name="Cash_Flow_Title" ColumnName="Cash_Flow_Title" />
+          <ScalarProperty Name="Is_Cash_Account" ColumnName="Is_Cash_Account" />
+          <ScalarProperty Name="Type_Of_Account" ColumnName="Type_Of_Account" />
+          <ScalarProperty Name="Title_Of_Account" ColumnName="Title_Of_Account" />
+          <ScalarProperty Name="Account_Code" ColumnName="Account_Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MonthlyClosings">
+      <EntityTypeMapping TypeName="GLModel.MonthlyClosing">
+        <MappingFragment StoreEntitySet="MonthlyClosing">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Rec_added_dateTime" ColumnName="Rec_added_dateTime" />
+          <ScalarProperty Name="Rec_added_by" ColumnName="Rec_added_by" />
+          <ScalarProperty Name="Fiscal_Id" ColumnName="Fiscal_Id" />
+          <ScalarProperty Name="Closing_Month" ColumnName="Closing_Month" />
+          <ScalarProperty Name="Company_id" ColumnName="Company_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_IDctrProcurement" FunctionName="GLModel.Store.usp_IDctrProcurement" />
+    <FunctionImportMapping FunctionImportName="usp_IDctr" FunctionName="GLModel.Store.usp_IDctr" />
+    <EntitySetMapping Name="IdCtrs">
+      <EntityTypeMapping TypeName="GLModel.IdCtr">
+        <MappingFragment StoreEntitySet="IdCtr">
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+          <ScalarProperty Name="ForTable" ColumnName="ForTable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_VGetCureCityChar" FunctionName="GLModel.Store.usp_VGetCureCityChar" />
+    <FunctionImportMapping FunctionImportName="usp_GetAllSalexTaxAccounts" FunctionName="GLModel.Store.usp_GetAllSalexTaxAccounts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="GLModel.usp_GetAllSalexTaxAccounts_Result">
+          <ScalarProperty Name="Account_Code" ColumnName="Account_Code" />
+          <ScalarProperty Name="Title_Of_Account" ColumnName="Title_Of_Account" />
+          <ScalarProperty Name="Type_Of_Account" ColumnName="Type_Of_Account" />
+          <ScalarProperty Name="Is_Cash_Account" ColumnName="Is_Cash_Account" />
+          <ScalarProperty Name="Cash_Flow_Title" ColumnName="Cash_Flow_Title" />
+          <ScalarProperty Name="Is_Transaction_Level" ColumnName="Is_Transaction_Level" />
+          <ScalarProperty Name="Subsidiary_Account_Type" ColumnName="Subsidiary_Account_Type" />
+          <ScalarProperty Name="Rec_Added_By" ColumnName="Rec_Added_By" />
+          <ScalarProperty Name="Rec_Added_Date" ColumnName="Rec_Added_Date" />
+          <ScalarProperty Name="Rec_Added_Time" ColumnName="Rec_Added_Time" />
+          <ScalarProperty Name="Rec_Edited_By" ColumnName="Rec_Edited_By" />
+          <ScalarProperty Name="Rec_Edited_Date" ColumnName="Rec_Edited_Date" />
+          <ScalarProperty Name="Rec_Edited_Time" ColumnName="Rec_Edited_Time" />
+          <ScalarProperty Name="Comp_Code" ColumnName="Comp_Code" />
+          <ScalarProperty Name="Subsidiary_Account_Param" ColumnName="Subsidiary_Account_Param" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

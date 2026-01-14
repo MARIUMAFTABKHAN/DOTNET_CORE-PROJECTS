@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ExpressDigital.Main" %>
+<%@ Register Src="~/MenuControl.ascx" TagName="WebControl" TagPrefix="MenuControl" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Digital (MMS)</title>
+    <link href="Content/MasterStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Content/master.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Content/jquery-ui.js"></script>
+    <link href="Content/jquery-ui.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        h4 {
+            color: #1a344d !important;
+        }
+
+        .btn {
+            width: 100px !important;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        .row{
+            margin-right:0px !important;
+            margin-left:0px !important;
+        }
+
+        .main_menu {
+            width: 100px;
+            background-color: #8db4f9;
+            color: #000;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            margin-right: 5px;
+        }
+
+        .level_menu {
+            width: 110px;
+            background-color: #f8e0be;
+            color: #FFF;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 5px;
+        }
+
+        .selected {
+            background-color: #eae2c1;
+            color: #020202;
+        }
+
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+            color: #FFF; /*Sets the text hover color on navbar*/
+        }
+
+        .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+            background-color: #000;
+            color: #FFF !important;
+            border-left: solid 1px #FFF;
+            border-right: solid 1px #FFF;
+        }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+            color: #FFF; /*BACKGROUND color for active*/
+            background-color: #000;
+        }
+
+
+        .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            color: #FFF;
+            text-decoration: none;
+            background-color: #000; /*change color of links in drop down here*/
+            border-left: solid 10px red;
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus {
+            text-decoration: none;
+            background-color: #000; /*Change rollover cell color here*/
+        }
+
+
+        .navbar-default .navbar-nav > li > a {
+            color: #000; /*Change active text color here*/
+        }
+
+        .navbar-default {
+            width: 100% !important;
+            background-color: #000;
+        }
+
+        .container-fluid {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .navbar-default {
+            border: 0px;
+        }
+
+        .dropdown-menu {
+            background-color: #fff;
+        }
+
+        .active {
+            background-color: #020202;
+        }
+
+        .dropdown {
+            color: #FFF;
+        }
+
+        .dropdown-toggle {
+            color: #FFF !important;
+        }
+
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .container {
+            width: 100% !important;
+        }
+
+        .navbar-nav > li > .dropdown-menu {
+            border-left: solid 10px black;
+        }
+    </style>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <script type="text/javascript" language="javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+            function EndRequestHandler(sender, args) {
+                if (args.get_error() != undefined) {
+                    args.set_errorHandled(true);
+                }
+            }
+        </script>
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="container body-content" style="margin: 0; padding: 0">
+            <div class="row">
+                <div class="_title">
+                    <div class="_leftHeader" style="margin: 0 auto;">
+                    </div>
+                    <div class="_rightHeader" style="margin: 0 auto; padding-right: 15px !important">
+                        <div style="color: #020202; float: right; padding-right: 15px; font-size: 11px; font-family: Tahoma; font-weight: 600;">
+                            <asp:Label ID="lbllogin" runat="server"></asp:Label>
+                            | <a href="Login.aspx">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="height: 65px!important; border-bottom: solid 2px #929393">
+                    <div class="col-md-2" style="top: 0px!important; left: 0px !important;">
+                        <div class="img-responsive">
+                            <img src="Content/Images/digitalLogoAamirD.jpg" alt="logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="background-color: #000; z-index: 346; width: 100% !important">
+                    <MenuControl:WebControl ID="menuctrl" runat="server" />
+                </div>
+            </div>
+
+            <div class="row" style="z-index: -999999">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+
+        </div>
+    </form>
+</body>
+</html>
