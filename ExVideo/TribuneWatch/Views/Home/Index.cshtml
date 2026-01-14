@@ -1,0 +1,151 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Express Tribune Filtering";
+    var basePath = Context.Request.PathBase.Value ?? "";
+}
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <h3 class="mb-0 text-sky">Express Tribune Filtering</h3>
+    <span class="text-muted small">API-driven results</span>
+</div>
+
+<!-- Filters -->
+<div class="row g-2 bg-white border rounded-4 p-3 shadow-sm mb-3">
+    <div class="col-12 col-md-2">
+        <label class="form-label">Code / Media #</label>
+        <input id="fMediaNo" class="form-control" placeholder="optional" />
+    </div>
+    <div class="col-12 col-md-3">
+        <label class="form-label">Slug</label>
+        <input id="fSlug" class="form-control" />
+    </div>
+    <div class="col-12 col-md-3">
+        <label class="form-label">Keyword</label>
+        <input id="fKeyword" class="form-control" />
+    </div>
+    <div class="col-6 col-md-2">
+        <label class="form-label">From</label>
+        <input id="fFrom" type="date" class="form-control" />
+    </div>
+    <div class="col-6 col-md-2">
+        <label class="form-label">To</label>
+        <input id="fTo" type="date" class="form-control" />
+    </div>
+    <div class="col-12 d-flex gap-2 mt-2">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="fExact">
+            <label class="form-check-label" for="fExact">Exact word</label>
+        </div>
+        <select id="fFootage" class="form-select w-auto">
+            <option value="">Any Footage</option>
+            <option value="0">24 & 26</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="120000001">120000001</option>
+        </select>
+        <button id="btnSearch" class="btn btn-sky rounded-pill px-4">Search</button>
+        <button id="btnReset" class="btn btn-outline-secondary rounded-pill">Reset</button>
+    </div>
+</div>
+
+<!-- DataTable -->
+<table id="tbl" class="table table-hover table-striped align-middle w-100">
+    <thead>
+        <tr>
+            <th>ArchiveID</th>
+            <th>Slug</th>
+            <th>Shoot</th>
+            <th>Photographer</th>
+            <th>Source</th>
+            <th style="width:160px">Actions</th>
+        </tr>
+    </thead>
+</table>
+
+<!-- Video Modal -->
+<div class="modal fade" id="playerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content rounded-4">
+      <div class="modal-header skybar text-white rounded-top-4">
+        <h5 class="modal-title" id="playerTitle">Playing…</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+            <video id="plyrVideo" playsinline controls preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@section Scripts{
+<script>
+const basePath = '@basePath';
+let table, plyr;
+let allowLoad = false; // ⬅️ gate the first call
+
+$(function(){
+  // player
+  plyr = new Plyr('#plyrVideo');
+
+  // datatable
+  table = $('#tbl').DataTable({
+    searching: false,
+    serverSide: false,
+    processing: true,
+    ajax: function (data, cb) {
+      if (!allowLoad) { cb({ data: [] }); return; } // nothing on first load
+
+      const q = {
+          ArchiveID: $('#fMediaNo').val() || null,
+        JTSSlug: $('#fSlug').val() || null,
+        Keyword: $('#fKeyword').val() || null,
+        ShootDateFrom: $('#fFrom').val() || null,
+        ShootDateTo: $('#fTo').val() || null,
+        ExactWordSearch: $('#fExact').is(':checked') ? true : null,
+        FootageTypeID: $('#fFootage').val() || null,
+        Page: 1,
+        PageSize: 50
+      };
+
+      const apiUrl = `${basePath}/api/videos/search`;
+
+       $.getJSON(apiUrl, q)
+        .done(rows => cb({ data: rows }))
+        .fail(err => {
+          console.error('Search failed', err);
+          cb({ data: [] });
+        });
+    },
+    order: [[2,'desc']],
+    columns: [
+      { data: 'archiveID' },
+      { data: 'slug', render: d => d || '' },
+      { data: 'shootDate', render: d => d || '' },
+      { data: 'photographer', render: d => d || '' },
+      { data: 'source', render: d => d || '' },
+      {
+        data: null, orderable:false,
+        render: r => `
+          
+          <a class="btn btn-sm btn-outline-secondary rounded-pill"
+             href="${basePath}/api/videos/${r.archiveID}/download"
+      }
+    ],
+    pageLength: 25
+  });
+
+  // Search triggers the first real load
+  $('#btnSearch').on('click', () => { allowLoad = true; table.ajax.reload(); });
+
+  // Reset clears table & blocks API again
+  $('#btnReset').on('click', () => {
+    $('#fMediaNo,#fSlug,#fKeyword,#fFrom,#fTo').val('');
+    $('#fExact').prop('checked', false);
+    $('#fFootage').val('');
+    allowLoad = false;
+    table.clear().draw();
+  });
+});
+</script>
+}

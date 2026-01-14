@@ -1,0 +1,66 @@
+﻿@{
+    var title = ViewData["Title"] as string ?? "Express Tribune Filtering";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <base href="~/" />
+
+    <!-- Bootstrap + DataTables + Plyr -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/v/bs5/dt-2.0.7/datatables.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+<body class="bg-skywhite">
+    <nav class="navbar navbar-expand-lg navbar-light skybar shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="/">Express Tribune Filtering</a>
+            <div class="d-flex align-items-center">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <span class="text-white me-3 small">Welcome, @User.Identity.Name!</span>
+                    <form method="post" action="/account/logout" class="mb-0">
+                        @* Uncomment this in production:
+                        @Html.AntiForgeryToken() *@
+                        <button class="btn btn-outline-light btn-sm rounded-pill">Logout</button>
+                    </form>
+                }
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-4">
+        @RenderBody()
+    </main>
+
+    <!-- Global progress overlay -->
+    <div id="progress-overlay" class="progress-overlay d-none">
+        <div class="progress-card">
+            <div class="spinner-border" role="status"></div>
+            <div class="ms-3">
+                <div class="fw-semibold">Fetching data…</div>
+                <div class="progress mt-2" role="progressbar" aria-label="Loading">
+                    <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" style="width: 45%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/dt-2.0.7/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.polyfilled.min.js"></script>
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

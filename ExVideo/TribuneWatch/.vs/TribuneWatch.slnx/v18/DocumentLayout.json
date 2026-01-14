@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ExVideo\\TribuneWatch\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\controllers\\videosearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:controllers\\videosearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\models\\videosearchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:models\\videosearchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\data\\mediaoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:data\\mediaoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\models\\videosearchrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:models\\videosearchrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|c:\\exvideo\\tribunewatch\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{067A5539-936C-B1AE-661B-E7C8EE7962B7}|TribuneWatch.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VideoSearchController.cs",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Controllers\\VideoSearchController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VideoSearchController.cs",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Controllers\\VideoSearchController.cs",
+              "RelativeToolTip": "Controllers\\VideoSearchController.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAgwBABAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T10:29:12.756Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:53:23.191Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VideoSearchRow.cs",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Models\\VideoSearchRow.cs",
+              "RelativeDocumentMoniker": "Models\\VideoSearchRow.cs",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Models\\VideoSearchRow.cs",
+              "RelativeToolTip": "Models\\VideoSearchRow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:40:25.402Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VideoSearchRequest.cs",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Models\\VideoSearchRequest.cs",
+              "RelativeDocumentMoniker": "Models\\VideoSearchRequest.cs",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Models\\VideoSearchRequest.cs",
+              "RelativeToolTip": "Models\\VideoSearchRequest.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA9wA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T08:40:50.388Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T09:13:55.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-13T11:46:54.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MediaOptions.cs",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Data\\MediaOptions.cs",
+              "RelativeDocumentMoniker": "Data\\MediaOptions.cs",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Data\\MediaOptions.cs",
+              "RelativeToolTip": "Data\\MediaOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T11:45:15.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T09:41:25.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T06:20:39.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\ExVideo\\TribuneWatch\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\ExVideo\\TribuneWatch\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwDcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-17T10:57:01.462Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

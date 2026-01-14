@@ -1,0 +1,30 @@
+{
+  "version": "3.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "datatables.net-bs5@2.3.4",
+      "destination": "wwwroot/lib/datatables.net-bs5/",
+      "files": [
+        "css/dataTables.bootstrap5.css",
+        "css/dataTables.bootstrap5.min.css",
+        "js/dataTables.bootstrap5.js",
+        "js/dataTables.bootstrap5.min.js",
+        "package.json",
+        "Readme.md",
+        "js/dataTables.bootstrap5.min.mjs",
+        "js/dataTables.bootstrap5.mjs",
+        "types/dataTables.bootstrap5.d.ts",
+        "License.txt"
+      ]
+    },
+    {
+      "library": "plyr@3.8.3",
+      "destination": "wwwroot/lib/plyr/"
+    },
+    {
+      "library": "datatables.net@1.13.6",
+      "destination": "wwwroot/lib/datatables.net/"
+    }
+  ]
+}
