@@ -1,0 +1,64 @@
+[
+  {
+    "ContainingType": "TribuneApp.Controllers.VideoController",
+    "Method": "Download",
+    "RelativePath": "api/videos/{archiveId}/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "archiveId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TribuneApp.Controllers.VideoController",
+    "Method": "Search",
+    "RelativePath": "api/videos/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ArchiveID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JTSSlug",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShootDateFrom",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ShootDateTo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ExactWordSearch",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FootageTypeID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

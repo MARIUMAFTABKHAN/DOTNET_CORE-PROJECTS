@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AMR-2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|c:\\amr-2024\\amr\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|c:\\amr-2024\\amr\\contactreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\contactreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|C:\\AMR-2024\\amr\\contactreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\contactreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|C:\\AMR-2024\\amr\\contactreportview.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\contactreportview.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|c:\\amr-2024\\amr\\contactreportview.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\contactreportview.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|C:\\AMR-2024\\amr\\revenuereportcmclient.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\revenuereportcmclient.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|C:\\AMR-2024\\amr\\publicationwisesummary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\publicationwisesummary.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|C:\\AMR-2024\\amr\\agencyexecutiveview.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|AMR\\AMR.csproj|solutionrelative:amr\\agencyexecutiveview.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\Web.config",
+              "RelativeDocumentMoniker": "AMR\\Web.config",
+              "ToolTip": "C:\\AMR-2024\\AMR\\Web.config",
+              "RelativeToolTip": "AMR\\Web.config",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-06T09:57:18.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactReport.aspx",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\ContactReport.aspx",
+              "RelativeDocumentMoniker": "AMR\\ContactReport.aspx",
+              "ToolTip": "C:\\AMR-2024\\AMR\\ContactReport.aspx",
+              "RelativeToolTip": "AMR\\ContactReport.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-06T08:23:03.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PublicationWiseSummary.aspx.cs",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\PublicationWiseSummary.aspx.cs",
+              "RelativeDocumentMoniker": "AMR\\PublicationWiseSummary.aspx.cs",
+              "ToolTip": "C:\\AMR-2024\\AMR\\PublicationWiseSummary.aspx.cs",
+              "RelativeToolTip": "AMR\\PublicationWiseSummary.aspx.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAAAEIBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T10:29:55.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RevenueReportCMClient.aspx.cs",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\RevenueReportCMClient.aspx.cs",
+              "RelativeDocumentMoniker": "AMR\\RevenueReportCMClient.aspx.cs",
+              "ToolTip": "C:\\AMR-2024\\AMR\\RevenueReportCMClient.aspx.cs",
+              "RelativeToolTip": "AMR\\RevenueReportCMClient.aspx.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAALkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T10:29:21.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactReportView.aspx.cs",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\ContactReportView.aspx.cs",
+              "RelativeDocumentMoniker": "AMR\\ContactReportView.aspx.cs",
+              "ToolTip": "C:\\AMR-2024\\AMR\\ContactReportView.aspx.cs",
+              "RelativeToolTip": "AMR\\ContactReportView.aspx.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwE0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T07:37:46.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContactReportView.aspx",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\ContactReportView.aspx",
+              "RelativeDocumentMoniker": "AMR\\ContactReportView.aspx",
+              "ToolTip": "C:\\AMR-2024\\AMR\\ContactReportView.aspx",
+              "RelativeToolTip": "AMR\\ContactReportView.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-02T07:23:54.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AgencyExecutiveView.aspx",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\AgencyExecutiveView.aspx",
+              "RelativeDocumentMoniker": "AMR\\AgencyExecutiveView.aspx",
+              "ToolTip": "C:\\AMR-2024\\AMR\\AgencyExecutiveView.aspx",
+              "RelativeToolTip": "AMR\\AgencyExecutiveView.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-02T07:24:49.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactReport.aspx.cs",
+              "DocumentMoniker": "C:\\AMR-2024\\AMR\\ContactReport.aspx.cs",
+              "RelativeDocumentMoniker": "AMR\\ContactReport.aspx.cs",
+              "ToolTip": "C:\\AMR-2024\\AMR\\ContactReport.aspx.cs",
+              "RelativeToolTip": "AMR\\ContactReport.aspx.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAF0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T13:54:49.388Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

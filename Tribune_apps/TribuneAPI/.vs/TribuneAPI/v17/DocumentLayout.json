@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\controllers\\videosearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\controllers\\videosearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\models\\videosearchrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\models\\videosearchrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VideoSearchController.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "RelativeToolTip": "TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAADwv0kAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:08:07.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "TribuneAPI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:45:56.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VideoSearchRow.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\VideoSearchRow.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Models\\VideoSearchRow.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\VideoSearchRow.cs",
+              "RelativeToolTip": "TribuneAPI\\Models\\VideoSearchRow.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:01:57.522Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

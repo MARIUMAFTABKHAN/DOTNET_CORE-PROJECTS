@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EXPARCSModelStoreContainer" CdmEntityContainer="EXPARCSEntities">
+    <EntitySetMapping Name="ArchiveFileDetails">
+      <EntityTypeMapping TypeName="EXPARCSModel.ArchiveFileDetail">
+        <MappingFragment StoreEntitySet="ArchiveFileDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ArchiveID" ColumnName="ArchiveID" />
+          <ScalarProperty Name="FileTypeStatus" ColumnName="FileTypeStatus" />
+          <ScalarProperty Name="FileFullPath" ColumnName="FileFullPath" />
+          <ScalarProperty Name="FileDuration" ColumnName="FileDuration" />
+          <ScalarProperty Name="vFileSize" ColumnName="vFileSize" />
+          <ScalarProperty Name="IsCopied" ColumnName="IsCopied" />
+          <ScalarProperty Name="PriorityOrder" ColumnName="PriorityOrder" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CopiedOn" ColumnName="CopiedOn" />
+          <ScalarProperty Name="SourcePath" ColumnName="SourcePath" />
+          <ScalarProperty Name="InProcess" ColumnName="InProcess" />
+          <ScalarProperty Name="BaseStation" ColumnName="BaseStation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblArchives">
+      <EntityTypeMapping TypeName="EXPARCSModel.tblArchive">
+        <MappingFragment StoreEntitySet="tblArchive">
+          <ScalarProperty Name="ArchiveID" ColumnName="ArchiveID" />
+          <ScalarProperty Name="MediaNo" ColumnName="MediaNo" />
+          <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="MediaTypeID" ColumnName="MediaTypeID" />
+          <ScalarProperty Name="ClassificationID" ColumnName="ClassificationID" />
+          <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+          <ScalarProperty Name="ShootDate" ColumnName="ShootDate" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="FootageTypeID" ColumnName="FootageTypeID" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="JTSFileName" ColumnName="JTSFileName" />
+          <ScalarProperty Name="JTSTicketNo" ColumnName="JTSTicketNo" />
+          <ScalarProperty Name="JTSReporterID" ColumnName="JTSReporterID" />
+          <ScalarProperty Name="JTSCameramanID" ColumnName="JTSCameramanID" />
+          <ScalarProperty Name="JTSBureau" ColumnName="JTSBureau" />
+          <ScalarProperty Name="JTSJobType" ColumnName="JTSJobType" />
+          <ScalarProperty Name="JTSCreatedBy" ColumnName="JTSCreatedBy" />
+          <ScalarProperty Name="JTSSlug" ColumnName="JTSSlug" />
+          <ScalarProperty Name="JTSDuration" ColumnName="JTSDuration" />
+          <ScalarProperty Name="RackNo" ColumnName="RackNo" />
+          <ScalarProperty Name="ShelfNo" ColumnName="ShelfNo" />
+          <ScalarProperty Name="ProducerID" ColumnName="ProducerID" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
+          <ScalarProperty Name="Singer_Band" ColumnName="Singer_Band" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ProgrammeTitleOrName" ColumnName="ProgrammeTitleOrName" />
+          <ScalarProperty Name="ProgramGenre_Lyrics" ColumnName="ProgramGenre_Lyrics" />
+          <ScalarProperty Name="SubTitleOrCaption_Cast" ColumnName="SubTitleOrCaption_Cast" />
+          <ScalarProperty Name="TelecastDate" ColumnName="TelecastDate" />
+          <ScalarProperty Name="Midbreaks" ColumnName="Midbreaks" />
+          <ScalarProperty Name="EpisodeNo" ColumnName="EpisodeNo" />
+          <ScalarProperty Name="Writer" ColumnName="Writer" />
+          <ScalarProperty Name="NOCNo" ColumnName="NOCNo" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="Theme" ColumnName="Theme" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Album" ColumnName="Album" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="FootageDetail" ColumnName="FootageDetail" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="Cdate" ColumnName="Cdate" />
+          <ScalarProperty Name="CTime" ColumnName="CTime" />
+          <ScalarProperty Name="SeaChangeCode" ColumnName="SeaChangeCode" />
+          <ScalarProperty Name="MediaStatusID" ColumnName="MediaStatusID" />
+          <ScalarProperty Name="InputTypeID" ColumnName="InputTypeID" />
+          <ScalarProperty Name="TotalCapacity" ColumnName="TotalCapacity" />
+          <ScalarProperty Name="CapacityUtilized" ColumnName="CapacityUtilized" />
+          <ScalarProperty Name="CapacityAvailable" ColumnName="CapacityAvailable" />
+          <ScalarProperty Name="DVDTitle" ColumnName="DVDTitle" />
+          <ScalarProperty Name="IsHighClip" ColumnName="IsHighClip" />
+          <ScalarProperty Name="IsLowClip" ColumnName="IsLowClip" />
+          <ScalarProperty Name="DVDNo" ColumnName="DVDNo" />
+          <ScalarProperty Name="IsIssued" ColumnName="IsIssued" />
+          <ScalarProperty Name="OnsiteBackup" ColumnName="OnsiteBackup" />
+          <ScalarProperty Name="OffsiteBackup" ColumnName="OffsiteBackup" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="EditedBy" ColumnName="EditedBy" />
+          <ScalarProperty Name="EditedOn" ColumnName="EditedOn" />
+          <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+          <ScalarProperty Name="OnsiteMediaTypeId" ColumnName="OnsiteMediaTypeId" />
+          <ScalarProperty Name="OffsiteMediaTypeId" ColumnName="OffsiteMediaTypeId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="PhotographerId" ColumnName="PhotographerId" />
+          <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+          <ScalarProperty Name="BureauTape" ColumnName="BureauTape" />
+          <ScalarProperty Name="AnchorId" ColumnName="AnchorId" />
+          <ScalarProperty Name="MediaSource" ColumnName="MediaSource" />
+          <ScalarProperty Name="IsInternational" ColumnName="IsInternational" />
+          <ScalarProperty Name="BaseStationID" ColumnName="BaseStationID" />
+          <ScalarProperty Name="IsMasterCopy" ColumnName="IsMasterCopy" />
+          <ScalarProperty Name="ProgramTitleID" ColumnName="ProgramTitleID" />
+          <ScalarProperty Name="MarkDeleted" ColumnName="MarkDeleted" />
+          <ScalarProperty Name="ContentTypeID" ColumnName="ContentTypeID" />
+          <ScalarProperty Name="ChannelCategoryID" ColumnName="ChannelCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

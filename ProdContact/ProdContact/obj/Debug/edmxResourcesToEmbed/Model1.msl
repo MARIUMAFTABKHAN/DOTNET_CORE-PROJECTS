@@ -1,0 +1,1265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExProdModelStoreContainer" CdmEntityContainer="ExProdEntities3">
+    <EntitySetMapping Name="AIGeneratedPrompts">
+      <EntityTypeMapping TypeName="ExProdModel.AIGeneratedPrompt">
+        <MappingFragment StoreEntitySet="AIGeneratedPrompt">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SceneId" ColumnName="SceneId" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="SceneLocationId" ColumnName="SceneLocationId" />
+          <ScalarProperty Name="AIPromp" ColumnName="AIPromp" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AIGeneratedScripts">
+      <EntityTypeMapping TypeName="ExProdModel.AIGeneratedScript">
+        <MappingFragment StoreEntitySet="AIGeneratedScript">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AIGeneratedPromptID" ColumnName="AIGeneratedPromptID" />
+          <ScalarProperty Name="AIGeneratedScript1" ColumnName="AIGeneratedScript" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="ExProdModel.AspNetRole">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="ExProdModel.AspNetUserClaim">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="ExProdModel.AspNetUserLogin">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserRoles">
+      <EntityTypeMapping TypeName="ExProdModel.AspNetUserRole">
+        <MappingFragment StoreEntitySet="AspNetUserRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="ExProdModel.AspNetUser">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="DesignationID" ColumnName="DesignationID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BudgetHeads">
+      <EntityTypeMapping TypeName="ExProdModel.BudgetHead">
+        <MappingFragment StoreEntitySet="BudgetHead">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Casts">
+      <EntityTypeMapping TypeName="ExProdModel.Cast">
+        <MappingFragment StoreEntitySet="Cast">
+          <ScalarProperty Name="CastID" ColumnName="CastID" />
+          <ScalarProperty Name="CastName" ColumnName="CastName" />
+          <ScalarProperty Name="CastCategoryID" ColumnName="CastCategoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CastAttenadnces">
+      <EntityTypeMapping TypeName="ExProdModel.CastAttenadnce">
+        <MappingFragment StoreEntitySet="CastAttenadnce">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectCastID" ColumnName="ProjectCastID" />
+          <ScalarProperty Name="SetLocationID" ColumnName="SetLocationID" />
+          <ScalarProperty Name="InsertedDateTime" ColumnName="InsertedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AttendanceDate" ColumnName="AttendanceDate" />
+          <ScalarProperty Name="AttendanceTime" ColumnName="AttendanceTime" />
+          <ScalarProperty Name="DepartureTime" ColumnName="DepartureTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CastCategories">
+      <EntityTypeMapping TypeName="ExProdModel.CastCategory">
+        <MappingFragment StoreEntitySet="CastCategory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="ExProdModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contactreport_mobile">
+      <EntityTypeMapping TypeName="ExProdModel.contactreport_mobile">
+        <MappingFragment StoreEntitySet="contactreport_mobile">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="visit_to" ColumnName="visit_to" />
+          <ScalarProperty Name="agency_client_id" ColumnName="agency_client_id" />
+          <ScalarProperty Name="project_id" ColumnName="project_id" />
+          <ScalarProperty Name="visit_date" ColumnName="visit_date" />
+          <ScalarProperty Name="minutes_of_meetings" ColumnName="minutes_of_meetings" />
+          <ScalarProperty Name="pr_visit" ColumnName="pr_visit" />
+          <ScalarProperty Name="new_executive" ColumnName="new_executive" />
+          <ScalarProperty Name="newexecutive_name" ColumnName="newexecutive_name" />
+          <ScalarProperty Name="followup_visit_to" ColumnName="followup_visit_to" />
+          <ScalarProperty Name="followup_visit_mode" ColumnName="followup_visit_mode" />
+          <ScalarProperty Name="followup_visit_time" ColumnName="followup_visit_time" />
+          <ScalarProperty Name="followup_visit_date" ColumnName="followup_visit_date" />
+          <ScalarProperty Name="Rec_Added_by" ColumnName="Rec_Added_by" />
+          <ScalarProperty Name="Rec_Added_Datetime" ColumnName="Rec_Added_Datetime" />
+          <ScalarProperty Name="Rec_Edit_by" ColumnName="Rec_Edit_by" />
+          <ScalarProperty Name="Rec_Edit_Datetime" ColumnName="Rec_Edit_Datetime" />
+          <ScalarProperty Name="Windows_Id" ColumnName="Windows_Id" />
+          <ScalarProperty Name="System_name" ColumnName="System_name" />
+          <ScalarProperty Name="GenerationDateTime" ColumnName="GenerationDateTime" />
+          <ScalarProperty Name="visit_time" ColumnName="visit_time" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="Desgn" ColumnName="Desgn" />
+          <ScalarProperty Name="Person_name" ColumnName="Person_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contactreportmobile_Detail">
+      <EntityTypeMapping TypeName="ExProdModel.Contactreportmobile_Detail">
+        <MappingFragment StoreEntitySet="Contactreportmobile_Detail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="contactreport" ColumnName="contactreport" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractTypes">
+      <EntityTypeMapping TypeName="ExProdModel.ContractType">
+        <MappingFragment StoreEntitySet="ContractType">
+          <ScalarProperty Name="ContractTypeID" ColumnName="ContractTypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Designations">
+      <EntityTypeMapping TypeName="ExProdModel.Designation">
+        <MappingFragment StoreEntitySet="Designations">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DesignationName" ColumnName="DesignationName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExLogManagers">
+      <EntityTypeMapping TypeName="ExProdModel.ExLogManager">
+        <MappingFragment StoreEntitySet="ExLogManager">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ActionOnForm" ColumnName="ActionOnForm" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+          <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+          <ScalarProperty Name="ActionOn" ColumnName="ActionOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExLogRecords">
+      <EntityTypeMapping TypeName="ExProdModel.ExLogRecord">
+        <MappingFragment StoreEntitySet="ExLogRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ActionOnForm" ColumnName="ActionOnForm" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+          <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+          <ScalarProperty Name="ActionOn" ColumnName="ActionOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpenseTypes">
+      <EntityTypeMapping TypeName="ExProdModel.ExpenseType">
+        <MappingFragment StoreEntitySet="ExpenseType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormAssignments">
+      <EntityTypeMapping TypeName="ExProdModel.FormAssignment">
+        <MappingFragment StoreEntitySet="FormAssignment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FormID" ColumnName="FormID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ControlID" ColumnName="ControlID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormControls">
+      <EntityTypeMapping TypeName="ExProdModel.FormControl">
+        <MappingFragment StoreEntitySet="FormControl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ControlName" ColumnName="ControlName" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="TypeofButton" ColumnName="TypeofButton" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genders">
+      <EntityTypeMapping TypeName="ExProdModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="ExProdModel.Genre">
+        <MappingFragment StoreEntitySet="Genre">
+          <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+          <ScalarProperty Name="GenreName" ColumnName="GenreName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IdCtrs">
+      <EntityTypeMapping TypeName="ExProdModel.IdCtr">
+        <MappingFragment StoreEntitySet="IdCtr">
+          <ScalarProperty Name="ForTable" ColumnName="ForTable" />
+          <ScalarProperty Name="Counter" ColumnName="Counter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IssueDelayLogs">
+      <EntityTypeMapping TypeName="ExProdModel.IssueDelayLog">
+        <MappingFragment StoreEntitySet="IssueDelayLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SceneID" ColumnName="SceneID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Languages">
+      <EntityTypeMapping TypeName="ExProdModel.Language">
+        <MappingFragment StoreEntitySet="Language">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="ExProdModel.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogRecords">
+      <EntityTypeMapping TypeName="ExProdModel.LogRecord">
+        <MappingFragment StoreEntitySet="LogRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RecordID" ColumnName="RecordID" />
+          <ScalarProperty Name="ActionOnForm" ColumnName="ActionOnForm" />
+          <ScalarProperty Name="ActionTaken" ColumnName="ActionTaken" />
+          <ScalarProperty Name="ActionBy" ColumnName="ActionBy" />
+          <ScalarProperty Name="ActionOn" ColumnName="ActionOn" />
+          <ScalarProperty Name="StrRecordID" ColumnName="StrRecordID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MakeupArtists">
+      <EntityTypeMapping TypeName="ExProdModel.MakeupArtist">
+        <MappingFragment StoreEntitySet="MakeupArtist">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MemberTypes">
+      <EntityTypeMapping TypeName="ExProdModel.MemberType">
+        <MappingFragment StoreEntitySet="MemberTypes">
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="BudgetHeadID" ColumnName="BudgetHeadID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuItems">
+      <EntityTypeMapping TypeName="ExProdModel.MenuItem">
+        <MappingFragment StoreEntitySet="MenuItems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+          <ScalarProperty Name="IsVisbile" ColumnName="IsVisbile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menus">
+      <EntityTypeMapping TypeName="ExProdModel.Menu">
+        <MappingFragment StoreEntitySet="Menus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneLiners">
+      <EntityTypeMapping TypeName="ExProdModel.OneLiner">
+        <MappingFragment StoreEntitySet="OneLiner">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OneLinerText" ColumnName="OneLinerText" />
+          <ScalarProperty Name="OneLinerStartID" ColumnName="OneLinerStartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedOn" ColumnName="ApprovedOn" />
+          <ScalarProperty Name="ApprovalComment" ColumnName="ApprovalComment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneLinerScripts">
+      <EntityTypeMapping TypeName="ExProdModel.OneLinerScript">
+        <MappingFragment StoreEntitySet="OneLinerScript">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OneLinerID" ColumnName="OneLinerID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneLinerStarts">
+      <EntityTypeMapping TypeName="ExProdModel.OneLinerStart">
+        <MappingFragment StoreEntitySet="OneLinerStart">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ContentHead" ColumnName="ContentHead" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneLinerStartDetails">
+      <EntityTypeMapping TypeName="ExProdModel.OneLinerStartDetail">
+        <MappingFragment StoreEntitySet="OneLinerStartDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OneLinerStartID" ColumnName="OneLinerStartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OneLinerWriterScripts">
+      <EntityTypeMapping TypeName="ExProdModel.OneLinerWriterScript">
+        <MappingFragment StoreEntitySet="OneLinerWriterScript">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OneLinerScriptID" ColumnName="OneLinerScriptID" />
+          <ScalarProperty Name="ScriptFile" ColumnName="ScriptFile" />
+          <ScalarProperty Name="UploadedBy" ColumnName="UploadedBy" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedOn" ColumnName="ApprovedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentRequestDetails">
+      <EntityTypeMapping TypeName="ExProdModel.PaymentRequestDetail">
+        <MappingFragment StoreEntitySet="PaymentRequestDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRID" ColumnName="PRID" />
+          <ScalarProperty Name="JobCompletionDate" ColumnName="JobCompletionDate" />
+          <ScalarProperty Name="PayeeName" ColumnName="PayeeName" />
+          <ScalarProperty Name="NatureOfJob" ColumnName="NatureOfJob" />
+          <ScalarProperty Name="MonthOrEps" ColumnName="MonthOrEps" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentRequestHeads">
+      <EntityTypeMapping TypeName="ExProdModel.PaymentRequestHead">
+        <MappingFragment StoreEntitySet="PaymentRequestHead">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Budgeted" ColumnName="Budgeted" />
+          <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+          <ScalarProperty Name="IsCash" ColumnName="IsCash" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsChecked" ColumnName="IsChecked" />
+          <ScalarProperty Name="DirApproved" ColumnName="DirApproved" />
+          <ScalarProperty Name="CheckedBy" ColumnName="CheckedBy" />
+          <ScalarProperty Name="CheckedOn" ColumnName="CheckedOn" />
+          <ScalarProperty Name="DirApprovedBy" ColumnName="DirApprovedBy" />
+          <ScalarProperty Name="DirApprovedOn" ColumnName="DirApprovedOn" />
+          <ScalarProperty Name="ChannelTrackingNo" ColumnName="ChannelTrackingNo" />
+          <ScalarProperty Name="DirComment" ColumnName="DirComment" />
+          <ScalarProperty Name="IsRevert" ColumnName="IsRevert" />
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+          <ScalarProperty Name="CheckNumber" ColumnName="CheckNumber" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentUserTypes">
+      <EntityTypeMapping TypeName="ExProdModel.PaymentUserType">
+        <MappingFragment StoreEntitySet="PaymentUserType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="ExProdModel.Project">
+        <MappingFragment StoreEntitySet="Project">
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="GenreId" ColumnName="GenreId" />
+          <ScalarProperty Name="ProjectFrequencyId" ColumnName="ProjectFrequencyId" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="TotalEpisodes" ColumnName="TotalEpisodes" />
+          <ScalarProperty Name="TimeDuration" ColumnName="TimeDuration" />
+          <ScalarProperty Name="TimeUnit" ColumnName="TimeUnit" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ProjectTypeId" ColumnName="ProjectTypeId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Budget" ColumnName="Budget" />
+          <ScalarProperty Name="DirectorID" ColumnName="DirectorID" />
+          <ScalarProperty Name="HOPID" ColumnName="HOPID" />
+          <ScalarProperty Name="OneLinerID" ColumnName="OneLinerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectBudgets">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectBudget">
+        <MappingFragment StoreEntitySet="ProjectBudget">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="TeamFinancing" ColumnName="TeamFinancing" />
+          <ScalarProperty Name="ProjectFinancing" ColumnName="ProjectFinancing" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectCasts">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectCast">
+        <MappingFragment StoreEntitySet="ProjectCast">
+          <ScalarProperty Name="ProjectCastId" ColumnName="ProjectCastId" />
+          <ScalarProperty Name="Character" ColumnName="Character" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="GenderId" ColumnName="GenderId" />
+          <ScalarProperty Name="CastCategoryId" ColumnName="CastCategoryId" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ContractTypeID" ColumnName="ContractTypeID" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="TeamMemberID" ColumnName="TeamMemberID" />
+          <ScalarProperty Name="VoiceOverMemberID" ColumnName="VoiceOverMemberID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectCrewContracts">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectCrewContract">
+        <MappingFragment StoreEntitySet="ProjectCrewContract">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="TeamMemberID" ColumnName="TeamMemberID" />
+          <ScalarProperty Name="ContractTypeID" ColumnName="ContractTypeID" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectCtrls">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectCtrl">
+        <MappingFragment StoreEntitySet="ProjectCtrl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CtrlName" ColumnName="CtrlName" />
+          <ScalarProperty Name="CtrlType" ColumnName="CtrlType" />
+          <ScalarProperty Name="active" ColumnName="active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectEpisodes">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectEpisode">
+        <MappingFragment StoreEntitySet="ProjectEpisodes">
+          <ScalarProperty Name="EpisodeId" ColumnName="EpisodeId" />
+          <ScalarProperty Name="EpisodeName" ColumnName="EpisodeName" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ScriptFile" ColumnName="ScriptFile" />
+          <ScalarProperty Name="NumOfScene" ColumnName="NumOfScene" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectExpenses">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectExpense">
+        <MappingFragment StoreEntitySet="ProjectExpense">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsPettyCash" ColumnName="IsPettyCash" />
+          <ScalarProperty Name="ExpenseTypeID" ColumnName="ExpenseTypeID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedAt" ColumnName="UpdatedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectFrequencies">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectFrequency">
+        <MappingFragment StoreEntitySet="ProjectFrequency">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FrequencyName" ColumnName="FrequencyName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectSchedulings">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectScheduling">
+        <MappingFragment StoreEntitySet="ProjectScheduling">
+          <ScalarProperty Name="ScheduleId" ColumnName="ScheduleId" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="DateSchedule" ColumnName="DateSchedule" />
+          <ScalarProperty Name="SetLocationId" ColumnName="SetLocationId" />
+          <ScalarProperty Name="CallTime" ColumnName="CallTime" />
+          <ScalarProperty Name="CameraRollTime" ColumnName="CameraRollTime" />
+          <ScalarProperty Name="CameraRollActualTime" ColumnName="CameraRollActualTime" />
+          <ScalarProperty Name="CameraPackupTime" ColumnName="CameraPackupTime" />
+          <ScalarProperty Name="CameraPackupActualTime" ColumnName="CameraPackupActualTime" />
+          <ScalarProperty Name="DirectorName" ColumnName="DirectorName" />
+          <ScalarProperty Name="DirectorComment" ColumnName="DirectorComment" />
+          <ScalarProperty Name="HOPName" ColumnName="HOPName" />
+          <ScalarProperty Name="HOPComment" ColumnName="HOPComment" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectTeamMembers">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectTeamMember">
+        <MappingFragment StoreEntitySet="ProjectTeamMembers">
+          <ScalarProperty Name="TeamMemberId" ColumnName="TeamMemberId" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProjectTypes">
+      <EntityTypeMapping TypeName="ExProdModel.ProjectType">
+        <MappingFragment StoreEntitySet="ProjectType">
+          <ScalarProperty Name="ProjectTypeID" ColumnName="ProjectTypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Props">
+      <EntityTypeMapping TypeName="ExProdModel.Prop">
+        <MappingFragment StoreEntitySet="Props">
+          <ScalarProperty Name="PropID" ColumnName="PropID" />
+          <ScalarProperty Name="PropName" ColumnName="PropName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolesItems">
+      <EntityTypeMapping TypeName="ExProdModel.RolesItem">
+        <MappingFragment StoreEntitySet="RolesItems">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scenes">
+      <EntityTypeMapping TypeName="ExProdModel.Scene">
+        <MappingFragment StoreEntitySet="Scene">
+          <ScalarProperty Name="SceneId" ColumnName="SceneId" />
+          <ScalarProperty Name="SceneName" ColumnName="SceneName" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="EpisodeId" ColumnName="EpisodeId" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Synopsis" ColumnName="Synopsis" />
+          <ScalarProperty Name="DayTime" ColumnName="DayTime" />
+          <ScalarProperty Name="SoundEffect" ColumnName="SoundEffect" />
+          <ScalarProperty Name="BackgroundPlay" ColumnName="BackgroundPlay" />
+          <ScalarProperty Name="isFlashBack" ColumnName="isFlashBack" />
+          <ScalarProperty Name="isSceneCut" ColumnName="isSceneCut" />
+          <ScalarProperty Name="isPhoneTalk" ColumnName="isPhoneTalk" />
+          <ScalarProperty Name="isReShoot" ColumnName="isReShoot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SceneCharacters">
+      <EntityTypeMapping TypeName="ExProdModel.SceneCharacter">
+        <MappingFragment StoreEntitySet="SceneCharacters">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SceneId" ColumnName="SceneId" />
+          <ScalarProperty Name="CastId" ColumnName="CastId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SceneLocations">
+      <EntityTypeMapping TypeName="ExProdModel.SceneLocation">
+        <MappingFragment StoreEntitySet="SceneLocation">
+          <ScalarProperty Name="SceneLocationId" ColumnName="SceneLocationId" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="SetLocationId" ColumnName="SetLocationId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SceneProps">
+      <EntityTypeMapping TypeName="ExProdModel.SceneProp">
+        <MappingFragment StoreEntitySet="SceneProps">
+          <ScalarProperty Name="ScenePropID" ColumnName="ScenePropID" />
+          <ScalarProperty Name="SceneID" ColumnName="SceneID" />
+          <ScalarProperty Name="PropID" ColumnName="PropID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SceneWardrobes">
+      <EntityTypeMapping TypeName="ExProdModel.SceneWardrobe">
+        <MappingFragment StoreEntitySet="SceneWardrobe">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SceneId" ColumnName="SceneId" />
+          <ScalarProperty Name="CastID" ColumnName="CastID" />
+          <ScalarProperty Name="WardrobeID" ColumnName="WardrobeID" />
+          <ScalarProperty Name="WardrobeStylistId" ColumnName="WardrobeStylistId" />
+          <ScalarProperty Name="MakeupArtistId" ColumnName="MakeupArtistId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduledScenes">
+      <EntityTypeMapping TypeName="ExProdModel.ScheduledScene">
+        <MappingFragment StoreEntitySet="ScheduledScenes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ScheduledID" ColumnName="ScheduledID" />
+          <ScalarProperty Name="SceneID" ColumnName="SceneID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetLocations">
+      <EntityTypeMapping TypeName="ExProdModel.SetLocation">
+        <MappingFragment StoreEntitySet="SetLocation">
+          <ScalarProperty Name="SetLocationId" ColumnName="SetLocationId" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="OwnerName" ColumnName="OwnerName" />
+          <ScalarProperty Name="OwnerNumber" ColumnName="OwnerNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetLocationTeamMembers">
+      <EntityTypeMapping TypeName="ExProdModel.SetLocationTeamMember">
+        <MappingFragment StoreEntitySet="SetLocationTeamMember">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="SetLocationID" ColumnName="SetLocationID" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreationBy" ColumnName="CreationBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ExProdModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblAgencies">
+      <EntityTypeMapping TypeName="ExProdModel.tblAgency">
+        <MappingFragment StoreEntitySet="tblAgency">
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="AgencyCategoryId" ColumnName="AgencyCategoryId" />
+          <ScalarProperty Name="AgencyTypeId" ColumnName="AgencyTypeId" />
+          <ScalarProperty Name="HeadOfficeAddress" ColumnName="HeadOfficeAddress" />
+          <ScalarProperty Name="HeadOfficeCityId" ColumnName="HeadOfficeCityId" />
+          <ScalarProperty Name="HeadOfficeStateId" ColumnName="HeadOfficeStateId" />
+          <ScalarProperty Name="HeadOfficePhone" ColumnName="HeadOfficePhone" />
+          <ScalarProperty Name="HeadOfficeFax" ColumnName="HeadOfficeFax" />
+          <ScalarProperty Name="HeadOfficeEmailAddress" ColumnName="HeadOfficeEmailAddress" />
+          <ScalarProperty Name="BranchOfficeAddress" ColumnName="BranchOfficeAddress" />
+          <ScalarProperty Name="BranchOffice1CityId" ColumnName="BranchOffice1CityId" />
+          <ScalarProperty Name="BranchOffice1StateId" ColumnName="BranchOffice1StateId" />
+          <ScalarProperty Name="BranchOffice1Phone" ColumnName="BranchOffice1Phone" />
+          <ScalarProperty Name="BranchOffice1Fax" ColumnName="BranchOffice1Fax" />
+          <ScalarProperty Name="BranchOffice1EmailAddress" ColumnName="BranchOffice1EmailAddress" />
+          <ScalarProperty Name="BranchOffice2CityId" ColumnName="BranchOffice2CityId" />
+          <ScalarProperty Name="BranchOffice2StateId" ColumnName="BranchOffice2StateId" />
+          <ScalarProperty Name="BranchOffice2Phone" ColumnName="BranchOffice2Phone" />
+          <ScalarProperty Name="BranchOffice2Fax" ColumnName="BranchOffice2Fax" />
+          <ScalarProperty Name="BranchOffice2EmailAddress" ColumnName="BranchOffice2EmailAddress" />
+          <ScalarProperty Name="FinanceContactPerson" ColumnName="FinanceContactPerson" />
+          <ScalarProperty Name="FinancePersonDesignation" ColumnName="FinancePersonDesignation" />
+          <ScalarProperty Name="FinanceDirectPhone" ColumnName="FinanceDirectPhone" />
+          <ScalarProperty Name="FinanceMobile" ColumnName="FinanceMobile" />
+          <ScalarProperty Name="FinanceFax" ColumnName="FinanceFax" />
+          <ScalarProperty Name="FinanceEmailAddress" ColumnName="FinanceEmailAddress" />
+          <ScalarProperty Name="MediaContactPerson" ColumnName="MediaContactPerson" />
+          <ScalarProperty Name="MediaPersonDesignation" ColumnName="MediaPersonDesignation" />
+          <ScalarProperty Name="MediaDirectPhone" ColumnName="MediaDirectPhone" />
+          <ScalarProperty Name="MediaMobile" ColumnName="MediaMobile" />
+          <ScalarProperty Name="MediaFax" ColumnName="MediaFax" />
+          <ScalarProperty Name="MediaEmailAddress" ColumnName="MediaEmailAddress" />
+          <ScalarProperty Name="BusinessCommencementDate" ColumnName="BusinessCommencementDate" />
+          <ScalarProperty Name="NTNNo" ColumnName="NTNNo" />
+          <ScalarProperty Name="AgencyStatus" ColumnName="AgencyStatus" />
+          <ScalarProperty Name="AgencyLegalStatus" ColumnName="AgencyLegalStatus" />
+          <ScalarProperty Name="BankingWith1" ColumnName="BankingWith1" />
+          <ScalarProperty Name="Branch1" ColumnName="Branch1" />
+          <ScalarProperty Name="AccountNo1" ColumnName="AccountNo1" />
+          <ScalarProperty Name="AvgMonthlyBill" ColumnName="AvgMonthlyBill" />
+          <ScalarProperty Name="BankingWith2" ColumnName="BankingWith2" />
+          <ScalarProperty Name="Branch2" ColumnName="Branch2" />
+          <ScalarProperty Name="AccountNo2" ColumnName="AccountNo2" />
+          <ScalarProperty Name="AvgMonthlyBill2" ColumnName="AvgMonthlyBill2" />
+          <ScalarProperty Name="CreditApplied" ColumnName="CreditApplied" />
+          <ScalarProperty Name="CreditAppliedDays" ColumnName="CreditAppliedDays" />
+          <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
+          <ScalarProperty Name="PaymentNumber" ColumnName="PaymentNumber" />
+          <ScalarProperty Name="PaymentNote" ColumnName="PaymentNote" />
+          <ScalarProperty Name="CreditApproved" ColumnName="CreditApproved" />
+          <ScalarProperty Name="CreditApprovedDays" ColumnName="CreditApprovedDays" />
+          <ScalarProperty Name="NicCopy" ColumnName="NicCopy" />
+          <ScalarProperty Name="NicCopyPath" ColumnName="NicCopyPath" />
+          <ScalarProperty Name="NTNCertificateCopy" ColumnName="NTNCertificateCopy" />
+          <ScalarProperty Name="NTNCertificatePath" ColumnName="NTNCertificatePath" />
+          <ScalarProperty Name="BankStatement" ColumnName="BankStatement" />
+          <ScalarProperty Name="BankStatementPath" ColumnName="BankStatementPath" />
+          <ScalarProperty Name="ClientsList" ColumnName="ClientsList" />
+          <ScalarProperty Name="ClientsListPath" ColumnName="ClientsListPath" />
+          <ScalarProperty Name="Form29" ColumnName="Form29" />
+          <ScalarProperty Name="Form29Path" ColumnName="Form29Path" />
+          <ScalarProperty Name="ReportVisitOffice" ColumnName="ReportVisitOffice" />
+          <ScalarProperty Name="AgencyGSTNo" ColumnName="AgencyGSTNo" />
+          <ScalarProperty Name="PresentStatus" ColumnName="PresentStatus" />
+          <ScalarProperty Name="OutstandingPKR" ColumnName="OutstandingPKR" />
+          <ScalarProperty Name="OverDuePKR" ColumnName="OverDuePKR" />
+          <ScalarProperty Name="OverDueDays" ColumnName="OverDueDays" />
+          <ScalarProperty Name="LastPaymentRecieved" ColumnName="LastPaymentRecieved" />
+          <ScalarProperty Name="PaidOn" ColumnName="PaidOn" />
+          <ScalarProperty Name="DishonorChequeAmt" ColumnName="DishonorChequeAmt" />
+          <ScalarProperty Name="DishonorChequeNo" ColumnName="DishonorChequeNo" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedByDesignation" ColumnName="CreatedByDesignation" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="ApprovedByDesignation" ColumnName="ApprovedByDesignation" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="IsCR" ColumnName="IsCR" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="PaymentType" ColumnName="PaymentType" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+          <ScalarProperty Name="MasterAgencyID" ColumnName="MasterAgencyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblChannels">
+      <EntityTypeMapping TypeName="ExProdModel.tblChannel">
+        <MappingFragment StoreEntitySet="tblChannel">
+          <ScalarProperty Name="ChannelId" ColumnName="ChannelId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="GLPublication" ColumnName="GLPublication" />
+          <ScalarProperty Name="PrefixNew" ColumnName="PrefixNew" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblClients">
+      <EntityTypeMapping TypeName="ExProdModel.tblClient">
+        <MappingFragment StoreEntitySet="tblClient">
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ClientCategoryId" ColumnName="ClientCategoryId" />
+          <ScalarProperty Name="GSTNo" ColumnName="GSTNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="CityId" ColumnName="CityId" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="ContactNo1" ColumnName="ContactNo1" />
+          <ScalarProperty Name="ContactNo2" ColumnName="ContactNo2" />
+          <ScalarProperty Name="ContactNo3" ColumnName="ContactNo3" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+          <ScalarProperty Name="IsRegistered" ColumnName="IsRegistered" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="NTNNo" ColumnName="NTNNo" />
+          <ScalarProperty Name="NICNO" ColumnName="NICNO" />
+          <ScalarProperty Name="IsGovernment" ColumnName="IsGovernment" />
+          <ScalarProperty Name="test" ColumnName="test" />
+          <ScalarProperty Name="IsACAllowed" ColumnName="IsACAllowed" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="ClientCountry" ColumnName="ClientCountry" />
+          <ScalarProperty Name="ClientProvince" ColumnName="ClientProvince" />
+          <ScalarProperty Name="ClientCity" ColumnName="ClientCity" />
+          <ScalarProperty Name="ClientNamePBA" ColumnName="ClientNamePBA" />
+          <ScalarProperty Name="IsGovernmentRate" ColumnName="IsGovernmentRate" />
+          <ScalarProperty Name="GSTApplicable" ColumnName="GSTApplicable" />
+          <ScalarProperty Name="ClientGovtId" ColumnName="ClientGovtId" />
+          <ScalarProperty Name="RegisteredIn" ColumnName="RegisteredIn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamAttendances">
+      <EntityTypeMapping TypeName="ExProdModel.TeamAttendance">
+        <MappingFragment StoreEntitySet="TeamAttendance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="SetLocationID" ColumnName="SetLocationID" />
+          <ScalarProperty Name="InsertedDateTime" ColumnName="InsertedDateTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="AttendanceDate" ColumnName="AttendanceDate" />
+          <ScalarProperty Name="AttendanceTime" ColumnName="AttendanceTime" />
+          <ScalarProperty Name="DepartureTime" ColumnName="DepartureTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamExpenses">
+      <EntityTypeMapping TypeName="ExProdModel.TeamExpense">
+        <MappingFragment StoreEntitySet="TeamExpense">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="IsCrew" ColumnName="IsCrew" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamMembers">
+      <EntityTypeMapping TypeName="ExProdModel.TeamMember">
+        <MappingFragment StoreEntitySet="TeamMember">
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsOutSourced" ColumnName="IsOutSourced" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeamMemberTypes">
+      <EntityTypeMapping TypeName="ExProdModel.TeamMemberType">
+        <MappingFragment StoreEntitySet="TeamMemberType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="MemberTypeID" ColumnName="MemberTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMemberTypes">
+      <EntityTypeMapping TypeName="ExProdModel.UserMemberType">
+        <MappingFragment StoreEntitySet="UserMemberType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="MemberTypeID" ColumnName="MemberTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WadrobeStylists">
+      <EntityTypeMapping TypeName="ExProdModel.WadrobeStylist">
+        <MappingFragment StoreEntitySet="WadrobeStylist">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Wardrobes">
+      <EntityTypeMapping TypeName="ExProdModel.Wardrobe">
+        <MappingFragment StoreEntitySet="Wardrobe">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="ExProdModel.Store.fn_Split" FunctionImportName="fn_Split">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.fn_Split_Result">
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="value" ColumnName="value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetProjectBudget" FunctionName="ExProdModel.Store.GetProjectBudget">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.GetProjectBudget_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="TeamFinancing" ColumnName="TeamFinancing" />
+          <ScalarProperty Name="ProjectFinancing" ColumnName="ProjectFinancing" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="ExProdModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="ExProdModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="ExProdModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_FormControls" FunctionName="ExProdModel.Store.sp_FormControls" />
+    <FunctionImportMapping FunctionImportName="sp_GetRoleItemsWithCtrls" FunctionName="ExProdModel.Store.sp_GetRoleItemsWithCtrls">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.sp_GetRoleItemsWithCtrls_Result">
+          <ScalarProperty Name="FormID" ColumnName="FormID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ctrlID" ColumnName="ctrlID" />
+          <ScalarProperty Name="ControlID" ColumnName="ControlID" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="ExProdModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="ExProdModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="ExProdModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="ExProdModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="usp_GetAllProjects" FunctionName="ExProdModel.Store.usp_GetAllProjects" />
+    <FunctionImportMapping FunctionImportName="usp_GetArtistAttendance" FunctionName="ExProdModel.Store.usp_GetArtistAttendance" />
+    <FunctionImportMapping FunctionImportName="usp_GetCrewAttendance" FunctionName="ExProdModel.Store.usp_GetCrewAttendance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetCrewAttendance_Result">
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="CallTime" ColumnName="CallTime" />
+          <ScalarProperty Name="AttendanceTime" ColumnName="AttendanceTime" />
+          <ScalarProperty Name="DepartureTime" ColumnName="DepartureTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCrewAttendanceOutSourced" FunctionName="ExProdModel.Store.usp_GetCrewAttendanceOutSourced">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetCrewAttendanceOutSourced_Result">
+          <ScalarProperty Name="MemberId" ColumnName="MemberId" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="MemberTypeId" ColumnName="MemberTypeId" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="CallTime" ColumnName="CallTime" />
+          <ScalarProperty Name="AttendanceTime" ColumnName="AttendanceTime" />
+          <ScalarProperty Name="DepartureTime" ColumnName="DepartureTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDSSHeader" FunctionName="ExProdModel.Store.usp_GetDSSHeader">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetDSSHeader_Result">
+          <ScalarProperty Name="CameraRollTime" ColumnName="CameraRollTime" />
+          <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+          <ScalarProperty Name="DateSchedule" ColumnName="DateSchedule" />
+          <ScalarProperty Name="CameraRollActualTime" ColumnName="CameraRollActualTime" />
+          <ScalarProperty Name="CameraPackupTime" ColumnName="CameraPackupTime" />
+          <ScalarProperty Name="CameraPackupActualTime" ColumnName="CameraPackupActualTime" />
+          <ScalarProperty Name="DirectorName" ColumnName="DirectorName" />
+          <ScalarProperty Name="DirectorComment" ColumnName="DirectorComment" />
+          <ScalarProperty Name="HOPName" ColumnName="HOPName" />
+          <ScalarProperty Name="HOPComment" ColumnName="HOPComment" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDSSReport" FunctionName="ExProdModel.Store.usp_GetDSSReport" />
+    <FunctionImportMapping FunctionImportName="usp_GetIssueLogDSS" FunctionName="ExProdModel.Store.usp_GetIssueLogDSS" />
+    <FunctionImportMapping FunctionImportName="usp_GetMenu" FunctionName="ExProdModel.Store.usp_GetMenu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetMenu_Result">
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="orderby" ColumnName="orderby" />
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="OrderBy1" ColumnName="OrderBy1" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FormName" ColumnName="FormName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetPaymentRequests" FunctionName="ExProdModel.Store.usp_GetPaymentRequests">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetPaymentRequests_Result">
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IsCash" ColumnName="IsCash" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="Budgeted" ColumnName="Budgeted" />
+          <ScalarProperty Name="JobCompletionDate" ColumnName="JobCompletionDate" />
+          <ScalarProperty Name="PayeeName" ColumnName="PayeeName" />
+          <ScalarProperty Name="NatureOfJob" ColumnName="NatureOfJob" />
+          <ScalarProperty Name="MonthOrEps" ColumnName="MonthOrEps" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="PrefixNew" ColumnName="PrefixNew" />
+          <ScalarProperty Name="ChannelTrackingNo" ColumnName="ChannelTrackingNo" />
+          <ScalarProperty Name="DirComment" ColumnName="DirComment" />
+          <ScalarProperty Name="ProdApprovedByUser" ColumnName="ProdApprovedByUser" />
+          <ScalarProperty Name="DirApprovedByUser" ColumnName="DirApprovedByUser" />
+          <ScalarProperty Name="CreatedByUser" ColumnName="CreatedByUser" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetPettyCashExpense" FunctionName="ExProdModel.Store.usp_GetPettyCashExpense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetPettyCashExpense_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsPettyCash" ColumnName="IsPettyCash" />
+          <ScalarProperty Name="ExpenseTypeID" ColumnName="ExpenseTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetProjectCast" FunctionName="ExProdModel.Store.usp_GetProjectCast">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetProjectCast_Result">
+          <ScalarProperty Name="CastName" ColumnName="CastName" />
+          <ScalarProperty Name="Character" ColumnName="Character" />
+          <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetProjectCastExpense" FunctionName="ExProdModel.Store.usp_GetProjectCastExpense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetProjectCastExpense_Result">
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="CastName" ColumnName="CastName" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetProjectCrewExpense" FunctionName="ExProdModel.Store.usp_GetProjectCrewExpense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetProjectCrewExpense_Result">
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="PayScale" ColumnName="PayScale" />
+          <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+          <ScalarProperty Name="MemberName" ColumnName="MemberName" />
+          <ScalarProperty Name="MemberType" ColumnName="MemberType" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetProjectExpense" FunctionName="ExProdModel.Store.usp_GetProjectExpense">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetProjectExpense_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProjectID" ColumnName="ProjectID" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="IsPettyCash" ColumnName="IsPettyCash" />
+          <ScalarProperty Name="ExpenseTypeID" ColumnName="ExpenseTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetProjects" FunctionName="ExProdModel.Store.usp_GetProjects">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetProjects_Result">
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="ProjectCode" ColumnName="ProjectCode" />
+          <ScalarProperty Name="GenreName" ColumnName="GenreName" />
+          <ScalarProperty Name="FrequencyName" ColumnName="FrequencyName" />
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="SceneName" ColumnName="SceneName" />
+          <ScalarProperty Name="SceneLocation" ColumnName="SceneLocation" />
+          <ScalarProperty Name="SceneLocationAddress" ColumnName="SceneLocationAddress" />
+          <ScalarProperty Name="SceneCharacters" ColumnName="SceneCharacters" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetRoleItems" FunctionName="ExProdModel.Store.usp_GetRoleItems">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetRoleItems_Result">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetRoleItemsWithCtrls" FunctionName="ExProdModel.Store.usp_GetRoleItemsWithCtrls">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetRoleItemsWithCtrls_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ctrlID" ColumnName="ctrlID" />
+          <ScalarProperty Name="ControlID" ColumnName="ControlID" />
+          <ScalarProperty Name="menuid" ColumnName="menuid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetRoleItemsWithCtrls_2" FunctionName="ExProdModel.Store.usp_GetRoleItemsWithCtrls_2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetRoleItemsWithCtrls_2_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ctrlID" ColumnName="ctrlID" />
+          <ScalarProperty Name="ControlID" ColumnName="ControlID" />
+          <ScalarProperty Name="menuid" ColumnName="menuid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetRoleItemsWithCtrls2" FunctionName="ExProdModel.Store.usp_GetRoleItemsWithCtrls2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExProdModel.usp_GetRoleItemsWithCtrls2_Result">
+          <ScalarProperty Name="ItemID" ColumnName="ItemID" />
+          <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="ctrlID" ColumnName="ctrlID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetSceneSynopsisDSS" FunctionName="ExProdModel.Store.usp_GetSceneSynopsisDSS" />
+    <FunctionImportMapping FunctionImportName="usp_GetSetLocationsDSS" FunctionName="ExProdModel.Store.usp_GetSetLocationsDSS" />
+    <FunctionImportMapping FunctionImportName="usp_GetSpecialPropsDSS" FunctionName="ExProdModel.Store.usp_GetSpecialPropsDSS" />
+    <FunctionImportMapping FunctionImportName="usp_GetUserControls" FunctionName="ExProdModel.Store.usp_GetUserControls" />
+    <FunctionImportMapping FunctionImportName="usp_GetVoiceOverDSS" FunctionName="ExProdModel.Store.usp_GetVoiceOverDSS" />
+    <FunctionImportMapping FunctionImportName="usp_GetWardrobeDSS" FunctionName="ExProdModel.Store.usp_GetWardrobeDSS" />
+    <FunctionImportMapping FunctionImportName="usp_IDctr" FunctionName="ExProdModel.Store.usp_IDctr" />
+  </EntityContainerMapping>
+</Mapping>

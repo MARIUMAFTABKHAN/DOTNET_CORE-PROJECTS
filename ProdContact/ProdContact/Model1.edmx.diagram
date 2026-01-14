@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="511305aef6ab4b87b1d0b20614b016f3" Name="Diagram1">
+        <EntityTypeShape EntityType="ExProdModel.AIGeneratedPrompt" Width="1.5" PointX="19.5" PointY="68.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.AIGeneratedScript" Width="1.5" PointX="21.75" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.AspNetRole" Width="1.5" PointX="3.75" PointY="30.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.AspNetUserClaim" Width="1.5" PointX="3" PointY="38.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.AspNetUserLogin" Width="1.5" PointX="3" PointY="41.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.AspNetUserRole" Width="1.5" PointX="6" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.AspNetUser" Width="1.5" PointX="0.75" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.BudgetHead" Width="1.5" PointX="1.5" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Cast" Width="1.5" PointX="12.75" PointY="58.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.CastAttenadnce" Width="1.5" PointX="15" PointY="67.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.CastCategory" Width="1.5" PointX="10.5" PointY="58.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.City" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.contactreport_mobile" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Contactreportmobile_Detail" Width="1.5" PointX="8" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ContractType" Width="1.5" PointX="13.5" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Designation" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ExLogManager" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ExLogRecord" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ExpenseType" Width="1.5" PointX="3" PointY="46.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.FormAssignment" Width="1.5" PointX="6" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.FormControl" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Gender" Width="1.5" PointX="10.5" PointY="60.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Genre" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.IdCtr" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.IssueDelayLog" Width="1.5" PointX="19.5" PointY="65.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Language" Width="1.5" PointX="17.25" PointY="68.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Location" Width="1.5" PointX="8.25" PointY="53.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.LogRecord" Width="1.5" PointX="3" PointY="50.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.MakeupArtist" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.MemberType" Width="1.5" PointX="3.75" PointY="34.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.MenuItem" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Menu" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.OneLiner" Width="1.5" PointX="5.25" PointY="49.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.OneLinerScript" Width="1.5" PointX="10.5" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.OneLinerStart" Width="1.5" PointX="3" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.OneLinerStartDetail" Width="1.5" PointX="8.25" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.OneLinerWriterScript" Width="1.5" PointX="15.75" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.PaymentRequestDetail" Width="1.5" PointX="15" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.PaymentRequestHead" Width="1.5" PointX="12.75" PointY="42.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.PaymentUserType" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Project" Width="1.5" PointX="10.5" PointY="49.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectBudget" Width="1.5" PointX="12.75" PointY="48.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectCast" Width="1.5" PointX="12.75" PointY="51.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectCrewContract" Width="1.5" PointX="15.75" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectCtrl" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectEpisode" Width="1.5" PointX="12.75" PointY="60.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectExpense" Width="1.5" PointX="8.25" PointY="44.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectFrequency" Width="1.5" PointX="8.25" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectScheduling" Width="1.5" PointX="15" PointY="61.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectTeamMember" Width="1.5" PointX="15.75" PointY="56.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ProjectType" Width="1.5" PointX="8.25" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Prop" Width="1.5" PointX="17.25" PointY="66.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.RolesItem" Width="1.5" PointX="9" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Scene" Width="1.5" PointX="17.25" PointY="59.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.SceneCharacter" Width="1.5" PointX="19.5" PointY="57.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.SceneLocation" Width="1.5" PointX="15" PointY="72.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.SceneProp" Width="1.5" PointX="19.5" PointY="60.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.SceneWardrobe" Width="1.5" PointX="22.5" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.ScheduledScene" Width="1.5" PointX="22.5" PointY="61.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.SetLocation" Width="1.5" PointX="12.75" PointY="74.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.SetLocationTeamMember" Width="1.5" PointX="15" PointY="75.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.sysdiagram" Width="1.5" PointX="2.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.tblAgency" Width="1.5" PointX="11.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.tblChannel" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.tblClient" Width="1.5" PointX="13.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.TeamAttendance" Width="1.5" PointX="15" PointY="78.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.TeamExpense" Width="1.5" PointX="18" PointY="51.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.TeamMember" Width="1.5" PointX="8.25" PointY="61.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.TeamMemberType" Width="1.5" PointX="10.5" PointY="43.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.UserMemberType" Width="1.5" PointX="6" PointY="41.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.WadrobeStylist" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExProdModel.Wardrobe" Width="1.5" PointX="20.25" PointY="54.375" IsExpanded="true" />
+        <AssociationConnector Association="ExProdModel.FK_AIGeneratedScript_Language" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_AIGeneratedScript_Scene" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_AIGeneratedScript_SceneLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_AIGeneratedScripts_AIGeneratedPrompt" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_FormAssignment_AspNetRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_RolesItems_AspNetRoles" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ExpenseType_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ExpenseType_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_LogRecord_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLiner_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLiner_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerScript_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerStart_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerStartDetail_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerWriterScript_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectExpense_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectExpense_AspNetUsers1" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_UserMemberType_AspNetUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_MemberTypes_BudgetHead" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Cast_CastCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_CastAttenadnce_ProjectCast" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_CastAttenadnce_SetLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCast_CastCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_contactreportId" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCast_ContractType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCrewContract_ContractType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectExpense_ExpenseType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_FormAssignment_MenuItems" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCast_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_IssueDelayLog_Scene" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Project_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_TeamMemberType_MemberTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_UserMemberType_MemberTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_MenuItems_Menus" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_RoleItems_MenuItems" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLiner_OneLinerStart" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerScript_OneLiner" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Project_OneLiner" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerWriterScript_OneLinerScript" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_OneLinerStartDetail_OneLinerStart" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_PaymentRequestDetail_PaymentRequestHead" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_PaymentRequestHead_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Project_ProjectFrequency" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Project_ProjectType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Project_TeamMember" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Project_TeamMember1" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectBudget_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCast_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCrewContract_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectEpisodes_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectScheduling_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectTeamMembers_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Scene_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SetLocation_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_TeamExpense_Project" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCast_TeamMember" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneCharacters_ProjectCast" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneWardrobe_ProjectCast" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_TeamExpense_ProjectCast" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectCrewContract_TeamMember" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Scene_ProjectEpisodes" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectScheduling_SetLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ScheduledScenes_ProjectScheduling" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ProjectTeamMembers_TeamMember" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneProps_Props" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Scene_SceneLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneCharacters_Scene" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneProps_Scene" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_ScheduledScenes_Scene" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_Wardrobe_Scene" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneLocation_SetLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneWardrobe_TeamMember" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneWardrobe_TeamMember1" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SceneWardrobe_Wardrobe" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_SetLocationTeamMember_SetLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_TeamAttendance_SetLocation" ManuallyRouted="false" />
+        <AssociationConnector Association="ExProdModel.FK_TeamMemberType_TeamMember" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

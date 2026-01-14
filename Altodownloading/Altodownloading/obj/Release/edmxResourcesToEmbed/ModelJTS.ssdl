@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JTSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ChannelCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CatagoryName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CatShortName" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ChannelCategoryDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ChannelID" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblBureau">
+    <Key>
+      <PropertyRef Name="BureauId" />
+    </Key>
+    <Property Name="BureauId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModifiedByUserId" Type="int" />
+    <Property Name="LastModifiedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="isParent" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblChannel">
+    <Key>
+      <PropertyRef Name="ChannelId" />
+    </Key>
+    <Property Name="ChannelId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LanguageId" Type="int" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModifiedByUserId" Type="int" />
+    <Property Name="LastModifiedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ChannelPath" Type="varchar" MaxLength="50" />
+    <Property Name="orderbyID" Type="int" />
+  </EntityType>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="Department" Type="varchar" MaxLength="1000" />
+    <Property Name="CreatedByUserId" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModifiedByUserId" Type="int" />
+    <Property Name="LastModifiedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="FullName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="UserPriority" Type="bit" Nullable="false" />
+    <Property Name="OffDay" Type="varchar" MaxLength="10" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModifiedByUserId" Type="int" />
+    <Property Name="LastModifiedOn" Type="datetime" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_ChannelCategoryDetails_ChannelCategoryDetails">
+    <End Role="ChannelCategory" Type="Self.ChannelCategory" Multiplicity="1" />
+    <End Role="ChannelCategoryDetails" Type="Self.ChannelCategoryDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChannelCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ChannelCategoryDetails">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChannelCategoryDetails_tblChannel">
+    <End Role="tblChannel" Type="Self.tblChannel" Multiplicity="1" />
+    <End Role="ChannelCategoryDetails" Type="Self.ChannelCategoryDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblChannel">
+        <PropertyRef Name="ChannelId" />
+      </Principal>
+      <Dependent Role="ChannelCategoryDetails">
+        <PropertyRef Name="ChannelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="usp_GetUserByDepartmentId" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DepartmentId" Type="int" Mode="In" />
+    <Parameter Name="IsActive" Type="bit" Mode="In" />
+  </Function>
+  <EntityContainer Name="JTSModelStoreContainer">
+    <EntitySet Name="ChannelCategory" EntityType="Self.ChannelCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChannelCategoryDetails" EntityType="Self.ChannelCategoryDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblBureau" EntityType="Self.tblBureau" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblChannel" EntityType="Self.tblChannel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDepartment" EntityType="Self.tblDepartment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ChannelCategoryDetails_ChannelCategoryDetails" Association="Self.FK_ChannelCategoryDetails_ChannelCategoryDetails">
+      <End Role="ChannelCategory" EntitySet="ChannelCategory" />
+      <End Role="ChannelCategoryDetails" EntitySet="ChannelCategoryDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChannelCategoryDetails_tblChannel" Association="Self.FK_ChannelCategoryDetails_tblChannel">
+      <End Role="tblChannel" EntitySet="tblChannel" />
+      <End Role="ChannelCategoryDetails" EntitySet="ChannelCategoryDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

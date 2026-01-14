@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProdContact\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|c:\\prodcontact\\prodcontact\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|solutionrelative:prodcontact\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|C:\\ProdContact\\prodcontact\\contactreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|solutionrelative:prodcontact\\contactreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|c:\\prodcontact\\prodcontact\\searchprojectproxy.ashx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|solutionrelative:prodcontact\\searchprojectproxy.ashx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|c:\\prodcontact\\prodcontact\\searchclientproxy.ashx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|solutionrelative:prodcontact\\searchclientproxy.ashx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|c:\\prodcontact\\prodcontact\\searchagencyproxy.ashx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|solutionrelative:prodcontact\\searchagencyproxy.ashx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|C:\\ProdContact\\prodcontact\\contactreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C28EEF6C-F732-41E3-8FCD-C7FFF019B5E4}|ProdContact\\ProdContact.csproj|solutionrelative:prodcontact\\contactreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\ProdContact\\ProdContact\\Site.Master",
+              "RelativeDocumentMoniker": "ProdContact\\Site.Master",
+              "ToolTip": "C:\\ProdContact\\ProdContact\\Site.Master",
+              "RelativeToolTip": "ProdContact\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-06T13:01:11.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SearchClientProxy.ashx.cs",
+              "DocumentMoniker": "C:\\ProdContact\\ProdContact\\SearchClientProxy.ashx.cs",
+              "RelativeDocumentMoniker": "ProdContact\\SearchClientProxy.ashx.cs",
+              "ToolTip": "C:\\ProdContact\\ProdContact\\SearchClientProxy.ashx.cs",
+              "RelativeToolTip": "ProdContact\\SearchClientProxy.ashx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:09:15.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SearchAgencyProxy.ashx.cs",
+              "DocumentMoniker": "C:\\ProdContact\\ProdContact\\SearchAgencyProxy.ashx.cs",
+              "RelativeDocumentMoniker": "ProdContact\\SearchAgencyProxy.ashx.cs",
+              "ToolTip": "C:\\ProdContact\\ProdContact\\SearchAgencyProxy.ashx.cs",
+              "RelativeToolTip": "ProdContact\\SearchAgencyProxy.ashx.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:08:34.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SearchProjectProxy.ashx.cs",
+              "DocumentMoniker": "C:\\ProdContact\\ProdContact\\SearchProjectProxy.ashx.cs",
+              "RelativeDocumentMoniker": "ProdContact\\SearchProjectProxy.ashx.cs",
+              "ToolTip": "C:\\ProdContact\\ProdContact\\SearchProjectProxy.ashx.cs",
+              "RelativeToolTip": "ProdContact\\SearchProjectProxy.ashx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T11:57:21.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContactReport.aspx.cs",
+              "DocumentMoniker": "C:\\ProdContact\\ProdContact\\ContactReport.aspx.cs",
+              "RelativeDocumentMoniker": "ProdContact\\ContactReport.aspx.cs",
+              "ToolTip": "C:\\ProdContact\\ProdContact\\ContactReport.aspx.cs",
+              "RelativeToolTip": "ProdContact\\ContactReport.aspx.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwE4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T10:07:38.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactReport.aspx",
+              "DocumentMoniker": "C:\\ProdContact\\ProdContact\\ContactReport.aspx",
+              "RelativeDocumentMoniker": "ProdContact\\ContactReport.aspx",
+              "ToolTip": "C:\\ProdContact\\ProdContact\\ContactReport.aspx",
+              "RelativeToolTip": "ProdContact\\ContactReport.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-06T10:07:37.193Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

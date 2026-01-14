@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EXPARCSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ArchiveFileDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ArchiveID" Type="int" Nullable="false" />
+    <Property Name="FileTypeStatus" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="FileFullPath" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="FileDuration" Type="varchar" MaxLength="10" />
+    <Property Name="vFileSize" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="IsCopied" Type="bit" />
+    <Property Name="PriorityOrder" Type="smallint" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CopiedOn" Type="datetime" />
+    <Property Name="SourcePath" Type="varchar" MaxLength="250" />
+    <Property Name="InProcess" Type="bit" Nullable="false" />
+    <Property Name="BaseStation" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="tblArchive">
+    <Key>
+      <PropertyRef Name="ArchiveID" />
+    </Key>
+    <Property Name="ArchiveID" Type="bigint" Nullable="false" />
+    <Property Name="MediaNo" Type="bigint" />
+    <Property Name="ChannelID" Type="int" />
+    <Property Name="CategoryID" Type="int" />
+    <Property Name="MediaTypeID" Type="int" />
+    <Property Name="ClassificationID" Type="int" />
+    <Property Name="EntryDate" Type="datetime" />
+    <Property Name="ShootDate" Type="datetime" />
+    <Property Name="SourceID" Type="int" />
+    <Property Name="FootageTypeID" Type="int" />
+    <Property Name="FileName" Type="varchar" MaxLength="200" />
+    <Property Name="JTSFileName" Type="varchar" MaxLength="200" />
+    <Property Name="JTSTicketNo" Type="varchar" MaxLength="50" />
+    <Property Name="JTSReporterID" Type="int" />
+    <Property Name="JTSCameramanID" Type="int" />
+    <Property Name="JTSBureau" Type="int" />
+    <Property Name="JTSJobType" Type="varchar" MaxLength="30" />
+    <Property Name="JTSCreatedBy" Type="varchar" MaxLength="30" />
+    <Property Name="JTSSlug" Type="varchar" MaxLength="2000" />
+    <Property Name="JTSDuration" Type="varchar" MaxLength="50" />
+    <Property Name="RackNo" Type="varchar" MaxLength="10" />
+    <Property Name="ShelfNo" Type="varchar" MaxLength="10" />
+    <Property Name="ProducerID" Type="int" />
+    <Property Name="Director" Type="varchar" MaxLength="50" />
+    <Property Name="Singer_Band" Type="varchar" MaxLength="50" />
+    <Property Name="Duration" Type="varchar" MaxLength="10" />
+    <Property Name="ProgrammeTitleOrName" Type="varchar" MaxLength="1000" />
+    <Property Name="ProgramGenre_Lyrics" Type="varchar" MaxLength="1000" />
+    <Property Name="SubTitleOrCaption_Cast" Type="varchar" MaxLength="1000" />
+    <Property Name="TelecastDate" Type="datetime" />
+    <Property Name="Midbreaks" Type="int" />
+    <Property Name="EpisodeNo" Type="varchar" MaxLength="5" />
+    <Property Name="Writer" Type="varchar" MaxLength="50" />
+    <Property Name="NOCNo" Type="varchar" MaxLength="5" />
+    <Property Name="LanguageID" Type="int" />
+    <Property Name="Theme" Type="varchar" MaxLength="1000" />
+    <Property Name="Remarks" Type="varchar" MaxLength="2000" />
+    <Property Name="Album" Type="varchar" MaxLength="200" />
+    <Property Name="Origin" Type="varchar" MaxLength="200" />
+    <Property Name="FootageDetail" Type="varchar" MaxLength="2000" />
+    <Property Name="Client" Type="varchar" MaxLength="2000" />
+    <Property Name="Cdate" Type="datetime" />
+    <Property Name="CTime" Type="datetime" />
+    <Property Name="SeaChangeCode" Type="varchar" MaxLength="20" />
+    <Property Name="MediaStatusID" Type="int" />
+    <Property Name="InputTypeID" Type="int" />
+    <Property Name="TotalCapacity" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="CapacityUtilized" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="CapacityAvailable" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="DVDTitle" Type="varchar" MaxLength="1000" />
+    <Property Name="IsHighClip" Type="bit" />
+    <Property Name="IsLowClip" Type="bit" />
+    <Property Name="DVDNo" Type="bigint" />
+    <Property Name="IsIssued" Type="bit" />
+    <Property Name="OnsiteBackup" Type="bigint" />
+    <Property Name="OffsiteBackup" Type="bigint" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="EditedBy" Type="int" />
+    <Property Name="EditedOn" Type="datetime" />
+    <Property Name="PartNo" Type="char" MaxLength="1" />
+    <Property Name="OnsiteMediaTypeId" Type="int" />
+    <Property Name="OffsiteMediaTypeId" Type="int" />
+    <Property Name="DepartmentId" Type="int" />
+    <Property Name="PhotographerId" Type="int" />
+    <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="BureauTape" Type="int" />
+    <Property Name="AnchorId" Type="int" />
+    <Property Name="MediaSource" Type="smallint" />
+    <Property Name="IsInternational" Type="bit" />
+    <Property Name="BaseStationID" Type="varchar" MaxLength="5" />
+    <Property Name="IsMasterCopy" Type="bit" />
+    <Property Name="ProgramTitleID" Type="int" />
+    <Property Name="MarkDeleted" Type="bit" />
+    <Property Name="ContentTypeID" Type="int" />
+    <Property Name="ChannelCategoryID" Type="int" />
+  </EntityType>
+  <EntityContainer Name="EXPARCSModelStoreContainer">
+    <EntitySet Name="ArchiveFileDetail" EntityType="Self.ArchiveFileDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblArchive" EntityType="Self.tblArchive" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

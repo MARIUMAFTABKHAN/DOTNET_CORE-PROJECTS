@@ -1,0 +1,2769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExProdModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="fn_Split_Result">
+    <Property Name="position" Type="Int32" Nullable="false" />
+    <Property Name="value" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+  </ComplexType>
+  <EntityType Name="AIGeneratedPrompt">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SceneId" Type="Int32" />
+    <Property Name="LanguageId" Type="Int32" />
+    <Property Name="SceneLocationId" Type="Int32" />
+    <Property Name="AIPromp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Language" Relationship="Self.FK_AIGeneratedScript_Language" FromRole="AIGeneratedPrompt" ToRole="Language" />
+    <NavigationProperty Name="Scene" Relationship="Self.FK_AIGeneratedScript_Scene" FromRole="AIGeneratedPrompt" ToRole="Scene" />
+    <NavigationProperty Name="SceneLocation" Relationship="Self.FK_AIGeneratedScript_SceneLocation" FromRole="AIGeneratedPrompt" ToRole="SceneLocation" />
+    <NavigationProperty Name="AIGeneratedScripts" Relationship="Self.FK_AIGeneratedScripts_AIGeneratedPrompt" FromRole="AIGeneratedPrompt" ToRole="AIGeneratedScript" />
+  </EntityType>
+  <EntityType Name="AIGeneratedScript">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AIGeneratedPromptID" Type="Int32" />
+    <Property Name="AIGeneratedScript1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AIGeneratedPrompt" Relationship="Self.FK_AIGeneratedScripts_AIGeneratedPrompt" FromRole="AIGeneratedScript" ToRole="AIGeneratedPrompt" />
+  </EntityType>
+  <EntityType Name="AspNetRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AspNetUserRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetRoles" ToRole="AspNetUserRoles" />
+    <NavigationProperty Name="FormAssignments" Relationship="Self.FK_FormAssignment_AspNetRoles" FromRole="AspNetRoles" ToRole="FormAssignment" />
+    <NavigationProperty Name="RolesItems" Relationship="Self.FK_RolesItems_AspNetRoles" FromRole="AspNetRoles" ToRole="RolesItems" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogin">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetRole" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetUserRoles" ToRole="AspNetRoles" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" FromRole="AspNetUserRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DesignationID" Type="Int32" />
+    <Property Name="CityID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetUserRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserRoles" />
+    <NavigationProperty Name="ExpenseTypes" Relationship="Self.FK_ExpenseType_AspNetUsers" FromRole="AspNetUsers" ToRole="ExpenseType" />
+    <NavigationProperty Name="ExpenseTypes1" Relationship="Self.FK_ExpenseType_AspNetUsers1" FromRole="AspNetUsers" ToRole="ExpenseType" />
+    <NavigationProperty Name="LogRecords" Relationship="Self.FK_LogRecord_AspNetUsers" FromRole="AspNetUsers" ToRole="LogRecord" />
+    <NavigationProperty Name="OneLiners" Relationship="Self.FK_OneLiner_AspNetUsers" FromRole="AspNetUsers" ToRole="OneLiner" />
+    <NavigationProperty Name="OneLiners1" Relationship="Self.FK_OneLiner_AspNetUsers1" FromRole="AspNetUsers" ToRole="OneLiner" />
+    <NavigationProperty Name="OneLinerScripts" Relationship="Self.FK_OneLinerScript_AspNetUsers" FromRole="AspNetUsers" ToRole="OneLinerScript" />
+    <NavigationProperty Name="OneLinerStarts" Relationship="Self.FK_OneLinerStart_AspNetUsers" FromRole="AspNetUsers" ToRole="OneLinerStart" />
+    <NavigationProperty Name="OneLinerStartDetails" Relationship="Self.FK_OneLinerStartDetail_AspNetUsers" FromRole="AspNetUsers" ToRole="OneLinerStartDetail" />
+    <NavigationProperty Name="OneLinerWriterScripts" Relationship="Self.FK_OneLinerWriterScript_AspNetUsers" FromRole="AspNetUsers" ToRole="OneLinerWriterScript" />
+    <NavigationProperty Name="ProjectExpenses" Relationship="Self.FK_ProjectExpense_AspNetUsers" FromRole="AspNetUsers" ToRole="ProjectExpense" />
+    <NavigationProperty Name="ProjectExpenses1" Relationship="Self.FK_ProjectExpense_AspNetUsers1" FromRole="AspNetUsers" ToRole="ProjectExpense" />
+    <NavigationProperty Name="UserMemberTypes" Relationship="Self.FK_UserMemberType_AspNetUsers" FromRole="AspNetUsers" ToRole="UserMemberType" />
+  </EntityType>
+  <EntityType Name="BudgetHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="MemberTypes" Relationship="Self.FK_MemberTypes_BudgetHead" FromRole="BudgetHead" ToRole="MemberTypes" />
+  </EntityType>
+  <EntityType Name="Cast">
+    <Key>
+      <PropertyRef Name="CastID" />
+    </Key>
+    <Property Name="CastID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CastCategoryID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CastCategory" Relationship="Self.FK_Cast_CastCategory" FromRole="Cast" ToRole="CastCategory" />
+  </EntityType>
+  <EntityType Name="CastAttenadnce">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectCastID" Type="Int32" Nullable="false" />
+    <Property Name="SetLocationID" Type="Int32" Nullable="false" />
+    <Property Name="InsertedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="AttendanceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="AttendanceTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="DepartureTime" Type="Time" Precision="7" />
+    <NavigationProperty Name="ProjectCast" Relationship="Self.FK_CastAttenadnce_ProjectCast" FromRole="CastAttenadnce" ToRole="ProjectCast" />
+    <NavigationProperty Name="SetLocation" Relationship="Self.FK_CastAttenadnce_SetLocation" FromRole="CastAttenadnce" ToRole="SetLocation" />
+  </EntityType>
+  <EntityType Name="CastCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Casts" Relationship="Self.FK_Cast_CastCategory" FromRole="CastCategory" ToRole="Cast" />
+    <NavigationProperty Name="ProjectCasts" Relationship="Self.FK_ProjectCast_CastCategory" FromRole="CastCategory" ToRole="ProjectCast" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="contactreport_mobile">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="visit_to" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="agency_client_id" Type="Int32" Nullable="false" />
+    <Property Name="project_id" Type="Int32" />
+    <Property Name="visit_date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="minutes_of_meetings" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="pr_visit" Type="Boolean" />
+    <Property Name="new_executive" Type="Boolean" />
+    <Property Name="newexecutive_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="followup_visit_to" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="followup_visit_mode" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="followup_visit_time" Type="Time" Precision="7" />
+    <Property Name="followup_visit_date" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Added_by" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Added_Datetime" Type="DateTime" Precision="3" />
+    <Property Name="Rec_Edit_by" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Rec_Edit_Datetime" Type="DateTime" Precision="3" />
+    <Property Name="Windows_Id" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="System_name" Type="String" MaxLength="31" FixedLength="false" Unicode="false" />
+    <Property Name="GenerationDateTime" Type="DateTime" Precision="3" />
+    <Property Name="visit_time" Type="Time" Precision="7" />
+    <Property Name="Mode" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Desgn" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Person_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Contactreportmobile_Detail" Relationship="Self.FK_contactreportId" FromRole="contactreport_mobile" ToRole="Contactreportmobile_Detail" />
+  </EntityType>
+  <EntityType Name="Contactreportmobile_Detail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="contactreport" Type="Int32" Nullable="false" />
+    <Property Name="Latitude" Type="Double" />
+    <Property Name="Longitude" Type="Double" />
+    <NavigationProperty Name="contactreport_mobile" Relationship="Self.FK_contactreportId" FromRole="Contactreportmobile_Detail" ToRole="contactreport_mobile" />
+  </EntityType>
+  <EntityType Name="ContractType">
+    <Key>
+      <PropertyRef Name="ContractTypeID" />
+    </Key>
+    <Property Name="ContractTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="ProjectCasts" Relationship="Self.FK_ProjectCast_ContractType" FromRole="ContractType" ToRole="ProjectCast" />
+    <NavigationProperty Name="ProjectCrewContracts" Relationship="Self.FK_ProjectCrewContract_ContractType" FromRole="ContractType" ToRole="ProjectCrewContract" />
+  </EntityType>
+  <EntityType Name="Designation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DesignationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ExLogManager">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="ActionOnForm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ActionTaken" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="ActionOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ExLogRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" Nullable="false" />
+    <Property Name="ActionOnForm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ActionTaken" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="ActionOn" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="ExpenseType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_ExpenseType_AspNetUsers" FromRole="ExpenseType" ToRole="AspNetUsers" />
+    <NavigationProperty Name="AspNetUser1" Relationship="Self.FK_ExpenseType_AspNetUsers1" FromRole="ExpenseType" ToRole="AspNetUsers" />
+    <NavigationProperty Name="ProjectExpenses" Relationship="Self.FK_ProjectExpense_ExpenseType" FromRole="ExpenseType" ToRole="ProjectExpense" />
+  </EntityType>
+  <EntityType Name="FormAssignment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FormID" Type="Int32" />
+    <Property Name="RoleID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ControlName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="ControlID" Type="Int32" />
+    <NavigationProperty Name="AspNetRole" Relationship="Self.FK_FormAssignment_AspNetRoles" FromRole="FormAssignment" ToRole="AspNetRoles" />
+    <NavigationProperty Name="MenuItem" Relationship="Self.FK_FormAssignment_MenuItems" FromRole="FormAssignment" ToRole="MenuItems" />
+  </EntityType>
+  <EntityType Name="FormControl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ControlName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="TypeofButton" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Gender">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="ProjectCasts" Relationship="Self.FK_ProjectCast_Gender" FromRole="Gender" ToRole="ProjectCast" />
+  </EntityType>
+  <EntityType Name="Genre">
+    <Key>
+      <PropertyRef Name="GenreId" />
+    </Key>
+    <Property Name="GenreId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GenreName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="IdCtr">
+    <Key>
+      <PropertyRef Name="ForTable" />
+    </Key>
+    <Property Name="ForTable" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Counter" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IssueDelayLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SceneID" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Scene" Relationship="Self.FK_IssueDelayLog_Scene" FromRole="IssueDelayLog" ToRole="Scene" />
+  </EntityType>
+  <EntityType Name="Language">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AIGeneratedPrompts" Relationship="Self.FK_AIGeneratedScript_Language" FromRole="Language" ToRole="AIGeneratedPrompt" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="LocationId" />
+    </Key>
+    <Property Name="LocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Project_Location" FromRole="Location" ToRole="Project" />
+  </EntityType>
+  <EntityType Name="LogRecord">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RecordID" Type="Int32" />
+    <Property Name="ActionOnForm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ActionTaken" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ActionBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ActionOn" Type="DateTime" Precision="3" />
+    <Property Name="StrRecordID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_LogRecord_AspNetUsers" FromRole="LogRecord" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="MakeupArtist">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="MemberTypeId" />
+    </Key>
+    <Property Name="MemberTypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="BudgetHeadID" Type="Int32" />
+    <NavigationProperty Name="BudgetHead" Relationship="Self.FK_MemberTypes_BudgetHead" FromRole="MemberTypes" ToRole="BudgetHead" />
+    <NavigationProperty Name="TeamMemberTypes" Relationship="Self.FK_TeamMemberType_MemberTypes" FromRole="MemberTypes" ToRole="TeamMemberType" />
+    <NavigationProperty Name="UserMemberTypes" Relationship="Self.FK_UserMemberType_MemberTypes" FromRole="MemberTypes" ToRole="UserMemberType" />
+  </EntityType>
+  <EntityType Name="MenuItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuID" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FormName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="OrderBy" Type="Int32" Nullable="false" />
+    <Property Name="IsVisbile" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="FormAssignments" Relationship="Self.FK_FormAssignment_MenuItems" FromRole="MenuItems" ToRole="FormAssignment" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_MenuItems_Menus" FromRole="MenuItems" ToRole="Menus" />
+    <NavigationProperty Name="RolesItems" Relationship="Self.FK_RoleItems_MenuItems" FromRole="MenuItems" ToRole="RolesItems" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MenuName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="OrderBy" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MenuItems" Relationship="Self.FK_MenuItems_Menus" FromRole="Menus" ToRole="MenuItems" />
+  </EntityType>
+  <EntityType Name="OneLiner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OneLinerText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OneLinerStartID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedOn" Type="DateTime" Precision="3" />
+    <Property Name="ApprovalComment" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_OneLiner_AspNetUsers" FromRole="OneLiner" ToRole="AspNetUsers" />
+    <NavigationProperty Name="AspNetUser1" Relationship="Self.FK_OneLiner_AspNetUsers1" FromRole="OneLiner" ToRole="AspNetUsers" />
+    <NavigationProperty Name="OneLinerStart" Relationship="Self.FK_OneLiner_OneLinerStart" FromRole="OneLiner" ToRole="OneLinerStart" />
+    <NavigationProperty Name="OneLinerScripts" Relationship="Self.FK_OneLinerScript_OneLiner" FromRole="OneLiner" ToRole="OneLinerScript" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Project_OneLiner" FromRole="OneLiner" ToRole="Project" />
+  </EntityType>
+  <EntityType Name="OneLinerScript">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OneLinerID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_OneLinerScript_AspNetUsers" FromRole="OneLinerScript" ToRole="AspNetUsers" />
+    <NavigationProperty Name="OneLiner" Relationship="Self.FK_OneLinerScript_OneLiner" FromRole="OneLinerScript" ToRole="OneLiner" />
+    <NavigationProperty Name="OneLinerWriterScripts" Relationship="Self.FK_OneLinerWriterScript_OneLinerScript" FromRole="OneLinerScript" ToRole="OneLinerWriterScript" />
+  </EntityType>
+  <EntityType Name="OneLinerStart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ContentHead" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmailSubject" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="EmailBody" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_OneLinerStart_AspNetUsers" FromRole="OneLinerStart" ToRole="AspNetUsers" />
+    <NavigationProperty Name="OneLiners" Relationship="Self.FK_OneLiner_OneLinerStart" FromRole="OneLinerStart" ToRole="OneLiner" />
+    <NavigationProperty Name="OneLinerStartDetails" Relationship="Self.FK_OneLinerStartDetail_OneLinerStart" FromRole="OneLinerStart" ToRole="OneLinerStartDetail" />
+  </EntityType>
+  <EntityType Name="OneLinerStartDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OneLinerStartID" Type="Int32" Nullable="false" />
+    <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_OneLinerStartDetail_AspNetUsers" FromRole="OneLinerStartDetail" ToRole="AspNetUsers" />
+    <NavigationProperty Name="OneLinerStart" Relationship="Self.FK_OneLinerStartDetail_OneLinerStart" FromRole="OneLinerStartDetail" ToRole="OneLinerStart" />
+  </EntityType>
+  <EntityType Name="OneLinerWriterScript">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OneLinerScriptID" Type="Int32" Nullable="false" />
+    <Property Name="ScriptFile" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="UploadedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_OneLinerWriterScript_AspNetUsers" FromRole="OneLinerWriterScript" ToRole="AspNetUsers" />
+    <NavigationProperty Name="OneLinerScript" Relationship="Self.FK_OneLinerWriterScript_OneLinerScript" FromRole="OneLinerWriterScript" ToRole="OneLinerScript" />
+  </EntityType>
+  <EntityType Name="PaymentRequestDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PRID" Type="Int32" />
+    <Property Name="JobCompletionDate" Type="DateTime" Precision="3" />
+    <Property Name="PayeeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NatureOfJob" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MonthOrEps" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Rate" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Int64" />
+    <NavigationProperty Name="PaymentRequestHead" Relationship="Self.FK_PaymentRequestDetail_PaymentRequestHead" FromRole="PaymentRequestDetail" ToRole="PaymentRequestHead" />
+  </EntityType>
+  <EntityType Name="PaymentRequestHead">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="StationID" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Budgeted" Type="Boolean" />
+    <Property Name="ChannelID" Type="Int32" />
+    <Property Name="IsCash" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="IsChecked" Type="Boolean" />
+    <Property Name="DirApproved" Type="Boolean" />
+    <Property Name="CheckedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CheckedOn" Type="DateTime" Precision="3" />
+    <Property Name="DirApprovedBy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DirApprovedOn" Type="DateTime" Precision="3" />
+    <Property Name="ChannelTrackingNo" Type="Int64" />
+    <Property Name="DirComment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsRevert" Type="Boolean" />
+    <Property Name="IsPaid" Type="Boolean" />
+    <Property Name="CheckNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BankName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PaymentDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="PaymentRequestDetails" Relationship="Self.FK_PaymentRequestDetail_PaymentRequestHead" FromRole="PaymentRequestHead" ToRole="PaymentRequestDetail" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_PaymentRequestHead_Project" FromRole="PaymentRequestHead" ToRole="Project" />
+  </EntityType>
+  <EntityType Name="PaymentUserType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="UserType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Project">
+    <Key>
+      <PropertyRef Name="ProjectId" />
+    </Key>
+    <Property Name="ProjectId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GenreId" Type="Int32" />
+    <Property Name="ProjectFrequencyId" Type="Int32" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="TotalEpisodes" Type="Int32" />
+    <Property Name="TimeDuration" Type="Int32" />
+    <Property Name="TimeUnit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerId" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="ProjectTypeId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Budget" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="DirectorID" Type="Int32" />
+    <Property Name="HOPID" Type="Int32" />
+    <Property Name="OneLinerID" Type="Int32" />
+    <NavigationProperty Name="Location" Relationship="Self.FK_Project_Location" FromRole="Project" ToRole="Location" />
+    <NavigationProperty Name="OneLiner" Relationship="Self.FK_Project_OneLiner" FromRole="Project" ToRole="OneLiner" />
+    <NavigationProperty Name="PaymentRequestHeads" Relationship="Self.FK_PaymentRequestHead_Project" FromRole="Project" ToRole="PaymentRequestHead" />
+    <NavigationProperty Name="ProjectFrequency" Relationship="Self.FK_Project_ProjectFrequency" FromRole="Project" ToRole="ProjectFrequency" />
+    <NavigationProperty Name="ProjectType" Relationship="Self.FK_Project_ProjectType" FromRole="Project" ToRole="ProjectType" />
+    <NavigationProperty Name="TeamMember" Relationship="Self.FK_Project_TeamMember" FromRole="Project" ToRole="TeamMember" />
+    <NavigationProperty Name="TeamMember1" Relationship="Self.FK_Project_TeamMember1" FromRole="Project" ToRole="TeamMember" />
+    <NavigationProperty Name="ProjectBudgets" Relationship="Self.FK_ProjectBudget_Project" FromRole="Project" ToRole="ProjectBudget" />
+    <NavigationProperty Name="ProjectCasts" Relationship="Self.FK_ProjectCast_Project" FromRole="Project" ToRole="ProjectCast" />
+    <NavigationProperty Name="ProjectCrewContracts" Relationship="Self.FK_ProjectCrewContract_Project" FromRole="Project" ToRole="ProjectCrewContract" />
+    <NavigationProperty Name="ProjectEpisodes" Relationship="Self.FK_ProjectEpisodes_Project" FromRole="Project" ToRole="ProjectEpisodes" />
+    <NavigationProperty Name="ProjectSchedulings" Relationship="Self.FK_ProjectScheduling_Project" FromRole="Project" ToRole="ProjectScheduling" />
+    <NavigationProperty Name="ProjectTeamMembers" Relationship="Self.FK_ProjectTeamMembers_Project" FromRole="Project" ToRole="ProjectTeamMembers" />
+    <NavigationProperty Name="Scenes" Relationship="Self.FK_Scene_Project" FromRole="Project" ToRole="Scene" />
+    <NavigationProperty Name="SetLocations" Relationship="Self.FK_SetLocation_Project" FromRole="Project" ToRole="SetLocation" />
+    <NavigationProperty Name="TeamExpenses" Relationship="Self.FK_TeamExpense_Project" FromRole="Project" ToRole="TeamExpense" />
+  </EntityType>
+  <EntityType Name="ProjectBudget">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="TeamFinancing" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ProjectFinancing" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectBudget_Project" FromRole="ProjectBudget" ToRole="Project" />
+  </EntityType>
+  <EntityType Name="ProjectCast">
+    <Key>
+      <PropertyRef Name="ProjectCastId" />
+    </Key>
+    <Property Name="ProjectCastId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Character" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="GenderId" Type="Int32" />
+    <Property Name="CastCategoryId" Type="Int32" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="ContractTypeID" Type="Int32" />
+    <Property Name="PayScale" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TeamMemberID" Type="Int32" />
+    <Property Name="VoiceOverMemberID" Type="Int32" />
+    <NavigationProperty Name="CastAttenadnces" Relationship="Self.FK_CastAttenadnce_ProjectCast" FromRole="ProjectCast" ToRole="CastAttenadnce" />
+    <NavigationProperty Name="CastCategory" Relationship="Self.FK_ProjectCast_CastCategory" FromRole="ProjectCast" ToRole="CastCategory" />
+    <NavigationProperty Name="ContractType" Relationship="Self.FK_ProjectCast_ContractType" FromRole="ProjectCast" ToRole="ContractType" />
+    <NavigationProperty Name="Gender" Relationship="Self.FK_ProjectCast_Gender" FromRole="ProjectCast" ToRole="Gender" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectCast_Project" FromRole="ProjectCast" ToRole="Project" />
+    <NavigationProperty Name="TeamMember" Relationship="Self.FK_ProjectCast_TeamMember" FromRole="ProjectCast" ToRole="TeamMember" />
+    <NavigationProperty Name="SceneCharacters" Relationship="Self.FK_SceneCharacters_ProjectCast" FromRole="ProjectCast" ToRole="SceneCharacters" />
+    <NavigationProperty Name="SceneWardrobes" Relationship="Self.FK_SceneWardrobe_ProjectCast" FromRole="ProjectCast" ToRole="SceneWardrobe" />
+    <NavigationProperty Name="TeamExpenses" Relationship="Self.FK_TeamExpense_ProjectCast" FromRole="ProjectCast" ToRole="TeamExpense" />
+  </EntityType>
+  <EntityType Name="ProjectCrewContract">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="TeamMemberID" Type="Int32" />
+    <Property Name="ContractTypeID" Type="Int32" />
+    <Property Name="PayScale" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="ContractType" Relationship="Self.FK_ProjectCrewContract_ContractType" FromRole="ProjectCrewContract" ToRole="ContractType" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectCrewContract_Project" FromRole="ProjectCrewContract" ToRole="Project" />
+    <NavigationProperty Name="TeamMember" Relationship="Self.FK_ProjectCrewContract_TeamMember" FromRole="ProjectCrewContract" ToRole="TeamMember" />
+  </EntityType>
+  <EntityType Name="ProjectCtrl">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CtrlName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CtrlType" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ProjectEpisode">
+    <Key>
+      <PropertyRef Name="EpisodeId" />
+    </Key>
+    <Property Name="EpisodeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EpisodeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="ScriptFile" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="NumOfScene" Type="Int32" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectEpisodes_Project" FromRole="ProjectEpisodes" ToRole="Project" />
+    <NavigationProperty Name="Scenes" Relationship="Self.FK_Scene_ProjectEpisodes" FromRole="ProjectEpisodes" ToRole="Scene" />
+  </EntityType>
+  <EntityType Name="ProjectExpense">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="Remarks" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="IsPettyCash" Type="Boolean" />
+    <Property Name="ExpenseTypeID" Type="Int32" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_ProjectExpense_AspNetUsers" FromRole="ProjectExpense" ToRole="AspNetUsers" />
+    <NavigationProperty Name="AspNetUser1" Relationship="Self.FK_ProjectExpense_AspNetUsers1" FromRole="ProjectExpense" ToRole="AspNetUsers" />
+    <NavigationProperty Name="ExpenseType" Relationship="Self.FK_ProjectExpense_ExpenseType" FromRole="ProjectExpense" ToRole="ExpenseType" />
+  </EntityType>
+  <EntityType Name="ProjectFrequency">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FrequencyName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Project_ProjectFrequency" FromRole="ProjectFrequency" ToRole="Project" />
+  </EntityType>
+  <EntityType Name="ProjectScheduling">
+    <Key>
+      <PropertyRef Name="ScheduleId" />
+    </Key>
+    <Property Name="ScheduleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="DateSchedule" Type="DateTime" Precision="0" />
+    <Property Name="SetLocationId" Type="Int32" />
+    <Property Name="CallTime" Type="Time" Precision="7" />
+    <Property Name="CameraRollTime" Type="Time" Precision="7" />
+    <Property Name="CameraRollActualTime" Type="Time" Precision="7" />
+    <Property Name="CameraPackupTime" Type="Time" Precision="7" />
+    <Property Name="CameraPackupActualTime" Type="Time" Precision="7" />
+    <Property Name="DirectorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DirectorComment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HOPName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HOPComment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectScheduling_Project" FromRole="ProjectScheduling" ToRole="Project" />
+    <NavigationProperty Name="SetLocation" Relationship="Self.FK_ProjectScheduling_SetLocation" FromRole="ProjectScheduling" ToRole="SetLocation" />
+    <NavigationProperty Name="ScheduledScenes" Relationship="Self.FK_ScheduledScenes_ProjectScheduling" FromRole="ProjectScheduling" ToRole="ScheduledScenes" />
+  </EntityType>
+  <EntityType Name="ProjectTeamMember">
+    <Key>
+      <PropertyRef Name="TeamMemberId" />
+    </Key>
+    <Property Name="TeamMemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="MemberId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_ProjectTeamMembers_Project" FromRole="ProjectTeamMembers" ToRole="Project" />
+    <NavigationProperty Name="TeamMember" Relationship="Self.FK_ProjectTeamMembers_TeamMember" FromRole="ProjectTeamMembers" ToRole="TeamMember" />
+  </EntityType>
+  <EntityType Name="ProjectType">
+    <Key>
+      <PropertyRef Name="ProjectTypeID" />
+    </Key>
+    <Property Name="ProjectTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Project_ProjectType" FromRole="ProjectType" ToRole="Project" />
+  </EntityType>
+  <EntityType Name="Prop">
+    <Key>
+      <PropertyRef Name="PropID" />
+    </Key>
+    <Property Name="PropID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PropName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SceneProps" Relationship="Self.FK_SceneProps_Props" FromRole="Props" ToRole="SceneProps" />
+  </EntityType>
+  <EntityType Name="RolesItem">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ItemID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AspNetRole" Relationship="Self.FK_RolesItems_AspNetRoles" FromRole="RolesItems" ToRole="AspNetRoles" />
+    <NavigationProperty Name="MenuItem" Relationship="Self.FK_RoleItems_MenuItems" FromRole="RolesItems" ToRole="MenuItems" />
+  </EntityType>
+  <EntityType Name="Scene">
+    <Key>
+      <PropertyRef Name="SceneId" />
+    </Key>
+    <Property Name="SceneId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SceneName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProjectId" Type="Int32" Nullable="false" />
+    <Property Name="EpisodeId" Type="Int32" Nullable="false" />
+    <Property Name="LocationId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="Remarks" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Synopsis" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="DayTime" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="SoundEffect" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="BackgroundPlay" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="isFlashBack" Type="Boolean" />
+    <Property Name="isSceneCut" Type="Boolean" />
+    <Property Name="isPhoneTalk" Type="Boolean" />
+    <Property Name="isReShoot" Type="Boolean" />
+    <NavigationProperty Name="AIGeneratedPrompts" Relationship="Self.FK_AIGeneratedScript_Scene" FromRole="Scene" ToRole="AIGeneratedPrompt" />
+    <NavigationProperty Name="IssueDelayLogs" Relationship="Self.FK_IssueDelayLog_Scene" FromRole="Scene" ToRole="IssueDelayLog" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_Scene_Project" FromRole="Scene" ToRole="Project" />
+    <NavigationProperty Name="ProjectEpisode" Relationship="Self.FK_Scene_ProjectEpisodes" FromRole="Scene" ToRole="ProjectEpisodes" />
+    <NavigationProperty Name="SceneLocation" Relationship="Self.FK_Scene_SceneLocation" FromRole="Scene" ToRole="SceneLocation" />
+    <NavigationProperty Name="SceneCharacters" Relationship="Self.FK_SceneCharacters_Scene" FromRole="Scene" ToRole="SceneCharacters" />
+    <NavigationProperty Name="SceneProps" Relationship="Self.FK_SceneProps_Scene" FromRole="Scene" ToRole="SceneProps" />
+    <NavigationProperty Name="ScheduledScenes" Relationship="Self.FK_ScheduledScenes_Scene" FromRole="Scene" ToRole="ScheduledScenes" />
+    <NavigationProperty Name="SceneWardrobes" Relationship="Self.FK_Wardrobe_Scene" FromRole="Scene" ToRole="SceneWardrobe" />
+  </EntityType>
+  <EntityType Name="SceneCharacter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SceneId" Type="Int32" />
+    <Property Name="CastId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <NavigationProperty Name="ProjectCast" Relationship="Self.FK_SceneCharacters_ProjectCast" FromRole="SceneCharacters" ToRole="ProjectCast" />
+    <NavigationProperty Name="Scene" Relationship="Self.FK_SceneCharacters_Scene" FromRole="SceneCharacters" ToRole="Scene" />
+  </EntityType>
+  <EntityType Name="SceneLocation">
+    <Key>
+      <PropertyRef Name="SceneLocationId" />
+    </Key>
+    <Property Name="SceneLocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="SetLocationId" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AIGeneratedPrompts" Relationship="Self.FK_AIGeneratedScript_SceneLocation" FromRole="SceneLocation" ToRole="AIGeneratedPrompt" />
+    <NavigationProperty Name="Scenes" Relationship="Self.FK_Scene_SceneLocation" FromRole="SceneLocation" ToRole="Scene" />
+    <NavigationProperty Name="SetLocation" Relationship="Self.FK_SceneLocation_SetLocation" FromRole="SceneLocation" ToRole="SetLocation" />
+  </EntityType>
+  <EntityType Name="SceneProp">
+    <Key>
+      <PropertyRef Name="ScenePropID" />
+    </Key>
+    <Property Name="ScenePropID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SceneID" Type="Int32" Nullable="false" />
+    <Property Name="PropID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Prop" Relationship="Self.FK_SceneProps_Props" FromRole="SceneProps" ToRole="Props" />
+    <NavigationProperty Name="Scene" Relationship="Self.FK_SceneProps_Scene" FromRole="SceneProps" ToRole="Scene" />
+  </EntityType>
+  <EntityType Name="SceneWardrobe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SceneId" Type="Int32" Nullable="false" />
+    <Property Name="CastID" Type="Int32" Nullable="false" />
+    <Property Name="WardrobeID" Type="Int32" Nullable="false" />
+    <Property Name="WardrobeStylistId" Type="Int32" />
+    <Property Name="MakeupArtistId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ProjectCast" Relationship="Self.FK_SceneWardrobe_ProjectCast" FromRole="SceneWardrobe" ToRole="ProjectCast" />
+    <NavigationProperty Name="Scene" Relationship="Self.FK_Wardrobe_Scene" FromRole="SceneWardrobe" ToRole="Scene" />
+    <NavigationProperty Name="TeamMember" Relationship="Self.FK_SceneWardrobe_TeamMember" FromRole="SceneWardrobe" ToRole="TeamMember" />
+    <NavigationProperty Name="TeamMember1" Relationship="Self.FK_SceneWardrobe_TeamMember1" FromRole="SceneWardrobe" ToRole="TeamMember" />
+    <NavigationProperty Name="Wardrobe" Relationship="Self.FK_SceneWardrobe_Wardrobe" FromRole="SceneWardrobe" ToRole="Wardrobe" />
+  </EntityType>
+  <EntityType Name="ScheduledScene">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScheduledID" Type="Int32" />
+    <Property Name="SceneID" Type="Int32" />
+    <NavigationProperty Name="ProjectScheduling" Relationship="Self.FK_ScheduledScenes_ProjectScheduling" FromRole="ScheduledScenes" ToRole="ProjectScheduling" />
+    <NavigationProperty Name="Scene" Relationship="Self.FK_ScheduledScenes_Scene" FromRole="ScheduledScenes" ToRole="Scene" />
+  </EntityType>
+  <EntityType Name="SetLocation">
+    <Key>
+      <PropertyRef Name="SetLocationId" />
+    </Key>
+    <Property Name="SetLocationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProjectId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerNumber" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CastAttenadnces" Relationship="Self.FK_CastAttenadnce_SetLocation" FromRole="SetLocation" ToRole="CastAttenadnce" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_SetLocation_Project" FromRole="SetLocation" ToRole="Project" />
+    <NavigationProperty Name="ProjectSchedulings" Relationship="Self.FK_ProjectScheduling_SetLocation" FromRole="SetLocation" ToRole="ProjectScheduling" />
+    <NavigationProperty Name="SceneLocations" Relationship="Self.FK_SceneLocation_SetLocation" FromRole="SetLocation" ToRole="SceneLocation" />
+    <NavigationProperty Name="SetLocationTeamMembers" Relationship="Self.FK_SetLocationTeamMember_SetLocation" FromRole="SetLocation" ToRole="SetLocationTeamMember" />
+    <NavigationProperty Name="TeamAttendances" Relationship="Self.FK_TeamAttendance_SetLocation" FromRole="SetLocation" ToRole="TeamAttendance" />
+  </EntityType>
+  <EntityType Name="SetLocationTeamMember">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberID" Type="Int32" Nullable="false" />
+    <Property Name="SetLocationID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreationDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreationBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="SetLocation" Relationship="Self.FK_SetLocationTeamMember_SetLocation" FromRole="SetLocationTeamMember" ToRole="SetLocation" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tblAgency">
+    <Key>
+      <PropertyRef Name="AgencyId" />
+    </Key>
+    <Property Name="AgencyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyCategoryId" Type="Int32" />
+    <Property Name="AgencyTypeId" Type="Int32" />
+    <Property Name="HeadOfficeAddress" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="HeadOfficeCityId" Type="Int32" />
+    <Property Name="HeadOfficeStateId" Type="Int32" />
+    <Property Name="HeadOfficePhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="HeadOfficeFax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="HeadOfficeEmailAddress" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOfficeAddress" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOffice1CityId" Type="Int32" />
+    <Property Name="BranchOffice1StateId" Type="Int32" />
+    <Property Name="BranchOffice1Phone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOffice1Fax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOffice1EmailAddress" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOffice2CityId" Type="Int32" />
+    <Property Name="BranchOffice2StateId" Type="Int32" />
+    <Property Name="BranchOffice2Phone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOffice2Fax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="BranchOffice2EmailAddress" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="FinanceContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FinancePersonDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FinanceDirectPhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FinanceMobile" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FinanceFax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="FinanceEmailAddress" Type="String" MaxLength="75" FixedLength="false" Unicode="false" />
+    <Property Name="MediaContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MediaPersonDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MediaDirectPhone" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="MediaMobile" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="MediaFax" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="MediaEmailAddress" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="BusinessCommencementDate" Type="DateTime" Precision="3" />
+    <Property Name="NTNNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AgencyLegalStatus" Type="Int32" />
+    <Property Name="BankingWith1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Branch1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountNo1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="AvgMonthlyBill" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="BankingWith2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Branch2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AccountNo2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="AvgMonthlyBill2" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreditApplied" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreditAppliedDays" Type="Int32" />
+    <Property Name="PaymentMode" Type="Int32" />
+    <Property Name="PaymentNumber" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="PaymentNote" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreditApproved" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="CreditApprovedDays" Type="Int32" />
+    <Property Name="NicCopy" Type="Boolean" />
+    <Property Name="NicCopyPath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NTNCertificateCopy" Type="Boolean" />
+    <Property Name="NTNCertificatePath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="BankStatement" Type="Boolean" />
+    <Property Name="BankStatementPath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ClientsList" Type="Boolean" />
+    <Property Name="ClientsListPath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Form29" Type="Boolean" />
+    <Property Name="Form29Path" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ReportVisitOffice" Type="Boolean" />
+    <Property Name="AgencyGSTNo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PresentStatus" Type="Boolean" />
+    <Property Name="OutstandingPKR" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="OverDuePKR" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="OverDueDays" Type="Int32" />
+    <Property Name="LastPaymentRecieved" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PaidOn" Type="DateTime" Precision="3" />
+    <Property Name="DishonorChequeAmt" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="DishonorChequeNo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedByDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsApproved" Type="Boolean" />
+    <Property Name="ApprovedBy" Type="Int32" />
+    <Property Name="ApprovedByDesignation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApprovedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="IsCR" Type="Boolean" />
+    <Property Name="IsRegistered" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="PaymentType" Type="Int32" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="ChannelId" Type="Int32" />
+    <Property Name="MasterAgencyID" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="tblChannel">
+    <Key>
+      <PropertyRef Name="ChannelId" />
+    </Key>
+    <Property Name="ChannelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="Prefix" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="GLPublication" Type="Int32" />
+    <Property Name="PrefixNew" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblClient">
+    <Key>
+      <PropertyRef Name="ClientId" />
+    </Key>
+    <Property Name="ClientId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="ClientCategoryId" Type="Int32" />
+    <Property Name="GSTNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="CountryId" Type="Int32" />
+    <Property Name="StateId" Type="Int32" />
+    <Property Name="AgencyId" Type="Int32" />
+    <Property Name="ContactNo1" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ContactNo2" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ContactNo3" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedBy" Type="Int32" />
+    <Property Name="IsRegistered" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="EndDate" Type="DateTime" Precision="3" />
+    <Property Name="NTNNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="NICNO" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IsGovernment" Type="Boolean" />
+    <Property Name="test" Type="Int32" />
+    <Property Name="IsACAllowed" Type="Boolean" Nullable="false" />
+    <Property Name="ShortName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ClientCountry" Type="Int32" />
+    <Property Name="ClientProvince" Type="Int32" />
+    <Property Name="ClientCity" Type="Int32" />
+    <Property Name="ClientNamePBA" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IsGovernmentRate" Type="Boolean" />
+    <Property Name="GSTApplicable" Type="Boolean" />
+    <Property Name="ClientGovtId" Type="Int32" />
+    <Property Name="RegisteredIn" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TeamAttendance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberID" Type="Int32" Nullable="false" />
+    <Property Name="SetLocationID" Type="Int32" Nullable="false" />
+    <Property Name="InsertedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="AttendanceDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="AttendanceTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="DepartureTime" Type="Time" Precision="7" />
+    <NavigationProperty Name="SetLocation" Relationship="Self.FK_TeamAttendance_SetLocation" FromRole="TeamAttendance" ToRole="SetLocation" />
+  </EntityType>
+  <EntityType Name="TeamExpense">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" />
+    <Property Name="MemberID" Type="Int32" />
+    <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="Remarks" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsCrew" Type="Boolean" />
+    <Property Name="CreatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedAt" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Project" Relationship="Self.FK_TeamExpense_Project" FromRole="TeamExpense" ToRole="Project" />
+    <NavigationProperty Name="ProjectCast" Relationship="Self.FK_TeamExpense_ProjectCast" FromRole="TeamExpense" ToRole="ProjectCast" />
+  </EntityType>
+  <EntityType Name="TeamMember">
+    <Key>
+      <PropertyRef Name="MemberId" />
+    </Key>
+    <Property Name="MemberId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="IsOutSourced" Type="Boolean" />
+    <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Projects" Relationship="Self.FK_Project_TeamMember" FromRole="TeamMember" ToRole="Project" />
+    <NavigationProperty Name="Projects1" Relationship="Self.FK_Project_TeamMember1" FromRole="TeamMember" ToRole="Project" />
+    <NavigationProperty Name="ProjectCasts" Relationship="Self.FK_ProjectCast_TeamMember" FromRole="TeamMember" ToRole="ProjectCast" />
+    <NavigationProperty Name="ProjectCrewContracts" Relationship="Self.FK_ProjectCrewContract_TeamMember" FromRole="TeamMember" ToRole="ProjectCrewContract" />
+    <NavigationProperty Name="ProjectTeamMembers" Relationship="Self.FK_ProjectTeamMembers_TeamMember" FromRole="TeamMember" ToRole="ProjectTeamMembers" />
+    <NavigationProperty Name="SceneWardrobes" Relationship="Self.FK_SceneWardrobe_TeamMember" FromRole="TeamMember" ToRole="SceneWardrobe" />
+    <NavigationProperty Name="SceneWardrobes1" Relationship="Self.FK_SceneWardrobe_TeamMember1" FromRole="TeamMember" ToRole="SceneWardrobe" />
+    <NavigationProperty Name="TeamMemberTypes" Relationship="Self.FK_TeamMemberType_TeamMember" FromRole="TeamMember" ToRole="TeamMemberType" />
+  </EntityType>
+  <EntityType Name="TeamMemberType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MemberID" Type="Int32" Nullable="false" />
+    <Property Name="MemberTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MemberType" Relationship="Self.FK_TeamMemberType_MemberTypes" FromRole="TeamMemberType" ToRole="MemberTypes" />
+    <NavigationProperty Name="TeamMember" Relationship="Self.FK_TeamMemberType_TeamMember" FromRole="TeamMemberType" ToRole="TeamMember" />
+  </EntityType>
+  <EntityType Name="UserMemberType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MemberTypeID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_UserMemberType_AspNetUsers" FromRole="UserMemberType" ToRole="AspNetUsers" />
+    <NavigationProperty Name="MemberType" Relationship="Self.FK_UserMemberType_MemberTypes" FromRole="UserMemberType" ToRole="MemberTypes" />
+  </EntityType>
+  <EntityType Name="WadrobeStylist">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Wardrobe">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Size" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SceneWardrobes" Relationship="Self.FK_SceneWardrobe_Wardrobe" FromRole="Wardrobe" ToRole="SceneWardrobe" />
+  </EntityType>
+  <Association Name="FK_AIGeneratedScript_Language">
+    <End Role="Language" Type="Self.Language" Multiplicity="0..1" />
+    <End Role="AIGeneratedPrompt" Type="Self.AIGeneratedPrompt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Language">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AIGeneratedPrompt">
+        <PropertyRef Name="LanguageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AIGeneratedScript_Scene">
+    <End Role="Scene" Type="Self.Scene" Multiplicity="0..1" />
+    <End Role="AIGeneratedPrompt" Type="Self.AIGeneratedPrompt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scene">
+        <PropertyRef Name="SceneId" />
+      </Principal>
+      <Dependent Role="AIGeneratedPrompt">
+        <PropertyRef Name="SceneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AIGeneratedScript_SceneLocation">
+    <End Role="SceneLocation" Type="Self.SceneLocation" Multiplicity="0..1" />
+    <End Role="AIGeneratedPrompt" Type="Self.AIGeneratedPrompt" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SceneLocation">
+        <PropertyRef Name="SceneLocationId" />
+      </Principal>
+      <Dependent Role="AIGeneratedPrompt">
+        <PropertyRef Name="SceneLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AIGeneratedScripts_AIGeneratedPrompt">
+    <End Role="AIGeneratedPrompt" Type="Self.AIGeneratedPrompt" Multiplicity="0..1" />
+    <End Role="AIGeneratedScript" Type="Self.AIGeneratedScript" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AIGeneratedPrompt">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AIGeneratedScript">
+        <PropertyRef Name="AIGeneratedPromptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormAssignment_AspNetRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="0..1" />
+    <End Role="FormAssignment" Type="Self.FormAssignment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormAssignment">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolesItems_AspNetRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="1" />
+    <End Role="RolesItems" Type="Self.RolesItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RolesItems">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExpenseType_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ExpenseType">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExpenseType_AspNetUsers1">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ExpenseType">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LogRecord_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="LogRecord" Type="Self.LogRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="LogRecord">
+        <PropertyRef Name="ActionBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLiner_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="OneLiner" Type="Self.OneLiner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLiner">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLiner_AspNetUsers1">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="OneLiner" Type="Self.OneLiner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLiner">
+        <PropertyRef Name="ApprovedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerScript_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="OneLinerScript" Type="Self.OneLinerScript" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerScript">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerStart_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="OneLinerStart" Type="Self.OneLinerStart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerStart">
+        <PropertyRef Name="ContentHead" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerStartDetail_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="OneLinerStartDetail" Type="Self.OneLinerStartDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerStartDetail">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerWriterScript_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="OneLinerWriterScript" Type="Self.OneLinerWriterScript" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerWriterScript">
+        <PropertyRef Name="UploadedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectExpense_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="ProjectExpense" Type="Self.ProjectExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProjectExpense">
+        <PropertyRef Name="CreatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectExpense_AspNetUsers1">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="0..1" />
+    <End Role="ProjectExpense" Type="Self.ProjectExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProjectExpense">
+        <PropertyRef Name="UpdatedBy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMemberType_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1" />
+    <End Role="UserMemberType" Type="Self.UserMemberType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserMemberType">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MemberTypes_BudgetHead">
+    <End Role="BudgetHead" Type="Self.BudgetHead" Multiplicity="0..1" />
+    <End Role="MemberTypes" Type="Self.MemberType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BudgetHead">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MemberTypes">
+        <PropertyRef Name="BudgetHeadID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cast_CastCategory">
+    <End Role="CastCategory" Type="Self.CastCategory" Multiplicity="1" />
+    <End Role="Cast" Type="Self.Cast" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CastCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Cast">
+        <PropertyRef Name="CastCategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CastAttenadnce_ProjectCast">
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="1" />
+    <End Role="CastAttenadnce" Type="Self.CastAttenadnce" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectCast">
+        <PropertyRef Name="ProjectCastId" />
+      </Principal>
+      <Dependent Role="CastAttenadnce">
+        <PropertyRef Name="ProjectCastID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CastAttenadnce_SetLocation">
+    <End Role="SetLocation" Type="Self.SetLocation" Multiplicity="1" />
+    <End Role="CastAttenadnce" Type="Self.CastAttenadnce" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetLocation">
+        <PropertyRef Name="SetLocationId" />
+      </Principal>
+      <Dependent Role="CastAttenadnce">
+        <PropertyRef Name="SetLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCast_CastCategory">
+    <End Role="CastCategory" Type="Self.CastCategory" Multiplicity="0..1" />
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CastCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProjectCast">
+        <PropertyRef Name="CastCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_contactreportId">
+    <End Role="contactreport_mobile" Type="Self.contactreport_mobile" Multiplicity="1" />
+    <End Role="Contactreportmobile_Detail" Type="Self.Contactreportmobile_Detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contactreport_mobile">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Contactreportmobile_Detail">
+        <PropertyRef Name="contactreport" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCast_ContractType">
+    <End Role="ContractType" Type="Self.ContractType" Multiplicity="0..1" />
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractType">
+        <PropertyRef Name="ContractTypeID" />
+      </Principal>
+      <Dependent Role="ProjectCast">
+        <PropertyRef Name="ContractTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCrewContract_ContractType">
+    <End Role="ContractType" Type="Self.ContractType" Multiplicity="0..1" />
+    <End Role="ProjectCrewContract" Type="Self.ProjectCrewContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ContractType">
+        <PropertyRef Name="ContractTypeID" />
+      </Principal>
+      <Dependent Role="ProjectCrewContract">
+        <PropertyRef Name="ContractTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectExpense_ExpenseType">
+    <End Role="ExpenseType" Type="Self.ExpenseType" Multiplicity="0..1" />
+    <End Role="ProjectExpense" Type="Self.ProjectExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ExpenseType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProjectExpense">
+        <PropertyRef Name="ExpenseTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormAssignment_MenuItems">
+    <End Role="MenuItems" Type="Self.MenuItem" Multiplicity="0..1" />
+    <End Role="FormAssignment" Type="Self.FormAssignment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FormAssignment">
+        <PropertyRef Name="FormID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCast_Gender">
+    <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Gender">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProjectCast">
+        <PropertyRef Name="GenderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IssueDelayLog_Scene">
+    <End Role="Scene" Type="Self.Scene" Multiplicity="1" />
+    <End Role="IssueDelayLog" Type="Self.IssueDelayLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scene">
+        <PropertyRef Name="SceneId" />
+      </Principal>
+      <Dependent Role="IssueDelayLog">
+        <PropertyRef Name="SceneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Location">
+    <End Role="Location" Type="Self.Location" Multiplicity="0..1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Location">
+        <PropertyRef Name="LocationId" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamMemberType_MemberTypes">
+    <End Role="MemberTypes" Type="Self.MemberType" Multiplicity="1" />
+    <End Role="TeamMemberType" Type="Self.TeamMemberType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberTypes">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="TeamMemberType">
+        <PropertyRef Name="MemberTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMemberType_MemberTypes">
+    <End Role="MemberTypes" Type="Self.MemberType" Multiplicity="1" />
+    <End Role="UserMemberType" Type="Self.UserMemberType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MemberTypes">
+        <PropertyRef Name="MemberTypeId" />
+      </Principal>
+      <Dependent Role="UserMemberType">
+        <PropertyRef Name="MemberTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MenuItems_Menus">
+    <End Role="Menus" Type="Self.Menu" Multiplicity="1" />
+    <End Role="MenuItems" Type="Self.MenuItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MenuItems">
+        <PropertyRef Name="MenuID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RoleItems_MenuItems">
+    <End Role="MenuItems" Type="Self.MenuItem" Multiplicity="1" />
+    <End Role="RolesItems" Type="Self.RolesItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MenuItems">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="RolesItems">
+        <PropertyRef Name="ItemID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLiner_OneLinerStart">
+    <End Role="OneLinerStart" Type="Self.OneLinerStart" Multiplicity="1" />
+    <End Role="OneLiner" Type="Self.OneLiner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OneLinerStart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLiner">
+        <PropertyRef Name="OneLinerStartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerScript_OneLiner">
+    <End Role="OneLiner" Type="Self.OneLiner" Multiplicity="1" />
+    <End Role="OneLinerScript" Type="Self.OneLinerScript" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OneLiner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerScript">
+        <PropertyRef Name="OneLinerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_OneLiner">
+    <End Role="OneLiner" Type="Self.OneLiner" Multiplicity="0..1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OneLiner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="OneLinerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerWriterScript_OneLinerScript">
+    <End Role="OneLinerScript" Type="Self.OneLinerScript" Multiplicity="1" />
+    <End Role="OneLinerWriterScript" Type="Self.OneLinerWriterScript" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OneLinerScript">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerWriterScript">
+        <PropertyRef Name="OneLinerScriptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OneLinerStartDetail_OneLinerStart">
+    <End Role="OneLinerStart" Type="Self.OneLinerStart" Multiplicity="1" />
+    <End Role="OneLinerStartDetail" Type="Self.OneLinerStartDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OneLinerStart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OneLinerStartDetail">
+        <PropertyRef Name="OneLinerStartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentRequestDetail_PaymentRequestHead">
+    <End Role="PaymentRequestHead" Type="Self.PaymentRequestHead" Multiplicity="0..1" />
+    <End Role="PaymentRequestDetail" Type="Self.PaymentRequestDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentRequestHead">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PaymentRequestDetail">
+        <PropertyRef Name="PRID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaymentRequestHead_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="PaymentRequestHead" Type="Self.PaymentRequestHead" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="PaymentRequestHead">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_ProjectFrequency">
+    <End Role="ProjectFrequency" Type="Self.ProjectFrequency" Multiplicity="0..1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectFrequency">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="ProjectFrequencyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_ProjectType">
+    <End Role="ProjectType" Type="Self.ProjectType" Multiplicity="0..1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectType">
+        <PropertyRef Name="ProjectTypeID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="ProjectTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_TeamMember">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="DirectorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_TeamMember1">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="Project" Type="Self.Project" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="HOPID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectBudget_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="ProjectBudget" Type="Self.ProjectBudget" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectBudget">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCast_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectCast">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCrewContract_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="ProjectCrewContract" Type="Self.ProjectCrewContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectCrewContract">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectEpisodes_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="ProjectEpisodes" Type="Self.ProjectEpisode" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectEpisodes">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectScheduling_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="ProjectScheduling" Type="Self.ProjectScheduling" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectScheduling">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectTeamMembers_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="ProjectTeamMembers" Type="Self.ProjectTeamMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="ProjectTeamMembers">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Scene_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="1" />
+    <End Role="Scene" Type="Self.Scene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="Scene">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SetLocation_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="SetLocation" Type="Self.SetLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="SetLocation">
+        <PropertyRef Name="ProjectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamExpense_Project">
+    <End Role="Project" Type="Self.Project" Multiplicity="0..1" />
+    <End Role="TeamExpense" Type="Self.TeamExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="ProjectId" />
+      </Principal>
+      <Dependent Role="TeamExpense">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCast_TeamMember">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="ProjectCast">
+        <PropertyRef Name="TeamMemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneCharacters_ProjectCast">
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="0..1" />
+    <End Role="SceneCharacters" Type="Self.SceneCharacter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectCast">
+        <PropertyRef Name="ProjectCastId" />
+      </Principal>
+      <Dependent Role="SceneCharacters">
+        <PropertyRef Name="CastId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneWardrobe_ProjectCast">
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="1" />
+    <End Role="SceneWardrobe" Type="Self.SceneWardrobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectCast">
+        <PropertyRef Name="ProjectCastId" />
+      </Principal>
+      <Dependent Role="SceneWardrobe">
+        <PropertyRef Name="CastID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamExpense_ProjectCast">
+    <End Role="ProjectCast" Type="Self.ProjectCast" Multiplicity="0..1" />
+    <End Role="TeamExpense" Type="Self.TeamExpense" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectCast">
+        <PropertyRef Name="ProjectCastId" />
+      </Principal>
+      <Dependent Role="TeamExpense">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectCrewContract_TeamMember">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="ProjectCrewContract" Type="Self.ProjectCrewContract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="ProjectCrewContract">
+        <PropertyRef Name="TeamMemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Scene_ProjectEpisodes">
+    <End Role="ProjectEpisodes" Type="Self.ProjectEpisode" Multiplicity="1" />
+    <End Role="Scene" Type="Self.Scene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectEpisodes">
+        <PropertyRef Name="EpisodeId" />
+      </Principal>
+      <Dependent Role="Scene">
+        <PropertyRef Name="EpisodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectScheduling_SetLocation">
+    <End Role="SetLocation" Type="Self.SetLocation" Multiplicity="0..1" />
+    <End Role="ProjectScheduling" Type="Self.ProjectScheduling" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetLocation">
+        <PropertyRef Name="SetLocationId" />
+      </Principal>
+      <Dependent Role="ProjectScheduling">
+        <PropertyRef Name="SetLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScheduledScenes_ProjectScheduling">
+    <End Role="ProjectScheduling" Type="Self.ProjectScheduling" Multiplicity="0..1" />
+    <End Role="ScheduledScenes" Type="Self.ScheduledScene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjectScheduling">
+        <PropertyRef Name="ScheduleId" />
+      </Principal>
+      <Dependent Role="ScheduledScenes">
+        <PropertyRef Name="ScheduledID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProjectTeamMembers_TeamMember">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="ProjectTeamMembers" Type="Self.ProjectTeamMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="ProjectTeamMembers">
+        <PropertyRef Name="MemberId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneProps_Props">
+    <End Role="Props" Type="Self.Prop" Multiplicity="1" />
+    <End Role="SceneProps" Type="Self.SceneProp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Props">
+        <PropertyRef Name="PropID" />
+      </Principal>
+      <Dependent Role="SceneProps">
+        <PropertyRef Name="PropID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Scene_SceneLocation">
+    <End Role="SceneLocation" Type="Self.SceneLocation" Multiplicity="0..1" />
+    <End Role="Scene" Type="Self.Scene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SceneLocation">
+        <PropertyRef Name="SceneLocationId" />
+      </Principal>
+      <Dependent Role="Scene">
+        <PropertyRef Name="LocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneCharacters_Scene">
+    <End Role="Scene" Type="Self.Scene" Multiplicity="0..1" />
+    <End Role="SceneCharacters" Type="Self.SceneCharacter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scene">
+        <PropertyRef Name="SceneId" />
+      </Principal>
+      <Dependent Role="SceneCharacters">
+        <PropertyRef Name="SceneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneProps_Scene">
+    <End Role="Scene" Type="Self.Scene" Multiplicity="1" />
+    <End Role="SceneProps" Type="Self.SceneProp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scene">
+        <PropertyRef Name="SceneId" />
+      </Principal>
+      <Dependent Role="SceneProps">
+        <PropertyRef Name="SceneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScheduledScenes_Scene">
+    <End Role="Scene" Type="Self.Scene" Multiplicity="0..1" />
+    <End Role="ScheduledScenes" Type="Self.ScheduledScene" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scene">
+        <PropertyRef Name="SceneId" />
+      </Principal>
+      <Dependent Role="ScheduledScenes">
+        <PropertyRef Name="SceneID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Wardrobe_Scene">
+    <End Role="Scene" Type="Self.Scene" Multiplicity="1" />
+    <End Role="SceneWardrobe" Type="Self.SceneWardrobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Scene">
+        <PropertyRef Name="SceneId" />
+      </Principal>
+      <Dependent Role="SceneWardrobe">
+        <PropertyRef Name="SceneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneLocation_SetLocation">
+    <End Role="SetLocation" Type="Self.SetLocation" Multiplicity="1" />
+    <End Role="SceneLocation" Type="Self.SceneLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetLocation">
+        <PropertyRef Name="SetLocationId" />
+      </Principal>
+      <Dependent Role="SceneLocation">
+        <PropertyRef Name="SetLocationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneWardrobe_TeamMember">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="SceneWardrobe" Type="Self.SceneWardrobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="SceneWardrobe">
+        <PropertyRef Name="MakeupArtistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneWardrobe_TeamMember1">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="0..1" />
+    <End Role="SceneWardrobe" Type="Self.SceneWardrobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="SceneWardrobe">
+        <PropertyRef Name="WardrobeStylistId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SceneWardrobe_Wardrobe">
+    <End Role="Wardrobe" Type="Self.Wardrobe" Multiplicity="1" />
+    <End Role="SceneWardrobe" Type="Self.SceneWardrobe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Wardrobe">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SceneWardrobe">
+        <PropertyRef Name="WardrobeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SetLocationTeamMember_SetLocation">
+    <End Role="SetLocation" Type="Self.SetLocation" Multiplicity="1" />
+    <End Role="SetLocationTeamMember" Type="Self.SetLocationTeamMember" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetLocation">
+        <PropertyRef Name="SetLocationId" />
+      </Principal>
+      <Dependent Role="SetLocationTeamMember">
+        <PropertyRef Name="SetLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamAttendance_SetLocation">
+    <End Role="SetLocation" Type="Self.SetLocation" Multiplicity="1" />
+    <End Role="TeamAttendance" Type="Self.TeamAttendance" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SetLocation">
+        <PropertyRef Name="SetLocationId" />
+      </Principal>
+      <Dependent Role="TeamAttendance">
+        <PropertyRef Name="SetLocationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TeamMemberType_TeamMember">
+    <End Role="TeamMember" Type="Self.TeamMember" Multiplicity="1" />
+    <End Role="TeamMemberType" Type="Self.TeamMemberType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TeamMember">
+        <PropertyRef Name="MemberId" />
+      </Principal>
+      <Dependent Role="TeamMemberType">
+        <PropertyRef Name="MemberID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ExProdEntities3" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AIGeneratedPrompts" EntityType="Self.AIGeneratedPrompt" />
+    <EntitySet Name="AIGeneratedScripts" EntityType="Self.AIGeneratedScript" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRole" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
+    <EntitySet Name="BudgetHeads" EntityType="Self.BudgetHead" />
+    <EntitySet Name="Casts" EntityType="Self.Cast" />
+    <EntitySet Name="CastAttenadnces" EntityType="Self.CastAttenadnce" />
+    <EntitySet Name="CastCategories" EntityType="Self.CastCategory" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="contactreport_mobile" EntityType="Self.contactreport_mobile" />
+    <EntitySet Name="Contactreportmobile_Detail" EntityType="Self.Contactreportmobile_Detail" />
+    <EntitySet Name="ContractTypes" EntityType="Self.ContractType" />
+    <EntitySet Name="Designations" EntityType="Self.Designation" />
+    <EntitySet Name="ExLogManagers" EntityType="Self.ExLogManager" />
+    <EntitySet Name="ExLogRecords" EntityType="Self.ExLogRecord" />
+    <EntitySet Name="ExpenseTypes" EntityType="Self.ExpenseType" />
+    <EntitySet Name="FormAssignments" EntityType="Self.FormAssignment" />
+    <EntitySet Name="FormControls" EntityType="Self.FormControl" />
+    <EntitySet Name="Genders" EntityType="Self.Gender" />
+    <EntitySet Name="Genres" EntityType="Self.Genre" />
+    <EntitySet Name="IdCtrs" EntityType="Self.IdCtr" />
+    <EntitySet Name="IssueDelayLogs" EntityType="Self.IssueDelayLog" />
+    <EntitySet Name="Languages" EntityType="Self.Language" />
+    <EntitySet Name="Locations" EntityType="Self.Location" />
+    <EntitySet Name="LogRecords" EntityType="Self.LogRecord" />
+    <EntitySet Name="MakeupArtists" EntityType="Self.MakeupArtist" />
+    <EntitySet Name="MemberTypes" EntityType="Self.MemberType" />
+    <EntitySet Name="MenuItems" EntityType="Self.MenuItem" />
+    <EntitySet Name="Menus" EntityType="Self.Menu" />
+    <EntitySet Name="OneLiners" EntityType="Self.OneLiner" />
+    <EntitySet Name="OneLinerScripts" EntityType="Self.OneLinerScript" />
+    <EntitySet Name="OneLinerStarts" EntityType="Self.OneLinerStart" />
+    <EntitySet Name="OneLinerStartDetails" EntityType="Self.OneLinerStartDetail" />
+    <EntitySet Name="OneLinerWriterScripts" EntityType="Self.OneLinerWriterScript" />
+    <EntitySet Name="PaymentRequestDetails" EntityType="Self.PaymentRequestDetail" />
+    <EntitySet Name="PaymentRequestHeads" EntityType="Self.PaymentRequestHead" />
+    <EntitySet Name="PaymentUserTypes" EntityType="Self.PaymentUserType" />
+    <EntitySet Name="Projects" EntityType="Self.Project" />
+    <EntitySet Name="ProjectBudgets" EntityType="Self.ProjectBudget" />
+    <EntitySet Name="ProjectCasts" EntityType="Self.ProjectCast" />
+    <EntitySet Name="ProjectCrewContracts" EntityType="Self.ProjectCrewContract" />
+    <EntitySet Name="ProjectCtrls" EntityType="Self.ProjectCtrl" />
+    <EntitySet Name="ProjectEpisodes" EntityType="Self.ProjectEpisode" />
+    <EntitySet Name="ProjectExpenses" EntityType="Self.ProjectExpense" />
+    <EntitySet Name="ProjectFrequencies" EntityType="Self.ProjectFrequency" />
+    <EntitySet Name="ProjectSchedulings" EntityType="Self.ProjectScheduling" />
+    <EntitySet Name="ProjectTeamMembers" EntityType="Self.ProjectTeamMember" />
+    <EntitySet Name="ProjectTypes" EntityType="Self.ProjectType" />
+    <EntitySet Name="Props" EntityType="Self.Prop" />
+    <EntitySet Name="RolesItems" EntityType="Self.RolesItem" />
+    <EntitySet Name="Scenes" EntityType="Self.Scene" />
+    <EntitySet Name="SceneCharacters" EntityType="Self.SceneCharacter" />
+    <EntitySet Name="SceneLocations" EntityType="Self.SceneLocation" />
+    <EntitySet Name="SceneProps" EntityType="Self.SceneProp" />
+    <EntitySet Name="SceneWardrobes" EntityType="Self.SceneWardrobe" />
+    <EntitySet Name="ScheduledScenes" EntityType="Self.ScheduledScene" />
+    <EntitySet Name="SetLocations" EntityType="Self.SetLocation" />
+    <EntitySet Name="SetLocationTeamMembers" EntityType="Self.SetLocationTeamMember" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="tblAgencies" EntityType="Self.tblAgency" />
+    <EntitySet Name="tblChannels" EntityType="Self.tblChannel" />
+    <EntitySet Name="tblClients" EntityType="Self.tblClient" />
+    <EntitySet Name="TeamAttendances" EntityType="Self.TeamAttendance" />
+    <EntitySet Name="TeamExpenses" EntityType="Self.TeamExpense" />
+    <EntitySet Name="TeamMembers" EntityType="Self.TeamMember" />
+    <EntitySet Name="TeamMemberTypes" EntityType="Self.TeamMemberType" />
+    <EntitySet Name="UserMemberTypes" EntityType="Self.UserMemberType" />
+    <EntitySet Name="WadrobeStylists" EntityType="Self.WadrobeStylist" />
+    <EntitySet Name="Wardrobes" EntityType="Self.Wardrobe" />
+    <AssociationSet Name="FK_AIGeneratedScript_Language" Association="Self.FK_AIGeneratedScript_Language">
+      <End Role="Language" EntitySet="Languages" />
+      <End Role="AIGeneratedPrompt" EntitySet="AIGeneratedPrompts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AIGeneratedScript_Scene" Association="Self.FK_AIGeneratedScript_Scene">
+      <End Role="Scene" EntitySet="Scenes" />
+      <End Role="AIGeneratedPrompt" EntitySet="AIGeneratedPrompts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AIGeneratedScript_SceneLocation" Association="Self.FK_AIGeneratedScript_SceneLocation">
+      <End Role="SceneLocation" EntitySet="SceneLocations" />
+      <End Role="AIGeneratedPrompt" EntitySet="AIGeneratedPrompts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AIGeneratedScripts_AIGeneratedPrompt" Association="Self.FK_AIGeneratedScripts_AIGeneratedPrompt">
+      <End Role="AIGeneratedPrompt" EntitySet="AIGeneratedPrompts" />
+      <End Role="AIGeneratedScript" EntitySet="AIGeneratedScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormAssignment_AspNetRoles" Association="Self.FK_FormAssignment_AspNetRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="FormAssignment" EntitySet="FormAssignments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolesItems_AspNetRoles" Association="Self.FK_RolesItems_AspNetRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="RolesItems" EntitySet="RolesItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExpenseType_AspNetUsers" Association="Self.FK_ExpenseType_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ExpenseType" EntitySet="ExpenseTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExpenseType_AspNetUsers1" Association="Self.FK_ExpenseType_AspNetUsers1">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ExpenseType" EntitySet="ExpenseTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LogRecord_AspNetUsers" Association="Self.FK_LogRecord_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="LogRecord" EntitySet="LogRecords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLiner_AspNetUsers" Association="Self.FK_OneLiner_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="OneLiner" EntitySet="OneLiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLiner_AspNetUsers1" Association="Self.FK_OneLiner_AspNetUsers1">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="OneLiner" EntitySet="OneLiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerScript_AspNetUsers" Association="Self.FK_OneLinerScript_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="OneLinerScript" EntitySet="OneLinerScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerStart_AspNetUsers" Association="Self.FK_OneLinerStart_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="OneLinerStart" EntitySet="OneLinerStarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerStartDetail_AspNetUsers" Association="Self.FK_OneLinerStartDetail_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="OneLinerStartDetail" EntitySet="OneLinerStartDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerWriterScript_AspNetUsers" Association="Self.FK_OneLinerWriterScript_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="OneLinerWriterScript" EntitySet="OneLinerWriterScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectExpense_AspNetUsers" Association="Self.FK_ProjectExpense_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ProjectExpense" EntitySet="ProjectExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectExpense_AspNetUsers1" Association="Self.FK_ProjectExpense_AspNetUsers1">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="ProjectExpense" EntitySet="ProjectExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMemberType_AspNetUsers" Association="Self.FK_UserMemberType_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="UserMemberType" EntitySet="UserMemberTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MemberTypes_BudgetHead" Association="Self.FK_MemberTypes_BudgetHead">
+      <End Role="BudgetHead" EntitySet="BudgetHeads" />
+      <End Role="MemberTypes" EntitySet="MemberTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cast_CastCategory" Association="Self.FK_Cast_CastCategory">
+      <End Role="CastCategory" EntitySet="CastCategories" />
+      <End Role="Cast" EntitySet="Casts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CastAttenadnce_ProjectCast" Association="Self.FK_CastAttenadnce_ProjectCast">
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+      <End Role="CastAttenadnce" EntitySet="CastAttenadnces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CastAttenadnce_SetLocation" Association="Self.FK_CastAttenadnce_SetLocation">
+      <End Role="SetLocation" EntitySet="SetLocations" />
+      <End Role="CastAttenadnce" EntitySet="CastAttenadnces" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCast_CastCategory" Association="Self.FK_ProjectCast_CastCategory">
+      <End Role="CastCategory" EntitySet="CastCategories" />
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_contactreportId" Association="Self.FK_contactreportId">
+      <End Role="contactreport_mobile" EntitySet="contactreport_mobile" />
+      <End Role="Contactreportmobile_Detail" EntitySet="Contactreportmobile_Detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCast_ContractType" Association="Self.FK_ProjectCast_ContractType">
+      <End Role="ContractType" EntitySet="ContractTypes" />
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCrewContract_ContractType" Association="Self.FK_ProjectCrewContract_ContractType">
+      <End Role="ContractType" EntitySet="ContractTypes" />
+      <End Role="ProjectCrewContract" EntitySet="ProjectCrewContracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectExpense_ExpenseType" Association="Self.FK_ProjectExpense_ExpenseType">
+      <End Role="ExpenseType" EntitySet="ExpenseTypes" />
+      <End Role="ProjectExpense" EntitySet="ProjectExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormAssignment_MenuItems" Association="Self.FK_FormAssignment_MenuItems">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="FormAssignment" EntitySet="FormAssignments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCast_Gender" Association="Self.FK_ProjectCast_Gender">
+      <End Role="Gender" EntitySet="Genders" />
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IssueDelayLog_Scene" Association="Self.FK_IssueDelayLog_Scene">
+      <End Role="Scene" EntitySet="Scenes" />
+      <End Role="IssueDelayLog" EntitySet="IssueDelayLogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Location" Association="Self.FK_Project_Location">
+      <End Role="Location" EntitySet="Locations" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamMemberType_MemberTypes" Association="Self.FK_TeamMemberType_MemberTypes">
+      <End Role="MemberTypes" EntitySet="MemberTypes" />
+      <End Role="TeamMemberType" EntitySet="TeamMemberTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMemberType_MemberTypes" Association="Self.FK_UserMemberType_MemberTypes">
+      <End Role="MemberTypes" EntitySet="MemberTypes" />
+      <End Role="UserMemberType" EntitySet="UserMemberTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MenuItems_Menus" Association="Self.FK_MenuItems_Menus">
+      <End Role="Menus" EntitySet="Menus" />
+      <End Role="MenuItems" EntitySet="MenuItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RoleItems_MenuItems" Association="Self.FK_RoleItems_MenuItems">
+      <End Role="MenuItems" EntitySet="MenuItems" />
+      <End Role="RolesItems" EntitySet="RolesItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLiner_OneLinerStart" Association="Self.FK_OneLiner_OneLinerStart">
+      <End Role="OneLinerStart" EntitySet="OneLinerStarts" />
+      <End Role="OneLiner" EntitySet="OneLiners" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerScript_OneLiner" Association="Self.FK_OneLinerScript_OneLiner">
+      <End Role="OneLiner" EntitySet="OneLiners" />
+      <End Role="OneLinerScript" EntitySet="OneLinerScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_OneLiner" Association="Self.FK_Project_OneLiner">
+      <End Role="OneLiner" EntitySet="OneLiners" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerWriterScript_OneLinerScript" Association="Self.FK_OneLinerWriterScript_OneLinerScript">
+      <End Role="OneLinerScript" EntitySet="OneLinerScripts" />
+      <End Role="OneLinerWriterScript" EntitySet="OneLinerWriterScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OneLinerStartDetail_OneLinerStart" Association="Self.FK_OneLinerStartDetail_OneLinerStart">
+      <End Role="OneLinerStart" EntitySet="OneLinerStarts" />
+      <End Role="OneLinerStartDetail" EntitySet="OneLinerStartDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentRequestDetail_PaymentRequestHead" Association="Self.FK_PaymentRequestDetail_PaymentRequestHead">
+      <End Role="PaymentRequestHead" EntitySet="PaymentRequestHeads" />
+      <End Role="PaymentRequestDetail" EntitySet="PaymentRequestDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaymentRequestHead_Project" Association="Self.FK_PaymentRequestHead_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="PaymentRequestHead" EntitySet="PaymentRequestHeads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_ProjectFrequency" Association="Self.FK_Project_ProjectFrequency">
+      <End Role="ProjectFrequency" EntitySet="ProjectFrequencies" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_ProjectType" Association="Self.FK_Project_ProjectType">
+      <End Role="ProjectType" EntitySet="ProjectTypes" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_TeamMember" Association="Self.FK_Project_TeamMember">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_TeamMember1" Association="Self.FK_Project_TeamMember1">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectBudget_Project" Association="Self.FK_ProjectBudget_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="ProjectBudget" EntitySet="ProjectBudgets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCast_Project" Association="Self.FK_ProjectCast_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCrewContract_Project" Association="Self.FK_ProjectCrewContract_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="ProjectCrewContract" EntitySet="ProjectCrewContracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectEpisodes_Project" Association="Self.FK_ProjectEpisodes_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="ProjectEpisodes" EntitySet="ProjectEpisodes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectScheduling_Project" Association="Self.FK_ProjectScheduling_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="ProjectScheduling" EntitySet="ProjectSchedulings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectTeamMembers_Project" Association="Self.FK_ProjectTeamMembers_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="ProjectTeamMembers" EntitySet="ProjectTeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Scene_Project" Association="Self.FK_Scene_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="Scene" EntitySet="Scenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SetLocation_Project" Association="Self.FK_SetLocation_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="SetLocation" EntitySet="SetLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamExpense_Project" Association="Self.FK_TeamExpense_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="TeamExpense" EntitySet="TeamExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCast_TeamMember" Association="Self.FK_ProjectCast_TeamMember">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneCharacters_ProjectCast" Association="Self.FK_SceneCharacters_ProjectCast">
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+      <End Role="SceneCharacters" EntitySet="SceneCharacters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneWardrobe_ProjectCast" Association="Self.FK_SceneWardrobe_ProjectCast">
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+      <End Role="SceneWardrobe" EntitySet="SceneWardrobes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamExpense_ProjectCast" Association="Self.FK_TeamExpense_ProjectCast">
+      <End Role="ProjectCast" EntitySet="ProjectCasts" />
+      <End Role="TeamExpense" EntitySet="TeamExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectCrewContract_TeamMember" Association="Self.FK_ProjectCrewContract_TeamMember">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="ProjectCrewContract" EntitySet="ProjectCrewContracts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Scene_ProjectEpisodes" Association="Self.FK_Scene_ProjectEpisodes">
+      <End Role="ProjectEpisodes" EntitySet="ProjectEpisodes" />
+      <End Role="Scene" EntitySet="Scenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectScheduling_SetLocation" Association="Self.FK_ProjectScheduling_SetLocation">
+      <End Role="SetLocation" EntitySet="SetLocations" />
+      <End Role="ProjectScheduling" EntitySet="ProjectSchedulings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScheduledScenes_ProjectScheduling" Association="Self.FK_ScheduledScenes_ProjectScheduling">
+      <End Role="ProjectScheduling" EntitySet="ProjectSchedulings" />
+      <End Role="ScheduledScenes" EntitySet="ScheduledScenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProjectTeamMembers_TeamMember" Association="Self.FK_ProjectTeamMembers_TeamMember">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="ProjectTeamMembers" EntitySet="ProjectTeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneProps_Props" Association="Self.FK_SceneProps_Props">
+      <End Role="Props" EntitySet="Props" />
+      <End Role="SceneProps" EntitySet="SceneProps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Scene_SceneLocation" Association="Self.FK_Scene_SceneLocation">
+      <End Role="SceneLocation" EntitySet="SceneLocations" />
+      <End Role="Scene" EntitySet="Scenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneCharacters_Scene" Association="Self.FK_SceneCharacters_Scene">
+      <End Role="Scene" EntitySet="Scenes" />
+      <End Role="SceneCharacters" EntitySet="SceneCharacters" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneProps_Scene" Association="Self.FK_SceneProps_Scene">
+      <End Role="Scene" EntitySet="Scenes" />
+      <End Role="SceneProps" EntitySet="SceneProps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScheduledScenes_Scene" Association="Self.FK_ScheduledScenes_Scene">
+      <End Role="Scene" EntitySet="Scenes" />
+      <End Role="ScheduledScenes" EntitySet="ScheduledScenes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Wardrobe_Scene" Association="Self.FK_Wardrobe_Scene">
+      <End Role="Scene" EntitySet="Scenes" />
+      <End Role="SceneWardrobe" EntitySet="SceneWardrobes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneLocation_SetLocation" Association="Self.FK_SceneLocation_SetLocation">
+      <End Role="SetLocation" EntitySet="SetLocations" />
+      <End Role="SceneLocation" EntitySet="SceneLocations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneWardrobe_TeamMember" Association="Self.FK_SceneWardrobe_TeamMember">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="SceneWardrobe" EntitySet="SceneWardrobes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneWardrobe_TeamMember1" Association="Self.FK_SceneWardrobe_TeamMember1">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="SceneWardrobe" EntitySet="SceneWardrobes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SceneWardrobe_Wardrobe" Association="Self.FK_SceneWardrobe_Wardrobe">
+      <End Role="Wardrobe" EntitySet="Wardrobes" />
+      <End Role="SceneWardrobe" EntitySet="SceneWardrobes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SetLocationTeamMember_SetLocation" Association="Self.FK_SetLocationTeamMember_SetLocation">
+      <End Role="SetLocation" EntitySet="SetLocations" />
+      <End Role="SetLocationTeamMember" EntitySet="SetLocationTeamMembers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamAttendance_SetLocation" Association="Self.FK_TeamAttendance_SetLocation">
+      <End Role="SetLocation" EntitySet="SetLocations" />
+      <End Role="TeamAttendance" EntitySet="TeamAttendances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TeamMemberType_TeamMember" Association="Self.FK_TeamMemberType_TeamMember">
+      <End Role="TeamMember" EntitySet="TeamMembers" />
+      <End Role="TeamMemberType" EntitySet="TeamMemberTypes" />
+    </AssociationSet>
+    <FunctionImport Name="fn_Split" IsComposable="true" ReturnType="Collection(ExProdModel.fn_Split_Result)">
+      <Parameter Name="text" Mode="In" Type="String" />
+      <Parameter Name="delimiter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GetProjectBudget" ReturnType="Collection(ExProdModel.GetProjectBudget_Result)">
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_FormControls">
+      <Parameter Name="MenuID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GetRoleItemsWithCtrls" ReturnType="Collection(ExProdModel.sp_GetRoleItemsWithCtrls_Result)">
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+      <Parameter Name="MenuID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ExProdModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ExProdModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="usp_GetAllProjects" />
+    <FunctionImport Name="usp_GetArtistAttendance">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetCrewAttendance" ReturnType="Collection(ExProdModel.usp_GetCrewAttendance_Result)">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetCrewAttendanceOutSourced" ReturnType="Collection(ExProdModel.usp_GetCrewAttendanceOutSourced_Result)">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetDSSHeader" ReturnType="Collection(ExProdModel.usp_GetDSSHeader_Result)">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetDSSReport">
+      <Parameter Name="FromStartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetIssueLogDSS">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetMenu" ReturnType="Collection(ExProdModel.usp_GetMenu_Result)">
+      <Parameter Name="UID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetPaymentRequests" ReturnType="Collection(ExProdModel.usp_GetPaymentRequests_Result)">
+      <Parameter Name="PRID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetPettyCashExpense" ReturnType="Collection(ExProdModel.usp_GetPettyCashExpense_Result)">
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetProjectCast" ReturnType="Collection(ExProdModel.usp_GetProjectCast_Result)">
+      <Parameter Name="ProjectId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetProjectCastExpense" ReturnType="Collection(ExProdModel.usp_GetProjectCastExpense_Result)">
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetProjectCrewExpense" ReturnType="Collection(ExProdModel.usp_GetProjectCrewExpense_Result)">
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetProjectExpense" ReturnType="Collection(ExProdModel.usp_GetProjectExpense_Result)">
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetProjects" ReturnType="Collection(ExProdModel.usp_GetProjects_Result)">
+      <Parameter Name="FromStartDate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetRoleItems" ReturnType="Collection(ExProdModel.usp_GetRoleItems_Result)">
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetRoleItemsWithCtrls" ReturnType="Collection(ExProdModel.usp_GetRoleItemsWithCtrls_Result)">
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetRoleItemsWithCtrls_2" ReturnType="Collection(ExProdModel.usp_GetRoleItemsWithCtrls_2_Result)">
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetRoleItemsWithCtrls2" ReturnType="Collection(ExProdModel.usp_GetRoleItemsWithCtrls2_Result)">
+      <Parameter Name="RoleID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetSceneSynopsisDSS">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetSetLocationsDSS">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetSpecialPropsDSS">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetUserControls">
+      <Parameter Name="RoldID" Mode="In" Type="String" />
+      <Parameter Name="ItemID" Mode="In" Type="Int32" />
+      <Parameter Name="ctrlID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetVoiceOverDSS">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_GetWardrobeDSS">
+      <Parameter Name="ScheduleDate" Mode="In" Type="DateTime" />
+      <Parameter Name="ProjectID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_IDctr" ReturnType="Collection(Int32)">
+      <Parameter Name="For_Table" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GetProjectBudget_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="ProjectID" Nullable="true" />
+    <Property Type="Decimal" Name="TeamFinancing" Nullable="true" Precision="19" />
+    <Property Type="Decimal" Name="ProjectFinancing" Nullable="true" Precision="19" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="sp_GetRoleItemsWithCtrls_Result">
+    <Property Type="Int32" Name="FormID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="RoleID" Nullable="true" MaxLength="128" />
+    <Property Type="Boolean" Name="ctrlID" Nullable="true" />
+    <Property Type="Int32" Name="ControlID" Nullable="false" />
+    <Property Type="Int32" Name="MenuID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCrewAttendance_Result">
+    <Property Type="Int32" Name="MemberId" Nullable="false" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ContactNumber" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="MemberTypeId" Nullable="false" />
+    <Property Type="String" Name="TypeName" Nullable="true" MaxLength="50" />
+    <Property Type="Time" Name="CallTime" Nullable="true" />
+    <Property Type="Time" Name="AttendanceTime" Nullable="true" />
+    <Property Type="Time" Name="DepartureTime" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetCrewAttendanceOutSourced_Result">
+    <Property Type="Int32" Name="MemberId" Nullable="false" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ContactNumber" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="MemberTypeId" Nullable="false" />
+    <Property Type="String" Name="TypeName" Nullable="true" MaxLength="50" />
+    <Property Type="Time" Name="CallTime" Nullable="true" />
+    <Property Type="Time" Name="AttendanceTime" Nullable="true" />
+    <Property Type="Time" Name="DepartureTime" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetDSSHeader_Result">
+    <Property Type="Time" Name="CameraRollTime" Nullable="true" />
+    <Property Type="Int32" Name="ProjectId" Nullable="true" />
+    <Property Type="DateTime" Name="DateSchedule" Nullable="true" />
+    <Property Type="Time" Name="CameraRollActualTime" Nullable="true" />
+    <Property Type="Time" Name="CameraPackupTime" Nullable="true" />
+    <Property Type="Time" Name="CameraPackupActualTime" Nullable="true" />
+    <Property Type="String" Name="DirectorName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="DirectorComment" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="HOPName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="HOPComment" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="usp_GetMenu_Result">
+    <Property Type="String" Name="RoleId" Nullable="false" MaxLength="128" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="orderby" Nullable="false" />
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="Int32" Name="MenuId" Nullable="false" />
+    <Property Type="Int32" Name="OrderBy1" Nullable="false" />
+    <Property Type="String" Name="Id" Nullable="false" MaxLength="128" />
+    <Property Type="String" Name="FormName" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_GetPaymentRequests_Result">
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+    <Property Type="DateTime" Name="Date" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="IsCash" Nullable="true" />
+    <Property Type="String" Name="CityName" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="Budgeted" Nullable="true" />
+    <Property Type="DateTime" Name="JobCompletionDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="PayeeName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="NatureOfJob" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="MonthOrEps" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Rate" Nullable="true" MaxLength="100" />
+    <Property Type="Int64" Name="Amount" Nullable="true" />
+    <Property Type="String" Name="PrefixNew" Nullable="true" MaxLength="50" />
+    <Property Type="Int64" Name="ChannelTrackingNo" Nullable="true" />
+    <Property Type="String" Name="DirComment" Nullable="false" />
+    <Property Type="String" Name="ProdApprovedByUser" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="DirApprovedByUser" Nullable="false" MaxLength="256" />
+    <Property Type="String" Name="CreatedByUser" Nullable="false" MaxLength="256" />
+  </ComplexType>
+  <ComplexType Name="usp_GetPettyCashExpense_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="ProjectID" Nullable="true" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="Amount" Nullable="true" />
+    <Property Type="Boolean" Name="IsPettyCash" Nullable="true" />
+    <Property Type="Int32" Name="ExpenseTypeID" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="usp_GetProjectCast_Result">
+    <Property Type="String" Name="CastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Character" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ContactNumber" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Gender" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_GetProjectCastExpense_Result">
+    <Property Type="Int32" Name="PaidAmount" Nullable="true" />
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="PayScale" Nullable="true" />
+    <Property Type="String" Name="ContractType" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="CastName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MemberType" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_GetProjectCrewExpense_Result">
+    <Property Type="Int32" Name="PaidAmount" Nullable="true" />
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+    <Property Type="Int32" Name="PayScale" Nullable="true" />
+    <Property Type="String" Name="ContractType" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="MemberName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="MemberType" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="usp_GetProjectExpense_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="ProjectID" Nullable="true" />
+    <Property Type="String" Name="Remarks" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="Amount" Nullable="true" />
+    <Property Type="Boolean" Name="IsPettyCash" Nullable="true" />
+    <Property Type="Int32" Name="ExpenseTypeID" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+  </ComplexType>
+  <ComplexType Name="usp_GetProjects_Result">
+    <Property Type="String" Name="ProjectName" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="ProjectCode" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="GenreName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="FrequencyName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LocationName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SceneName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SceneLocation" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="SceneLocationAddress" Nullable="true" MaxLength="250" />
+    <Property Type="String" Name="SceneCharacters" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_GetRoleItems_Result">
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="RoleID" Nullable="true" MaxLength="128" />
+  </ComplexType>
+  <ComplexType Name="usp_GetRoleItemsWithCtrls_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="RoleID" Nullable="true" MaxLength="128" />
+    <Property Type="Boolean" Name="ctrlID" Nullable="true" />
+    <Property Type="Int32" Name="ControlID" Nullable="false" />
+    <Property Type="Int32" Name="menuid" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetRoleItemsWithCtrls_2_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="RoleID" Nullable="true" MaxLength="128" />
+    <Property Type="Boolean" Name="ctrlID" Nullable="true" />
+    <Property Type="Int32" Name="ControlID" Nullable="false" />
+    <Property Type="Int32" Name="menuid" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_GetRoleItemsWithCtrls2_Result">
+    <Property Type="Int32" Name="ItemID" Nullable="false" />
+    <Property Type="String" Name="MenuName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="ItemName" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="true" />
+    <Property Type="String" Name="RoleID" Nullable="true" MaxLength="128" />
+    <Property Type="Boolean" Name="ctrlID" Nullable="true" />
+  </ComplexType>
+</Schema>

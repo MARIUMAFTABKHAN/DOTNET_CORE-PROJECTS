@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JTSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="UserPriority" Type="Boolean" Nullable="false" />
+    <Property Name="OffDay" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedByUserId" Type="Int32" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="JTSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+    <EntitySet Name="tblDepartments" EntityType="JTSModel.tblDepartment" />
+    <FunctionImport Name="usp_GetUserByDepartmentId" ReturnType="Collection(JTSModel.usp_GetUserByDepartmentId_Result)">
+      <Parameter Name="DepartmentId" Mode="In" Type="Int32" />
+      <Parameter Name="IsActive" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <EntitySet Name="tblBureaux" EntityType="JTSModel.tblBureau" />
+    <EntitySet Name="ChannelCategories" EntityType="JTSModel.ChannelCategory" />
+    <EntitySet Name="ChannelCategoryDetails" EntityType="JTSModel.ChannelCategoryDetail" />
+    <EntitySet Name="tblChannels" EntityType="JTSModel.tblChannel" />
+    <AssociationSet Name="FK_ChannelCategoryDetails_ChannelCategoryDetails" Association="JTSModel.FK_ChannelCategoryDetails_ChannelCategoryDetails">
+      <End Role="ChannelCategory" EntitySet="ChannelCategories" />
+      <End Role="ChannelCategoryDetail" EntitySet="ChannelCategoryDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChannelCategoryDetails_tblChannel" Association="JTSModel.FK_ChannelCategoryDetails_tblChannel">
+      <End Role="tblChannel" EntitySet="tblChannels" />
+      <End Role="ChannelCategoryDetail" EntitySet="ChannelCategoryDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tblDepartment">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+    <Property Name="Department" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedByUserId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedByUserId" Type="Int32" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <ComplexType Name="usp_GetUserByDepartmentId_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="String" Name="FullName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="15" />
+    <Property Type="String" Name="Email" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CityId" Nullable="false" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Boolean" Name="UserPriority" Nullable="false" />
+    <Property Type="String" Name="OffDay" Nullable="true" MaxLength="10" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="Int32" Name="CreatedByUserId" Nullable="true" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="LastModifiedByUserId" Nullable="true" />
+    <Property Type="DateTime" Name="LastModifiedOn" Nullable="true" Precision="23" />
+  </ComplexType>
+  <EntityType Name="tblBureau">
+    <Key>
+      <PropertyRef Name="BureauId" />
+    </Key>
+    <Property Name="BureauId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedByUserId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedByUserId" Type="Int32" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="isParent" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChannelCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CatagoryName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CatShortName" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ChannelCategoryDetails" Relationship="JTSModel.FK_ChannelCategoryDetails_ChannelCategoryDetails" FromRole="ChannelCategory" ToRole="ChannelCategoryDetail" />
+  </EntityType>
+  <EntityType Name="ChannelCategoryDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="ChannelID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="ChannelCategory" Relationship="JTSModel.FK_ChannelCategoryDetails_ChannelCategoryDetails" FromRole="ChannelCategoryDetail" ToRole="ChannelCategory" />
+    <NavigationProperty Name="tblChannel" Relationship="JTSModel.FK_ChannelCategoryDetails_tblChannel" FromRole="ChannelCategoryDetail" ToRole="tblChannel" />
+  </EntityType>
+  <EntityType Name="tblChannel">
+    <Key>
+      <PropertyRef Name="ChannelId" />
+    </Key>
+    <Property Name="ChannelId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LanguageId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedByUserId" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedByUserId" Type="Int32" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ChannelPath" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="orderbyID" Type="Int32" />
+    <NavigationProperty Name="ChannelCategoryDetails" Relationship="JTSModel.FK_ChannelCategoryDetails_tblChannel" FromRole="tblChannel" ToRole="ChannelCategoryDetail" />
+  </EntityType>
+  <Association Name="FK_ChannelCategoryDetails_ChannelCategoryDetails">
+    <End Type="JTSModel.ChannelCategory" Role="ChannelCategory" Multiplicity="1" />
+    <End Type="JTSModel.ChannelCategoryDetail" Role="ChannelCategoryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChannelCategory">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ChannelCategoryDetail">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChannelCategoryDetails_tblChannel">
+    <End Type="JTSModel.tblChannel" Role="tblChannel" Multiplicity="1" />
+    <End Type="JTSModel.ChannelCategoryDetail" Role="ChannelCategoryDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblChannel">
+        <PropertyRef Name="ChannelId" />
+      </Principal>
+      <Dependent Role="ChannelCategoryDetail">
+        <PropertyRef Name="ChannelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,7 @@
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\CheckApp.exe
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\CheckApp.dll
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\CheckApp.deps.json
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\CheckApp.runtimeconfig.json
+C:\Users\marium.aftab\source\repos\CheckApp\obj\Release\net8.0\PubTmp\Out\CheckApp.pdb

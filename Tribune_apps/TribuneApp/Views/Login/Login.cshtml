@@ -1,0 +1,44 @@
+﻿@model string
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Login";
+}
+<style>
+    .login-card {
+        max-width: 400px;
+        margin: 5rem auto;
+        border-radius: 1rem;
+        box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    }
+
+    .btn-primary {
+        background-color: #0b68ff;
+        border: none;
+        border-radius: 1.5rem;
+    }
+</style>
+
+<div class="card login-card">
+    <div class="card-header bg-primary text-white text-center fw-bold">
+        Login
+    </div>
+    <div class="card-body">
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+
+        <form method="post" asp-controller="Login" asp-action="LoginPost">
+            <input type="hidden" name="returnUrl" value="@Model" />
+            <div class="mb-3">
+                <label class="form-label">Username</label>
+                <input name="username" class="form-control" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input name="password" type="password" class="form-control" required />
+            </div>
+            <button class="btn btn-primary w-100">Sign in</button>
+        </form>
+    </div>
+</div>

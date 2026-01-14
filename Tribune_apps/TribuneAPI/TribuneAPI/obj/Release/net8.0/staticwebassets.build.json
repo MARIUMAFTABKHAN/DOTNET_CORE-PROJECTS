@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9qVvQP3vgFx55QQhDFaffYFg24biZxHuzt33skW3+6A=",
+  "Source": "TribuneAPI",
+  "BasePath": "_content/TribuneAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

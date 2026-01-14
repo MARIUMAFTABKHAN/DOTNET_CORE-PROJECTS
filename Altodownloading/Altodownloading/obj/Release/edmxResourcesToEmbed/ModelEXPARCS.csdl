@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EXPARCSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="EXPARCSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SUSources" EntityType="EXPARCSModel.SUSource" />
+    <EntitySet Name="ArchiveFileDetails" EntityType="EXPARCSModel.ArchiveFileDetail" />
+    <EntitySet Name="tblArchives" EntityType="EXPARCSModel.tblArchive" />
+    <EntitySet Name="SUKeyWordDetails" EntityType="EXPARCSModel.SUKeyWordDetail" />
+    <EntitySet Name="SUProgramTitleOrNames" EntityType="EXPARCSModel.SUProgramTitleOrName" />
+  </EntityContainer>
+  <EntityType Name="SUSource">
+    <Key>
+      <PropertyRef Name="SourceID" />
+    </Key>
+    <Property Name="SourceID" Type="Int32" Nullable="false" />
+    <Property Name="Source" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArchiveFileDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ArchiveID" Type="Int32" Nullable="false" />
+    <Property Name="FileTypeStatus" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="FileFullPath" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="FileDuration" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="vFileSize" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="IsCopied" Type="Boolean" />
+    <Property Name="PriorityOrder" Type="Int16" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CopiedOn" Type="DateTime" Precision="3" />
+    <Property Name="SourcePath" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="InProcess" Type="Boolean" Nullable="false" />
+    <Property Name="BaseStation" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tblArchive">
+    <Key>
+      <PropertyRef Name="ArchiveID" />
+    </Key>
+    <Property Name="ArchiveID" Type="Int64" Nullable="false" />
+    <Property Name="MediaNo" Type="Int64" />
+    <Property Name="ChannelID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="MediaTypeID" Type="Int32" />
+    <Property Name="ClassificationID" Type="Int32" />
+    <Property Name="EntryDate" Type="DateTime" Precision="3" />
+    <Property Name="ShootDate" Type="DateTime" Precision="3" />
+    <Property Name="SourceID" Type="Int32" />
+    <Property Name="FootageTypeID" Type="Int32" />
+    <Property Name="FileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JTSFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="JTSTicketNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="JTSReporterID" Type="Int32" />
+    <Property Name="JTSCameramanID" Type="Int32" />
+    <Property Name="JTSBureau" Type="Int32" />
+    <Property Name="JTSJobType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="JTSCreatedBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="JTSSlug" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="JTSDuration" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="RackNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ShelfNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProducerID" Type="Int32" />
+    <Property Name="Director" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Singer_Band" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Duration" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="ProgrammeTitleOrName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="ProgramGenre_Lyrics" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="SubTitleOrCaption_Cast" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="TelecastDate" Type="DateTime" Precision="3" />
+    <Property Name="Midbreaks" Type="Int32" />
+    <Property Name="EpisodeNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Writer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NOCNo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="LanguageID" Type="Int32" />
+    <Property Name="Theme" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Album" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Origin" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FootageDetail" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Client" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+    <Property Name="Cdate" Type="DateTime" Precision="3" />
+    <Property Name="CTime" Type="DateTime" Precision="3" />
+    <Property Name="SeaChangeCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MediaStatusID" Type="Int32" />
+    <Property Name="InputTypeID" Type="Int32" />
+    <Property Name="TotalCapacity" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CapacityUtilized" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="CapacityAvailable" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="DVDTitle" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="IsHighClip" Type="Boolean" />
+    <Property Name="IsLowClip" Type="Boolean" />
+    <Property Name="DVDNo" Type="Int64" />
+    <Property Name="IsIssued" Type="Boolean" />
+    <Property Name="OnsiteBackup" Type="Int64" />
+    <Property Name="OffsiteBackup" Type="Int64" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="PartNo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="OnsiteMediaTypeId" Type="Int32" />
+    <Property Name="OffsiteMediaTypeId" Type="Int32" />
+    <Property Name="DepartmentId" Type="Int32" />
+    <Property Name="PhotographerId" Type="Int32" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="BureauTape" Type="Int32" />
+    <Property Name="AnchorId" Type="Int32" />
+    <Property Name="MediaSource" Type="Int16" />
+    <Property Name="IsInternational" Type="Boolean" />
+    <Property Name="BaseStationID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="IsMasterCopy" Type="Boolean" />
+    <Property Name="ProgramTitleID" Type="Int32" />
+    <Property Name="MarkDeleted" Type="Boolean" />
+    <Property Name="ContentTypeID" Type="Int32" />
+    <Property Name="ChannelCategoryID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SUKeyWordDetail">
+    <Key>
+      <PropertyRef Name="KeyWordDetailID" />
+    </Key>
+    <Property Name="KeyWordDetailID" Type="Int32" Nullable="false" />
+    <Property Name="KeyWordTypeId" Type="Int32" Nullable="false" />
+    <Property Name="KeyWords" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SUProgramTitleOrName">
+    <Key>
+      <PropertyRef Name="ProgramTitleID" />
+    </Key>
+    <Property Name="ProgramTitleID" Type="Int32" Nullable="false" />
+    <Property Name="ProgramTitle" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="Int32" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="rowguid" Type="Guid" Nullable="false" />
+    <Property Name="ProgramTitleShortCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

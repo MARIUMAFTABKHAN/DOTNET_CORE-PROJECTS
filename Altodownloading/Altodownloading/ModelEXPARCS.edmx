@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EXPARCSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ArchiveFileDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ArchiveID" Type="int" Nullable="false" />
+          <Property Name="FileTypeStatus" Type="char" MaxLength="1" Nullable="false" />
+          <Property Name="FileFullPath" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="FileDuration" Type="varchar" MaxLength="10" />
+          <Property Name="vFileSize" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="IsCopied" Type="bit" />
+          <Property Name="PriorityOrder" Type="smallint" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="CopiedOn" Type="datetime" />
+          <Property Name="SourcePath" Type="varchar" MaxLength="250" />
+          <Property Name="InProcess" Type="bit" Nullable="false" />
+          <Property Name="BaseStation" Type="varchar" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="SUKeyWordDetails">
+          <Key>
+            <PropertyRef Name="KeyWordDetailID" />
+          </Key>
+          <Property Name="KeyWordDetailID" Type="int" Nullable="false" />
+          <Property Name="KeyWordTypeId" Type="int" Nullable="false" />
+          <Property Name="KeyWords" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="EditedBy" Type="int" />
+          <Property Name="EditedOn" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SUProgramTitleOrName">
+          <Key>
+            <PropertyRef Name="ProgramTitleID" />
+          </Key>
+          <Property Name="ProgramTitleID" Type="int" Nullable="false" />
+          <Property Name="ProgramTitle" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="EditedBy" Type="int" />
+          <Property Name="EditedOn" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="ProgramTitleShortCode" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SUSource">
+          <Key>
+            <PropertyRef Name="SourceID" />
+          </Key>
+          <Property Name="SourceID" Type="int" Nullable="false" />
+          <Property Name="Source" Type="varchar" MaxLength="200" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="EditedBy" Type="int" />
+          <Property Name="EditedOn" Type="datetime" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblArchive">
+          <Key>
+            <PropertyRef Name="ArchiveID" />
+          </Key>
+          <Property Name="ArchiveID" Type="bigint" Nullable="false" />
+          <Property Name="MediaNo" Type="bigint" />
+          <Property Name="ChannelID" Type="int" />
+          <Property Name="CategoryID" Type="int" />
+          <Property Name="MediaTypeID" Type="int" />
+          <Property Name="ClassificationID" Type="int" />
+          <Property Name="EntryDate" Type="datetime" />
+          <Property Name="ShootDate" Type="datetime" />
+          <Property Name="SourceID" Type="int" />
+          <Property Name="FootageTypeID" Type="int" />
+          <Property Name="FileName" Type="varchar" MaxLength="200" />
+          <Property Name="JTSFileName" Type="varchar" MaxLength="200" />
+          <Property Name="JTSTicketNo" Type="varchar" MaxLength="50" />
+          <Property Name="JTSReporterID" Type="int" />
+          <Property Name="JTSCameramanID" Type="int" />
+          <Property Name="JTSBureau" Type="int" />
+          <Property Name="JTSJobType" Type="varchar" MaxLength="30" />
+          <Property Name="JTSCreatedBy" Type="varchar" MaxLength="30" />
+          <Property Name="JTSSlug" Type="varchar" MaxLength="2000" />
+          <Property Name="JTSDuration" Type="varchar" MaxLength="50" />
+          <Property Name="RackNo" Type="varchar" MaxLength="10" />
+          <Property Name="ShelfNo" Type="varchar" MaxLength="10" />
+          <Property Name="ProducerID" Type="int" />
+          <Property Name="Director" Type="varchar" MaxLength="50" />
+          <Property Name="Singer_Band" Type="varchar" MaxLength="50" />
+          <Property Name="Duration" Type="varchar" MaxLength="10" />
+          <Property Name="ProgrammeTitleOrName" Type="varchar" MaxLength="1000" />
+          <Property Name="ProgramGenre_Lyrics" Type="varchar" MaxLength="1000" />
+          <Property Name="SubTitleOrCaption_Cast" Type="varchar" MaxLength="1000" />
+          <Property Name="TelecastDate" Type="datetime" />
+          <Property Name="Midbreaks" Type="int" />
+          <Property Name="EpisodeNo" Type="varchar" MaxLength="10" />
+          <Property Name="Writer" Type="varchar" MaxLength="50" />
+          <Property Name="NOCNo" Type="varchar" MaxLength="5" />
+          <Property Name="LanguageID" Type="int" />
+          <Property Name="Theme" Type="varchar" MaxLength="1000" />
+          <Property Name="Remarks" Type="varchar" MaxLength="2000" />
+          <Property Name="Album" Type="varchar" MaxLength="200" />
+          <Property Name="Origin" Type="varchar" MaxLength="200" />
+          <Property Name="FootageDetail" Type="varchar" MaxLength="2000" />
+          <Property Name="Client" Type="varchar" MaxLength="2000" />
+          <Property Name="Cdate" Type="datetime" />
+          <Property Name="CTime" Type="datetime" />
+          <Property Name="SeaChangeCode" Type="varchar" MaxLength="20" />
+          <Property Name="MediaStatusID" Type="int" />
+          <Property Name="InputTypeID" Type="int" />
+          <Property Name="TotalCapacity" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CapacityUtilized" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CapacityAvailable" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DVDTitle" Type="varchar" MaxLength="1000" />
+          <Property Name="IsHighClip" Type="bit" />
+          <Property Name="IsLowClip" Type="bit" />
+          <Property Name="DVDNo" Type="bigint" />
+          <Property Name="IsIssued" Type="bit" />
+          <Property Name="OnsiteBackup" Type="bigint" />
+          <Property Name="OffsiteBackup" Type="bigint" />
+          <Property Name="CreatedBy" Type="int" />
+          <Property Name="CreatedOn" Type="datetime" />
+          <Property Name="EditedBy" Type="int" />
+          <Property Name="EditedOn" Type="datetime" />
+          <Property Name="PartNo" Type="char" MaxLength="1" />
+          <Property Name="OnsiteMediaTypeId" Type="int" />
+          <Property Name="OffsiteMediaTypeId" Type="int" />
+          <Property Name="DepartmentId" Type="int" />
+          <Property Name="PhotographerId" Type="int" />
+          <Property Name="rowguid" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BureauTape" Type="int" />
+          <Property Name="AnchorId" Type="int" />
+          <Property Name="MediaSource" Type="smallint" />
+          <Property Name="IsInternational" Type="bit" />
+          <Property Name="BaseStationID" Type="varchar" MaxLength="5" />
+          <Property Name="IsMasterCopy" Type="bit" />
+          <Property Name="ProgramTitleID" Type="int" />
+          <Property Name="MarkDeleted" Type="bit" />
+          <Property Name="ContentTypeID" Type="int" />
+          <Property Name="ChannelCategoryID" Type="int" />
+        </EntityType>
+        <EntityContainer Name="EXPARCSModelStoreContainer">
+          <EntitySet Name="ArchiveFileDetail" EntityType="Self.ArchiveFileDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SUKeyWordDetails" EntityType="Self.SUKeyWordDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SUProgramTitleOrName" EntityType="Self.SUProgramTitleOrName" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SUSource" EntityType="Self.SUSource" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblArchive" EntityType="Self.tblArchive" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EXPARCSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="EXPARCSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SUSources" EntityType="EXPARCSModel.SUSource" />
+          <EntitySet Name="ArchiveFileDetails" EntityType="EXPARCSModel.ArchiveFileDetail" />
+          <EntitySet Name="tblArchives" EntityType="EXPARCSModel.tblArchive" />
+          <EntitySet Name="SUKeyWordDetails" EntityType="EXPARCSModel.SUKeyWordDetail" />
+          <EntitySet Name="SUProgramTitleOrNames" EntityType="EXPARCSModel.SUProgramTitleOrName" />
+        </EntityContainer>
+        <EntityType Name="SUSource">
+          <Key>
+            <PropertyRef Name="SourceID" />
+          </Key>
+          <Property Name="SourceID" Type="Int32" Nullable="false" />
+          <Property Name="Source" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="EditedBy" Type="Int32" />
+          <Property Name="EditedOn" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ArchiveFileDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ArchiveID" Type="Int32" Nullable="false" />
+          <Property Name="FileTypeStatus" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="FileFullPath" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="FileDuration" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="vFileSize" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="IsCopied" Type="Boolean" />
+          <Property Name="PriorityOrder" Type="Int16" />
+          <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="CopiedOn" Type="DateTime" Precision="3" />
+          <Property Name="SourcePath" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="InProcess" Type="Boolean" Nullable="false" />
+          <Property Name="BaseStation" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblArchive">
+          <Key>
+            <PropertyRef Name="ArchiveID" />
+          </Key>
+          <Property Name="ArchiveID" Type="Int64" Nullable="false" />
+          <Property Name="MediaNo" Type="Int64" />
+          <Property Name="ChannelID" Type="Int32" />
+          <Property Name="CategoryID" Type="Int32" />
+          <Property Name="MediaTypeID" Type="Int32" />
+          <Property Name="ClassificationID" Type="Int32" />
+          <Property Name="EntryDate" Type="DateTime" Precision="3" />
+          <Property Name="ShootDate" Type="DateTime" Precision="3" />
+          <Property Name="SourceID" Type="Int32" />
+          <Property Name="FootageTypeID" Type="Int32" />
+          <Property Name="FileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="JTSFileName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="JTSTicketNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="JTSReporterID" Type="Int32" />
+          <Property Name="JTSCameramanID" Type="Int32" />
+          <Property Name="JTSBureau" Type="Int32" />
+          <Property Name="JTSJobType" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="JTSCreatedBy" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="JTSSlug" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="JTSDuration" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RackNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ShelfNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ProducerID" Type="Int32" />
+          <Property Name="Director" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Singer_Band" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Duration" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ProgrammeTitleOrName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ProgramGenre_Lyrics" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="SubTitleOrCaption_Cast" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="TelecastDate" Type="DateTime" Precision="3" />
+          <Property Name="Midbreaks" Type="Int32" />
+          <Property Name="EpisodeNo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Writer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NOCNo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="LanguageID" Type="Int32" />
+          <Property Name="Theme" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="Remarks" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Album" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Origin" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="FootageDetail" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Client" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="Cdate" Type="DateTime" Precision="3" />
+          <Property Name="CTime" Type="DateTime" Precision="3" />
+          <Property Name="SeaChangeCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="MediaStatusID" Type="Int32" />
+          <Property Name="InputTypeID" Type="Int32" />
+          <Property Name="TotalCapacity" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CapacityUtilized" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CapacityAvailable" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DVDTitle" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="IsHighClip" Type="Boolean" />
+          <Property Name="IsLowClip" Type="Boolean" />
+          <Property Name="DVDNo" Type="Int64" />
+          <Property Name="IsIssued" Type="Boolean" />
+          <Property Name="OnsiteBackup" Type="Int64" />
+          <Property Name="OffsiteBackup" Type="Int64" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="EditedBy" Type="Int32" />
+          <Property Name="EditedOn" Type="DateTime" Precision="3" />
+          <Property Name="PartNo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="OnsiteMediaTypeId" Type="Int32" />
+          <Property Name="OffsiteMediaTypeId" Type="Int32" />
+          <Property Name="DepartmentId" Type="Int32" />
+          <Property Name="PhotographerId" Type="Int32" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="BureauTape" Type="Int32" />
+          <Property Name="AnchorId" Type="Int32" />
+          <Property Name="MediaSource" Type="Int16" />
+          <Property Name="IsInternational" Type="Boolean" />
+          <Property Name="BaseStationID" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="IsMasterCopy" Type="Boolean" />
+          <Property Name="ProgramTitleID" Type="Int32" />
+          <Property Name="MarkDeleted" Type="Boolean" />
+          <Property Name="ContentTypeID" Type="Int32" />
+          <Property Name="ChannelCategoryID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SUKeyWordDetail">
+          <Key>
+            <PropertyRef Name="KeyWordDetailID" />
+          </Key>
+          <Property Name="KeyWordDetailID" Type="Int32" Nullable="false" />
+          <Property Name="KeyWordTypeId" Type="Int32" Nullable="false" />
+          <Property Name="KeyWords" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="EditedBy" Type="Int32" />
+          <Property Name="EditedOn" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SUProgramTitleOrName">
+          <Key>
+            <PropertyRef Name="ProgramTitleID" />
+          </Key>
+          <Property Name="ProgramTitleID" Type="Int32" Nullable="false" />
+          <Property Name="ProgramTitle" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="Int32" />
+          <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+          <Property Name="EditedBy" Type="Int32" />
+          <Property Name="EditedOn" Type="DateTime" Precision="3" />
+          <Property Name="rowguid" Type="Guid" Nullable="false" />
+          <Property Name="ProgramTitleShortCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EXPARCSModelStoreContainer" CdmEntityContainer="EXPARCSEntities">
+          <EntitySetMapping Name="SUSources">
+            <EntityTypeMapping TypeName="EXPARCSModel.SUSource">
+              <MappingFragment StoreEntitySet="SUSource">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="EditedOn" ColumnName="EditedOn" />
+                <ScalarProperty Name="EditedBy" ColumnName="EditedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArchiveFileDetails">
+            <EntityTypeMapping TypeName="EXPARCSModel.ArchiveFileDetail">
+              <MappingFragment StoreEntitySet="ArchiveFileDetail">
+                <ScalarProperty Name="BaseStation" ColumnName="BaseStation" />
+                <ScalarProperty Name="InProcess" ColumnName="InProcess" />
+                <ScalarProperty Name="SourcePath" ColumnName="SourcePath" />
+                <ScalarProperty Name="CopiedOn" ColumnName="CopiedOn" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="PriorityOrder" ColumnName="PriorityOrder" />
+                <ScalarProperty Name="IsCopied" ColumnName="IsCopied" />
+                <ScalarProperty Name="vFileSize" ColumnName="vFileSize" />
+                <ScalarProperty Name="FileDuration" ColumnName="FileDuration" />
+                <ScalarProperty Name="FileFullPath" ColumnName="FileFullPath" />
+                <ScalarProperty Name="FileTypeStatus" ColumnName="FileTypeStatus" />
+                <ScalarProperty Name="ArchiveID" ColumnName="ArchiveID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblArchives">
+            <EntityTypeMapping TypeName="EXPARCSModel.tblArchive">
+              <MappingFragment StoreEntitySet="tblArchive">
+                <ScalarProperty Name="ChannelCategoryID" ColumnName="ChannelCategoryID" />
+                <ScalarProperty Name="ContentTypeID" ColumnName="ContentTypeID" />
+                <ScalarProperty Name="MarkDeleted" ColumnName="MarkDeleted" />
+                <ScalarProperty Name="ProgramTitleID" ColumnName="ProgramTitleID" />
+                <ScalarProperty Name="IsMasterCopy" ColumnName="IsMasterCopy" />
+                <ScalarProperty Name="BaseStationID" ColumnName="BaseStationID" />
+                <ScalarProperty Name="IsInternational" ColumnName="IsInternational" />
+                <ScalarProperty Name="MediaSource" ColumnName="MediaSource" />
+                <ScalarProperty Name="AnchorId" ColumnName="AnchorId" />
+                <ScalarProperty Name="BureauTape" ColumnName="BureauTape" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="PhotographerId" ColumnName="PhotographerId" />
+                <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+                <ScalarProperty Name="OffsiteMediaTypeId" ColumnName="OffsiteMediaTypeId" />
+                <ScalarProperty Name="OnsiteMediaTypeId" ColumnName="OnsiteMediaTypeId" />
+                <ScalarProperty Name="PartNo" ColumnName="PartNo" />
+                <ScalarProperty Name="EditedOn" ColumnName="EditedOn" />
+                <ScalarProperty Name="EditedBy" ColumnName="EditedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="OffsiteBackup" ColumnName="OffsiteBackup" />
+                <ScalarProperty Name="OnsiteBackup" ColumnName="OnsiteBackup" />
+                <ScalarProperty Name="IsIssued" ColumnName="IsIssued" />
+                <ScalarProperty Name="DVDNo" ColumnName="DVDNo" />
+                <ScalarProperty Name="IsLowClip" ColumnName="IsLowClip" />
+                <ScalarProperty Name="IsHighClip" ColumnName="IsHighClip" />
+                <ScalarProperty Name="DVDTitle" ColumnName="DVDTitle" />
+                <ScalarProperty Name="CapacityAvailable" ColumnName="CapacityAvailable" />
+                <ScalarProperty Name="CapacityUtilized" ColumnName="CapacityUtilized" />
+                <ScalarProperty Name="TotalCapacity" ColumnName="TotalCapacity" />
+                <ScalarProperty Name="InputTypeID" ColumnName="InputTypeID" />
+                <ScalarProperty Name="MediaStatusID" ColumnName="MediaStatusID" />
+                <ScalarProperty Name="SeaChangeCode" ColumnName="SeaChangeCode" />
+                <ScalarProperty Name="CTime" ColumnName="CTime" />
+                <ScalarProperty Name="Cdate" ColumnName="Cdate" />
+                <ScalarProperty Name="Client" ColumnName="Client" />
+                <ScalarProperty Name="FootageDetail" ColumnName="FootageDetail" />
+                <ScalarProperty Name="Origin" ColumnName="Origin" />
+                <ScalarProperty Name="Album" ColumnName="Album" />
+                <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+                <ScalarProperty Name="Theme" ColumnName="Theme" />
+                <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+                <ScalarProperty Name="NOCNo" ColumnName="NOCNo" />
+                <ScalarProperty Name="Writer" ColumnName="Writer" />
+                <ScalarProperty Name="EpisodeNo" ColumnName="EpisodeNo" />
+                <ScalarProperty Name="Midbreaks" ColumnName="Midbreaks" />
+                <ScalarProperty Name="TelecastDate" ColumnName="TelecastDate" />
+                <ScalarProperty Name="SubTitleOrCaption_Cast" ColumnName="SubTitleOrCaption_Cast" />
+                <ScalarProperty Name="ProgramGenre_Lyrics" ColumnName="ProgramGenre_Lyrics" />
+                <ScalarProperty Name="ProgrammeTitleOrName" ColumnName="ProgrammeTitleOrName" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="Singer_Band" ColumnName="Singer_Band" />
+                <ScalarProperty Name="Director" ColumnName="Director" />
+                <ScalarProperty Name="ProducerID" ColumnName="ProducerID" />
+                <ScalarProperty Name="ShelfNo" ColumnName="ShelfNo" />
+                <ScalarProperty Name="RackNo" ColumnName="RackNo" />
+                <ScalarProperty Name="JTSDuration" ColumnName="JTSDuration" />
+                <ScalarProperty Name="JTSSlug" ColumnName="JTSSlug" />
+                <ScalarProperty Name="JTSCreatedBy" ColumnName="JTSCreatedBy" />
+                <ScalarProperty Name="JTSJobType" ColumnName="JTSJobType" />
+                <ScalarProperty Name="JTSBureau" ColumnName="JTSBureau" />
+                <ScalarProperty Name="JTSCameramanID" ColumnName="JTSCameramanID" />
+                <ScalarProperty Name="JTSReporterID" ColumnName="JTSReporterID" />
+                <ScalarProperty Name="JTSTicketNo" ColumnName="JTSTicketNo" />
+                <ScalarProperty Name="JTSFileName" ColumnName="JTSFileName" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FootageTypeID" ColumnName="FootageTypeID" />
+                <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+                <ScalarProperty Name="ShootDate" ColumnName="ShootDate" />
+                <ScalarProperty Name="EntryDate" ColumnName="EntryDate" />
+                <ScalarProperty Name="ClassificationID" ColumnName="ClassificationID" />
+                <ScalarProperty Name="MediaTypeID" ColumnName="MediaTypeID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="ChannelID" ColumnName="ChannelID" />
+                <ScalarProperty Name="MediaNo" ColumnName="MediaNo" />
+                <ScalarProperty Name="ArchiveID" ColumnName="ArchiveID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUKeyWordDetails">
+            <EntityTypeMapping TypeName="EXPARCSModel.SUKeyWordDetail">
+              <MappingFragment StoreEntitySet="SUKeyWordDetails">
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="EditedOn" ColumnName="EditedOn" />
+                <ScalarProperty Name="EditedBy" ColumnName="EditedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="KeyWords" ColumnName="KeyWords" />
+                <ScalarProperty Name="KeyWordTypeId" ColumnName="KeyWordTypeId" />
+                <ScalarProperty Name="KeyWordDetailID" ColumnName="KeyWordDetailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SUProgramTitleOrNames">
+            <EntityTypeMapping TypeName="EXPARCSModel.SUProgramTitleOrName">
+              <MappingFragment StoreEntitySet="SUProgramTitleOrName">
+                <ScalarProperty Name="ProgramTitleShortCode" ColumnName="ProgramTitleShortCode" />
+                <ScalarProperty Name="rowguid" ColumnName="rowguid" />
+                <ScalarProperty Name="EditedOn" ColumnName="EditedOn" />
+                <ScalarProperty Name="EditedBy" ColumnName="EditedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="ProgramTitle" ColumnName="ProgramTitle" />
+                <ScalarProperty Name="ProgramTitleID" ColumnName="ProgramTitleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

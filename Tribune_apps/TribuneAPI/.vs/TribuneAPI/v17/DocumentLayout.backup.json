@@ -1,0 +1,201 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\controllers\\videosearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\controllers\\videosearchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\models\\videosearchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\models\\videosearchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\services\\newsfileindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\services\\newsfileindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\services\\inewsfileindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\services\\inewsfileindex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\models\\videosearchrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\models\\videosearchrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\models\\mediaoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\models\\mediaoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|c:\\users\\marium.aftab\\source\\repos\\tribuneapi\\tribuneapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C0030C-75CC-479B-86CB-6BE434843A39}|TribuneAPI\\TribuneAPI.csproj|solutionrelative:tribuneapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewsFileIndex.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Services\\NewsFileIndex.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Services\\NewsFileIndex.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Services\\NewsFileIndex.cs",
+              "RelativeToolTip": "TribuneAPI\\Services\\NewsFileIndex.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T07:21:20.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "INewsFileIndex.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Services\\INewsFileIndex.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Services\\INewsFileIndex.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Services\\INewsFileIndex.cs",
+              "RelativeToolTip": "TribuneAPI\\Services\\INewsFileIndex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-22T07:20:43.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VideoSearchController.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "RelativeToolTip": "TribuneAPI\\Controllers\\VideoSearchController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAALgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:08:07.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VideoSearchRequest.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\VideoSearchRequest.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Models\\VideoSearchRequest.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\VideoSearchRequest.cs",
+              "RelativeToolTip": "TribuneAPI\\Models\\VideoSearchRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:03:22.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MediaOptions.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\MediaOptions.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Models\\MediaOptions.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\MediaOptions.cs",
+              "RelativeToolTip": "TribuneAPI\\Models\\MediaOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:02:40.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VideoSearchRow.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\VideoSearchRow.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Models\\VideoSearchRow.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\VideoSearchRow.cs",
+              "RelativeToolTip": "TribuneAPI\\Models\\VideoSearchRow.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T07:01:57.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "TribuneAPI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:45:56.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Program.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Program.cs",
+              "RelativeToolTip": "TribuneAPI\\Program.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAwwCQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:44:47.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "TribuneAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\appsettings.json",
+              "RelativeToolTip": "TribuneAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-21T06:43:44.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "TribuneAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:42:50.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TribuneAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\marium.aftab\\source\\repos\\TribuneAPI\\TribuneAPI\\Models\\User.cs",
+              "RelativeToolTip": "TribuneAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T06:41:15.815Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
